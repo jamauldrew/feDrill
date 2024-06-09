@@ -1,0 +1,3835 @@
+Ethics and Professional Practice:
+  - Code of Ethics
+  - Surveying incidental to the practice of engineering excludes the surveying of real property for the establishment
+  - The following shall be considered as minimum evidence that the applicant is qualified for certification as an
+  - The following shall be considered as minimum evidence satisfactory to the board that the applicant is qualified
+  - Authorization
+  - Intellectual Property
+  - Patents
+  - Trademarks
+  - Copyrights
+  - Trade Secrets
+  - Societal Considerations
+  - CIVIL CBT Exam Specifications
+  - Knowledge
+  - Number of Questions
+  - Mathematics and Statistics
+  - CERCLA, SDWA, NEPA, OSHA)
+
+Safety:
+  - Definition of Safety
+  - Abbreviation
+  - Name
+  - Jurisdiction
+  - ANSI
+  - ITSNA
+  - MSHA
+  - NFPA
+  - NIOSH
+  - OSHA
+  - RCRA
+  - USCG
+  - USDOT
+  - USEPA
+  - American National Standards Institute
+  - Compressed Gas Association
+  - Canadian Standards Association
+  - Federal Aviation Administration
+  - International Electrotechnical Commission
+  - Mine Safety and Health Administration
+  - National Fire Protection Association
+  - National Institute for Occupational Safety and Health
+  - Occupational Safety and Health Administration
+  - Resource Conservation and Recovery Act
+  - Underwriters Laboratories
+  - United States Coast Guard
+  - United States Department of Transportation
+  - United States Environmental Protection Agency
+  - Nonprofit standards organization
+  - Nonprofit trade association
+  - Federal regulatory agency
+  - Nationally recognized testing laboratory
+  - Federal law
+  - Safety and Prevention
+  - Job Safety Analysis
+  - Hazard Assessments
+  - Hazard Assessment
+  - GHS LABEL ELEMENTS
+  - Product Name or Identifier
+  - Signal Word
+  - Hazard Statements
+  - Supplemental Information
+  - Precautionary Measures and Pictograms
+  - First Aid Statements
+  - Name and Address of Company
+  - Telephone Number
+  - GHS PICTOGRAMS AND HAZARD CLASSES
+  - TRANSPORT PICTOGRAMS
+  - FLAMMABLE LIQUID
+  - FLAMMABLE GAS
+  - FLAMMABLE AEROSOL
+  - FLAMMABLE SOLID
+  - SELF-REACTIVE
+  - SUBSTANCES
+  - PYROPHORICS (SPONTANEOUSLY
+  - COMBUSTIBLE)
+  - SELF-HEATING SUBSTANCES
+  - SUBSTANCES, WHICH IN
+  - CONTACT WITH WATER,
+  - EMIT FLAMMABLE GASES
+  - (DANGEROUS WHEN WET)
+  - OXIDIZING GASES
+  - OXIDIZING LIQUIDS
+  - OXIDIZING SOLIDS
+  - EXPLOSIVE DIVISIONS
+  - EXPLOSIVE DIVISION 1.4
+  - EXPLOSIVE DIVISION 1.5
+  - EXPLOSIVE DIVISION 1.6
+  - ACUTE TOXICITY (POISON):
+  - ORAL, DERMAL, INHALATION
+  - CORROSIVE
+  - COMPRESSED GASES
+  - MARINE POLLUTANT
+  - ORGANIC PEROXIDES
+  - ACUTE ORAL TOXICITY
+  - LD50
+  - PICTOGRAM
+  - SIGNAL WORD
+  - NO SYMBOL
+  - DANGER
+  - HAZARD STATEMENT FATAL IF SWALLOWED
+  - WARNING
+  - FATAL IF SWALLOWED
+  - TOXIC IF SWALLOWED
+  - HARMFUL IF SWALLOWED
+  - MAY BE HARMFUL
+  - IF SWALLOWED
+  - Signal Words
+  - Pesticide Toxicity Categories
+  - Signal Word on Label
+  - Toxicity Category
+  - Acute-Oral
+  - Amount Needed to Kill
+  - Highly Toxic
+  - Warning
+  - Caution
+  - Moderately Toxic
+  - Slightly Toxic
+  - Relatively Nontoxic
+  - One to six teaspoons
+  - Notes
+  - Keep Out of Reach of Children
+  - Flammability
+  - Acetone
+  - Acetylene
+  - Ammonia
+  - Carbon disulfide
+  - Carbon monoxide
+  - Cycloheptane
+  - Cyclohexane
+  - Cyclopropane
+  - Diethyl ether
+  - Ethane
+  - Ethyl acetate
+  - Ethyl alcohol
+  - Ethyl ether
+  - Ethyl nitrite
+  - Ethylene
+  - Hydrazine
+  - Hydrogen
+  - Hydrogen sulfide
+  - Isobutane
+  - Methane
+  - Propane
+  - COMBUSTIBLE CONCENTRATION
+  - SATURATED VAPORAIR MIXTURES
+  - MIST
+  - UPPER
+  - LIMIT
+  - FLAMMABLE
+  - MIXTURES
+  - AUTOIGNITION
+  - LOWER
+  - TEMPERATURE
+  - Granular Storage and Process Safety
+  - Confined Space Safety
+  - Electrical Safety
+  - Current Level
+  - Probable Effect on Human Body
+  - Dose-Response Curves
+  - TOXIC RESPONSE (PERCENT)
+  - TOXICANT
+  - LD 10 LD 50
+  - LOGARITHM OF LD50 DOSE
+  - LC50
+  - LD50
+  - Comparative Acutely Lethal Doses
+  - Actual
+  - Ranking
+  - Toxic Chemical
+  - PCBs
+  - Morphine
+  - Nicotine
+  - Selected Chemical Interaction Effects
+  - Effect
+  - Relative toxicity
+  - Example
+  - Additive
+  - Organophosphate
+  - Synergistic
+  - Cigarette smoking
+  - Antagonistic
+  - Exposure Limits for Selected Compounds
+  - Allowable Workplace
+  - Iodine
+  - Aspirin
+  - Perchloroethylene
+  - Trichloroethylene
+  - Tetrahydrofuran
+  - Carcinogens
+  - RESPONSE
+  - NO THRESHOLD LINEAR
+  - AT LOW DOSE
+  - DOSE
+  - CARCINOGENIC DOSE
+  - RESPONSE CURVE
+  - Compound
+  - Ammonia
+  - Chlorine
+  - Ethyl Chloride
+  - Ethyl Ether
+  - Noncarcinogens
+  - RESPONSE
+  - NOAEL
+  - THRESHOLD
+  - DOSE
+  - NONCARCINOGENIC DOSE
+  - RESPONSE CURVE
+  - Dose is expressed
+  - Reference Dose
+  - NOAEL
+  - CHEMICAL COMPATIBILITY CHART
+  - Reactivity Group
+  - Name
+  - Non-Oxidizing
+  - Oxidizing
+  - Aldehydes
+  - Amides
+  - Aromatic
+  - Carbamates
+  - REACTIVITY
+  - CODE
+  - Strong
+  - Containing Water
+  - EXTREMELY REACTIVE!
+  - GF 21
+  - Substances
+  - HEAT GENERATION,
+  - FIRE, AND TOXIC GAS
+  - GENERATION
+  - Organic Sulfides
+  - EXAMPLE:
+  - HEAT GENERATION
+  - FIRE
+  - TOXIC GAS GENERATION
+  - FLAMMABLE GAS GENERATION
+  - EXPLOSION
+  - POLYMERIZATION
+  - SOLUBILIZATION OF TOXIC MATERIAL
+  - MAY BE HAZARDOUS BUT UNKNOWN
+  - CONSEQUENCES
+  - Do Not Mix With Any Chemical or Waste Material
+  - GT 106
+  - COPPER, AL BRONZE, TIN BRONZE
+  - SODIUM HYDROXIDE
+  - METHANOL
+  - ACID,
+  - NITRIC
+  - AMMONIA,
+  - AQUEOUS
+  - HYDROCHLORIC
+  - ACETIC
+  - TEMPERATURE, °F
+  - KEY TO CHARTS
+  - HYDROGEN PEROXIDE
+  - Detailed Corrosion Data on Construction Materials
+  - AERATED
+  - 600°F
+  - AERATED OR
+  - AIR-FREE
+  - NEOPRENE
+  - POLYETHYLENE
+  - RUBBER, BUTYL
+  - STAINLESS STEEL, TYPE 316
+  - ALKALINE
+  - STEEL
+  - STRESS CRACKS
+  - AT HIGHER TEMPS.
+  - STYRENE COPOLYMERS, HIGH IMPACT
+  - Exposure
+  - Residential Exposure Equations for Various Pathways
+  - Ingestion in drinking water
+  - (BW)(AT)
+  - Ingestion while swimming
+  - Dermal contact with water
+  - Ingestion of chemicals in soil
+  - Dermal contact with soil
+  - EPA-Recommended Values for Estimating Intake
+  - Parameter
+  - Standard Value
+  - Inhalation rates
+  - Exposure duration
+  - National median
+  - Averaging time
+  - Swimming
+  - Eating fish and shellfish
+  - Oral ingestion
+  - Concentrations of Vaporized Liquids
+  - Psat
+  - Ergonomics
+  - NIOSH Formula
+  - Frequency Multiplier Table
+  - Container
+  - Optimal Design
+  - GOOD
+  - POOR
+  - Comfort Grip
+  - Flex Fingers
+  - FAIR
+  - Coupling
+  - GOOD
+  - POOR
+  - Biomechanics of the Human Body
+  - Basic Equations
+  - Incidence Variable Values
+  - Noise Pollution
+  - Point Source Attenuation
+  - Line Source Attenuation
+  - SPLtotal
+  - Noise Level
+  - Permissible Time
+
+Mathematics:
+  - Discrete Math
+  - Symbols
+  - Ordered pair
+  - Matrix of Relation
+  - Finite State Machine
+  - State
+  - Input
+  - S1 S2
+  - S2 S3
+  - S3 S3
+  - Straight Line
+  - The general form of the equation is
+  - The standard form of the equation is
+  - The point-slope form is
+  - The distance between two points is
+  - Quadratic Equation
+  - Logarithms
+  - Identities
+  - Algebra of Complex Numbers
+  - Polar Coordinate System
+  - Euler's Identity
+  - Roots
+  - Trigonometry
+  - Law of Sines
+  - Law of Cosines
+  - Identities
+  - Mensuration of Areas and Volumes
+  - Nomenclature
+  - Parabola
+  - Ellipse
+  - Circular Segment
+  - Circular Sector
+  - Sphere
+  - Parallelogram
+  - Prismoid
+  - Right Circular Cone
+  - Right Circular Cylinder
+  - Paraboloid of Revolution
+  - Conic Sections
+  - Conic Section Equation
+  - The general form of the conic section equation is
+  - Differential Calculus
+  - The Derivative
+  - The Partial Derivative
+  - The Curvature of Any Curve
+  - Curvature in Rectangular Coordinates
+  - The Radius of Curvature
+  - Integral Calculus
+  - Derivatives
+  - Indefinite Integrals
+  - Progression and Series
+  - Arithmetic Progression
+  - Geometric Progression
+  - Properties of Series
+  - Power Series
+  - Taylor's Series
+  - Differential Equations
+  - First-Order Linear Homogeneous Differential Equations with Constant Coefficients
+  - First-Order Linear Nonhomogeneous Differential Equations
+  - The solution is
+  - Second-Order Linear Homogeneous Differential Equations with Constant Coefficients
+  - An equation of the form
+  - The roots of the characteristic equation are
+  - Fourier Transform
+  - Fourier Series
+  - The Fourier Transform and its Inverse
+  - Fourier Transform Pairs
+  - Linearity
+  - Fourier Transform Theorems
+  - Scale change
+  - Time reversal
+  - Duality
+  - Time shift
+  - Frequency shift
+  - Modulation
+  - Multiplication
+  - Convolution
+  - Differentiation
+  - Integration
+  - Laplace Transforms
+  - The unilateral Laplace transform pair
+  - Laplace Transform Pairs
+  - Matrices
+  - Multiplication of Two Matrices
+  - SA BW
+  - Addition of Two Matrices
+  - A+G B+H C+I
+  - D+J E+K F+L
+  - Identity Matrix
+  - Matrix Transpose
+  - Matrix Properties
+  - Determinants
+  - Vectors
+  - Identities
+  - Numerical Methods
+  - Difference Equations
+  - First-Order Linear Difference Equation
+  - Newton's Method for Root Extraction
+  - Newton's Method of Minimization
+  - Newton's algorithm is
+  - Numerical Integration
+  - Three of the more common numerical integration algorithms used to evaluate the integral
+  - Euler's or Forward Rectangular Rule
+  - Trapezoidal Rule
+  - Numerical Solution of Ordinary Differential Equations
+  - Euler's Approximation
+  - Probability and Statistics
+  - Engineering Sciences
+  - Materials Science
+  - Probability and Statistics
+  - Probability and Statistics
+  - Engineering Sciences
+  - Probability and Statistics
+  - Probability and Statistics
+  - Chemistry
+  - Instrumentation and Controls
+  - Engineering Ethics and Societal Impacts
+
+Engineering Probability and Statistics:
+  - The weighted arithmetic mean is
+  - The sample variance is
+  - The sample standard deviation is
+  - Permutations and Combinations
+  - Sets
+  - De Morgan's Law
+  - A,B= A+B
+  - A+B= A,B
+  - Associative Law
+  - Distributive Law
+  - Laws of Probability
+  - P(A)
+  - P(B)
+  - Bayes' Theorem
+  - Probability Density Function
+  - Cumulative Distribution Functions
+  - Expected Values
+  - The standard deviation is given by
+  - Combinations of Random Variables
+  - Binomial Distribution
+  - The Central Limit Theorem
+  - Gamma Function
+  - Propagation of Error
+  - Measurement Error
+  - Linear Combinations
+  - Measurement Uncertainty
+  - Linear Regression and Goodness of Fit
+  - Least Squares
+  - Residual
+  - Hypothesis Testing
+  - Randomized Complete Block Design
+  - Two-Factor Factorial Designs
+  - One-Way ANOVA Table
+  - Source of Variation
+  - Degrees of
+  - Freedom
+  - Sum of
+  - Squares
+  - Between Treatments
+  - SStreatments
+  - Error
+  - SSerror
+  - Total
+  - SStotal
+  - Mean Square
+  - SStreatments
+  - SS error
+  - Randomized Complete Block ANOVA Table
+  - Source of Variation
+  - Degrees of
+  - Freedom
+  - Sum of
+  - Squares
+  - Between Treatments
+  - SStreatments
+  - Between Blocks
+  - SSblocks
+  - Error
+  - SSerror
+  - Total
+  - SStotal
+  - Mean Square
+  - SStreatments
+  - SS blocks
+  - SS error
+  - Two-Way Factorial ANOVA Table
+  - Source of Variation
+  - Degrees of
+  - Freedom
+  - Sum of
+  - Squares
+  - AB Interaction
+  - SSAB
+  - Error
+  - SSerror
+  - Total
+  - SStotal
+  - Mean Square
+  - SS AB
+  - MSAB
+  - Hypothesis
+  - Test Statistic
+  - Criteria for Rejection
+  - Variances
+  - An approximate result is
+  - Sample Size
+  - Test Statistics
+  - Confidence Interval
+  - Unit Normal Distribution
+  - Fractiles
+  - Student's t-Distribution
+  - Denominator
+  - Degrees of Freedom
+  - Statistical Quality Control
+  - Average and Range Charts
+  - Standard Deviation Charts
+  - Approximations
+  - Tests for Out of Control
+  - Variable
+  - Binomial
+  - Coefficient
+  - Equation
+  - Hyper
+  - Geometric
+  - Poisson
+  - Mean
+  - Variance
+  - Negative
+  - Binomial
+  - Multinomial
+  - Uniform
+  - Gamma
+  - Exponential
+  - Weibull
+  - Normal
+  - Triangular
+
+Chemistry and Biology:
+  - Definitions
+  - Faraday's Equation
+  - Nernst Equation
+  - 7H +A
+  - 7A –A7H +A
+  - 6HA@
+  - Bioconversion
+  - Substrate
+  - Cells
+  - Photosynthesis
+  - Instrumental Methods of Analysis
+  - Method
+  - Atomic absorption spectrometry
+  - Electrochemistry
+  - Ion chromatography
+  - Raman spectroscopy
+  - UV absorption
+  - UV fluorescence
+  - X-ray absorption
+  - X-ray diffraction
+  - Qualitative
+  - Quantitative
+  - Elemental
+  - Molecular
+  - Periodic Table of Elements
+  - VIII
+  - Atomic Number
+  - Symbol
+  - Atomic Weight
+  - Lanthanide Series
+  - Actinide Series
+  - Selected Rules of Nomenclature in Organic Chemistry
+  - Alcohols
+  - Ethers
+  - Carboxylic Acids
+  - Aldehydes
+  - Ketones
+  - Unsaturated Acyclic Hydrocarbons
+  - Important Families of Organic Compounds
+  - FAMILY
+  - Alkene
+  - Alkyne
+  - Specific
+  - Example
+  - CH3CH3
+  - IUPAC
+  - Name
+  - Ethene
+  - Ethyne
+  - Ethane
+  - Ethylene
+  - Acetylene
+  - Common
+  - Name
+  - Arene
+  - Ketone
+  - Carboxylic
+  - Acid
+  - Ester
+  - CH3CH
+  - CH3CCH3
+  - CH3COH
+  - CH3COCH3
+  - Methanamine
+  - Ethanal
+  - Acetone
+  - Ethanoic
+  - Acid
+  - Methylamine
+  - Acetaldehyde
+  - Dimethyl
+  - Acetic Acid
+  - Methyl
+  - R1CR2
+  - RCOH
+  - RCOR
+  - Alcohol
+  - Ether
+  - Amine
+  - CH3CH2OH
+  - CH3OCH3
+  - CH3NH2
+  - Benzene
+  - Chloroethane
+  - Ethanol
+  - Methoxymethane
+  - Ethyl
+  - Ethyl alcohol
+  - Dimethyl
+  - General
+  - Formula
+  - Aldehyde
+  - Haloalkane
+  - RNH2
+  - R2NH
+  - Functional
+  - Group
+  - –C ≡C–
+  - Aromatic
+  - Ring
+  - Methyl
+  - Alkane
+  - Common Names and Molecular Formulas of Some Industrial
+  - Common Name
+  - Chemical Name
+  - Muriatic acid
+  - Cumene
+  - Styrene
+  - Gypsum
+  - Limestone
+  - Dolomite
+  - Bauxite
+  - Anatase
+  - Rutile
+  - Pyrite
+  - Epsom salt
+  - Hydroquinone
+  - Soda ash
+  - Salt
+  - Potash
+  - Baking soda
+  - Caustic soda
+  - Carbolic acid
+  - Aniline
+  - Toluene
+  - Xylene
+  - Neopentane
+  - Magnetite
+  - Quicksilver
+  - Heavy water
+  - Hydrochloric acid
+  - Isopropyl benzene
+  - Vinyl benzene
+  - Hypochlorite ion
+  - Chlorite ion
+  - Chlorate ion
+  - Perchlorate ion
+  - Calcium sulfate
+  - Calcium carbonate
+  - Magnesium carbonate
+  - Aluminum oxide
+  - Titanium dioxide
+  - Vinyl chloride
+  - Ethylene oxide
+  - Ferrous sulfide
+  - Magnesium sulfate
+  - Sodium carbonate
+  - Sodium chloride
+  - Potassium carbonate
+  - Sodium bicarbonate
+  - Sodium hydroxide
+  - Vinyl alcohol
+  - Phenol
+  - Aminobenzene
+  - Urea
+  - Methyl benzene
+  - Dimethyl benzene
+  - Silane
+  - Ozone
+  - Mercury
+  - Deuterium oxide
+  - Borane
+  - Deuterium
+  - Tritium
+  - Nitrous oxide
+  - Phosgene
+  - Tungsten
+  - Permanganate ion
+  - Dichromate ion
+  - Hydronium ion
+  - Sodium chloride
+  - Sulfuric acid
+  - Eyewash
+  - Laughing gas
+  - Wolfram
+  - Brine
+  - Battery acid
+  - Molecular
+  - Formula
+  - C6H5CH(CH3)2
+  - C2H4O
+  - C6H4(OH)2
+  - NaCl
+  - K2CO3
+  - NaOH
+  - CH2=CHOH
+  - C6H5OH
+  - C6H5NH2
+  - (NH2)2CO
+  - C6H5CH3
+  - C6H4(CH3)2
+  - CH3C(CH3)2CH3
+  - H3BO3
+  - H3O+1
+  - NaCl
+  - H2SO4
+  - Electrochemistry
+  - Corrosion Reaction
+  - Cellular Biology
+  - PERIPLASMIC
+  - SPACE
+  - OUTER
+  - MEMBRANE
+  - SEX PILUS
+  - RIBOSOMES
+  - PEPTIDOGLYCAN
+  - CYTOPLASMIC
+  - CHROMOSOME
+  - FLAGELLA
+  - INNER OR CYTOPLASMIC
+  - MEMBRANE
+  - COMMON PILUS
+  - MITOCHONDRIA
+  - CELL WALL
+  - STARCH GRANULES
+  - PLASMA
+  - MEMBRANE
+  - NUCLEUS
+  - ENDOPLASMIC
+  - RETICULUM
+  - CHLOROPLAST
+  - TONOPLAST
+  - GOLGI
+  - COMPLEX
+  - LYSOSOME
+  - CENTRAL
+  - VACUOLE
+  - ROUGH
+  - ENDOPLASMIC
+  - RETICULUM
+  - ANIMAL
+  - PLANT
+  - Atomic Bonding
+  - Primary Bonds
+  - Corrosion
+  - Diffusion
+  - Diffusion Coefficient
+  - Thermal and Mechanical Processing
+  - Properties of Materials
+  - Electrical
+  - Conductivity is the reciprocal of the resistivity
+  - Mechanical
+  - Engineering strain
+  - True strain
+  - Metal
+  - Symbol
+  - Aluminum
+  - Antimony
+  - Arsenic
+  - Barium
+  - Beryllium
+  - Bismuth
+  - Cadmium
+  - Caesium
+  - Calcium
+  - Cerium
+  - Chromium
+  - Cobalt
+  - Copper
+  - Gallium
+  - Gold
+  - Indium
+  - Iridium
+  - Iron
+  - Lead
+  - Lithium
+  - Magnesium
+  - Manganese
+  - Mercury
+  - Molybendum
+  - Nickel
+  - Niobium
+  - Osmium
+  - Palladium
+  - Platinum
+  - Potassium
+  - Rhodium
+  - Rubidium
+  - Ruthenium
+  - Silver
+  - Sodium
+  - Strontium
+  - Tantalum
+  - Thallium
+  - Thorium
+  - Titanium
+  - Tungsten
+  - Uranium
+  - Vanadium
+  - Zinc
+  - Zirconium
+  - Atomic
+  - Weight
+  - Melting
+  - Specific Heat
+  - Electrical
+  - Resistivity
+  - (273.2 K)
+  - Element
+  - Dopant
+  - Periodic table
+  - Maximum solid solubility
+  - Impurity Energy Levels for Extrinsic Semiconductors
+  - GaAs
+  - Semiconductor
+  - Engineering stress
+  - True stress
+  - Representative Values of Fracture Toughness
+  - Material
+  - A1 2014-T651
+  - A1 2024-T3
+  - Alumina
+  - Silicon Carbide
+  - Relationship Between Hardness and Tensile Strength
+  - ASTM Grain Size
+  - Nactual
+  - Composite Materials
+  - Hardenability
+  - JOMINY HARDENABILITY CURVES FOR SIX STEELS
+  - COOLING RATES FOR BARS QUENCHED IN AGITATED WATER
+  - COOLING RATES FOR BARS QUENCHED IN AGITATED OIL
+  - Impact Test
+  - AVERAGE 28-DAY COMPRESSIVE
+  - STRENGTH, PSI
+  - Concrete
+  - NO ADDED AIR
+  - RECOMMENDED
+  - PERCENT
+  - ENTRAINED AIR
+  - W/C BY WEIGHT
+  - Concrete strength decreases with increases in water-cement
+  - COMPRESSIVE STRENGTH, PSI
+  - CONTINUOUSLY MOIST CURED
+  - IN AIR AFTER 28 DAYS
+  - IN AIR AFTER 14 DAYS
+  - STORED CONTINUOUSLY IN LABORATORY AIR
+  - AGE, DAYS
+  - Amorphous Materials
+  - VOLUME
+  - TEMPERATURE
+  - Polymers
+  - Polymer Additives
+  - Thermal Properties
+  - Binary Phase Diagrams
+  - Lever Rule
+  - TEMPERATURE, °F
+  - TEMPERATURE, °C
+  - COMPOSITION, WT%
+  - Iron-Iron Carbide Phase Diagram
+
+Materials Science/Structure of Matter:
+
+Statics:
+  - The resultant direction with respect to the x-axis is
+  - Systems of Forces
+  - Equilibrium Requirements
+  - The centroid of area is defined as
+  - Moment of Inertia
+  - Moment of Inertia Parallel Axis Theorem
+  - Radius of Gyration
+  - Product of Inertia
+  - Friction
+  - Screw Thread
+  - Belt Friction
+  - Statically Determinate Truss
+  - The method consists of solving for the forces in the members by writing the two equilibrium equations for each joint
+  - Concurrent Forces
+  - Figure
+  - Product of Inertia
+  - Area Moment of Inertia
+
+Dynamics:
+  - Common Nomenclature
+  - Particle Kinematics
+  - Cartesian Coordinates
+  - Radial and Transverse Components for Planar Motion
+  - PATH
+  - Particle Rectilinear Motion
+  - Particle Curvilinear Motion
+  - Relative Motion
+  - Translating Axes x-y
+  - Plane Circular Motion
+  - Here the vector quantities are defined as
+  - The radial acceleration is given by
+  - Normal and Tangential Components
+  - PATH
+  - Constant Acceleration
+  - Projectile Motion
+  - The equations for common projectile motion may be obtained from the constant acceleration equations as
+  - Non-constant Acceleration
+  - For variable angular acceleration
+  - Concept of Weight
+  - Particle Kinetics
+  - Normal and Tangential Kinetics for Planar Problems
+  - Ft ma
+  - Fn ma
+  - Principle of Work and Energy
+  - Kinetic Energy
+  - Particle
+  - Rigid Body
+  - Potential Energy
+  - Potential Energy in Gravity Field
+  - Elastic Potential Energy
+  - Work
+  - Variable force
+  - Constant force
+  - Weeight
+  - Spring
+  - Power and Efficiency
+  - Pout
+  - Impulse and Momentum
+  - Linear Momentum
+  - Angular Momentum or Moment of Momentum
+  - Impact
+  - Friction
+  - The Laws of Friction are
+  - The formula expressing the Laws of Friction is
+  - In general
+  - Rigid Body Rotation
+  - Mass Moment of Inertia
+  - Radius of Gyration
+  - Equations of Motion
+  - Rigid Body
+  - Plane Motion
+  - The definitions for the mass moments of inertia are
+  - Parallel-Axis Theorem
+  - Mass Radius of Gyration
+  - The mass radius of gyration is defined as
+  - Kinetic Energy
+  - For motion in the xy plane this reduces to
+  - Principle of Angular Impulse and Momentum
+  - Rigid Body
+  - Conservation of Angular Momentum
+  - Free and Forced Vibration
+  - EQUILIBRIUM POSITION
+  - One can define
+  - AMPLITUDE X0 /KF0
+  - Torsional Vibration
+  - For torsional free vibrations it may be shown that the differential equation of motion is
+  - Figure
+  - Mass Moment of Inertia
+  - CONE
+  - THIN CIRCULAR DISK
+  - HEMISPHERE
+  - THIN PLATE
+  - Strength of Materials
+  - Materials
+
+Mechanics of Materials:
+  - Uniaxial Stress-Strain
+  - STRESS, PSI
+  - Stress-Strain Curve for Mild Steel
+  - Definitions
+  - Engineering Strain
+  - Percent Elongation
+  - Shear Stress-Strain
+  - Uniaxial Loading and Deformation
+  - Thermal Deformations
+  - Cylindrical Pressure Vessel
+  - Stress and Strain
+  - Principal Stresses
+  - Shear strain
+  - Hooke's Law
+  - Torsion
+  - Torsional Strain
+  - Beams
+  - Shearing Force and Bending Moment Sign Conventions
+  - POSITIVE BENDING
+  - NEGATIVE BENDING
+  - POSITIVE SHEAR
+  - NEGATIVE SHEAR
+  - Stresses in Beams
+  - Deflection of Beams
+  - Composite Sections
+  - COMPOSITE
+  - SECTION
+  - TRANSFORMED
+  - E1, A1
+  - E2, A2
+  - Columns
+  - Euler's Formula
+  - NEUTRAL
+  - AXIS
+  - Elastic Strain Energy
+  - The strain energy per unit volume is
+  - Material Properties
+  - Modulus of
+  - Material
+  - Steel
+  - Aluminum
+  - Cast Iron
+  - Brass
+  - Copper
+  - Bronze
+  - Magnesium
+  - Glass
+  - Polystyrene
+  - Alumina Fiber
+  - Aramide Fiber
+  - Boron Fiber
+  - Beryllium Fiber
+  - BeO Fiber
+  - Carbon Fiber
+  - Silicon Carbide Fiber
+  - Coefficient of Thermal
+  - Poisson's
+  - (10−6)/°Φ
+  - High Strength
+  - Specific
+  - Modulus of
+  - Magnesium
+  - Alloy
+  - Materials
+  - Shear
+  - Metallic
+  - Aluminum
+  - Wrought Alloys
+  - Cast Iron
+  - Alloys
+  - Copper
+  - Steel
+  - 2014-T6
+  - 6061-T6
+  - Titanium
+  - Alloy
+  - Nonmetallic
+  - Concrete
+  - Plastic
+  - Reinforced
+  - Low Strength
+  - Wood
+  - Select Structural
+  - Grade
+  - Douglas Fir
+  - White Spruce
+  - BOOKS FOR THE MATERIAL SHOULD BE CONSULTED.
+  - THE YIELD AND ULTIMATE STRENGTHS FOR DUCTILE MATERIALS CAN BE ASSUMED EQUAL FOR BOTH TENSION AND COMPRESSION.
+  - BEAM
+  - SLOPE
+  - 6EIL
+  - 24EI
+  - 48EI
+  - 243EI
+  - 384EI
+  - 128EI
+  - 6EIL
+  - 24EI
+  - 360EI
+  - 45EI
+  - 384EI
+  - 48EI
+  - MAXIMUM MOMENT
+  - ELASTIC CURVE
+  - 16EI
+  - DEFLECTION
+  - BEAM
+  - SLOPE
+  - MAXIMUM MOMENT
+  - 24EI
+  - ELASTIC CURVE
+  - 48EI
+  - 384EI
+  - 30EI
+  - 192EI
+  - PIPE
+  - SLOPE
+  - DEFLECTION
+  - ELASTIC CURVE
+  - MAXIMUM MOMENT
+  - Materials
+  - Material Properties and Processing
+
+Thermodynamics:
+  - Properties of Single-Component Systems
+  - Nomenclature
+  - Functions and Their Symbols and Units
+  - Function
+  - Absolute pressure
+  - Absolute temperature
+  - Volume
+  - Specific volume
+  - Internal energy
+  - Btu or kJ
+  - Specific internal energy
+  - Enthalpy
+  - Specific enthalpy
+  - Entropy
+  - Specific entropy
+  - Gibbs free energy
+  - Helmholtz free energy
+  - PVT Behavior
+  - Ideal Gas
+  - For an ideal gas
+  - Ideal Gas Mixtures
+  - Real Gas
+  - EOS are used to quantify PvT behavior
+  - First Law of Thermodynamics
+  - Closed Thermodynamic System
+  - No mass crosses system boundary
+  - Open Thermodynamic System
+  - Closed system
+  - Steady-Flow Systems
+  - Special Cases of Steady-Flow Energy Equation
+  - Basic Cycles
+  - Psychrometrics
+  - Second Law of Thermodynamics
+  - Thermal Energy Reservoirs
+  - Kelvin-Planck Statement of Second Law
+  - Clausius' Statement of Second Law
+  - Entropy
+  - Inequality of Clausius
+  - Isentropic Process
+  - Adiabatic Process
+  - Increase of Entropy Principle
+  - Entropy Change for Solids and Liquids
+  - Heats of Reaction
+  - Tref
+  - Combustion Processes
+  - Combustion in Air
+  - Combustion in Excess Air
+  - Incomplete Combustion
+  - Mass of air
+  - Henry's Law at Constant Temperature
+  - Raoult's Law for Vapor-Liquid Equilibrium
+  - Rigorous Vapor-Liquid Equilibrium
+  - Phase Relations
+  - Clausius-Clapeyron Equation
+  - P+F=C+2
+  - Chemical Reaction Equilibria
+  - Definitions
+  - Chemical Reaction Equilibrium
+  - For the reaction
+  - The effect of temperature on the equilibrium constant is
+  - STEAM TABLES
+  - Specific Volume
+  - Internal Energy
+  - Enthalpy
+  - Entropy
+  - Superheated Water Tables
+  - CONSTANT TEMPERATURE, °F
+  - CCOO
+  - NNSS
+  - TTAA
+  - NNTT
+  - PPRR
+  - EESS
+  - SSUU
+  - RREE
+  - PpSs
+  - °DFE
+  - 20°C
+  - Pressure-Enthalpy
+  - Diagram
+  - 220 °C
+  - SUVA
+  - RATE
+  - SATU
+  - REFERENCE STATE:
+  - FOR SATURATED LIQUID AT –40°F
+  - Thermal Conductivity
+  - Liquid
+  - Vapor
+  - Specific Heat cp
+  - LIQU
+  - SATU
+  - RATE
+  - PRESSURE-ENTHALPY
+  - DIAGRAM
+  - 410A 2013.
+  - Reprinted with
+  - Handbook
+  - BASED ON FORMULATION OF LEMMON AND JACOBSEN (2004)
+  - [R-32/125 (50/50)]
+  - REFERENCE STATE:
+  - R-410A
+  - Liquid
+  - Vapor
+  - Specific Heat cp
+  - Thermal Conductivity
+  - Bubble
+  - Liquid
+  - Vapor
+  - Specific Heat cp
+  - Thermal Conductivity
+  - Bubble
+  - Liquid
+  - Vapor
+  - Specific Heat cp
+  - Thermal Conductivity
+  - Thermal and Physical Property Tables
+  - GASES
+  - Argon
+  - Butane
+  - Carbon dioxide
+  - Carbon monoxide
+  - Ethane
+  - Helium
+  - Hydrogen
+  - Methane
+  - Neon
+  - Nitrogen
+  - Octane vapor
+  - Oxygen
+  - Propane
+  - Steam
+  - Substance
+  - Gases
+  - GASES
+  - Argon
+  - Butane
+  - Carbon dioxide
+  - Carbon monoxide
+  - Ethane
+  - Helium
+  - Hydrogen
+  - Methane
+  - Neon
+  - Nitrogen
+  - Octane vapor
+  - Oxygen
+  - Propane
+  - Steam
+  - SELECTED LIQUIDS AND SOLIDS
+  - Density
+  - Substance
+  - Liquids
+  - Ammonia
+  - Mercury
+  - Water
+  - Solids
+  - Aluminum
+  - Copper
+  - Iron
+  - Lead
+  - GENERALIZED
+  - COMPRESSIBILITY CHARTS
+  - COMPRESSIBILITY FACTOR,
+  - Definition of Compressibility Factor
+  - COMMON THERMODYNAMIC CYCLES
+  - Carnot Cycle
+  - Reversed Carnot
+  - Otto Cycle
+  - Rankine Cycle
+  - Refrigeration
+  - Refrigeration and HVAC
+  - Cycles
+  - Two-Stage Cycle
+  - Qo in
+  - Qo out
+  - Air Refrigeration Cycle
+  - Qout
+  - Surface Water Resources and Hydrology
+  - Water and Wastewater
+  - Air Quality and Control
+  - Solid and Hazardous Waste
+  - Energy and Environment
+  - INDUSTRIAL AND SYSTEMS CBT Exam Specifications
+  - Knowledge
+  - Number of Questions
+
+Fluid Mechanics:
+  - Definitions
+  - Dm DV
+  - DW DV
+  - Stress is defined as
+  - Surface Tension and Capillarity
+  - The difference in pressure between two different points is
+  - Manometers
+  - Patm
+  - Forces on Submerged Surfaces and the Center of Pressure
+  - SIDE VIEW
+  - LIQUID
+  - CENTROID (C)
+  - CENTER OF PRESSURE (CP)
+  - SUBMERGED PLANE SURFACE
+  - Archimedes Principle and Buoyancy
+  - Principles of One-Dimensional Fluid Flow
+  - The Continuity Equation
+  - Energy Equation
+  - Bernoulli Equation
+  - Euler's Equation
+  - Fluid flow characterization
+  - Reynolds Number
+  - The velocity distribution for laminar flow in circular tubes or between planes is
+  - The shear stress distribution is
+  - Consequences of Fluid Flow
+  - Head Loss Due to Flow
+  - The Darcy-Weisbach equation is
+  - An alternative formulation employed by chemical engineers is
+  - Pressure Drop for Laminar Flow
+  - Flow in Noncircular Conduits
+  - Drag Force
+  - Characteristics of Selected Flow Configurations
+  - Manning's Equation
+  - Hazen-Williams Equation
+  - Orifice Discharging Freely into Atmosphere
+  - Multipath Pipeline Problems
+  - The Impulse-Momentum Principle
+  - Jet Propulsion
+  - Deflectors and Blades
+  - Fixed Blade
+  - Moving Blade
+  - Impulse Turbine
+  - Compressible Flow
+  - Mach Number
+  - Isentropic Flow Relationships
+  - Normal Shock Relationships
+  - NORMAL SHOCK
+  - Fluid Flow Machinery
+  - Centrifugal Pump Characteristics
+  - PUMP PERFORMANCE CURVES
+  - NET POSITIVE
+  - SUCTION HEAD
+  - REQUIRED, NPSHR
+  - NPSHR
+  - EFFICIENCY,
+  - MODEL 3656/3756 S-GROUP
+  - METERS
+  - FEET
+  - %EFF 50 60
+  - TOTAL DYNAMIC HEAD
+  - 1750 RPM NOTE: NOT RECOMMENDED FOR OPERATION
+  - BEYOND PRINTED H-Q CURVE.
+  - CAPACITY
+  - 160 U.S. GPM
+  - Pvapor
+  - Pump Power Equation
+  - Fan Characteristics
+  - Typical Backward Curved Fans
+  - POWER
+  - Compressors
+  - INLET
+  - COMPRESSOR
+  - EXIT
+  - Compressor Isentropic Efficiency
+  - V2−V2
+  - Adiabatic Compression
+  - Isothermal Compression
+  - Mhc Pi
+  - Blowers
+  - Turbines
+  - INLET
+  - TURBINE
+  - EXIT
+  - Turbine Isentropic Efficiency
+  - Performance of Components
+  - Fluid Flow Measurement
+  - Pitot Tubes
+  - Venturi Meters
+  - Orifices
+  - Dimensional Homogeneity
+  - Dimensional Analysis
+  - Similitude
+  - Aerodynamics
+  - Airfoil Theory
+  - The lift force on an airfoil FL is given by
+  - The lift coefficient CL can be approximated by the equation
+  - The drag coefficient CD may be approximated by
+  - The aspect ratio AR is defined
+  - AERODYNAMIC MOMENT CENTER
+  - CAMBER LINE
+  - CHORD
+  - Temperature
+  - Specific Weight
+  - Density
+  - Absolute Dynamic
+  - Viscosity
+  - Kinematic
+  - Vapor Pressure
+  - Temperature
+  - Specific Weight
+  - Mass Density
+  - Absolute Dynamic
+  - Viscosity
+  - Kinematic
+  - Vapor Pressure
+  - FLOW IN CLOSED CONDUITS
+  - LAMINAR
+  - FLOW
+  - CRITICAL
+  - ZONE
+  - TRANS
+  - COMPLETE TURBULENCE, ROUGH PIPES
+  - LAMINAR
+  - FLOW
+  - CRITICAL Re
+  - RELATIVE ROUGHNESS (—)
+  - GLASS, DRAWN BRASS, COPPER, LEAD
+  - SMOOTH
+  - COMMERCIAL STEEL, WROUGHT IRON
+  - ASPHALTED CAST IRON
+  - GALVANIZED IRON
+  - CAST IRON
+  - CONCRETE
+  - RIVETED STEEL
+  - CORRUGATED METAL PIPE
+  - LARGE TUNNEL, CONCRETE OR STEEL LINED
+  - BLASTED ROCK TUNNEL
+  - SPHERES
+  - DISKS
+  - CYLINDERS
+  - Terminal Velocities of Spherical Particles of Different Densities
+  - THEORETICAL SCREEN MESH
+  - EQUIVALENT STANDARD
+  - TYLER SCREEN MESH
+  - 5.0 0°F
+  - NOTE
+  - 1. NUMBERS ON CURVES REPRESENT
+  - TRUE (NOT BULK OR APPARENT)
+  - SPECIFIC GRAVITY OF PARTICLES
+  - REFERRED TO WATER AT 4°C.
+  - NOTES
+  - 2. STOKES–CUNNINGHAM CORRECTION
+  - FACTOR IS INCLUDED FOR FINE
+  - PARTICLES SETTLING IN AIR.
+  - 3. PHYSICAL PROPERTIES USED.
+  - Fluid
+  - Water
+  - Density
+  - Water Resources and Environmental Engineering
+  - Structural Engineering
+  - Geotechnical Engineering
+  - Transportation Engineering
+  - Construction Engineering
+  - ELECTRICAL AND COMPUTER CBT Exam Specifications
+  - Knowledge
+  - Number of Questions
+  - Basic Electrical Engineering
+  - Thermodynamics and Heat Transfer
+
+Heat Transfer:
+  - Basic Heat-Transfer Rate Equations
+  - Conduction
+  - Fourier's Law of Conduction
+  - Convection
+  - Newton's Law of Cooling
+  - Radiation
+  - Critical Insulation Radius
+  - Rtotal
+  - Composite Plane Wall
+  - T∞1 T1
+  - Transient Conduction Using the Lumped Capacitance Model
+  - Fluid
+  - The lumped capacitance model is valid if
+  - Body
+  - Constant Fluid Temperature
+  - The temperature variation of the body with time is
+  - Approximate Solution for Solid with Sudden Convection
+  - INFINITE CYLINDER AND SPHERE
+  - PLANE WALL
+  - For Fo
+  - Coefficients used in the one-term approximation to the series
+  - Plane Wall
+  - Infinite Cylinder
+  - Sphere
+  - Fins
+  - Rectangular Fin
+  - Pin Fin
+  - Convection
+  - Terms
+  - External Flow
+  - Internal Flow
+  - Laminar Flow in Circular Tubes
+  - ReD Pr
+  - Turbulent Flow in Circular Tubes
+  - Dittus-Boelter Equation
+  - Sieder-Tate Equation
+  - Noncircular Ducts
+  - Boiling
+  - BOILING REGIMES
+  - FREE
+  - CONVECTION
+  - NUCLEATE
+  - ISOLATED
+  - BUBBLES
+  - FILM
+  - JETS AND
+  - COLUMNS
+  - TRANSITION
+  - Peak Heat Flux
+  - Heater Geometry
+  - Large horizontal flat heater
+  - Large horizontal cyclinder
+  - Small horizontal cyclinder
+  - Large sphere
+  - Small sphere
+  - Width or diameter
+  - 18.9 K1
+  - Radius
+  - Minimum Heat Flux
+  - Film Boiling
+  - Outside Horizontal Tubes
+  - Vertical Flat Plate in Large Body of Stationary Fluid
+  - Range of RaL
+  - Long Horizontal Cylinder in Large Body of Stationary Fluid
+  - Heat Exchangers
+  - For counterflow in tubular heat exchangers
+  - For parallel flow in tubular heat exchangers
+  - Qmax
+  - Cmin
+  - Effectiveness-NTU Relations
+  - For parallel flow concentric tube heat exchanger
+  - For counterflow concentric tube heat exchanger
+  - Overall Heat-Transfer Coefficient for Concentric Tube and Shell-and-Tube Heat Exchangers
+  - UA hiAi Ai
+  - Ao hoAo
+  - Radiation
+  - Types of Bodies
+  - Any Body
+  - For any body
+  - Opaque Body
+  - For an opaque body
+  - Gray Body
+  - Black body
+  - Reciprocity Relations
+  - Net Energy Exchange by Radiation between Two Bodies
+  - Body Small Compared to its Surroundings
+  - Net Energy Exchange by Radiation between Two Black Bodies
+  - The net energy exchange by radiation between two black bodies that see each other is given by
+  - Net Energy Exchange by Radiation between Two DiffuseGray Surfaces that Form an Enclosure
+  - Generalized Cases
+  - One-Dimensional Geometry with Thin Low-Emissivity Shield Inserted between Two Parallel Plates
+  - Radiation Shield
+  - Reradiating Surface
+  - Measurement
+  - Definitions
+  - Physical parameter
+  - Converts small signal to
+  - Temperature Sensors
+  - Clas
+  - Tun ium
+  - Tung
+  - Iron
+  - OUTER JACKET
+  - Alloy Combination and Color
+  - ANSI
+  - Code
+  - IRON
+  - White
+  - CONSTANTAN
+  - COPPER-NICKEL
+  - Cu-Ni
+  - NICKELCHROMIUM
+  - Ni-Cr
+  - Yellow
+  - COPPER
+  - Blue
+  - Purple
+  - NICKEL-ALUMINUM
+  - Ni-Al
+  - CONSTANTAN
+  - COPPER-NICKEL
+  - Cu-Ni
+  - Outer Jacket Color
+  - Maximum
+  - Thermocouple
+  - Thermocouple Extension
+  - Temperature Range
+  - Leads
+  - Cable
+  - Environment
+  - Limited Use in Oxidizing at
+  - Not Recommended for Low
+  - Temperatures
+  - Brown
+  - Black
+  - Yellow
+  - Limited Use in Vacuum or
+  - Blue
+  - Purple
+  - Strain Transducers
+  - Strain
+  - Bridge
+  - Type
+  - Gauge Setup
+  - Sensitivity
+  - Details
+  - Axial
+  - Full
+  - Bending
+  - Torsional and
+  - Shear
+  - WHEATSTONE BRIDGE
+  - Pressure Sensors
+  - Pressure Relative
+  - Measurement Types
+  - Comparison
+  - Absolute
+  - Gauge
+  - Relative to local atmospheric pressure
+  - Differential
+  - Relative to another pressurized source
+  - Examples of Common Chemical Sensors
+  - Sensor Type
+  - Principle
+  - Materials
+  - Analyte
+  - Semiconducting
+  - Conductivity
+  - Electrochemical sensor
+  - Amperiometric
+  - Solid electrode sensor
+  - Potentiometric
+  - Nafion
+  - Piezoelectric sensor
+  - Catalytic combustion sensor Calorimetric
+  - Pyroelectric sensor
+  - Calorimetric
+  - Vapors
+  - Optical sensors
+  - Colorimetric
+  - Sampling
+  - The sampling rate or frequency is given by
+  - Analog-to-Digital Conversion
+  - Signal Conditioning
+  - Measurement Uncertainty
+  - It is critical to always consider the measurement uncertainty of your instrumentation and processes when performing
+  - Control Systems
+  - The linear time-invariant transfer function model represented by the block diagram
+  - INPUT
+  - OUTPUT
+  - One classical negative feedback control system model block diagram is
+  - System performance studies normally include
+  - For the unity feedback control system model
+  - Steady-State Error ess
+  - Type
+  - Ramp
+  - 1/KB
+  - Acceleration
+  - Input
+  - Unit Step
+  - First-Order Control System Models
+  - Second-Order Control System Models
+  - One standard second-order control system model is
+  - An alternative form commonly employed in the chemical process industry is
+  - Mass Transfer in Dilute Solutions
+  - Rate of Transfer in Terms of Coefficients
+  - Mass Transfer
+  - RePr
+  - ReSc
+  - Mass Transfer and Separation
+  - Solids Handling
+  - Chemical Reaction Engineering
+  - Economics
+  - Process Design
+  - Process Control
+  - Mechanical Design and Analysis
+  - OTHER DISCIPLINES CBT Exam Specifications
+  - Knowledge
+  - Number of Questions
+
+Instrumentation, Measurement, and Control:
+
+Engineering Economics:
+  - Factor Name
+  - Single Payment
+  - Compound Amount
+  - Converts
+  - Symbol
+  - Formula
+  - Present Worth
+  - Uniform Series
+  - Sinking Fund
+  - Capital Recovery
+  - Compound Amount
+  - Uniform Gradient
+  - Present Worth
+  - Future Worth
+  - Uniform Series
+  - Nomenclature and Definitions
+  - Subscripts
+  - Non-Annual Compounding
+  - Breakeven Analysis
+  - The payback period is the period of time required for the profit or other benefits of an investment to equal the cost of the
+  - Inflation
+  - Depreciation
+  - Straight Line
+  - Book Value
+  - Taxation
+  - Capitalized Costs
+  - Bonds
+  - Rate-of-Return
+  - Benefit-Cost Analysis
+  - MACRS FACTORS
+  - Year
+  - Economic Decision Trees
+  - Decision node
+  - Outcome node
+  - Chance node
+  - Interest Rate Tables
+  - Properties of Electrical Materials
+  - A. KCL, KVL
+  - Linear Systems
+  - Signal Processing
+  - Electronics
+  - Power Systems
+  - Electromagnetics
+  - Control Systems
+  - Communications
+  - Computer Networks
+  - Digital Systems
+  - Computer Systems
+  - Software Engineering
+  - ENVIRONMENTAL CBT Exam Specifications
+  - Knowledge
+  - Number of Questions
+  - Fundamental Principles
+  - Environmental Chemistry
+  - Health Hazards and Risk Assessment
+  - Fluid Mechanics and Hydraulics
+  - Probability and Statistics
+  - Modeling and Quantitative Analysis
+  - Engineering Management
+  - Facilities and Supply Chain
+  - Work Design
+  - Quality
+  - MECHANICAL CBT Exam Specifications
+  - Knowledge
+  - Number of Questions
+  - Electricity and Magnetism
+
+Chemical Engineering:
+  - Chemical Reaction Engineering
+  - Nomenclature
+  - The rate of reaction is frequently expressed by
+  - Reaction Order
+  - Zero-Order Irreversible Reaction
+  - CA0XA
+  - First-Order Irreversible Reaction
+  - Second-Order Irreversible Reaction
+  - First-Order Reversible Reactions
+  - Reactions of Shifting Order
+  - This form of the rate equation is used for elementary enzyme-catalyzed reactions and for elementary surfaced-catalyzed
+  - Elementary enzyme-catalyzed reactions
+  - VmaxCs
+  - CA0VPFR
+  - Continuous-Stirred Tank Reactors in Series
+  - Two Irreversible Reactions in Parallel
+  - Two First-Order Irreversible Reactions in Series
+  - A"D"U
+  - PFR is
+  - Mass Transfer
+  - Diffusion
+  - Molecular Diffusion
+  - Convection
+  - Overall Coefficients
+  - Distillation
+  - F=V+L
+  - For binary system following Raoult's Law
+  - Overall Material Balances
+  - F=D+B
+  - Operating Lines
+  - Rectifying section
+  - Stripping section
+  - Reflux ratio
+  - Ratio of reflux to overhead product
+  - SATURATED VAPOR
+  - SATURATED LIQUID
+  - Feed condition line
+  - FEED
+  - COMPOSITION
+  - Murphree plate efficiency
+  - Continuous Contact Columns
+  - Momentum Transfer
+  - Solids Handling
+  - Parcle Size Range Guide for the Applicaon of Various Solid-Solid Operaons
+  - Sorters
+  - Size alone
+  - Screens
+  - Liquid cyclones
+  - Hydroseparators-Classifiers
+  - Centrifuges
+  - Sizers
+  - Cyclones
+  - Cones
+  - Drums
+  - Size and density
+  - Dry tables
+  - Centrifugal jigs
+  - Jigs
+  - Magnetic susceptibility
+  - Dry magnetic separators
+  - Wet magnetic separators
+  - HGMS
+  - Electrical conductivity
+  - Electrostatic separators
+  - Surface wettability
+  - Froth flotation
+  - Selective flocculation
+  - KAOLIN
+  - RELATIVE HUMIDITY (%)
+  - Sieve Conversion Table
+  - Mesh to Micron
+  - Conversion Table
+  - MICRONS
+  - US MESH
+  - TYLER
+  - MESH
+  - INCHES
+  - MILLIMETERS
+  - Solids Processing
+  - Particle Size Distribution Functions
+  - Fraction of Total Particles
+  - Particle Size
+  - Discrete Particle Density Functions
+  - XML #0=
+  - Crushing and Grinding Equipment Selection
+  - Size-Reduction
+  - Operation
+  - Crushing
+  - Primary
+  - Secondary
+  - Grinding
+  - Coarse
+  - Fine
+  - Disintegration
+  - Hard
+  - Soft
+  - Hardness
+  - Reduction
+  - Ratio
+  - Types of
+  - Equipment
+  - Types of Size-Reduction Equipment
+  - Classifier
+  - SLOPING TANK CLASSIFIER
+  - (SPIRAL, RAKE, DRAG)
+  - O(–)
+  - Feed Rate
+  - Not critical
+  - Used for closed circuit
+  - None
+  - Classification occurs
+  - (M-S)
+  - Effectively an overloaded
+  - (N-S)
+  - Similar to cylindrical tank
+  - O(+)
+  - CONE CLASSIFIER
+  - O(–)
+  - HYDROCYCLONE
+  - Suitability
+  - (M-S)
+  - Feed Overflow
+  - Underflow
+  - Power
+  - Description
+  - O(+)
+  - O(–)
+  - Limiting Size
+  - CYLINDRICAL TANK CLASSIFIER
+  - Width
+  - Diameter
+  - Length
+  - Angle of Repose
+  - SOLIDS
+  - ANGLE OF REPOSE
+  - Crystallization Processes
+  - Hydrate Formation Phase Diagram for Magnesium Sulfate-Water System
+  - 6H20
+  - TEMPERATURE (°F)
+  - Cost Estimation
+  - Cost Indexes
+  - Capital Cost Estimation
+  - Lang factors
+  - Type of plant
+  - Fixed capital investment
+  - Total capital investment
+  - Solid processing
+  - Solid-fluid processing
+  - Fluid processing
+  - Component
+  - Direct costs
+  - Range
+  - Purchased-equipment installation
+  - Yard improvements
+  - Total direct plant cost
+  - Indirect costs
+  - Engineering and supervision
+  - Construction expenses
+  - Total direct and indirect plant costs
+  - Fixed-capital investment
+  - Total capital investment
+  - Scaling of Equipment Costs
+  - Equipment
+  - Size range
+  - Exponent
+  - Classification of Cost Estimates
+  - Class of
+  - Estimate
+  - Level of Project
+  - Definition
+  - Complete
+  - Methodology
+  - Typical Purpose
+  - Stochastic or
+  - Judgement
+  - Primarily
+  - Stochastic
+  - Mixed but
+  - Deterministic
+  - Screening or
+  - Feasibility
+  - Concept Study or
+  - Control
+  - Control or
+  - Check Estimate
+  - Deterministic
+  - Expected
+  - Accuracy Range
+  - Relative to Best
+  - Preparation
+
+Civil Engineering:
+  - Geotechnical
+  - Phase Relationships
+  - WEIGHTS
+  - (OR MASSES)
+  - VOLUMES
+  - PHASE DIAGRAM
+  - Volume of voids
+  - Total unit weight
+  - Saturated unit weight
+  - Unit weight of solids
+  - Dry unit weight
+  - Specific gravity of soil solids
+  - Void ratio
+  - Porosity
+  - Relative density
+  - Plasticity index
+  - Coefficient of uniformity
+  - Discharge velocity
+  - Factor of safety against seepage liquefaction
+  - RANGE OF
+  - RECOMPRESSION
+  - VIRGIN
+  - COMPRESSION
+  - PRESSURE (LOG10 SCALE)
+  - SOIL CONSOLIDATION CURVE OVER CONSOLIDATED CLAY
+  - Compression index
+  - Recompression index
+  - Ultimate consolidation settlement in soil layer
+  - Two-way
+  - One-way
+  - -COU
+  - MOHR
+  - NORMAL
+  - Different types of drainage
+  - Total normal stress
+  - Effective stress
+  - Shear stress
+  - Shear stress at failure
+  - Horizontal Stress Profiles and Forces
+  - Effective
+  - Vertical
+  - Stress
+  - Pore
+  - Water
+  - Pressure
+  - Effective
+  - Horizontal
+  - Force
+  - At rest forces on wall per unit length of wall
+  - Vertical Stress Profiles
+  - Total
+  - Vertical
+  - Pore
+  - Water
+  - Effective
+  - Vertical Stress Profiles with Surcharge
+  - Total
+  - Ultimate Bearing Capacity
+  - Vertical
+  - Retaining Walls
+  - GROUND
+  - SURFACE
+  - TMOB
+  - SLOPE FAILURE
+  - ALONG PLANAR SURFACE
+  - ASSUMED
+  - PLANAR SLIP
+  - SURFACE
+  - AASHTO Soil Classification
+  - GENERAL CLASSIFICATION
+  - GROUP CLASSIFICATION
+  - CHARACTERISTICS OF FRACTION PASSING
+  - LIQUID LIMIT
+  - USUAL TYPES OF CONSTITUENT MATERIALS STONE FRAGM'TS,
+  - SIEVE ANALYSIS, PERCENT PASSING:
+  - GRAVEL, SAND
+  - SILT-CLAY MATERIALS
+  - A-7-5
+  - A-7-6
+  - FINE
+  - SAND
+  - SILTY OR CLAYEY GRAVEL AND SAND
+  - SILTY SOILS
+  - EXCELLENT TO GOOD
+  - CLAYEY SOILS
+  - FAIR TO POOR
+  - Liquid limit
+  - Plasticity index
+  - Soil Classification
+  - Criteria for Assigning Group Symbols and Group Names Using Laboratory TestsA
+  - Gravels
+  - COARSE-GRAINED
+  - SOILS
+  - Group NameB
+  - Well-graded gravelE
+  - Poorly graded gravelE
+  - Fines classify as ML or
+  - Fines classify as CL or
+  - Clean Sands
+  - Well-graded sandI
+  - Poorly graded sandI
+  - Sands with Fines
+  - Fines classify as ML or
+  - Fines classify as CL or
+  - Clean Gravels
+  - Gravels with Fines
+  - Sands
+  - Silts and Clays
+  - FINE-GRAINED SOILS
+  - Group Symbol
+  - Liquid limit
+  - HIGHLY ORGANIC SOILS
+  - GW-GM well-graded gravel with silt
+  - GW-GC well-graded gravel with clay
+  - GP-GM poorly graded gravel with silt
+  - GP-GC poorly graded gravel with clay
+  - For classification of fine-grained soils
+  - PLASTICITY INDEX (PI)
+  - MH or OH
+  - ML or OL
+  - CL-ML
+  - Peat
+  - SW-SM well-graded sand with silt
+  - SW-SC well-graded sand with clay
+  - SP-SM poorly graded sand with silt
+  - SP-SC poorly graded sand with clay
+  - (D30)2
+  - LIQUID LIMIT (LL)
+  - Structural Analysis
+  - Influence Lines for Beams and Trusses
+  - Moving Concentrated Load Sets
+  - Beam Stiffness and Moment Carryover
+  - Truss Deflection by Unit Load Method
+  - Frame Deflection by Unit Load Method
+  - Elementary Statically Indeterminate Structures by Force Method of Analysis
+  - 48 EI
+  - Plane Truss
+  - Static Analysis
+  - Classification
+  - Unstable
+  - Stable and statically determinate
+  - Stable and statically indeterminate
+  - Plane Frame
+  - Static Analysis
+  - Classification
+  - Unstable
+  - Stable and statically determinate
+  - Stable and statically indeterminate
+  - Structural Design
+  - Nominal Loads used in LRFD and ASD Load Combinations
+  - Basic combinations
+  - Nominal loads used in the following combinations
+  - 1.4D
+  - Live Load Reduction
+  - For members supporting one floor
+  - For members supporting two or more floors
+  - Flat Roof Snow Loads
+  - Terrain Category
+  - Roof Exposure
+  - Partially Exposed
+  - Fully Exposed
+  - Sheltered
+  - All structures except as indicated below
+  - Unheated and open air structures
+  - Structures intentionally kept below freezing
+  - Importance Factors
+  - Risk Category
+  - Low Risk
+  - All Others
+  - Assembly Buildings
+  - Essential Facilities
+  - Wind Loads
+  - Suburban
+  - Exposure
+  - Open Terrain
+  - Open Water
+  - Definitions
+  - Members with tied reinforcement
+  - Shear and torsion
+  - Bearing on concrete
+  - For All Beams
+  - Singly-Reinforced Beams
+  - As fy
+  - Required
+  - Maximum
+  - ASTM STANDARD REINFORCEMENT BARS
+  - BAR SIZE
+  - DIAMETER, IN.
+  - AREA, IN
+  - WEIGHT, LB/FT
+  - Unified Design Provisions
+  - Compressive Strain
+  - Forces
+  - Tensioncontrolled
+  - Transition
+  - Compressioncontrolled
+  - Short Columns
+  - Limits for Longitudinal Reinforcements
+  - Nominal Column Strength Interaction Diagram for Rectangular Section
+  - INTERACTION
+  - Interaction Diagram
+  - DIAGRAM
+  - GRAPH A.11
+  - E–4–60–0.75
+  - COMP. CONT. LIMIT
+  - TENS. CONT. LIMIT
+  - Design of Steel Components
+  - (ANSI/AISC 360-16) LRFD, ASD
+  - Beams
+  - Yielding
+  - Lateral-Torsional Buckling
+  - Based on bracing where Lb is the length between points that are either braced against lateral displacement of the compression
+  - Shear
+  - Columns
+  - VALUES OF Cb FOR SIMPLY SUPPORTED BEAMS
+  - LATERAL BRACING
+  - ALONG SPAN
+  - LOAD
+  - NONE
+  - LOAD AT MIDPOINT
+  - AT LOAD POINT
+  - AT LOAD POINTS
+  - LOADS AT THIRD POINTS
+  - LOADS SYMMETRICALLY PLACED
+  - NONE
+  - LOADS AT QUARTER POINTS
+  - AT MIDPOINT
+  - AT THIRD POINTS
+  - AT QUARTER
+  - POINTS
+  - AT FIFTH POINTS
+  - NOTE: LATERAL BRACING MUST ALWAYS BE PROVIDED AT POINTS OF
+  - SUPPORT PER AISC SPECIFICATION CHAPTER F.
+  - Tension Members
+  - Definitions
+  - Angles with longitudinal welds only
+  - Limit States and Available Strengths
+  - Smaller
+  - Area Depth Web
+  - Shape
+  - Axis X-X
+  - W24X62
+  - W24X55
+  - W21X73
+  - W21X68
+  - W21X62
+  - W21X55
+  - W21X57
+  - W21X50
+  - W21X48
+  - W21X44
+  - W18X71
+  - W18X65
+  - W18X60
+  - W18X55
+  - W18X50
+  - W18X46
+  - W18X40
+  - W16X67
+  - W16X57
+  - W16X50
+  - W16X45
+  - W16X40
+  - W16X36
+  - W14X74
+  - W14X68
+  - W14X61
+  - W14X53
+  - W14X48
+  - W12X79
+  - W12X72
+  - W12X65
+  - W12X58
+  - W12X53
+  - W12X50
+  - W12X45
+  - W12X40
+  - Axis Y-Y
+  - W24X68
+  - Flange
+  - Shape
+  - LRFD
+  - AVAILABLE MOMENT VS. UNBRACED LENGTH
+  - W21X
+  - W24X
+  - X50 14X
+  - W10X68
+  - W12X65
+  - W24X7
+  - W12X72
+  - W14X68
+  - W10X88
+  - W12X79
+  - TABLE 3-10 (CONTINUED)
+  - TABLE C-A-7.1
+  - BUCKLED SHAPE OF COLUMN IS
+  - SHOWN BY DASHED LINE.
+  - AISC-RECOMMENDED DESIGN
+  - VALUE WHEN IDEAL CONDITIONS
+  - ARE APPROXIMATED
+  - END CONDITION CODE
+  - ROTATION FIXED AND TRANSLATION FIXED
+  - ROTATION FREE AND TRANSLATION FIXED
+  - ROTATION FIXED AND TRANSLATION FREE
+  - ROTATION FREE AND TRANSLATION FREE
+  - Shape
+  - CN 1, 000
+  - Rational Formula
+  - Surface Water System Hydrologic Budget
+  - Pan Evaporation
+  - Evapotranspiration Rates for Grasses
+  - Grass-Reference Evapotranspiration Rates
+  - Classification
+  - Moderate
+  - High
+  - Very High
+  - Lake Classification
+  - Lake Classification Based on Productivity
+  - Oligotrophic
+  - Mesotrophic
+  - Eutrophic
+  - Average
+  - Range
+  - Secchi Depth
+  - Total Phosphorus
+  - Darcy's Law
+  - Well Drawdown
+  - Unconfined aquifer
+  - ORIGINAL
+  - GROUNDWATER
+  - LEVEL
+  - PERMEABLE SOIL
+  - BOTTOM OF AQUIFER
+  - IMPERMEABLE
+  - Dupuit's Formula
+  - Confined aquifer
+  - ORIGINAL PIEZOMETRIC SURFACE
+  - AQUITARD
+  - TOP OF AQUIFER
+  - PERMEABLE SOIL
+  - BOTTOM OF AQUIFER
+  - IMPERMEABLE
+  - Thiem Equation
+  - Ratio of Minimum or of Peak-to-Average Daily Sewage Flow
+  - Sewage Flow Ratio Curves
+  - DARCY-WEISBACH
+  - HYDRAULIC
+  - Specific Energy
+  - For rectangular channels
+  - Specific Energy Diagram
+  - Momentum Depth Diagram
+  - Hydraulic Jump
+  - Manning's Equation
+  - Weir Formulas
+  - Rectangular
+  - Free discharge suppressed
+  - Free discharge contracted
+  - V-Notch
+  - Hazen-Williams Equation
+  - Q1.852
+  - 4.52 Q1.85
+  - 6.05 Q1.85
+  - SI Units
+  - Pipe Material
+  - Ductile iron
+  - Vitrified clay
+  - Brick sewers
+  - Asbestos-cement
+  - Plastic
+  - Fire Hydrant Discharging to Atmosphere
+  - OUTLET SMOOTH
+  - AND WELL-ROUNDED
+  - COEF. 0.90
+  - OUTLET SQUARE
+  - OUTLET SQUARE AND
+  - AND SHARP
+  - PROJECTING INTO BARREL
+  - COEF. 0.80
+  - COEF. 0.70
+  - Fire Sprinkler Discharge
+  - Orifice Size
+  - Name
+  - Standard
+  - Large
+  - Extra large
+  - Transportation
+  - Traffic Signal Timing
+  - Stopping Sight Distance
+  - Peak Hour Factor
+  - Hourly Volume
+  - PHF Hourly
+  - Vertical Curves
+  - CK NT
+  - BA NGE
+  - YPVC
+  - DATUM
+  - VERTICAL CURVE FORMULAS
+  - NOT TO SCALE
+  - TAN WARD
+  - Crest Vertical Curve
+  - Sag Vertical Curve
+  - Horizontal Curves
+  - E+ R=
+  - Spiral Transition Length
+  - Basic Freeway Segment Highway Capacity
+  - Parameters for Speed-Flow Curves for Basic Freeway Segments
+  - Parameter
+  - FFSadj
+  - Definition and Units
+  - Basic Freeway Segments
+  - Measured or predicted with equation
+  - Adjustment to FFS for Average Lane Width for Basic Freeway
+  - Adjustment to FFS for Right-Side Lateral
+  - Right-Side
+  - Lateral
+  - Lanes in One Direction
+  - PCE by Type of Terrain
+  - Vehicle
+  - Level
+  - Rolling
+  - Demand exceeds capacity
+  - Traffic Flow Relationships
+  - Greenshields Model
+  - Oversaturated flow
+  - Gravity Model
+  - Logit Models
+  - Traffic Safety Equations
+  - Crash Rates at Intersections
+  - Crash Rates for Roadway Segments
+  - Crash Reduction
+  - Highway Pavement Design
+  - AASHTO Structural Number Equation
+  - Gross Axle Load
+  - Load Equivalency
+  - Factors
+  - Tandem
+  - Axles
+  - Single
+  - Gross Axle Load
+  - Latitudes and Departures
+  - Earthwork formulas
+  - Average End Area Formula
+  - Prismoidal Formula
+  - Pyramid or Cone
+  - PROFILE
+  - EXISTING GROUND
+  - BEGINNING
+  - OF PROJECT
+  - FILL
+  - PROPOSED
+  - GRADE LINE
+  - STATION
+  - MASS HAUL DIAGRAM
+  - BALANCE
+  - POINT
+  - Area formulas
+  - Construction
+  - CPM Precedence Relationships
+  - ACTIVITY-ON-NODE
+  - ACTIVITY-ON-ARROW ANNOTATION
+  - EARLY START/LATE START
+  - ACTIVITY-ON-NODE ANNOTATION
+  - EARLY FINISH/LATE FINISH
+  - ACTIVITY
+  - DURATION
+  - EARLY
+  - START
+  - ACTIVITY DESCRIPTION
+  - DURATION FLOAT
+  - LATE
+  - Nomenclature
+  - Earned-Value Analysis
+  - Variances
+  - EARLY
+  - FINISH
+  - LATE
+  - Indices
+  - BCWP
+  - Forecasting
+  - Actual
+  - Planned
+
+Environmental Engineering:
+  - Air pollution
+  - Nomenclature
+  - OOWWW
+  - Selected Properties of Air
+  - Molecular weight of air
+  - Density
+  - Lapse Rate
+  - Stability Condition
+  - Unstable
+  - Neutral
+  - Stable
+  - Solar Insolation
+  - Surface Wind
+  - Strongb
+  - Moderatec
+  - Slightd
+  - Night
+  - Cloudinesse
+  - Cloudy
+  - Clear
+  - STANDARD DEVIATION, METERS
+  - Constants
+  - Stability
+  - Cyclone
+  - Cyclone Effective Number of Turns Approximation
+  - Dimension
+  - High Efficiency
+  - Conventional
+  - High Throughput
+  - Cyclone Collection Efficiency
+  - Particle Size Ratio
+  - Baghouse
+  - Pulse
+  - Reverse
+  - Dust
+  - Electrostatic Precipitator Efficiency
+  - Incineration
+  - Kiln Formula
+  - 2.28 L/D
+  - Energy Content of Waste
+  - Typical Waste Values
+  - Food Waste
+  - Paper
+  - Cardboard
+  - Plastics
+  - Wood
+  - Glass
+  - Bi-metallic Cans
+  - Indoor Air Quality
+  - Material Balance
+  - Air Infiltration Rates into Homes with Windows Closed
+  - Layout of Room
+  - No windows or exterior doors
+  - Windows or exterior doors on one wall
+  - Windows or exterior doors on two walls
+  - Windows or exterior doors on three walls
+  - Air Exchange Rate
+  - Approximate Volume Flow Rate of Outdoor Air
+  - Percent of Outdoor Air
+  - Outdoor Air Changes per Hour
+  - Fate and Transport
+  - Mass Calculations
+  - Microbial Kinetics
+  - BOD Exertion
+  - Stream Modeling
+  - Streeter Phelps
+  - YkmS
+  - Multiple Limiting Substrates
+  - Non-steady State Continuous Flow
+  - Steady State Continuous Flow
+  - Kinetic Temperature Corrections
+  - Bio Towers
+  - Trickling Filters
+  - Partition Coefficients
+  - Bioconcentration Factor BCF
+  - Octanol-Water Partition Coefficient
+  - Organic Carbon Partition Coefficient Koc
+  - Vadose Zone Penetration
+  - Typical Values of Rv
+  - Soil
+  - Coarse Gravel
+  - Gravel to Coarse Sand
+  - Coarse to Medium Sand
+  - Medium to Fine Sand
+  - Fine Sand to Silt
+  - Gasoline
+  - Kerosene
+  - Light Fuel Oil
+  - Reaction Order
+  - Zero
+  - Ideal Batch
+  - Ideal Plug Flow
+  - Ideal CMFR
+  - First
+  - Second
+  - Equations for Ct
+  - Reaction Order
+  - Ideal Batch
+  - Ideal Plug Flow
+  - Ideal CMFR
+  - First
+  - Second
+  - Landfill
+  - Typical Densities of As-Received Source-Separated Materials
+  - Material
+  - Paper
+  - Newspaper
+  - Corrugated cardboard
+  - High grades
+  - Clear
+  - Green or amber
+  - Semicrushed
+  - Aluminum Cans
+  - Whole
+  - Flattened
+  - Plastics
+  - Typical Moisture Content of Municipal
+  - Component
+  - Food wastes
+  - Paper
+  - Cardboard
+  - Plastics
+  - Textiles
+  - Rubber
+  - Leather
+  - Garden trimmings
+  - Wood
+  - Glass
+  - Tin cans
+  - Nonferrous metals
+  - Ferrous metals
+  - Municipal solid waste
+  - Range
+  - Typical
+  - Effect of Overburden Pressure
+  - Gas Flux
+  - Soil Landfill Cover Water Balance
+  - Compaction
+  - Population Modeling
+  - Population Projection Equations
+  - Percent Growth
+  - Ratio and Correlation Growth
+  - Decreasing-Rate-of-Increase Growth
+  - Radiation
+  - Effective Half-Life
+  - Half-Life
+  - Daughter Product Activity
+  - Daughter Product Maximum Activity Time
+  - Inverse Square Law
+  - Sampling and Monitoring
+  - Investigation Type
+  - Confidence
+  - Minimum Detectable Relative
+  - Preliminary site investigation
+  - Emergency clean-up
+  - Planned removal and
+  - Coefficient of
+  - Variation
+  - Power
+  - Confidence
+  - Level
+  - Minimum Detectable Relative Difference
+  - Wastewater Treatment and Technologies
+  - The recirculation factor is calculated using
+  - Dechlorination of Sulfite Compounds
+  - Methanol Requirement for Biologically Treated Wastewater
+  - BOD Test Solution and Seeding Procedures
+  - Activated Sludge
+  - Design and Operaonal Parameters for Acvated-Sludge
+  - Treatment of Municipal Wastewater
+  - Type of Process
+  - Tapered aeration
+  - Conventional
+  - Step aeration
+  - Completely mixed
+  - Contact stabilization
+  - Contact basin
+  - Stabilization basin
+  - High-rate aeration
+  - Pure oxygen
+  - Extended aeration
+  - Mean cell
+  - Food-to-mass ratio
+  - Hydraulic
+  - Volumetric
+  - Mixed liquor
+  - (MLSS,
+  - Recycle
+  - Facultative Pond
+  - Flow
+  - BOD5
+  - Air supplied
+  - BOD5)
+  - Biotower
+  - Fixed-Film Equation without Recycle
+  - Fixed-Film Equation with Recycle
+  - Aerobic Digestion
+  - Design criteria for aerobic digestersa
+  - Parameter
+  - Value
+  - Cell tissue
+  - Energy requirements for mixing
+  - Tank Volume
+  - OF DIGESTER LIQUID TEMPERATURE AND DIGESTER SLUDGE AGE
+  - Anaerobic Digestion
+  - Design parameters for anaerobic digesters
+  - Parameter
+  - Standard-rate
+  - High-rate
+  - Standard Rate
+  - High Rate
+  - First stage
+  - Second Stage
+  - Water Treatment Technologies
+  - Activated Carbon Adsorption
+  - Freundlich Isotherm
+  - Linearized Form
+  - Langmuir Isotherm
+  - Depth of Sorption Zone
+  - EXHAUSTION
+  - BREAKTHROUGH
+  - Air Stripping
+  - WATER INLET
+  - AIR OUTLETS
+  - AIR INLETS (BLOWER)
+  - WATER OUTLET
+  - MW KLa
+  - Clarifier
+  - Typical Primary Clarifier Efficiency Percent Removal
+  - Suspended
+  - Solids
+  - BOD5
+  - Overflow rates
+  - Design Criteria for Sedimentation Basins
+  - Type of Basin
+  - Average
+  - Water Treatment
+  - Alum coagulation
+  - Ferric coagulation
+  - Upflow clarifiers
+  - Groundwater
+  - Surface water
+  - Clarification following lime-soda softening
+  - Conventional
+  - Wastewater Treatment
+  - Primary clarifiers
+  - Settling basins following fixed film reactors
+  - Settling basins following air-activated sludge reactors
+  - All configurations EXCEPT extended aeration
+  - Extended aeration
+  - Overflow Rate
+  - Hydraulic
+  - Residence Depth
+  - Time
+  - Solids Loading Rate
+  - Average
+  - Peak
+  - Weir Loadings
+  - Horizontal Velocities
+  - Dimensions
+  - Settling Equations
+  - General Spherical
+  - Stokes's Law
+  - Filtration Equations
+  - Head Loss Through Clean Bed
+  - Rose Equation
+  - Monosized Media
+  - Multisized Media
+  - Carmen-Kozeny Equation
+  - Bed Expansion
+  - Monosized
+  - Multisized
+  - Lime-Soda Softening Equations
+  - Molecular
+  - Formulas
+  - Weight
+  - Equivalent
+  - CO32–
+  - HCO3–
+  - SO42–
+  - Coagulation Equations
+  - Phosphorus Removal Equations
+  - Common Radicals in Water
+  - Molecular
+  - Formulas
+  - Weight
+  - Equivalent
+  - CO32–
+  - HCO3–
+  - SO42–
+  - Typical Operating Ranges for Coagulation with Alum and Ferric Chloride
+  - RE-STABILIZATION ZONE
+  - (BOUNDARY
+  - CHANGES
+  - WITH
+  - COLLOID)
+  - OPTIMAL SWEEP
+  - COMBINATION
+  - (SWEEP AND
+  - ABSORPTION)
+  - CHARGE NEUTRALIZATION
+  - TO ZERO ZETA POTENTIAL
+  - ADSORPTION
+  - DESTABILIZATION
+  - AITOTAL
+  - AI8(OH)20
+  - SWEEP
+  - COAGULATION
+  - AI(OH)4
+  - AI(OH)
+  - RE-STABILIZATION ZONE
+  - (CHANGES
+  - WITH COLLOID
+  - OR SURFACE
+  - AREA)
+  - ADSORPTION
+  - DESTABILIZATION
+  - FeTOTAL
+  - Rapid Mix and Flocculator Design
+  - Reel and Paddle
+  - Turbulent Flow Impeller Mixer
+  - Values of the Impeller Constant KT
+  - Type of Impeller
+  - Reverse Osmosis
+  - Osmotic Pressure of Solutions of Electrolytes
+  - PRESSURIZED
+  - SALINE FEED
+  - PRODUCT
+  - WATER
+  - SELECTIVELY
+  - PERMEABLE
+  - MEMBRANE
+  - WASTE BRINE
+  - REVERSE OSMOSIS UNIT
+  - Salt Flux through the Membrane
+  - Water Flux
+  - Ultrafiltration
+  - Disinfection
+  - Baffling Factors
+  - Baffling
+  - Condition
+  - Factor
+  - Unbaffled
+  - Poor
+  - Single or multiple unbaffled
+  - Average
+  - Baffled inlet or outlet with some
+  - Superior
+  - Perfect
+  - Very high length to width ratio
+  - Baffling Description
+  - Removal and Inactivation Requirements
+  - Microorganism
+  - Giardia
+  - Virsuses
+  - Cryptosporidium
+  - Required Log Reduction
+  - Treatment
+  - Removal
+  - Typical Removal Credits and Inactivation Requirements for Various Treatment Technologies
+  - Process
+  - Conventional
+  - Treatment
+  - Resulting
+  - Typical Log
+  - Disinfection
+  - Removal Credits Inactivation Requirements
+  - Giardia Viruses
+  - Giardia
+  - Viruses
+  - Direct
+  - Filtration
+  - Slow Sand
+  - Diatomaceous
+  - Earth Filtration
+  - Unfiltered
+  - Of Giardia Cysts By Free Chlorine
+  - Chlorine Concentration
+  - CT VALUES* FOR
+  - 4-LOG INACTIVATION OF VIRUSES BY FREE CHLORINE
+  - Energy
+  - ENERGY SOURCES
+  - Energy Sources and Conversion Processes
+  - BIOMASS
+  - FUELS
+  - PHOTOSYNTHESIS
+  - PHOTOVOLTAICS
+  - SOLAR
+  - THERMAL
+  - OCEAN
+  - WIND, HYDRO,
+  - WAVES, TIDAL
+  - ENERGY FORMS
+  - BATTERIES, FUEL CELLS
+  - ELECTROCHEMICAL
+  - CHEMICAL
+  - HEAT
+  - MECHANICAL
+  - WORK
+  - ELECTRICITY
+  - ENERGY SOURCES
+  - NUCLEAR
+  - FISSION,
+  - FUSION
+  - FOSSIL FUELS
+  - FUELS
+  - GEOTHERMAL
+  - GAS, OIL, COAL
+  - TO END USES:
+  - RESIDENTIAL
+  - INDUSTRIAL
+  - TRANSPORTATION
+  - Combustion
+  - Combustible Substance
+  - Reaction
+  - Mols
+  - Carbon to carbon monoxide
+  - Carbon to carbon dioxide
+  - Carbon monoxide to carbon dioxide
+  - Hydrogen
+  - Sulfur to sulfur dioxide
+  - Sulfur to sulfur trioxide
+  - Methane
+  - Ethane
+  - Propane
+  - Butane
+  - Acetylene
+  - Ethylene
+  - Biomass as an Energy Source
+  - DIRECT COMBUSTION
+  - WOODY PLANT MATERIAL
+  - SIZE REDUCTION/PELLETING
+  - HEAT
+  - PYROLYSIS/LIQUEFACTION
+  - SOLID FUELS
+  - GASIFICATION
+  - GASEOUS
+  - FUELS
+  - CELLULOSIC PLANT MATERIAL
+  - STARCH/SUGARY PLANT MATERIALS
+  - ANAEROBIC DIGESTION
+  - LIQUID
+  - FUEL
+  - OILY PLANT MATERIAL
+  - FERMENTATION
+  - MICROORGANISMS
+  - EXTRACTION
+  - ENGINES
+  - CONVERSION
+  - HUMANS
+  - LIVESTOCK
+  - WASTES
+  - RESIDUES
+  - KEY:
+  - PHYSICAL PROCESSES
+  - CHEMICAL/THERMAL PROCESSES
+  - BIOCHEMICAL PROCESSES
+  - Hydropower
+  - Nuclear
+  - Nuclear Power Reactor Characteristics
+  - Reactor
+  - Type
+  - Typical
+  - Thermal
+  - Power
+  - Pressurizedwater
+  - Boilingwater
+  - Gas-cooled
+  - Liquid-metal
+  - Average
+  - Typical Fuel
+  - Reactor
+  - Coolant
+  - Light water
+  - Carbon
+  - Fast-breeder
+  - Sodium
+  - Fluid-fueled
+  - Varies
+  - Reactor fuel
+  - Wind
+  - Noise of Different Activities Compared with Wind Turbines
+  - Threshold of pain
+  - Busy general office
+  - Quiet bedroom
+  - Rural night-time background
+  - Threshold of hearing
+  - Hydraulic Turbine Operating Regimes
+  - IMPULSE
+  - TURBINE
+  - BARREL
+  - FRANCIS
+  - INDUSTRIAL
+  - PUMP
+  - PROPELLER AND
+  - KAPLAN TURBINE
+  - BULB
+  - UNIT
+  - STANDARDIZED
+  - TUBULAR UNIT
+  - ELECTRIC OUTPUT (MW)
+  - TYPICAL SUMMER DAY
+  - NATURAL-GASFIRED MODE
+  - SOLAR MODE
+  - TYPICAL WINTER DAY
+  - OFF-
+  - MID-PEAK
+  - PEAK
+  - Spacing of Solar Flat-Plate Collectors to Avoid Shadowing
+  - OPTIMUM TILT ANGLE (°)
+  - ELECTRIC OUTPUT (MW)
+  - Solar
+  - INTE
+  - ATIO
+  - INSO
+  - LATITUDE (°)
+  - Wastes with Fuel Value
+  - Industrial Wastes
+  - Coke-oven
+  - Blast-furnace
+  - Carbon monoxide
+  - Refinery
+  - Industrial sludge
+  - Black liquor
+  - Sulfite liquor
+  - Dirty solvents
+  - Spent lubricants
+  - Paints and resins
+  - Oily waste and residue
+  - Bagasse
+  - Bark
+  - General wood waste
+  - Sawdust and shavings
+  - Coffee grounds
+  - Nut hulls
+  - Rice hulls
+  - Corn cobs
+  - Typical Heating Value of MSW Components
+  - Component
+  - Range
+  - Typical
+  - Food wastes
+  - Paper
+  - Cardboard
+  - Plastics
+  - Textiles
+  - Rubber
+  - Leather
+  - Garden trimmings
+  - Wood
+  - Glass
+  - Tin cans
+  - Nonferrous metals
+  - Ferrous metals
+  - Concentrations Held Constant at Current Levels
+  - Global Warming Potential
+  - Chemical
+  - Formula
+  - Methane
+  - Nitrous Oxide
+  - HFC-23
+  - CHF3
+  - HFC-32
+  - CH2F2
+  - HFC-41
+  - CH3F
+  - C5H2F10
+  - HFC-125
+  - C2HF5
+  - HFC-134
+  - C2H2F4
+  - CH2FCF3
+  - C2H4F2
+  - HFC-143
+  - C2H3F3
+  - C3HF7
+  - C3H2F6
+  - C3H3F5
+  - Sulfur hexafluoride
+  - Perfluoromethane
+  - Perfluoroethane
+  - C2F6
+  - Perfluoropropane
+  - C3F8
+  - Perfluorobutane
+  - C4F10
+  - Perfluorocyblobutane
+  - Perfluoropentane
+  - C5F12
+  - C6F14
+  - Species
+  - Perfluorohexane
+  - Sustainability
+  - Carbon emission factors
+  - Kaya's Emission Equation
+
+Electrical and Computer Engineering:
+  - Units
+  - Electrostatics
+  - Q1Q2
+  - Electrostatic Fields
+  - Voltage
+  - Current
+  - Magnetic Fields
+  - Induced Voltage
+  - Resistivity
+  - Resistors in Series and Parallel
+  - R1R2
+  - Kirchhoff's Laws
+  - Source Equivalents
+  - For an arbitrary circuit
+  - SOURCES
+  - RESISTORS
+  - The Norton equivalent circuit is
+  - Capacitors and Inductors
+  - Inductor
+  - The energy stored in an inductor is expressed in joules and given by
+  - Capacitors and Inductors in Parallel and Series
+  - Capacitors in Parallel
+  - Capacitors in Series
+  - Inductors in Parallel
+  - Inductors in Series
+  - AC Circuits
+  - Average Value
+  - Effective or RMS Values
+  - Sine-Cosine Relations and Trigonometric Identities
+  - Phasor Transforms of Sinusoids
+  - Circuit
+  - Element
+  - Impedance Resistance Reactance Admittance Conductance Susceptance
+  - Resistor
+  - Capacitor
+  - Inductor
+  - Maximum Power-Transfer Theorem
+  - DC Circuits
+  - Thevenin Equivalent Circuit
+  - AC Circuits
+  - In an ac circuit maximum power transfer to the load impedance ZL occurs when the load impedance equals the complex
+  - RC and RL Transients
+  - Resonance
+  - The radian resonant frequency for both parallel and series resonance situations is
+  - Series Resonance
+  - Parallel Resonance
+  - AC Power
+  - Complex Power
+  - The corresponding line-to-line voltages are
+  - Turns Ratio
+  - The impedance seen at the input is
+  - Three-Phase Transformer Connection Diagrams
+  - H2 H1
+  - WYE-WYE CONNECTION
+  - WYE-DELTA CONNECTION
+  - DELTA-WYE CONNECTION
+  - DELTA-DELTA CONNECTION
+  - AC Machines
+  - The synchronous speed ns for ac motors is given by
+  - Synchronous Machines
+  - Induction Machines
+  - TORQUE (% OF MAXIMUM)
+  - ROTOR SPEED (% OF SYNCHRONOUS SPEED)
+  - DC Machines
+  - The mechanical power generated by the armature is
+  - The mechanical torque produced is
+  - Servomotors and Generators
+  - SPEED
+  - TORQUE
+  - Voltage Regulation
+  - Electromagnetic Dynamic Fields
+  - The integral and point form of Maxwell's equations are
+  - Lossless Transmission Lines
+  - The reflection coefficient at the load is defined as
+  - Difference Equations
+  - First-Order Linear Difference Equation
+  - Second-Order Linear Difference Equation
+  - The transform definition is
+  - The inverse transform is given by the contour integral
+  - Convolution
+  - Digital Signal Processing
+  - The corresponding transfer function is given by
+  - Communication Theory and Concepts
+  - Functions
+  - Rectangular
+  - The Fourier Transform and its Inverse
+  - Frequency Response and Impulse Response
+  - This gives
+  - Parseval's Theorem
+  - Parseval's Theorem for Fourier Series
+  - Fourier series
+  - Decibels and Bode Plots
+  - Term
+  - Magnitude Response
+  - Phase Response
+  - Plot
+  - MAGNITUDE
+  - PHASE
+  - Angle Modulation
+  - The instantaneous phase is
+  - The instantaneous frequency is
+  - The frequency deviation is
+  - The phase deviation is
+  - The frequency-deviation ratio is
+  - Sampled Messages
+  - Ideal-Impulse Sampling
+  - The minimum bandwidth required to transmit the PCM message will be
+  - Error Coding
+  - Delays in Computer Networks
+  - PACKET
+  - DESTINATION
+  - SOURCE
+  - Transmission Algorithms
+  - Shannon Channel Capacity Formula
+  - Analog Filter Circuits
+  - First-Order Low-Pass Filters
+  - First-Order High-Pass Filters
+  - Frequency Response
+  - V2 R2
+  - V2 RP
+  - R1R2
+  - Band-Pass Filters
+  - Band-Reject Filters
+  - Frequency Response
+  - V2 R2
+  - V2 RP
+  - R1R2
+  - Operational Amplifiers
+  - Ideal
+  - Equivalent Circuit of an Ideal Op Amp
+  - Solid-State Electronics and Devices
+  - Carrier concentrations at equilibrium
+  - NaNd
+  - Thermal voltage
+  - Differential Amplifier
+  - Linear region
+  - Power Conversion
+  - DIODES
+  - Device and Schematic
+  - Symbol
+  - Relationship
+  - Shockley Equation
+  - Mathematical
+  - Realistic
+  - Schematic Symbol
+  - Ideal I-V Relationship
+  - State
+  - Reverse
+  - Blocking
+  - Triggered by iG Pulse
+  - Realistic
+  - I-V Relationship
+  - State
+  - Forward
+  - Blocking
+  - Reverse
+  - Breakdown Blocking
+  - Forward Forward
+  - Blocking Breakover
+  - Mathematical
+  - Relationships
+  - Equivalent Circuit
+  - Schematic Symbol
+  - Same as for NPN with current
+  - VCE sat
+  - VBE sat
+  - Same as NPN with current directions
+  - Qpoint
+  - Equivalent Circuit
+  - Schematic Symbol
+  - N-CHANNEL JFET
+  - Mathematical Relationships
+  - P-CHANNEL JFET
+  - N-CHANNEL DEPLETION
+  - MOSFET (NMOS)
+  - SIMPLIFIED SYMBOL
+  - P-CHANNEL DEPLETION
+  - MOSFET (PMOS)
+  - Same as for N-Channel with current directions
+  - Same as for N-Channel
+  - Schematic Symbol
+  - N-CHANNEL ENHANCEMENT
+  - MOSFET (NMOS)
+  - Mathematical Relationships
+  - SIMPLIFIED SYMBOL
+  - P-CHANNEL ENHANCEMENT
+  - MOSFET (PMOS)
+  - Same as for N-channel with current directions
+  - Same as for N-channel
+  - Number Systems and Codes
+  - Binary Number System
+  - HexaPacked
+  - Binary Decimal decimal Octal
+  - Code
+  - Gray
+  - Logic Operations and Boolean Algebra
+  - Function
+  - Inputs
+  - C= A⊕B
+  - LOGIC SYMBOL
+  - De Morgan's Theorems
+  - NAND
+  - Flip-Flops
+  - SR Flip-Flop
+  - JK Flip-Flop
+  - Composite Flip-Flop State Transition
+  - Switching Function Terminology
+  - Computer Networking
+  - OSI MODEL
+  - TCP/IP MODEL
+  - APPLICATION
+  - PRESENTATION
+  - SESSION
+  - TRANSPORT
+  - NETWORK
+  - INTERNET
+  - DATA LINK
+  - INTERFACE
+  - PHYSICAL
+  - The link layer or data link layer contains protocols for transmissions between devices on the same link and usually handles error
+  - MESSAGE
+  - DATA
+  - APPLICATION
+  - TCP/UDP
+  - HEADER
+  - TRANSPORT
+  - INTERNET
+  - DATA
+  - NETWORK INTERFACE
+  - SEGMENT
+  - PACKET
+  - FRAME
+  - FRAME HEADER
+  - ENCAPSULATION OF APPLICATION DATA THROUGH EACH LAYER
+  - Abbreviation
+  - Acknowledge
+  - Automatic request
+  - Bandwidth
+  - Cyclic redundancy code
+  - DHCP Dynamic host configuration protocol
+  - Internet protocol
+  - Local area network
+  - Negative acknowledgement
+  - Open systems interconnect
+  - Transmission control protocol
+  - Protocol Definitions
+  - Internet Protocol Addressing
+  - Address range
+  - Number of
+  - Software
+  - Private network
+  - Shared address space for communications
+  - Host
+  - Subnet
+  - Used for link-local addresses between two hosts
+  - Documentation
+  - Internet
+  - Private network
+  - Used for benchmark testing of inter-network
+  - Subnet
+  - Address block
+  - Scope
+  - Description
+  - Address
+  - (CIDR)
+  - First address
+  - Number of
+  - Last address
+  - Usage
+  - Purpose
+  - Routing
+  - Software
+  - Unspecified
+  - Host
+  - Loopback
+  - Global Internet
+  - Routing
+  - Discard
+  - Teredo
+  - Software
+  - Addresses
+  - Documentation
+  - Private
+  - Unique local
+  - Link
+  - Link-local
+  - Global Internet
+  - Multicast
+  - Offsets
+  - Octet
+  - Version
+  - DSCP
+  - Total Length
+  - Identification
+  - Time To Live
+  - Flags
+  - Protocol
+  - Fragment Offset
+  - Header Checksum
+  - Source IP Address
+  - Destination IP Address
+  - Version
+  - Total Length
+  - Identification
+  - Flags
+  - Fragment Offset
+  - Protocol
+  - Header Checksum
+  - Source Address
+  - Destination Address
+  - Options
+  - Size
+  - Field
+  - Copied
+  - Description
+  - Option
+  - Number
+  - Length
+  - Option Data
+  - Variable
+  - Offsets
+  - Octet
+  - Version
+  - Flow Label
+  - Traffic Class
+  - Payload Length
+  - Next Header
+  - Hop Limit
+  - Source Address
+  - Destination Address
+  - Transmission Control Protocol
+  - TCP Header
+  - Offsets
+  - Octet
+  - Source port
+  - Sequence number
+  - Data
+  - Checksum
+  - Reserved
+  - Destination port
+  - Padding
+  - User Datagram Protocol
+  - UDP Header
+  - Offsets
+  - Octet
+  - Source port
+  - Destination port
+  - Length
+  - Checksum
+  - Source Port Number
+  - Destination Port Number
+  - Internet Control Message Protocol
+  - Offsets
+  - Octet
+  - Type
+  - Rest of Header
+  - Code
+  - Checksum
+  - ICMP Type
+  - ICMP Code
+  - Network Topologies
+  - Point-to-Point
+  - STATIONS
+  - Token Ring
+  - RING
+  - INTERFACE
+  - Star
+  - STATIONS
+  - HUB OR SWITCH
+  - Mesh
+  - Tree
+  - STATION
+  - Communication Methodologies
+  - SERIAL
+  - PARALLEL
+  - Serial
+  - Parallel
+  - Simplex
+  - Half-Duplex
+  - Allows communications in both directions simultaneously
+  - Computer Systems
+  - INDEX
+  - BLOCK OFFSET
+  - INSTRUCTION
+  - MEMORY
+  - CONTROL
+  - UNIT
+  - DATA
+  - Multicore
+  - CPU CORE
+  - L1 CACHES
+  - BACK SIDE
+  - BUS INTERFACE
+  - L2 CACHES
+  - FRONT SIDE
+  - Threading
+  - Abbreviation
+  - CISC Complex instruction set computing
+  - Central processing unit
+  - FIFO
+  - Least frequently used
+  - Least recently used
+  - MRU Most recently used
+  - RISC Reduced instruction set computing
+  - RAM Random access memory
+  - ROM Read only memory
+  - Software Engineering
+  - Endianness
+  - Pointers
+  - Algorithms
+  - Data Structures
+  - (LIFO))
+  - Graph Traversal
+  - Tree Traversal
+  - In-Order Traversal
+  - Preorder Traversal
+  - Postorder Traversal
+  - Notation
+  - Name
+  - Logarithmic
+  - Loglinear
+  - Quadratic
+  - Software Syntax Guidelines
+  - Variables whose type is object and the exact specification of that object is not critical to the problem must have the
+  - Flow Chart Definition
+  - PROCESS
+  - OPERATION
+  - DATA I/O
+  - START OR STOP
+  - POINT
+  - DOCUMENT
+  - DECISION
+  - DATABASE
+  - Software Testing
+  - There are many approaches to software testing but they are typically split into static testing versus dynamic and black box
+  - Computer Network Security
+  - Firewalls
+  - Nmap
+  - Target Specification
+  - Host Discovery
+  - Scan Techniques
+  - Port Specification and Scan Order
+  - OS Detection
+  - Timing and Performance
+  - Output
+  - Examples
+  - Port Scanning
+  - Common TCP Ports
+  - Protocol
+  - Port Number
+  - Telnet
+  - HTTP
+  - HTTPS
+  - POP3
+  - SMTP
+  - Web Vulnerability Testing
+  - Phases
+  - Reconnaissance
+  - Scanning
+  - Gaining Access
+  - Maintaining Access
+  - Covering Tracks
+  - Methods
+  - Security Triad
+  - Authentication
+  - Three factors for authentication
+  - PPP protocols
+  - Other protocols
+  - Key Equations
+  - McCabe's Cyclomatic Complexity
+  - The RSA Public-Key Cryptosystem
+  - Diffie-Hellman Key-Exchange Protocol
+
+Industrial and Systems Engineering:
+  - Linear Programming
+  - Dual Linear Program
+  - Primal
+  - Dual
+  - Network Optimization
+  - Process Capability
+  - Actual Capability
+  - Queueing Models
+  - Definitions
+  - Fundamental Relationships
+  - Simulation
+  - Inverse Transform Method for Continuous Random Variables
+  - Forecasting
+  - Moving Average
+  - Exponentially Weighted Moving Average
+  - Main Effects
+  - Interaction Effects
+  - Sum of Squares of Random Error
+  - The sum of the squares due to the random error can be computed as
+  - The total sum of squares is equal to
+  - Reliability
+  - Learning Curves
+  - Inventory Models
+  - Facility Planning
+  - Equipment Requirements
+  - People Requirements
+  - Standard Time Determination
+  - Plant Location
+  - Minimize
+  - Material Handling
+  - Line Balancing
+  - Job Sequencing
+  - PERT
+  - Taylor Tool Life Formula
+  - Work Sampling Formulas
+  - ANTHROPOMETRIC MEASUREMENTS
+  - SITTING HEIGHT
+  - (ERECT)
+  - SITTING HEIGHT (NORMAL)
+  - THIGH CLEARANCE
+  - HEIGHT
+  - ELBOW-TO-ELBOW
+  - BREADTH
+  - KNEE HEIGHT
+  - ELBOW REST
+  - SEAT BREADTH
+  - BUTTOCK
+  - POPLITEAL
+  - LENGTH
+  - KNEE LENGTH
+  - HEIGHT
+  - HEIGHTS
+  - Eye height
+  - Elbow height
+  - Knuckle height
+  - Thigh clearance height
+  - DEPTHS
+  - Chest depth
+  - Elbow-fingertip distance
+  - BREADTHS
+  - Elbow-to-elbow breadth
+  - HEAD DIMENSIONS
+  - Head breadth
+  - Head circumference
+  - Interpupillary distance
+  - HAND DIMENSIONS
+  - Hand length
+  - Crotch-tip length
+  - FOOT DIMENSIONS
+  - Foot length
+  - Foot breadth
+  - Lateral malleolus height
+  - Percentiles
+
+Mechanical Engineering:
+  - Mechanical Design and Analysis
+  - Springs
+  - Mechanical Springs
+  - Equivalent Spring Constant
+  - Material
+  - ASTM
+  - Music wire
+  - Oil-tempered wire
+  - Hard-drawn wire
+  - Chrome vanadium
+  - Chrome silicon
+  - A228
+  - A229
+  - A227
+  - A232
+  - A401
+  - Maximum allowable torsional stress for static applications may be approximated as
+  - Compression Spring Dimensions
+  - Type of Spring Ends
+  - Plain
+  - Plain and
+  - Ground
+  - Squared or
+  - Closed
+  - Squared and
+  - Term
+  - Bearings
+  - The equivalent radial load is
+  - Power Screws
+  - Power Transmission
+  - Shafts and Axles
+  - Gearing
+  - Involute Gear Tooth Nomenclature
+  - Base pitch
+  - Module
+  - Dynamics of Mechanisms
+  - Gearing
+  - Lewis Equation
+  - Joining Methods
+  - Bolt stiffness may be calculated from
+  - Material
+  - Steel
+  - Aluminum
+  - Copper
+  - Gray cast iron
+  - The factor of safety guarding against joint separation is
+  - Failure by Pure Shear
+  - FASTENER IN SHEAR
+  - Failure by Rupture
+  - MEMBER RUPTURE
+  - Failure by Crushing of Rivet or Fastener
+  - MEMBER OR FASTENER CRUSHING
+  - Fastener Groups in Shear
+  - FASTENER GROUPS
+  - Manufacturability
+  - Limits and Fits
+  - Definitions
+  - Some Preferred Fits
+  - Clearance
+  - Transition
+  - Interference
+  - For the hole
+  - All values in mm
+  - Basic Size
+  - Deviations for Shafts
+  - Basic
+  - Size
+  - Feature Control Frame
+  - Datum
+  - Virtual Condition
+  - Modifying Symbols
+  - Term
+  - Symbol
+  - AT MAXIMUM MATERIAL CONDITION
+  - AT MAXIMUM MATERIAL BOUNDARY
+  - Definitions
+  - AT LEAST MATERIAL CONDITION
+  - AT LEAST MATERIAL BOUNDARY
+  - PROJECTED TOLERANCE
+  - ZONE
+  - DIAMETER
+  - SPHERICAL DIAMETER
+  - RADIUS
+  - SPHERICAL RADIUS
+  - SQUARE
+  - REFERENCE
+  - ARC LENGTH
+  - DIMENSION ORIGIN
+  - Tolerance
+  - Types
+  - Drawing Callout
+  - Meaning
+  - Example
+  - ASME
+  - Symbol
+  - Ø10±0.2
+  - Tolerance Zone
+  - Definition
+  - Zone
+  - Modifiers
+  - Allowed
+  - Datums
+  - Used
+  - Straightness
+  - Ø10±0.2
+  - Form
+  - Flatness
+  - Circularity
+  - Cylindricity
+  - Profile
+  - Profile of
+  - Additional Comments
+  - Tolerance
+  - Types
+  - Angularity
+  - Drawing Callout
+  - Meaning
+  - Example
+  - ASME
+  - Symbol
+  - Orientation
+  - Perpendicularity
+  - Ø5±0.2
+  - Parallelism
+  - Location
+  - Position
+  - Ø10±0.2
+  - Circular
+  - Runout
+  - Individual Feature of Size
+  - Ø5±0.2
+  - Total
+  - Zone
+  - EXTERNAL
+  - FEATURE
+  - Ø22.2
+  - GAGE
+  - Ø22.1
+  - AT Ø22.2 (MMC)
+  - FORM SHALL
+  - BE PERFECT
+  - Tolerance Zone
+  - Definition
+  - Zone
+  - Modifiers
+  - Allowed
+  - Datums
+  - Used
+  - Additional Comments
+  - Variations of Size
+  - The actual local size of an individual feature at
+  - Perfect Form at MMC Not Required
+  - PERFECT FORM AT MMC NOT REQUIRED
+  - All Applicable Geometric Tolerances
+  - Ø22.4
+  - INTERNAL
+  - FEATURE
+  - GAGE
+  - AT Ø22.3 (MMC)
+  - FORM SHALL
+  - BE PERFECT
+  - Ø22.3
+  - Ø22.4
+  - Intermediate- and Long-Length Columns
+  - Static Loading Failure Theories
+  - Brittle Materials
+  - Maximum-Normal-Stress Theory
+  - The maximum-normal-stress theory states that failure occurs when one of the three principal stresses equals the strength of the
+  - Coulomb-Mohr Theory
+  - Ductile Materials
+  - Maximum-Shear-Stress Theory
+  - The maximum-shear-stress theory states that yielding begins when the maximum shear stress equals the maximum shear stress
+  - Distortion-Energy Theory
+  - Variable Loading Failure Theories
+  - Modified Goodman Theory
+  - Soderberg Theory
+  - Endurance Limit for Steels
+  - Endurance Limit Modifying Factors
+  - Surface
+  - Finish
+  - Ground
+  - Machined or
+  - Hot rolled
+  - As forged
+  - Kinematics of Mechanisms
+  - Four-Bar Linkage
+  - ANSI Symbols for Hydraulic Power
+  - HVAC
+  - Nomenclature
+  - MOIST
+  - Cooling and Dehumidification
+  - Qout
+  - LIQUID OUT
+  - Heating and Humidification
+  - WATER OR STEAM
+  - MOIST
+  - WATER
+  - Adiabatic Mixing
+  - MOIST AIR
+  - Cycles and Processes
+  - Internal Combustion Engines
+  - Diesel Cycle
+  - Brake Power
+  - Indicated Power
+  - Brake Thermal Efficiency
+  - Indicated Thermal Efficiency
+  - Mechanical Efficiency
+  - Displacement Volume
+  - Cylinder
+  - Piston
+  - Compression Ratio
+  - Volumetric Efficiency
+  - Gas Turbines
+  - COMBUSTOR
+  - COMPRESSOR
+  - TURBINE
+  - Steam Power Plants
+  - Feedwater Heaters
+  - Steam Trap
+  - LIQUID
+  - Junction
+  - Pump
+  - Index
+  - Symbols
+  - INDEX
+  - AASHTO 266
+  - ASD 272, 281
+  - ASME Y14.5 444
+  - Index
+  - (ACI 318-14) 274
+  - LRFD, ASD 281
+  - INDEX
+  - HVAC 173, 454
+  - (ASD) 272
+  - LRFD 272, 281
+  - Index
+  - (MACRS) 231
+  - NOAEL 24
+  - INDEX
+  - PERT 428
+  - CHEMICAL CBT Exam Specifications
+  - Knowledge
+  - Number of Questions

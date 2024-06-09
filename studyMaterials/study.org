@@ -1,0 +1,384 @@
+#+title: Study
+
+
+** sh scripts
+   #+begin_src sh :dir "."
+   pdftotext fe-handbook-10-2.pdf output.txt
+   #+end_src
+
+   #+RESULTS:
+
+** Example Python Script:
+*** Failed scripts
+#+begin_src sh
+# pdfinfo /mnt/e/Backup/2024/03/Jamaul/FE/Fe/fe-handbook-10-2.pdf
+pdfgrep -n "Bookmark" /mnt/e/Backup/2024/03/Jamaul/FE/Fe/fe-handbook-10-2.pdf
+#+end_src
+#+RESULTS:
+#+begin_src python
+import fitz
+
+def extract_toc_from_page(pdf_path, toc_page):
+    try:
+        document = fitz.open(pdf_path)
+        page = document[toc_page]
+        links = page.get_links()
+        toc = []
+        for link in links:
+            if 'uri' in link:  # Skip the links that open external URLs
+                continue
+            page_num = link['page'] + 1 # Adjust because fitz pages are zero-indexed
+            text = page.get_text('text')  # Extract text on the TOC page
+            lines = text.split('\n')
+            for line in lines:
+                # Assume format like: "Chapter 1 ................... 1"
+                if line.endswith(str(page_num)):
+                    title = line.rsplit(' ', 1)[0].strip('.')  # Clean title
+                    toc.append((title, page_num))
+        return toc
+    except Exception as e:
+        print(f"Error occurred while extracting TOC: {e}")
+        return []
+
+def build_structure_from_toc(toc):
+    structure = []
+    for title, page in toc:
+        # Assuming there's a way to determine levels (e.g. "Chapter" indicates top-level)
+        if 'Chapter' in title:
+            structure.append({'title': title, 'page': page, 'children': []})
+        else:
+            if structure:
+                structure[-1]['children'].append({'title': title, 'page': page})
+    return structure
+
+def print_structure(structure):
+    for chapter in structure:
+        print(f"Chapter: {chapter['title']} (Page {chapter['page']})")
+        for section in chapter['children']:
+            print(f"  Section: {section['title']} (Page {section['page']})")
+
+pdf_path = "/mnt/e/Backup/2024/03/Jamaul/FE/Fe/fe-handbook-10-2.pdf"
+toc_page = 4  # Assuming 'v' corresponds to the 5th page in the document (zero-indexed 4)
+toc = extract_toc_from_page(pdf_path, toc_page)
+structure = build_structure_from_toc(toc)
+print_structure(structure)
+print(f"Final Structure: {structure}")  # Ensure structure is printed
+
+#+end_src
+#+RESULTS:
+: None
+*** extract headings, export as org file.
+#+begin_src python
+import re
+
+def is_valid_heading(line):
+    line = line.strip()
+    if len(line) < 4:
+        return False
+    if line.isupper() or re.match(r"^[A-Z][a-zA-Z'\s\-]*$", line):
+        words = line.split()
+        if len(words) == 1 and len(line) >= 4:
+            return True
+        elif all(len(word) > 1 for word in words) and len(words) > 1:
+            return True
+    return False
+
+def extract_headings(file_path, history_length=5):
+    try:
+        with open(file_path, 'r') as file:
+            lines = file.readlines()
+    except IOError:
+        print(f"Error opening file: {file_path}")
+        return []
+
+    headings = []
+    seen_headings = []
+
+    for line in lines:
+        line = line.strip()
+        if is_valid_heading(line):
+            if line not in seen_headings[-history_length:]:
+                headings.append(line)
+                seen_headings.append(line)
+
+    return headings
+
+def extract_headings_by_category(headings, categories):
+    category_dict = {category: [] for category in categories}
+    current_category = None
+
+    for heading in headings:
+        clean_heading = heading.strip()
+        if clean_heading in categories:
+            current_category = clean_heading
+        elif current_category:
+            category_dict[current_category].append(clean_heading)
+
+    return category_dict
+
+def generate_tree(category_dict):
+    tree_lines = []
+    for category, headings in category_dict.items():
+        tree_lines.append(f"* {category}")  # Org-mode top-level heading
+        for heading in headings:
+            tree_lines.append(f"** {heading}")  # Org-mode second-level heading
+    return "\n".join(tree_lines)
+
+def write_to_file(output_file, content):
+    try:
+        with open(output_file, 'w') as file:
+            file.write(content)
+        print(f"Content written to {output_file}")
+    except IOError:
+        print(f"Error writing to file: {output_file}")
+
+def main():
+    input_file = 'output.txt'
+    final_output_file = 'extracted_headings.org'
+    history_length = 5  # You can make this configurable
+
+    # Step 1: Extract headings
+    headings = extract_headings(input_file, history_length)
+    if not headings:
+        print("No valid headings found or file could not be read.")
+        return
+
+    # Step 2: Define categories
+    categories = [
+        "Ethics and Professional Practice",
+        "Safety",
+        "Mathematics",
+        "Engineering Probability and Statistics",
+        "Chemistry and Biology",
+        "Materials Science/Structure of Matter",
+        "Statics",
+        "Dynamics",
+        "Mechanics of Materials",
+        "Thermodynamics",
+        "Fluid Mechanics",
+        "Heat Transfer",
+        "Instrumentation, Measurement, and Control",
+        "Engineering Economics",
+        "Chemical Engineering",
+        "Civil Engineering",
+        "Environmental Engineering",
+        "Electrical and Computer Engineering",
+        "Industrial and Systems Engineering",
+        "Mechanical Engineering"
+    ]
+
+    # Step 3: Categorize extracted headings
+    category_dict = extract_headings_by_category(headings, categories)
+
+    # Step 4: Generate tree structure in org-mode format
+    tree = generate_tree(category_dict)
+
+    # Step 5: Write final output in org-mode format
+    write_to_file(final_output_file, tree)
+
+    # Print the final categorized headings tree
+    print(tree)
+
+if __name__ == "__main__":
+    main()
+#+end_src
+
+#+RESULTS:
+: None
+
+*** analyze previous testing results
+#+begin_src python :results output drawer
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
+
+def analyze_data(data, item_col, performance_col, max_performance=15, alpha=0.5, beta=0.5):
+    df = pd.DataFrame(data)
+
+    pd.set_option('display.max_columns', None)
+    pd.set_option('display.max_colwidth', None)
+    pd.set_option('display.width', None)
+
+    scaler = MinMaxScaler()
+    df[f'Normalized {item_col}'] = scaler.fit_transform(df[[item_col]])
+    df[f'Normalized {performance_col}'] = scaler.fit_transform(df[[performance_col]])
+
+    df['Performance Deviation'] = (max_performance - df[performance_col]) / max_performance
+    df[f'Normalized Performance Deviation'] = scaler.fit_transform(df[['Performance Deviation']])
+
+    df[f'Normalized Total Items'] = scaler.fit_transform(df[[item_col]])
+
+    df['Priority Score Raw'] = alpha * df[f'Normalized {item_col}'] + beta * df[f'Normalized Performance Deviation'] + df[f'Normalized Total Items']
+    df['Priority Score'] = scaler.fit_transform(df[['Priority Score Raw']])  # Rescale Priority Score if needed
+
+    df['Rank'] = df['Priority Score'].rank(ascending=False)
+    df = df.sort_values('Rank')
+
+    # Select specific columns to return
+    return df[['Knowledge Area', item_col, performance_col, 'Performance Deviation', 'Priority Score', 'Rank']]
+
+# Example usage
+data = {
+    "Knowledge Area": ["Mathematics", "Probability and Statistics", "Ethics and Professional Practice", "Engineering Economics", "Electricity and Magnetism", "Statics", "Dynamics, Kinematics, and Vibrations", "Mechanics of Materials", "Material Properties and Processing", "Fluid Mechanics", "Thermodynamics", "Heat Transfer", "Measurements, Instrumentation, and Controls", "Mechanical Design and Analysis"],
+    "Number of Items": [6, 4, 4, 4, 5, 9, 10, 9, 7, 10, 10, 7, 5, 10],
+    "Performance": [10.3, 6.2, 8.5, 6.8, 5.6, 8.5, 7.1, 4.5, 7.9, 6.7, 6.4, 6.9, 10.0, 6.7]
+}
+
+results = analyze_data(data, 'Number of Items', 'Performance', alpha=0.5, beta=0.5)
+print(results)
+#+end_src
+
+#+RESULTS:
+:results:
+                                 Knowledge Area  Number of Items  Performance  Performance Deviation  Priority Score  Rank
+10                               Thermodynamics               10          6.4               0.573333        1.000000   1.0
+9                               Fluid Mechanics               10          6.7               0.553333        0.984615   2.5
+13               Mechanical Design and Analysis               10          6.7               0.553333        0.984615   2.5
+6          Dynamics, Kinematics, and Vibrations               10          7.1               0.526667        0.964103   4.0
+7                        Mechanics of Materials                9          4.5               0.700000        0.948718   5.0
+5                                       Statics                9          8.5               0.433333        0.743590   6.0
+11                                Heat Transfer                7          6.9               0.540000        0.528205   7.0
+8            Material Properties and Processing                7          7.9               0.473333        0.476923   8.0
+4                     Electricity and Magnetism                5          5.6               0.626667        0.297436   9.0
+0                                   Mathematics                6         10.3               0.313333        0.205128  10.0
+1                    Probability and Statistics                4          6.2               0.586667        0.117949  11.0
+3                         Engineering Economics                4          6.8               0.546667        0.087179  12.0
+12  Measurements, Instrumentation, and Controls                5         10.0               0.333333        0.071795  13.0
+2              Ethics and Professional Practice                4          8.5               0.433333        0.000000  14.0
+:end:
+
+*** analyze diagnostic scores
+#+begin_src python :results output drawer
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# import matplotlib
+# matplotlib.use('TkAgg')
+
+def analyze_data(data, item_col, performance_col, max_performance=15, alpha=0.5, beta=0.5):
+    df = pd.DataFrame(data)
+
+    scaler = MinMaxScaler()
+    df[f'Normalized {item_col}'] = scaler.fit_transform(df[[item_col]])
+    df[f'Normalized {performance_col}'] = scaler.fit_transform(df[[performance_col]])
+
+    df['Performance Deviation'] = (max_performance - df[performance_col]) / max_performance
+    df[f'Normalized Performance Deviation'] = scaler.fit_transform(df[['Performance Deviation']])
+
+    df[f'Normalized Total Items'] = scaler.fit_transform(df[[item_col]])
+
+    df['Priority Score Raw'] = alpha * df[f'Normalized {item_col}'] + beta * df[f'Normalized Performance Deviation'] + df[f'Normalized Total Items']
+    df['Priority Score'] = scaler.fit_transform(df[['Priority Score Raw']])  # Rescale Priority Score if needed
+    df['Rank'] = df['Priority Score'].rank(ascending=False)
+
+    df = df.sort_values('Rank')
+
+    styled_df = df[['Knowledge Area', item_col, performance_col, 'Performance Deviation', 'Priority Score', 'Rank']].style.background_gradient(cmap='viridis')
+
+    plot_data(df, item_col, performance_col)
+
+    return styled_df
+
+def plot_data(df, item_col, performance_col):
+    sns.set(style="whitegrid")
+
+    # Scatter plot for Performance vs. Number of Items
+    plt.figure(figsize=(14, 7))
+    sns.scatterplot(x=item_col, y=performance_col, size="Rank", hue="Knowledge Area", data=df, palette="viridis", legend=False, sizes=(20, 200))
+    plt.title('Performance vs. Number of Items')
+    plt.xlabel('Number of Items')
+    plt.ylabel('Performance')
+    plt.show()
+
+    # Heatmap for Priority Score
+    mean_priority_score = df.groupby('Knowledge Area')['Priority Score'].mean()
+    sorted_knowledge_areas = mean_priority_score.sort_values(ascending=False).index
+
+    plt.figure(figsize=(12, 8))
+    rank_data_pivot = df.pivot(index='Knowledge Area', columns=item_col, values='Priority Score')
+    rank_data_pivot = rank_data_pivot.loc[sorted_knowledge_areas]
+    sns.heatmap(rank_data_pivot, annot=True, cmap="viridis", linewidths=.5)
+    plt.title('Heatmap of Priority Scores by Knowledge Area and Number of Items')
+    plt.show()
+
+# Example usage
+data = {
+    "Knowledge Area": ["Mathematics", "Probability and Statistics", "Ethics and Professional Practice", "Engineering Economics", "Electricity and Magnetism", "Statics", "Dynamics, Kinematics, and Vibrations", "Mechanics of Materials", "Material Properties and Processing", "Fluid Mechanics", "Thermodynamics", "Heat Transfer", "Measurements, Instrumentation, and Controls", "Mechanical Design and Analysis"],
+    "Number of Items": [6, 4, 4, 4, 5, 9, 10, 9, 7, 10, 10, 7, 5, 10],
+    "Performance": [10.3, 6.2, 8.5, 6.8, 5.6, 8.5, 7.1, 4.5, 7.9, 6.7, 6.4, 6.9, 10.0, 6.7]
+}
+data2 = {
+    "Knowledge Area": ["Mathematics", "Probability and Statistics", "Ethics and Professional Practice", "Engineering Economics", "Electricity and Magnetism", "Statics", "Dynamics, Kinematics, and Vibrations", "Mechanics of Materials", "Material Properties and Processing", "Fluid Mechanics", "Thermodynamics", "Heat Transfer", "Measurements, Instrumentation, and Controls", "Mechanical Design and Analysis"],
+    "Number of Items": [6, 4, 4, 4, 5, 9, 10, 9, 7, 10, 10, 7, 5, 10],
+    "Performance": [4.4, 8.0, 8.3, 10.1, 8.5, 7.3, 5.8, 0.0, 8.4, 5.7, 5.1, 6.9, 7.1, 7.8]
+}
+
+results = analyze_data(data, 'Number of Items', 'Performance', alpha=0.5, beta=0.5)
+# results2 = analyze_data(data2, 'Number of Items', 'Performance', alpha=0.5, beta=0.5)
+
+# Display styled DataFrame
+print(results)
+# print(results2)
+#+end_src
+
+#+RESULTS:
+:results:
+<pandas.io.formats.style.Styler object at 0x7eff4cfc37d0>
+:end:
+
+
+
+
+* Contents
+** Units and Conversion Factors (1)
+** Ethics and Professional Practice (4)
+** Safety (13)
+** Mathematics (34)
+** Engineering Probability and Statistics (63)
+** Chemistry and Biology (85)
+** Materials Science/Structure of Matter (94)
+** Statics (107)
+** Dynamics (114)
+** Mechanics of Materials (130)
+** Thermodynamics (143)
+** Fluid Mechanics (177)
+** Heat Transfer (204)
+** Instrumentation, Measurement, and Control (220)
+** Engineering Economics (230)
+** Chemical Engineering (238)
+** Civil Engineering (259)
+** Environmental Engineering (312)
+** Electrical and Computer Engineering (357)
+** Industrial and Systems Engineering (419)
+** Mechanical Engineering (433)
+** Index (463)
+** Appendix: FE Exam Specifications (473)
+
+* Outline>PDF-Tools
+** Cover and Copyright (1)
+** Introduction (3)
+** Contents (5)
+** Units and Conversion Factors (7)
+** Ethics and Professional Practice (10)
+** Safety (19)
+** Mathematics (40)
+** Engineering Probability and Statistics (69)
+** Chemistry and Biology (91)
+** Materials Science/Structure of Matter (100)
+** Statics (113)
+** Dynamics  (120)
+** Mechanics of Materials (136)
+** Thermodynamics (149)
+** Fluid Mechanics (183)
+** Heat Transfer (210)
+** Instrumentation, Measurement, and Control  (226)
+** Engineering Economics (236)
+** Chemical Engineering  (244)
+** Civil Engineering  (265)
+** Environmental Engineering (318)
+** Electrical and Computer Engineering (363)
+** Industrial and Systems Engineering (425)
+** Mechanical Engineering (439)
+** Index (469)
+** Appendix: FE Exam Specifications (479)

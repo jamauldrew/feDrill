@@ -1,0 +1,186 @@
+#+begin_export latex
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{multicol}
+\setstretch{1.5}
+\begin{document}
+\begin{multicols}{2}
+
+\section*{Tier 1}
+1. Newton's Second Law (Force = Mass × Acceleration): \\
+   \( F = m \cdot a \) \\
+2. Work Done by a Force: \\
+   \( W = F \cdot d \cdot \cos(\theta) \) \\
+3. Kinetic Energy: \\
+   \( KE = \frac{1}{2} \cdot m \cdot v^2 \) \\
+4. Potential Energy (Gravitational): \\
+   \( PE = m \cdot g \cdot h \) \\
+5. Hooke's Law (Spring Force): \\
+   \( F = k \cdot x \) \\
+6. Pressure in a Fluid at Rest: \\
+   \( P = \rho \cdot g \cdot h \) \\
+7. Bernoulli's Equation (Incompressible, Steady Flow): \\
+   \( P + \frac{1}{2} \cdot \rho \cdot v^2 + \rho \cdot g \cdot h = \text{constant} \) \\
+8. Fluid Flow Rate (Continuity Equation): \\
+   \( A_1 \cdot v_1 = A_2 \cdot v_2 \) \\
+9. Ideal Gas Law: \\
+   \( PV = nRT \) \\
+10. Efficiency (Thermal): \\
+    \( \eta = \frac{W_{\text{out}}}{Q_{\text{in}}} \) \\
+11. First Law of Thermodynamics (Energy Conservation): \\
+    \( \Delta U = Q - W \) \\
+12. Stress: \\
+    \( \sigma = \frac{F}{A} \) \\
+13. Strain: \\
+    \( \epsilon = \frac{\Delta L}{L} \) \\
+14. Young's Modulus: \\
+    \( E = \frac{\sigma}{\epsilon} \) \\
+15. Shear Stress: \\
+    \( \tau = \frac{F}{A} \) \\
+16. Shear Strain: \\
+    \( \gamma = \frac{\Delta x}{h} \) \\
+17. Bending Stress (Simple Beam): \\
+    \( \sigma = \frac{M \cdot c}{I} \) \\
+18. Torsional Shear Stress (Circular Shaft): \\
+    \( \tau = \frac{T \cdot r}{J} \) \\
+19. Coulomb's Law (Electrostatic Force): \\
+    \( F = \frac{k \cdot q_1 \cdot q_2}{r^2} \) \\
+20. Ohm's Law (Electrical Circuits): \\
+    \( V = I \cdot R \) \\
+21. Magnetic Field Strength (Straight Wire): \\
+    \( B = \frac{\mu_0 \cdot I}{2 \cdot \pi \cdot r} \) \\
+22. Frequency (Simple Harmonic Motion): \\
+    \( f = \frac{1}{T} \) \\
+23. Centripetal Force: \\
+    \( F_c = \frac{m \cdot v^2}{r} \) \\
+24. Angular Velocity: \\
+    \( \omega = \frac{\theta}{t} \) \\
+25. Wave Speed (Propagation): \\
+    \( v = f \cdot \lambda \) \\
+
+\newpage
+\vfill\eject
+\section*{Tier 2}
+1. Moment of Inertia (Rectangle about centroid): \\
+   \( I = \frac{b \cdot h^3}{12} \) \\
+2. Poisson's Ratio (Longitudinal to lateral strain): \\
+   \( \nu = -\frac{\epsilon_{\text{lat}}}{\epsilon_{\text{long}}} \) \\
+3. Reynolds Number (Fluid Mechanics): \\
+   \( Re = \frac{\rho \cdot v \cdot D}{\mu} \) \\
+4. Nusselt Number (Convection Heat Transfer): \\
+   \( Nu = \frac{h \cdot L}{k} \) \\
+5. Fourier's Law (Heat Conduction): \\
+   \( q = -k \cdot A \cdot \frac{dT}{dx} \) \\
+6. Diffusion Equation (Mass Transfer): \\
+   \( \frac{\partial C}{\partial t} = D \cdot \nabla^2 C \) \\
+7. Euler's Formula (Buckling of Columns): \\
+   \( F_{\text{critical}} = \frac{\pi^2 \cdot E \cdot I}{(K \cdot L)^2} \) \\
+8. Carnot Efficiency (Ideal Heat Engine): \\
+   \( \eta_{\text{Carnot}} = 1 - \frac{T_{\text{low}}}{T_{\text{high}}} \) \\
+9. Law of Conservation of Linear Momentum: \\
+   \( \Sigma F = m \cdot a \) \\
+10. Law of Conservation of Angular Momentum: \\
+    \( \Sigma \tau = I \cdot \alpha \) \\
+11. Law of Conservation of Energy: \\
+    \( \Sigma W = \Delta KE + \Delta PE + Q \) \\
+12. Pascal's Law (Hydrostatic Pressure): \\
+    \( \Delta P = \rho \cdot g \cdot \Delta h \) \\
+13. Stokes' Law (Viscous Drag on a Sphere): \\
+    \( F_d = 6 \cdot \pi \cdot \mu \cdot R \cdot v \) \\
+14. Strouhal Number (Flow past a Cylinder): \\
+    \( St = \frac{f \cdot D}{v} \) \\
+15. Capacitance (Parallel Plate Capacitor): \\
+    \( C = \frac{\varepsilon_0 \cdot A}{d} \) \\
+16. Inductance (Solenoid): \\
+    \( L = \frac{\mu_0 \cdot N^2 \cdot A}{l} \) \\
+17. Biot-Savart Law (Magnetic Field around a Wire): \\
+    \( dB = \frac{\mu_0 \cdot I \cdot dl \times r}{4 \cdot \pi \cdot r^3} \) \\
+18. Displacement Current (Maxwell's equations): \\
+    \( \frac{\partial D}{\partial t} = \nabla \times H \) \\
+19. Resistivity (Electrical Resistance): \\
+    \( \rho = R \cdot \frac{A}{L} \) \\
+20. Force on a Current-Carrying Wire in a Magnetic Field: \\
+    \( F = I \cdot L \times B \) \\
+21. Speed of Sound in a Gas: \\
+    \( v = \sqrt{\gamma \cdot R \cdot T} \) \\
+22. Specific Heat Capacity: \\
+    \( Q = mc\Delta T \) \\
+23. Coefficient of Performance (Refrigeration Cycle): \\
+    \( \text{COP} = \frac{Q_{\text{in}}}{W_{\text{in}}} \) \\
+24. Heat Transfer by Radiation (Stefan-Boltzmann Law): \\
+    \( q = \sigma \cdot A \cdot (T_h^4 - T_c^4) \) \\
+25. Snell's Law (Refraction of Light): \\
+    \( n_1 \cdot \sin(\theta_1) = n_2 \cdot \sin(\theta_2) \) \\
+\newpage
+\vfill\eject
+\section*{Ambiguous Variables}
+
+
+F \\
+
+    Newton's Second Law: Force \\
+    Coulomb's Law: Electrostatic Force \\
+    Euler's Formula: Critical Load \\
+    Law of Conservation of Linear Momentum: Net Force \\
+
+T \\
+
+    Ideal Gas Law: Temperature \\
+    Torsional Shear Stress: Torque \\
+
+P \\
+
+    Work Done by a Force: Power \\
+    Pressure in a Fluid at Rest: Pressure \\
+
+v \\
+
+    Kinetic Energy: Velocity \\
+    Fluid Flow Rate: Velocity \\
+    Reynolds Number: Velocity \\
+    Speed of Sound in a Gas: Velocity \\
+
+Q \\
+
+    Efficiency (Thermal): Heat \\
+    Law of Conservation of Energy: Heat \\
+    Specific Heat Capacity: Heat \\
+    Heat Transfer by Radiation: Heat \\
+
+A \\
+
+    Bernoulli's Equation: Area \\
+    Capacitance: Area \\
+
+L \\
+
+    Law of Conservation of Linear Momentum: Length \\
+    Inductance: Length \\
+    Displacement Current: Length \\
+
+R \\
+
+    Ohm's Law: Resistance \\
+    Resistivity: Resistance \\
+
+I \\
+
+    Hooke's Law: Spring Constant \\
+    Bernoulli's Equation: Current \\
+    Capacitance: Current \\
+    Biot-Savart Law: Current \\
+
+E \\
+
+    Young's Modulus: Elastic Modulus \\
+    Euler's Formula: Modulus of Elasticity \\
+
+h \\
+
+    Potential Energy: Height \\
+    Moment of Inertia: Height \\
+\end{multicols}
+\end{document}
+#+end_export

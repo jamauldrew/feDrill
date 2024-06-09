@@ -1,0 +1,3816 @@
+* Ethics and Professional Practice [0/16]
+** TODO Code of Ethics
+** TODO Surveying incidental to the practice of engineering excludes the surveying of real property for the establishment
+** TODO The following shall be considered as minimum evidence that the applicant is qualified for certification as an
+** TODO The following shall be considered as minimum evidence satisfactory to the board that the applicant is qualified
+** TODO Authorization
+** TODO Intellectual Property
+** TODO Patents
+** TODO Trademarks
+** TODO Copyrights
+** TODO Trade Secrets
+** TODO Societal Considerations
+** TODO CIVIL CBT Exam Specifications
+** TODO Knowledge
+** TODO Number of Questions
+** TODO Mathematics and Statistics
+** TODO CERCLA, SDWA, NEPA, OSHA)
+* Safety [0/291]
+** TODO Definition of Safety
+** TODO Abbreviation
+** TODO Name
+** TODO Jurisdiction
+** TODO ANSI
+** TODO ITSNA
+** TODO MSHA
+** TODO NFPA
+** TODO NIOSH
+** TODO OSHA
+** TODO RCRA
+** TODO USCG
+** TODO USDOT
+** TODO USEPA
+** TODO American National Standards Institute
+** TODO Compressed Gas Association
+** TODO Canadian Standards Association
+** TODO Federal Aviation Administration
+** TODO International Electrotechnical Commission
+** TODO Mine Safety and Health Administration
+** TODO National Fire Protection Association
+** TODO National Institute for Occupational Safety and Health
+** TODO Occupational Safety and Health Administration
+** TODO Resource Conservation and Recovery Act
+** TODO Underwriters Laboratories
+** TODO United States Coast Guard
+** TODO United States Department of Transportation
+** TODO United States Environmental Protection Agency
+** TODO Nonprofit standards organization
+** TODO Nonprofit trade association
+** TODO Federal regulatory agency
+** TODO Nationally recognized testing laboratory
+** TODO Federal law
+** TODO Safety and Prevention
+** TODO Job Safety Analysis
+** TODO Hazard Assessments
+** TODO Hazard Assessment
+** TODO GHS LABEL ELEMENTS
+** TODO Product Name or Identifier
+** TODO Signal Word
+** TODO Hazard Statements
+** TODO Supplemental Information
+** TODO Precautionary Measures and Pictograms
+** TODO First Aid Statements
+** TODO Name and Address of Company
+** TODO Telephone Number
+** TODO GHS PICTOGRAMS AND HAZARD CLASSES
+** TODO TRANSPORT PICTOGRAMS
+** TODO FLAMMABLE LIQUID
+** TODO FLAMMABLE GAS
+** TODO FLAMMABLE AEROSOL
+** TODO FLAMMABLE SOLID
+** TODO SELF-REACTIVE
+** TODO SUBSTANCES
+** TODO PYROPHORICS (SPONTANEOUSLY
+** TODO COMBUSTIBLE)
+** TODO SELF-HEATING SUBSTANCES
+** TODO SUBSTANCES, WHICH IN
+** TODO CONTACT WITH WATER,
+** TODO EMIT FLAMMABLE GASES
+** TODO (DANGEROUS WHEN WET)
+** TODO OXIDIZING GASES
+** TODO OXIDIZING LIQUIDS
+** TODO OXIDIZING SOLIDS
+** TODO EXPLOSIVE DIVISIONS
+** TODO EXPLOSIVE DIVISION 1.4
+** TODO EXPLOSIVE DIVISION 1.5
+** TODO EXPLOSIVE DIVISION 1.6
+** TODO ACUTE TOXICITY (POISON):
+** TODO ORAL, DERMAL, INHALATION
+** TODO CORROSIVE
+** TODO COMPRESSED GASES
+** TODO MARINE POLLUTANT
+** TODO ORGANIC PEROXIDES
+** TODO ACUTE ORAL TOXICITY
+** TODO LD50
+** TODO PICTOGRAM
+** TODO SIGNAL WORD
+** TODO SYMBOL
+** TODO DANGER
+** TODO HAZARD STATEMENT FATAL IF SWALLOWED
+** TODO WARNING
+** TODO FATAL IF SWALLOWED
+** TODO TOXIC IF SWALLOWED
+** TODO HARMFUL IF SWALLOWED
+** TODO MAY BE HARMFUL
+** TODO IF SWALLOWED
+** TODO Signal Words
+** TODO Pesticide Toxicity Categories
+** TODO Signal Word on Label
+** TODO Toxicity Category
+** TODO Acute-Oral
+** TODO Amount Needed to Kill
+** TODO Highly Toxic
+** TODO Warning
+** TODO Caution
+** TODO Moderately Toxic
+** TODO Slightly Toxic
+** TODO Relatively Nontoxic
+** TODO One to six teaspoons
+** TODO Notes
+** TODO Keep Out of Reach of Children
+** TODO Flammability
+** TODO Acetone
+** TODO Acetylene
+** TODO Ammonia
+** TODO Carbon disulfide
+** TODO Carbon monoxide
+** TODO Cycloheptane
+** TODO Cyclohexane
+** TODO Cyclopropane
+** TODO Diethyl ether
+** TODO Ethane
+** TODO Ethyl acetate
+** TODO Ethyl alcohol
+** TODO Ethyl ether
+** TODO Ethyl nitrite
+** TODO Ethylene
+** TODO Hydrazine
+** TODO Hydrogen
+** TODO Hydrogen sulfide
+** TODO Isobutane
+** TODO Methane
+** TODO Propane
+** TODO COMBUSTIBLE CONCENTRATION
+** TODO SATURATED VAPORAIR MIXTURES
+** TODO MIST
+** TODO UPPER
+** TODO LIMIT
+** TODO FLAMMABLE
+** TODO MIXTURES
+** TODO AUTOIGNITION
+** TODO LOWER
+** TODO TEMPERATURE
+** TODO Granular Storage and Process Safety
+** TODO Confined Space Safety
+** TODO Electrical Safety
+** TODO Current Level
+** TODO Probable Effect on Human Body
+** TODO Dose-Response Curves
+** TODO TOXIC RESPONSE (PERCENT)
+** TODO TOXICANT
+** TODO LD 10 LD 50
+** TODO LOGARITHM OF LD50 DOSE
+** TODO LC50
+** TODO LD50
+** TODO Comparative Acutely Lethal Doses
+** TODO Actual
+** TODO Ranking
+** TODO Toxic Chemical
+** TODO PCBs
+** TODO Morphine
+** TODO Nicotine
+** TODO Selected Chemical Interaction Effects
+** TODO Effect
+** TODO Relative toxicity
+** TODO Example
+** TODO Additive
+** TODO Organophosphate
+** TODO Synergistic
+** TODO Cigarette smoking
+** TODO Antagonistic
+** TODO Exposure Limits for Selected Compounds
+** TODO Allowable Workplace
+** TODO Iodine
+** TODO Aspirin
+** TODO Perchloroethylene
+** TODO Trichloroethylene
+** TODO Tetrahydrofuran
+** TODO Carcinogens
+** TODO RESPONSE
+** TODO THRESHOLD LINEAR
+** TODO AT LOW DOSE
+** TODO DOSE
+** TODO CARCINOGENIC DOSE
+** TODO RESPONSE CURVE
+** TODO Compound
+** TODO Ammonia
+** TODO Chlorine
+** TODO Ethyl Chloride
+** TODO Ethyl Ether
+** TODO Noncarcinogens
+** TODO RESPONSE
+** TODO NOAEL
+** TODO THRESHOLD
+** TODO DOSE
+** TODO NONCARCINOGENIC DOSE
+** TODO RESPONSE CURVE
+** TODO Dose is expressed
+** TODO Reference Dose
+** TODO NOAEL
+** TODO CHEMICAL COMPATIBILITY CHART
+** TODO Reactivity Group
+** TODO Name
+** TODO Non-Oxidizing
+** TODO Oxidizing
+** TODO Aldehydes
+** TODO Amides
+** TODO Aromatic
+** TODO Carbamates
+** TODO REACTIVITY
+** TODO CODE
+** TODO Strong
+** TODO Containing Water
+** TODO EXTREMELY REACTIVE!
+** TODO GF 21
+** TODO Substances
+** TODO HEAT GENERATION,
+** TODO FIRE, AND TOXIC GAS
+** TODO GENERATION
+** TODO Organic Sulfides
+** TODO EXAMPLE:
+** TODO HEAT GENERATION
+** TODO FIRE
+** TODO TOXIC GAS GENERATION
+** TODO FLAMMABLE GAS GENERATION
+** TODO EXPLOSION
+** TODO POLYMERIZATION
+** TODO SOLUBILIZATION OF TOXIC MATERIAL
+** TODO MAY BE HAZARDOUS BUT UNKNOWN
+** TODO CONSEQUENCES
+** TODO Do Not Mix With Any Chemical or Waste Material
+** TODO GT 106
+** TODO COPPER, AL BRONZE, TIN BRONZE
+** TODO SODIUM HYDROXIDE
+** TODO METHANOL
+** TODO ACID,
+** TODO NITRIC
+** TODO AMMONIA,
+** TODO AQUEOUS
+** TODO HYDROCHLORIC
+** TODO ACETIC
+** TODO TEMPERATURE, °F
+** TODO KEY TO CHARTS
+** TODO HYDROGEN PEROXIDE
+** TODO Detailed Corrosion Data on Construction Materials
+** TODO AERATED
+** TODO 600°F
+** TODO AERATED OR
+** TODO AIR-FREE
+** TODO NEOPRENE
+** TODO POLYETHYLENE
+** TODO RUBBER, BUTYL
+** TODO STAINLESS STEEL, TYPE 316
+** TODO ALKALINE
+** TODO STEEL
+** TODO STRESS CRACKS
+** TODO AT HIGHER TEMPS.
+** TODO STYRENE COPOLYMERS, HIGH IMPACT
+** TODO Exposure
+** TODO Residential Exposure Equations for Various Pathways
+** TODO Ingestion in drinking water
+** TODO (BW)(AT)
+** TODO Ingestion while swimming
+** TODO Dermal contact with water
+** TODO Ingestion of chemicals in soil
+** TODO Dermal contact with soil
+** TODO EPA-Recommended Values for Estimating Intake
+** TODO Parameter
+** TODO Standard Value
+** TODO Inhalation rates
+** TODO Exposure duration
+** TODO National median
+** TODO Averaging time
+** TODO Swimming
+** TODO Eating fish and shellfish
+** TODO Oral ingestion
+** TODO Concentrations of Vaporized Liquids
+** TODO Psat
+** TODO Ergonomics
+** TODO NIOSH Formula
+** TODO Frequency Multiplier Table
+** TODO Container
+** TODO Optimal Design
+** TODO GOOD
+** TODO POOR
+** TODO Comfort Grip
+** TODO Flex Fingers
+** TODO FAIR
+** TODO Coupling
+** TODO GOOD
+** TODO POOR
+** TODO Biomechanics of the Human Body
+** TODO Basic Equations
+** TODO Incidence Variable Values
+** TODO Noise Pollution
+** TODO Point Source Attenuation
+** TODO Line Source Attenuation
+** TODO SPLtotal
+** TODO Noise Level
+** TODO Permissible Time
+* Mathematics [0/117]
+** TODO Discrete Math
+** TODO Symbols
+** TODO Ordered pair
+** TODO Matrix of Relation
+** TODO Finite State Machine
+** TODO State
+** TODO Input
+** TODO S1 S2
+** TODO S2 S3
+** TODO S3 S3
+** TODO Straight Line
+** TODO The general form of the equation is
+** TODO The standard form of the equation is
+** TODO The point-slope form is
+** TODO The distance between two points is
+** TODO Quadratic Equation
+** TODO Logarithms
+** TODO Identities
+** TODO Algebra of Complex Numbers
+** TODO Polar Coordinate System
+** TODO Euler's Identity
+** TODO Roots
+** TODO Trigonometry
+** TODO Law of Sines
+** TODO Law of Cosines
+** TODO Identities
+** TODO Mensuration of Areas and Volumes
+** TODO Nomenclature
+** TODO Parabola
+** TODO Ellipse
+** TODO Circular Segment
+** TODO Circular Sector
+** TODO Sphere
+** TODO Parallelogram
+** TODO Prismoid
+** TODO Right Circular Cone
+** TODO Right Circular Cylinder
+** TODO Paraboloid of Revolution
+** TODO Conic Sections
+** TODO Conic Section Equation
+** TODO The general form of the conic section equation is
+** TODO Differential Calculus
+** TODO The Derivative
+** TODO The Partial Derivative
+** TODO The Curvature of Any Curve
+** TODO Curvature in Rectangular Coordinates
+** TODO The Radius of Curvature
+** TODO Integral Calculus
+** TODO Derivatives
+** TODO Indefinite Integrals
+** TODO Progression and Series
+** TODO Arithmetic Progression
+** TODO Geometric Progression
+** TODO Properties of Series
+** TODO Power Series
+** TODO Taylor's Series
+** TODO Differential Equations
+** TODO First-Order Linear Homogeneous Differential Equations with Constant Coefficients
+** TODO First-Order Linear Nonhomogeneous Differential Equations
+** TODO The solution is
+** TODO Second-Order Linear Homogeneous Differential Equations with Constant Coefficients
+** TODO An equation of the form
+** TODO The roots of the characteristic equation are
+** TODO Fourier Transform
+** TODO Fourier Series
+** TODO The Fourier Transform and its Inverse
+** TODO Fourier Transform Pairs
+** TODO Linearity
+** TODO Fourier Transform Theorems
+** TODO Scale change
+** TODO Time reversal
+** TODO Duality
+** TODO Time shift
+** TODO Frequency shift
+** TODO Modulation
+** TODO Multiplication
+** TODO Convolution
+** TODO Differentiation
+** TODO Integration
+** TODO Laplace Transforms
+** TODO The unilateral Laplace transform pair
+** TODO Laplace Transform Pairs
+** TODO Matrices
+** TODO Multiplication of Two Matrices
+** TODO SA BW
+** TODO Addition of Two Matrices
+** TODO A+G B+H C+I
+** TODO D+J E+K F+L
+** TODO Identity Matrix
+** TODO Matrix Transpose
+** TODO Matrix Properties
+** TODO Determinants
+** TODO Vectors
+** TODO Identities
+** TODO Numerical Methods
+** TODO Difference Equations
+** TODO First-Order Linear Difference Equation
+** TODO Newton's Method for Root Extraction
+** TODO Newton's Method of Minimization
+** TODO Newton's algorithm is
+** TODO Numerical Integration
+** TODO Three of the more common numerical integration algorithms used to evaluate the integral
+** TODO Euler's or Forward Rectangular Rule
+** TODO Trapezoidal Rule
+** TODO Numerical Solution of Ordinary Differential Equations
+** TODO Euler's Approximation
+** TODO Probability and Statistics
+** TODO Engineering Sciences
+** TODO Materials Science
+** TODO Probability and Statistics
+** TODO Probability and Statistics
+** TODO Engineering Sciences
+** TODO Probability and Statistics
+** TODO Probability and Statistics
+** TODO Chemistry
+** TODO Instrumentation and Controls
+** TODO Engineering Ethics and Societal Impacts
+* [#B] Engineering Probability and Statistics [0/116]
+** TODO The weighted arithmetic mean is
+** TODO The sample variance is
+** TODO The sample standard deviation is
+** TODO Permutations and Combinations
+** TODO Sets
+** TODO De Morgan's Law
+** TODO A,B= A+B
+** TODO A+B= A,B
+** TODO Associative Law
+** TODO Distributive Law
+** TODO Laws of Probability
+** TODO P(A)
+** TODO P(B)
+** TODO Bayes' Theorem
+** TODO Probability Density Function
+** TODO Cumulative Distribution Functions
+** TODO Expected Values
+** TODO The standard deviation is given by
+** TODO Combinations of Random Variables
+** TODO Binomial Distribution
+** TODO The Central Limit Theorem
+** TODO Gamma Function
+** TODO Propagation of Error
+** TODO Measurement Error
+** TODO Linear Combinations
+** TODO Measurement Uncertainty
+** TODO Linear Regression and Goodness of Fit
+** TODO Least Squares
+** TODO Residual
+** TODO Hypothesis Testing
+** TODO Randomized Complete Block Design
+** TODO Two-Factor Factorial Designs
+** TODO One-Way ANOVA Table
+** TODO Source of Variation
+** TODO Degrees of
+** TODO Freedom
+** TODO Sum of
+** TODO Squares
+** TODO Between Treatments
+** TODO SStreatments
+** TODO Error
+** TODO SSerror
+** TODO Total
+** TODO SStotal
+** TODO Mean Square
+** TODO SStreatments
+** TODO SS error
+** TODO Randomized Complete Block ANOVA Table
+** TODO Source of Variation
+** TODO Degrees of
+** TODO Freedom
+** TODO Sum of
+** TODO Squares
+** TODO Between Treatments
+** TODO SStreatments
+** TODO Between Blocks
+** TODO SSblocks
+** TODO Error
+** TODO SSerror
+** TODO Total
+** TODO SStotal
+** TODO Mean Square
+** TODO SStreatments
+** TODO SS blocks
+** TODO SS error
+** TODO Two-Way Factorial ANOVA Table
+** TODO Source of Variation
+** TODO Degrees of
+** TODO Freedom
+** TODO Sum of
+** TODO Squares
+** TODO AB Interaction
+** TODO SSAB
+** TODO Error
+** TODO SSerror
+** TODO Total
+** TODO SStotal
+** TODO Mean Square
+** TODO SS AB
+** TODO MSAB
+** TODO Hypothesis
+** TODO Test Statistic
+** TODO Criteria for Rejection
+** TODO Variances
+** TODO An approximate result is
+** TODO Sample Size
+** TODO Test Statistics
+** TODO Confidence Interval
+** TODO Unit Normal Distribution
+** TODO Fractiles
+** TODO Student's t-Distribution
+** TODO Denominator
+** TODO Degrees of Freedom
+** TODO Statistical Quality Control
+** TODO Average and Range Charts
+** TODO Standard Deviation Charts
+** TODO Approximations
+** TODO Tests for Out of Control
+** TODO Variable
+** TODO Binomial
+** TODO Coefficient
+** TODO Equation
+** TODO Hyper
+** TODO Geometric
+** TODO Poisson
+** TODO Mean
+** TODO Variance
+** TODO Negative
+** TODO Binomial
+** TODO Multinomial
+** TODO Uniform
+** TODO Gamma
+** TODO Exponential
+** TODO Weibull
+** TODO Normal
+** TODO Triangular
+* Chemistry and Biology [0/349]
+** TODO Definitions
+** TODO Faraday's Equation
+** TODO Nernst Equation
+** TODO 7H +A
+** TODO 7A –A7H +A
+** TODO 6HA@
+** TODO Bioconversion
+** TODO Substrate
+** TODO Cells
+** TODO Photosynthesis
+** TODO Instrumental Methods of Analysis
+** TODO Method
+** TODO Atomic absorption spectrometry
+** TODO Electrochemistry
+** TODO Ion chromatography
+** TODO Raman spectroscopy
+** TODO UV absorption
+** TODO UV fluorescence
+** TODO X-ray absorption
+** TODO X-ray diffraction
+** TODO Qualitative
+** TODO Quantitative
+** TODO Elemental
+** TODO Molecular
+** TODO Periodic Table of Elements
+** TODO VIII
+** TODO Atomic Number
+** TODO Symbol
+** TODO Atomic Weight
+** TODO Lanthanide Series
+** TODO Actinide Series
+** TODO Selected Rules of Nomenclature in Organic Chemistry
+** TODO Alcohols
+** TODO Ethers
+** TODO Carboxylic Acids
+** TODO Aldehydes
+** TODO Ketones
+** TODO Unsaturated Acyclic Hydrocarbons
+** TODO Important Families of Organic Compounds
+** TODO FAMILY
+** TODO Alkene
+** TODO Alkyne
+** TODO Specific
+** TODO Example
+** TODO CH3CH3
+** TODO IUPAC
+** TODO Name
+** TODO Ethene
+** TODO Ethyne
+** TODO Ethane
+** TODO Ethylene
+** TODO Acetylene
+** TODO Common
+** TODO Name
+** TODO Arene
+** TODO Ketone
+** TODO Carboxylic
+** TODO Acid
+** TODO Ester
+** TODO CH3CH
+** TODO CH3CCH3
+** TODO CH3COH
+** TODO CH3COCH3
+** TODO Methanamine
+** TODO Ethanal
+** TODO Acetone
+** TODO Ethanoic
+** TODO Acid
+** TODO Methylamine
+** TODO Acetaldehyde
+** TODO Dimethyl
+** TODO Acetic Acid
+** TODO Methyl
+** TODO R1CR2
+** TODO RCOH
+** TODO RCOR
+** TODO Alcohol
+** TODO Ether
+** TODO Amine
+** TODO CH3CH2OH
+** TODO CH3OCH3
+** TODO CH3NH2
+** TODO Benzene
+** TODO Chloroethane
+** TODO Ethanol
+** TODO Methoxymethane
+** TODO Ethyl
+** TODO Ethyl alcohol
+** TODO Dimethyl
+** TODO General
+** TODO Formula
+** TODO Aldehyde
+** TODO Haloalkane
+** TODO RNH2
+** TODO R2NH
+** TODO Functional
+** TODO Group
+** TODO –C ≡C–
+** TODO Aromatic
+** TODO Ring
+** TODO Methyl
+** TODO Alkane
+** TODO Common Names and Molecular Formulas of Some Industrial
+** TODO Common Name
+** TODO Chemical Name
+** TODO Muriatic acid
+** TODO Cumene
+** TODO Styrene
+** TODO Gypsum
+** TODO Limestone
+** TODO Dolomite
+** TODO Bauxite
+** TODO Anatase
+** TODO Rutile
+** TODO Pyrite
+** TODO Epsom salt
+** TODO Hydroquinone
+** TODO Soda ash
+** TODO Salt
+** TODO Potash
+** TODO Baking soda
+** TODO Caustic soda
+** TODO Carbolic acid
+** TODO Aniline
+** TODO Toluene
+** TODO Xylene
+** TODO Neopentane
+** TODO Magnetite
+** TODO Quicksilver
+** TODO Heavy water
+** TODO Hydrochloric acid
+** TODO Isopropyl benzene
+** TODO Vinyl benzene
+** TODO Hypochlorite ion
+** TODO Chlorite ion
+** TODO Chlorate ion
+** TODO Perchlorate ion
+** TODO Calcium sulfate
+** TODO Calcium carbonate
+** TODO Magnesium carbonate
+** TODO Aluminum oxide
+** TODO Titanium dioxide
+** TODO Vinyl chloride
+** TODO Ethylene oxide
+** TODO Ferrous sulfide
+** TODO Magnesium sulfate
+** TODO Sodium carbonate
+** TODO Sodium chloride
+** TODO Potassium carbonate
+** TODO Sodium bicarbonate
+** TODO Sodium hydroxide
+** TODO Vinyl alcohol
+** TODO Phenol
+** TODO Aminobenzene
+** TODO Urea
+** TODO Methyl benzene
+** TODO Dimethyl benzene
+** TODO Silane
+** TODO Ozone
+** TODO Mercury
+** TODO Deuterium oxide
+** TODO Borane
+** TODO Deuterium
+** TODO Tritium
+** TODO Nitrous oxide
+** TODO Phosgene
+** TODO Tungsten
+** TODO Permanganate ion
+** TODO Dichromate ion
+** TODO Hydronium ion
+** TODO Sodium chloride
+** TODO Sulfuric acid
+** TODO Eyewash
+** TODO Laughing gas
+** TODO Wolfram
+** TODO Brine
+** TODO Battery acid
+** TODO Molecular
+** TODO Formula
+** TODO C6H5CH(CH3)2
+** TODO C2H4O
+** TODO C6H4(OH)2
+** TODO NaCl
+** TODO K2CO3
+** TODO NaOH
+** TODO CH2=CHOH
+** TODO C6H5OH
+** TODO C6H5NH2
+** TODO (NH2)2CO
+** TODO C6H5CH3
+** TODO C6H4(CH3)2
+** TODO CH3C(CH3)2CH3
+** TODO H3BO3
+** TODO H3O+1
+** TODO NaCl
+** TODO H2SO4
+** TODO Electrochemistry
+** TODO Corrosion Reaction
+** TODO Cellular Biology
+** TODO PERIPLASMIC
+** TODO SPACE
+** TODO OUTER
+** TODO MEMBRANE
+** TODO SEX PILUS
+** TODO RIBOSOMES
+** TODO PEPTIDOGLYCAN
+** TODO CYTOPLASMIC
+** TODO CHROMOSOME
+** TODO FLAGELLA
+** TODO INNER OR CYTOPLASMIC
+** TODO MEMBRANE
+** TODO COMMON PILUS
+** TODO MITOCHONDRIA
+** TODO CELL WALL
+** TODO STARCH GRANULES
+** TODO PLASMA
+** TODO MEMBRANE
+** TODO NUCLEUS
+** TODO ENDOPLASMIC
+** TODO RETICULUM
+** TODO CHLOROPLAST
+** TODO TONOPLAST
+** TODO GOLGI
+** TODO COMPLEX
+** TODO LYSOSOME
+** TODO CENTRAL
+** TODO VACUOLE
+** TODO ROUGH
+** TODO ENDOPLASMIC
+** TODO RETICULUM
+** TODO ANIMAL
+** TODO PLANT
+** TODO Atomic Bonding
+** TODO Primary Bonds
+** TODO Corrosion
+** TODO Diffusion
+** TODO Diffusion Coefficient
+** TODO Thermal and Mechanical Processing
+** TODO Properties of Materials
+** TODO Electrical
+** TODO Conductivity is the reciprocal of the resistivity
+** TODO Mechanical
+** TODO Engineering strain
+** TODO True strain
+** TODO Metal
+** TODO Symbol
+** TODO Aluminum
+** TODO Antimony
+** TODO Arsenic
+** TODO Barium
+** TODO Beryllium
+** TODO Bismuth
+** TODO Cadmium
+** TODO Caesium
+** TODO Calcium
+** TODO Cerium
+** TODO Chromium
+** TODO Cobalt
+** TODO Copper
+** TODO Gallium
+** TODO Gold
+** TODO Indium
+** TODO Iridium
+** TODO Iron
+** TODO Lead
+** TODO Lithium
+** TODO Magnesium
+** TODO Manganese
+** TODO Mercury
+** TODO Molybendum
+** TODO Nickel
+** TODO Niobium
+** TODO Osmium
+** TODO Palladium
+** TODO Platinum
+** TODO Potassium
+** TODO Rhodium
+** TODO Rubidium
+** TODO Ruthenium
+** TODO Silver
+** TODO Sodium
+** TODO Strontium
+** TODO Tantalum
+** TODO Thallium
+** TODO Thorium
+** TODO Titanium
+** TODO Tungsten
+** TODO Uranium
+** TODO Vanadium
+** TODO Zinc
+** TODO Zirconium
+** TODO Atomic
+** TODO Weight
+** TODO Melting
+** TODO Specific Heat
+** TODO Electrical
+** TODO Resistivity
+** TODO (273.2 K)
+** TODO Element
+** TODO Dopant
+** TODO Periodic table
+** TODO Maximum solid solubility
+** TODO Impurity Energy Levels for Extrinsic Semiconductors
+** TODO GaAs
+** TODO Semiconductor
+** TODO Engineering stress
+** TODO True stress
+** TODO Representative Values of Fracture Toughness
+** TODO Material
+** TODO A1 2014-T651
+** TODO A1 2024-T3
+** TODO Alumina
+** TODO Silicon Carbide
+** TODO Relationship Between Hardness and Tensile Strength
+** TODO ASTM Grain Size
+** TODO Nactual
+** TODO Composite Materials
+** TODO Hardenability
+** TODO JOMINY HARDENABILITY CURVES FOR SIX STEELS
+** TODO COOLING RATES FOR BARS QUENCHED IN AGITATED WATER
+** TODO COOLING RATES FOR BARS QUENCHED IN AGITATED OIL
+** TODO Impact Test
+** TODO AVERAGE 28-DAY COMPRESSIVE
+** TODO STRENGTH, PSI
+** TODO Concrete
+** TODO ADDED AIR
+** TODO RECOMMENDED
+** TODO PERCENT
+** TODO ENTRAINED AIR
+** TODO W/C BY WEIGHT
+** TODO Concrete strength decreases with increases in water-cement
+** TODO COMPRESSIVE STRENGTH, PSI
+** TODO CONTINUOUSLY MOIST CURED
+** TODO IN AIR AFTER 28 DAYS
+** TODO IN AIR AFTER 14 DAYS
+** TODO STORED CONTINUOUSLY IN LABORATORY AIR
+** TODO AGE, DAYS
+** TODO Amorphous Materials
+** TODO VOLUME
+** TODO TEMPERATURE
+** TODO Polymers
+** TODO Polymer Additives
+** TODO Thermal Properties
+** TODO Binary Phase Diagrams
+** TODO Lever Rule
+** TODO TEMPERATURE, °F
+** TODO TEMPERATURE, °C
+** TODO COMPOSITION, WT%
+** TODO Iron-Iron Carbide Phase Diagram
+* Materials Science/Structure of Matter
+* Statics [0/17]
+** TODO The resultant direction with respect to the x-axis is
+** TODO Systems of Forces
+** TODO Equilibrium Requirements
+** TODO The centroid of area is defined as
+** TODO Moment of Inertia
+** TODO Moment of Inertia Parallel Axis Theorem
+** TODO Radius of Gyration
+** TODO Product of Inertia
+** TODO Friction
+** TODO Screw Thread
+** TODO Belt Friction
+** TODO Statically Determinate Truss
+** TODO The method consists of solving for the forces in the members by writing the two equilibrium equations for each joint
+** TODO Concurrent Forces
+** TODO Figure
+** TODO Product of Inertia
+** TODO Area Moment of Inertia
+* Dynamics [0/75]
+** TODO Common Nomenclature
+** TODO Particle Kinematics
+** TODO Cartesian Coordinates
+** TODO Radial and Transverse Components for Planar Motion
+** TODO PATH
+** TODO Particle Rectilinear Motion
+** TODO Particle Curvilinear Motion
+** TODO Relative Motion
+** TODO Translating Axes x-y
+** TODO Plane Circular Motion
+** TODO Here the vector quantities are defined as
+** TODO The radial acceleration is given by
+** TODO Normal and Tangential Components
+** TODO PATH
+** TODO Constant Acceleration
+** TODO Projectile Motion
+** TODO The equations for common projectile motion may be obtained from the constant acceleration equations as
+** TODO Non-constant Acceleration
+** TODO For variable angular acceleration
+** TODO Concept of Weight
+** TODO Particle Kinetics
+** TODO Normal and Tangential Kinetics for Planar Problems
+** TODO Ft ma
+** TODO Fn ma
+** TODO Principle of Work and Energy
+** TODO Kinetic Energy
+** TODO Particle
+** TODO Rigid Body
+** TODO Potential Energy
+** TODO Potential Energy in Gravity Field
+** TODO Elastic Potential Energy
+** TODO Work
+** TODO Variable force
+** TODO Constant force
+** TODO Weeight
+** TODO Spring
+** TODO Power and Efficiency
+** TODO Pout
+** TODO Impulse and Momentum
+** TODO Linear Momentum
+** TODO Angular Momentum or Moment of Momentum
+** TODO Impact
+** TODO Friction
+** TODO The Laws of Friction are
+** TODO The formula expressing the Laws of Friction is
+** TODO In general
+** TODO Rigid Body Rotation
+** TODO Mass Moment of Inertia
+** TODO Radius of Gyration
+** TODO Equations of Motion
+** TODO Rigid Body
+** TODO Plane Motion
+** TODO The definitions for the mass moments of inertia are
+** TODO Parallel-Axis Theorem
+** TODO Mass Radius of Gyration
+** TODO The mass radius of gyration is defined as
+** TODO Kinetic Energy
+** TODO For motion in the xy plane this reduces to
+** TODO Principle of Angular Impulse and Momentum
+** TODO Rigid Body
+** TODO Conservation of Angular Momentum
+** TODO Free and Forced Vibration
+** TODO EQUILIBRIUM POSITION
+** TODO One can define
+** TODO AMPLITUDE X0 /KF0
+** TODO Torsional Vibration
+** TODO For torsional free vibrations it may be shown that the differential equation of motion is
+** TODO Figure
+** TODO Mass Moment of Inertia
+** TODO CONE
+** TODO THIN CIRCULAR DISK
+** TODO HEMISPHERE
+** TODO THIN PLATE
+** TODO Strength of Materials
+** TODO Materials
+* [#A] Mechanics of Materials [0/122]
+** TODO Uniaxial Stress-Strain
+** TODO STRESS, PSI
+** TODO Stress-Strain Curve for Mild Steel
+** TODO Definitions
+** TODO Engineering Strain
+** TODO Percent Elongation
+** TODO Shear Stress-Strain
+** TODO Uniaxial Loading and Deformation
+** TODO Thermal Deformations
+** TODO Cylindrical Pressure Vessel
+** TODO Stress and Strain
+** TODO Principal Stresses
+** TODO Shear strain
+** TODO Hooke's Law
+** TODO Torsion
+** TODO Torsional Strain
+** TODO Beams
+** TODO Shearing Force and Bending Moment Sign Conventions
+** TODO POSITIVE BENDING
+** TODO NEGATIVE BENDING
+** TODO POSITIVE SHEAR
+** TODO NEGATIVE SHEAR
+** TODO Stresses in Beams
+** TODO Deflection of Beams
+** TODO Composite Sections
+** TODO COMPOSITE
+** TODO SECTION
+** TODO TRANSFORMED
+** TODO E1, A1
+** TODO E2, A2
+** TODO Columns
+** TODO Euler's Formula
+** TODO NEUTRAL
+** TODO AXIS
+** TODO Elastic Strain Energy
+** TODO The strain energy per unit volume is
+** TODO Material Properties
+** TODO Modulus of
+** TODO Material
+** TODO Steel
+** TODO Aluminum
+** TODO Cast Iron
+** TODO Brass
+** TODO Copper
+** TODO Bronze
+** TODO Magnesium
+** TODO Glass
+** TODO Polystyrene
+** TODO Alumina Fiber
+** TODO Aramide Fiber
+** TODO Boron Fiber
+** TODO Beryllium Fiber
+** TODO BeO Fiber
+** TODO Carbon Fiber
+** TODO Silicon Carbide Fiber
+** TODO Coefficient of Thermal
+** TODO Poisson's
+** TODO (10−6)/°Φ
+** TODO High Strength
+** TODO Specific
+** TODO Modulus of
+** TODO Magnesium
+** TODO Alloy
+** TODO Materials
+** TODO Shear
+** TODO Metallic
+** TODO Aluminum
+** TODO Wrought Alloys
+** TODO Cast Iron
+** TODO Alloys
+** TODO Copper
+** TODO Steel
+** TODO 2014-T6
+** TODO 6061-T6
+** TODO Titanium
+** TODO Alloy
+** TODO Nonmetallic
+** TODO Concrete
+** TODO Plastic
+** TODO Reinforced
+** TODO Low Strength
+** TODO Wood
+** TODO Select Structural
+** TODO Grade
+** TODO Douglas Fir
+** TODO White Spruce
+** TODO BOOKS FOR THE MATERIAL SHOULD BE CONSULTED.
+** TODO THE YIELD AND ULTIMATE STRENGTHS FOR DUCTILE MATERIALS CAN BE ASSUMED EQUAL FOR BOTH TENSION AND COMPRESSION.
+** TODO BEAM
+** TODO SLOPE
+** TODO 6EIL
+** TODO 24EI
+** TODO 48EI
+** TODO 243EI
+** TODO 384EI
+** TODO 128EI
+** TODO 6EIL
+** TODO 24EI
+** TODO 360EI
+** TODO 45EI
+** TODO 384EI
+** TODO 48EI
+** TODO MAXIMUM MOMENT
+** TODO ELASTIC CURVE
+** TODO 16EI
+** TODO DEFLECTION
+** TODO BEAM
+** TODO SLOPE
+** TODO MAXIMUM MOMENT
+** TODO 24EI
+** TODO ELASTIC CURVE
+** TODO 48EI
+** TODO 384EI
+** TODO 30EI
+** TODO 192EI
+** TODO PIPE
+** TODO SLOPE
+** TODO DEFLECTION
+** TODO ELASTIC CURVE
+** TODO MAXIMUM MOMENT
+** TODO Materials
+** TODO Material Properties and Processing
+* [#B] Thermodynamics [0/186]
+** TODO Properties of Single-Component Systems
+** TODO Nomenclature
+** TODO Functions and Their Symbols and Units
+** TODO Function
+** TODO Absolute pressure
+** TODO Absolute temperature
+** TODO Volume
+** TODO Specific volume
+** TODO Internal energy
+** TODO Btu or kJ
+** TODO Specific internal energy
+** TODO Enthalpy
+** TODO Specific enthalpy
+** TODO Entropy
+** TODO Specific entropy
+** TODO Gibbs free energy
+** TODO Helmholtz free energy
+** TODO PVT Behavior
+** TODO Ideal Gas
+** TODO For an ideal gas
+** TODO Ideal Gas Mixtures
+** TODO Real Gas
+** TODO EOS are used to quantify PvT behavior
+** TODO First Law of Thermodynamics
+** TODO Closed Thermodynamic System
+** TODO No mass crosses system boundary
+** TODO Open Thermodynamic System
+** TODO Closed system
+** TODO Steady-Flow Systems
+** TODO Special Cases of Steady-Flow Energy Equation
+** TODO Basic Cycles
+** TODO Psychrometrics
+** TODO Second Law of Thermodynamics
+** TODO Thermal Energy Reservoirs
+** TODO Kelvin-Planck Statement of Second Law
+** TODO Clausius' Statement of Second Law
+** TODO Entropy
+** TODO Inequality of Clausius
+** TODO Isentropic Process
+** TODO Adiabatic Process
+** TODO Increase of Entropy Principle
+** TODO Entropy Change for Solids and Liquids
+** TODO Heats of Reaction
+** TODO Tref
+** TODO Combustion Processes
+** TODO Combustion in Air
+** TODO Combustion in Excess Air
+** TODO Incomplete Combustion
+** TODO Mass of air
+** TODO Henry's Law at Constant Temperature
+** TODO Raoult's Law for Vapor-Liquid Equilibrium
+** TODO Rigorous Vapor-Liquid Equilibrium
+** TODO Phase Relations
+** TODO Clausius-Clapeyron Equation
+** TODO P+F=C+2
+** TODO Chemical Reaction Equilibria
+** TODO Definitions
+** TODO Chemical Reaction Equilibrium
+** TODO For the reaction
+** TODO The effect of temperature on the equilibrium constant is
+** TODO STEAM TABLES
+** TODO Specific Volume
+** TODO Internal Energy
+** TODO Enthalpy
+** TODO Entropy
+** TODO Superheated Water Tables
+** TODO CONSTANT TEMPERATURE, °F
+** TODO CCOO
+** TODO NNSS
+** TODO TTAA
+** TODO NNTT
+** TODO PPRR
+** TODO EESS
+** TODO SSUU
+** TODO RREE
+** TODO PpSs
+** TODO °DFE
+** TODO 20°C
+** TODO Pressure-Enthalpy
+** TODO Diagram
+** TODO 220 °C
+** TODO SUVA
+** TODO RATE
+** TODO SATU
+** TODO REFERENCE STATE:
+** TODO FOR SATURATED LIQUID AT –40°F
+** TODO Thermal Conductivity
+** TODO Liquid
+** TODO Vapor
+** TODO Specific Heat cp
+** TODO LIQU
+** TODO SATU
+** TODO RATE
+** TODO PRESSURE-ENTHALPY
+** TODO DIAGRAM
+** TODO 410A 2013.
+** TODO Reprinted with
+** TODO Handbook
+** TODO BASED ON FORMULATION OF LEMMON AND JACOBSEN (2004)
+** TODO [R-32/125 (50/50)]
+** TODO REFERENCE STATE:
+** TODO R-410A
+** TODO Liquid
+** TODO Vapor
+** TODO Specific Heat cp
+** TODO Thermal Conductivity
+** TODO Bubble
+** TODO Liquid
+** TODO Vapor
+** TODO Specific Heat cp
+** TODO Thermal Conductivity
+** TODO Bubble
+** TODO Liquid
+** TODO Vapor
+** TODO Specific Heat cp
+** TODO Thermal Conductivity
+** TODO Thermal and Physical Property Tables
+** TODO GASES
+** TODO Argon
+** TODO Butane
+** TODO Carbon dioxide
+** TODO Carbon monoxide
+** TODO Ethane
+** TODO Helium
+** TODO Hydrogen
+** TODO Methane
+** TODO Neon
+** TODO Nitrogen
+** TODO Octane vapor
+** TODO Oxygen
+** TODO Propane
+** TODO Steam
+** TODO Substance
+** TODO Gases
+** TODO GASES
+** TODO Argon
+** TODO Butane
+** TODO Carbon dioxide
+** TODO Carbon monoxide
+** TODO Ethane
+** TODO Helium
+** TODO Hydrogen
+** TODO Methane
+** TODO Neon
+** TODO Nitrogen
+** TODO Octane vapor
+** TODO Oxygen
+** TODO Propane
+** TODO Steam
+** TODO SELECTED LIQUIDS AND SOLIDS
+** TODO Density
+** TODO Substance
+** TODO Liquids
+** TODO Ammonia
+** TODO Mercury
+** TODO Water
+** TODO Solids
+** TODO Aluminum
+** TODO Copper
+** TODO Iron
+** TODO Lead
+** TODO GENERALIZED
+** TODO COMPRESSIBILITY CHARTS
+** TODO COMPRESSIBILITY FACTOR,
+** TODO Definition of Compressibility Factor
+** TODO COMMON THERMODYNAMIC CYCLES
+** TODO Carnot Cycle
+** TODO Reversed Carnot
+** TODO Otto Cycle
+** TODO Rankine Cycle
+** TODO Refrigeration
+** TODO Refrigeration and HVAC
+** TODO Cycles
+** TODO Two-Stage Cycle
+** TODO Qo in
+** TODO Qo out
+** TODO Air Refrigeration Cycle
+** TODO Qout
+** TODO Surface Water Resources and Hydrology
+** TODO Water and Wastewater
+** TODO Air Quality and Control
+** TODO Solid and Hazardous Waste
+** TODO Energy and Environment
+** TODO INDUSTRIAL AND SYSTEMS CBT Exam Specifications
+** TODO Knowledge
+** TODO Number of Questions
+* [#B] Fluid Mechanics [0/168]
+** TODO Definitions
+** TODO Dm DV
+** TODO DW DV
+** TODO Stress is defined as
+** TODO Surface Tension and Capillarity
+** TODO The difference in pressure between two different points is
+** TODO Manometers
+** TODO Patm
+** TODO Forces on Submerged Surfaces and the Center of Pressure
+** TODO SIDE VIEW
+** TODO LIQUID
+** TODO CENTROID (C)
+** TODO CENTER OF PRESSURE (CP)
+** TODO SUBMERGED PLANE SURFACE
+** TODO Archimedes Principle and Buoyancy
+** TODO Principles of One-Dimensional Fluid Flow
+** TODO The Continuity Equation
+** TODO Energy Equation
+** TODO Bernoulli Equation
+** TODO Euler's Equation
+** TODO Fluid flow characterization
+** TODO Reynolds Number
+** TODO The velocity distribution for laminar flow in circular tubes or between planes is
+** TODO The shear stress distribution is
+** TODO Consequences of Fluid Flow
+** TODO Head Loss Due to Flow
+** TODO The Darcy-Weisbach equation is
+** TODO An alternative formulation employed by chemical engineers is
+** TODO Pressure Drop for Laminar Flow
+** TODO Flow in Noncircular Conduits
+** TODO Drag Force
+** TODO Characteristics of Selected Flow Configurations
+** TODO Manning's Equation
+** TODO Hazen-Williams Equation
+** TODO Orifice Discharging Freely into Atmosphere
+** TODO Multipath Pipeline Problems
+** TODO The Impulse-Momentum Principle
+** TODO Jet Propulsion
+** TODO Deflectors and Blades
+** TODO Fixed Blade
+** TODO Moving Blade
+** TODO Impulse Turbine
+** TODO Compressible Flow
+** TODO Mach Number
+** TODO Isentropic Flow Relationships
+** TODO Normal Shock Relationships
+** TODO NORMAL SHOCK
+** TODO Fluid Flow Machinery
+** TODO Centrifugal Pump Characteristics
+** TODO PUMP PERFORMANCE CURVES
+** TODO NET POSITIVE
+** TODO SUCTION HEAD
+** TODO REQUIRED, NPSHR
+** TODO NPSHR
+** TODO EFFICIENCY,
+** TODO MODEL 3656/3756 S-GROUP
+** TODO METERS
+** TODO FEET
+** TODO %EFF 50 60
+** TODO TOTAL DYNAMIC HEAD
+** TODO 1750 RPM NOTE: NOT RECOMMENDED FOR OPERATION
+** TODO BEYOND PRINTED H-Q CURVE.
+** TODO CAPACITY
+** TODO 160 U.S. GPM
+** TODO Pvapor
+** TODO Pump Power Equation
+** TODO Fan Characteristics
+** TODO Typical Backward Curved Fans
+** TODO POWER
+** TODO Compressors
+** TODO INLET
+** TODO COMPRESSOR
+** TODO EXIT
+** TODO Compressor Isentropic Efficiency
+** TODO V2−V2
+** TODO Adiabatic Compression
+** TODO Isothermal Compression
+** TODO Mhc Pi
+** TODO Blowers
+** TODO Turbines
+** TODO INLET
+** TODO TURBINE
+** TODO EXIT
+** TODO Turbine Isentropic Efficiency
+** TODO Performance of Components
+** TODO Fluid Flow Measurement
+** TODO Pitot Tubes
+** TODO Venturi Meters
+** TODO Orifices
+** TODO Dimensional Homogeneity
+** TODO Dimensional Analysis
+** TODO Similitude
+** TODO Aerodynamics
+** TODO Airfoil Theory
+** TODO The lift force on an airfoil FL is given by
+** TODO The lift coefficient CL can be approximated by the equation
+** TODO The drag coefficient CD may be approximated by
+** TODO The aspect ratio AR is defined
+** TODO AERODYNAMIC MOMENT CENTER
+** TODO CAMBER LINE
+** TODO CHORD
+** TODO Temperature
+** TODO Specific Weight
+** TODO Density
+** TODO Absolute Dynamic
+** TODO Viscosity
+** TODO Kinematic
+** TODO Vapor Pressure
+** TODO Temperature
+** TODO Specific Weight
+** TODO Mass Density
+** TODO Absolute Dynamic
+** TODO Viscosity
+** TODO Kinematic
+** TODO Vapor Pressure
+** TODO FLOW IN CLOSED CONDUITS
+** TODO LAMINAR
+** TODO FLOW
+** TODO CRITICAL
+** TODO ZONE
+** TODO TRANS
+** TODO COMPLETE TURBULENCE, ROUGH PIPES
+** TODO LAMINAR
+** TODO FLOW
+** TODO CRITICAL Re
+** TODO RELATIVE ROUGHNESS (—)
+** TODO GLASS, DRAWN BRASS, COPPER, LEAD
+** TODO SMOOTH
+** TODO COMMERCIAL STEEL, WROUGHT IRON
+** TODO ASPHALTED CAST IRON
+** TODO GALVANIZED IRON
+** TODO CAST IRON
+** TODO CONCRETE
+** TODO RIVETED STEEL
+** TODO CORRUGATED METAL PIPE
+** TODO LARGE TUNNEL, CONCRETE OR STEEL LINED
+** TODO BLASTED ROCK TUNNEL
+** TODO SPHERES
+** TODO DISKS
+** TODO CYLINDERS
+** TODO Terminal Velocities of Spherical Particles of Different Densities
+** TODO THEORETICAL SCREEN MESH
+** TODO EQUIVALENT STANDARD
+** TODO TYLER SCREEN MESH
+** TODO 5.0 0°F
+** TODO NOTE
+** TODO 1. NUMBERS ON CURVES REPRESENT
+** TODO TRUE (NOT BULK OR APPARENT)
+** TODO SPECIFIC GRAVITY OF PARTICLES
+** TODO REFERRED TO WATER AT 4°C.
+** TODO NOTES
+** TODO 2. STOKES–CUNNINGHAM CORRECTION
+** TODO FACTOR IS INCLUDED FOR FINE
+** TODO PARTICLES SETTLING IN AIR.
+** TODO 3. PHYSICAL PROPERTIES USED.
+** TODO Fluid
+** TODO Water
+** TODO Density
+** TODO Water Resources and Environmental Engineering
+** TODO Structural Engineering
+** TODO Geotechnical Engineering
+** TODO Transportation Engineering
+** TODO Construction Engineering
+** TODO ELECTRICAL AND COMPUTER CBT Exam Specifications
+** TODO Knowledge
+** TODO Number of Questions
+** TODO Basic Electrical Engineering
+** TODO Thermodynamics and Heat Transfer
+* [#B] Heat Transfer [0/219]
+** TODO Basic Heat-Transfer Rate Equations
+** TODO Conduction
+** TODO Fourier's Law of Conduction
+** TODO Convection
+** TODO Newton's Law of Cooling
+** TODO Radiation
+** TODO Critical Insulation Radius
+** TODO Rtotal
+** TODO Composite Plane Wall
+** TODO T∞1 T1
+** TODO Transient Conduction Using the Lumped Capacitance Model
+** TODO Fluid
+** TODO The lumped capacitance model is valid if
+** TODO Body
+** TODO Constant Fluid Temperature
+** TODO The temperature variation of the body with time is
+** TODO Approximate Solution for Solid with Sudden Convection
+** TODO INFINITE CYLINDER AND SPHERE
+** TODO PLANE WALL
+** TODO For Fo
+** TODO Coefficients used in the one-term approximation to the series
+** TODO Plane Wall
+** TODO Infinite Cylinder
+** TODO Sphere
+** TODO Fins
+** TODO Rectangular Fin
+** TODO Pin Fin
+** TODO Convection
+** TODO Terms
+** TODO External Flow
+** TODO Internal Flow
+** TODO Laminar Flow in Circular Tubes
+** TODO ReD Pr
+** TODO Turbulent Flow in Circular Tubes
+** TODO Dittus-Boelter Equation
+** TODO Sieder-Tate Equation
+** TODO Noncircular Ducts
+** TODO Boiling
+** TODO BOILING REGIMES
+** TODO FREE
+** TODO CONVECTION
+** TODO NUCLEATE
+** TODO ISOLATED
+** TODO BUBBLES
+** TODO FILM
+** TODO JETS AND
+** TODO COLUMNS
+** TODO TRANSITION
+** TODO Peak Heat Flux
+** TODO Heater Geometry
+** TODO Large horizontal flat heater
+** TODO Large horizontal cyclinder
+** TODO Small horizontal cyclinder
+** TODO Large sphere
+** TODO Small sphere
+** TODO Width or diameter
+** TODO 18.9 K1
+** TODO Radius
+** TODO Minimum Heat Flux
+** TODO Film Boiling
+** TODO Outside Horizontal Tubes
+** TODO Vertical Flat Plate in Large Body of Stationary Fluid
+** TODO Range of RaL
+** TODO Long Horizontal Cylinder in Large Body of Stationary Fluid
+** TODO Heat Exchangers
+** TODO For counterflow in tubular heat exchangers
+** TODO For parallel flow in tubular heat exchangers
+** TODO Qmax
+** TODO Cmin
+** TODO Effectiveness-NTU Relations
+** TODO For parallel flow concentric tube heat exchanger
+** TODO For counterflow concentric tube heat exchanger
+** TODO Overall Heat-Transfer Coefficient for Concentric Tube and Shell-and-Tube Heat Exchangers
+** TODO UA hiAi Ai
+** TODO Ao hoAo
+** TODO Radiation
+** TODO Types of Bodies
+** TODO Any Body
+** TODO For any body
+** TODO Opaque Body
+** TODO For an opaque body
+** TODO Gray Body
+** TODO Black body
+** TODO Reciprocity Relations
+** TODO Net Energy Exchange by Radiation between Two Bodies
+** TODO Body Small Compared to its Surroundings
+** TODO Net Energy Exchange by Radiation between Two Black Bodies
+** TODO The net energy exchange by radiation between two black bodies that see each other is given by
+** TODO Net Energy Exchange by Radiation between Two DiffuseGray Surfaces that Form an Enclosure
+** TODO Generalized Cases
+** TODO One-Dimensional Geometry with Thin Low-Emissivity Shield Inserted between Two Parallel Plates
+** TODO Radiation Shield
+** TODO Reradiating Surface
+** TODO Measurement
+** TODO Definitions
+** TODO Physical parameter
+** TODO Converts small signal to
+** TODO Temperature Sensors
+** TODO Clas
+** TODO Tun ium
+** TODO Tung
+** TODO Iron
+** TODO OUTER JACKET
+** TODO Alloy Combination and Color
+** TODO ANSI
+** TODO Code
+** TODO IRON
+** TODO White
+** TODO CONSTANTAN
+** TODO COPPER-NICKEL
+** TODO Cu-Ni
+** TODO NICKELCHROMIUM
+** TODO Ni-Cr
+** TODO Yellow
+** TODO COPPER
+** TODO Blue
+** TODO Purple
+** TODO NICKEL-ALUMINUM
+** TODO Ni-Al
+** TODO CONSTANTAN
+** TODO COPPER-NICKEL
+** TODO Cu-Ni
+** TODO Outer Jacket Color
+** TODO Maximum
+** TODO Thermocouple
+** TODO Thermocouple Extension
+** TODO Temperature Range
+** TODO Leads
+** TODO Cable
+** TODO Environment
+** TODO Limited Use in Oxidizing at
+** TODO Not Recommended for Low
+** TODO Temperatures
+** TODO Brown
+** TODO Black
+** TODO Yellow
+** TODO Limited Use in Vacuum or
+** TODO Blue
+** TODO Purple
+** TODO Strain Transducers
+** TODO Strain
+** TODO Bridge
+** TODO Type
+** TODO Gauge Setup
+** TODO Sensitivity
+** TODO Details
+** TODO Axial
+** TODO Full
+** TODO Bending
+** TODO Torsional and
+** TODO Shear
+** TODO WHEATSTONE BRIDGE
+** TODO Pressure Sensors
+** TODO Pressure Relative
+** TODO Measurement Types
+** TODO Comparison
+** TODO Absolute
+** TODO Gauge
+** TODO Relative to local atmospheric pressure
+** TODO Differential
+** TODO Relative to another pressurized source
+** TODO Examples of Common Chemical Sensors
+** TODO Sensor Type
+** TODO Principle
+** TODO Materials
+** TODO Analyte
+** TODO Semiconducting
+** TODO Conductivity
+** TODO Electrochemical sensor
+** TODO Amperiometric
+** TODO Solid electrode sensor
+** TODO Potentiometric
+** TODO Nafion
+** TODO Piezoelectric sensor
+** TODO Catalytic combustion sensor Calorimetric
+** TODO Pyroelectric sensor
+** TODO Calorimetric
+** TODO Vapors
+** TODO Optical sensors
+** TODO Colorimetric
+** TODO Sampling
+** TODO The sampling rate or frequency is given by
+** TODO Analog-to-Digital Conversion
+** TODO Signal Conditioning
+** TODO Measurement Uncertainty
+** TODO It is critical to always consider the measurement uncertainty of your instrumentation and processes when performing
+** TODO Control Systems
+** TODO The linear time-invariant transfer function model represented by the block diagram
+** TODO INPUT
+** TODO OUTPUT
+** TODO One classical negative feedback control system model block diagram is
+** TODO System performance studies normally include
+** TODO For the unity feedback control system model
+** TODO Steady-State Error ess
+** TODO Type
+** TODO Ramp
+** TODO 1/KB
+** TODO Acceleration
+** TODO Input
+** TODO Unit Step
+** TODO First-Order Control System Models
+** TODO Second-Order Control System Models
+** TODO One standard second-order control system model is
+** TODO An alternative form commonly employed in the chemical process industry is
+** TODO Mass Transfer in Dilute Solutions
+** TODO Rate of Transfer in Terms of Coefficients
+** TODO Mass Transfer
+** TODO RePr
+** TODO ReSc
+** TODO Mass Transfer and Separation
+** TODO Solids Handling
+** TODO Chemical Reaction Engineering
+** TODO Economics
+** TODO Process Design
+** TODO Process Control
+** TODO Mechanical Design and Analysis
+** TODO OTHER DISCIPLINES CBT Exam Specifications
+** TODO Knowledge
+** TODO Number of Questions
+* Instrumentation, Measurement, and Control
+* [#B] Engineering Economics [0/66]
+** TODO Factor Name
+** TODO Single Payment
+** TODO Compound Amount
+** TODO Converts
+** TODO Symbol
+** TODO Formula
+** TODO Present Worth
+** TODO Uniform Series
+** TODO Sinking Fund
+** TODO Capital Recovery
+** TODO Compound Amount
+** TODO Uniform Gradient
+** TODO Present Worth
+** TODO Future Worth
+** TODO Uniform Series
+** TODO Nomenclature and Definitions
+** TODO Subscripts
+** TODO Non-Annual Compounding
+** TODO Breakeven Analysis
+** TODO The payback period is the period of time required for the profit or other benefits of an investment to equal the cost of the
+** TODO Inflation
+** TODO Depreciation
+** TODO Straight Line
+** TODO Book Value
+** TODO Taxation
+** TODO Capitalized Costs
+** TODO Bonds
+** TODO Rate-of-Return
+** TODO Benefit-Cost Analysis
+** TODO MACRS FACTORS
+** TODO Year
+** TODO Economic Decision Trees
+** TODO Decision node
+** TODO Outcome node
+** TODO Chance node
+** TODO Interest Rate Tables
+** TODO Properties of Electrical Materials
+** TODO A. KCL, KVL
+** TODO Linear Systems
+** TODO Signal Processing
+** TODO Electronics
+** TODO Power Systems
+** TODO Electromagnetics
+** TODO Control Systems
+** TODO Communications
+** TODO Computer Networks
+** TODO Digital Systems
+** TODO Computer Systems
+** TODO Software Engineering
+** TODO ENVIRONMENTAL CBT Exam Specifications
+** TODO Knowledge
+** TODO Number of Questions
+** TODO Fundamental Principles
+** TODO Environmental Chemistry
+** TODO Health Hazards and Risk Assessment
+** TODO Fluid Mechanics and Hydraulics
+** TODO Probability and Statistics
+** TODO Modeling and Quantitative Analysis
+** TODO Engineering Management
+** TODO Facilities and Supply Chain
+** TODO Work Design
+** TODO Quality
+** TODO MECHANICAL CBT Exam Specifications
+** TODO Knowledge
+** TODO Number of Questions
+** TODO Electricity and Magnetism
+* Chemical Engineering [0/190]
+** TODO Chemical Reaction Engineering
+** TODO Nomenclature
+** TODO The rate of reaction is frequently expressed by
+** TODO Reaction Order
+** TODO Zero-Order Irreversible Reaction
+** TODO CA0XA
+** TODO First-Order Irreversible Reaction
+** TODO Second-Order Irreversible Reaction
+** TODO First-Order Reversible Reactions
+** TODO Reactions of Shifting Order
+** TODO This form of the rate equation is used for elementary enzyme-catalyzed reactions and for elementary surfaced-catalyzed
+** TODO Elementary enzyme-catalyzed reactions
+** TODO VmaxCs
+** TODO CA0VPFR
+** TODO Continuous-Stirred Tank Reactors in Series
+** TODO Two Irreversible Reactions in Parallel
+** TODO Two First-Order Irreversible Reactions in Series
+** TODO A"D"U
+** TODO PFR is
+** TODO Mass Transfer
+** TODO Diffusion
+** TODO Molecular Diffusion
+** TODO Convection
+** TODO Overall Coefficients
+** TODO Distillation
+** TODO F=V+L
+** TODO For binary system following Raoult's Law
+** TODO Overall Material Balances
+** TODO F=D+B
+** TODO Operating Lines
+** TODO Rectifying section
+** TODO Stripping section
+** TODO Reflux ratio
+** TODO Ratio of reflux to overhead product
+** TODO SATURATED VAPOR
+** TODO SATURATED LIQUID
+** TODO Feed condition line
+** TODO FEED
+** TODO COMPOSITION
+** TODO Murphree plate efficiency
+** TODO Continuous Contact Columns
+** TODO Momentum Transfer
+** TODO Solids Handling
+** TODO Parcle Size Range Guide for the Applicaon of Various Solid-Solid Operaons
+** TODO Sorters
+** TODO Size alone
+** TODO Screens
+** TODO Liquid cyclones
+** TODO Hydroseparators-Classifiers
+** TODO Centrifuges
+** TODO Sizers
+** TODO Cyclones
+** TODO Cones
+** TODO Drums
+** TODO Size and density
+** TODO Dry tables
+** TODO Centrifugal jigs
+** TODO Jigs
+** TODO Magnetic susceptibility
+** TODO Dry magnetic separators
+** TODO Wet magnetic separators
+** TODO HGMS
+** TODO Electrical conductivity
+** TODO Electrostatic separators
+** TODO Surface wettability
+** TODO Froth flotation
+** TODO Selective flocculation
+** TODO KAOLIN
+** TODO RELATIVE HUMIDITY (%)
+** TODO Sieve Conversion Table
+** TODO Mesh to Micron
+** TODO Conversion Table
+** TODO MICRONS
+** TODO US MESH
+** TODO TYLER
+** TODO MESH
+** TODO INCHES
+** TODO MILLIMETERS
+** TODO Solids Processing
+** TODO Particle Size Distribution Functions
+** TODO Fraction of Total Particles
+** TODO Particle Size
+** TODO Discrete Particle Density Functions
+** TODO XML #0=
+** TODO Crushing and Grinding Equipment Selection
+** TODO Size-Reduction
+** TODO Operation
+** TODO Crushing
+** TODO Primary
+** TODO Secondary
+** TODO Grinding
+** TODO Coarse
+** TODO Fine
+** TODO Disintegration
+** TODO Hard
+** TODO Soft
+** TODO Hardness
+** TODO Reduction
+** TODO Ratio
+** TODO Types of
+** TODO Equipment
+** TODO Types of Size-Reduction Equipment
+** TODO Classifier
+** TODO SLOPING TANK CLASSIFIER
+** TODO (SPIRAL, RAKE, DRAG)
+** TODO O(–)
+** TODO Feed Rate
+** TODO Not critical
+** TODO Used for closed circuit
+** TODO None
+** TODO Classification occurs
+** TODO (M-S)
+** TODO Effectively an overloaded
+** TODO (N-S)
+** TODO Similar to cylindrical tank
+** TODO O(+)
+** TODO CONE CLASSIFIER
+** TODO O(–)
+** TODO HYDROCYCLONE
+** TODO Suitability
+** TODO (M-S)
+** TODO Feed Overflow
+** TODO Underflow
+** TODO Power
+** TODO Description
+** TODO O(+)
+** TODO O(–)
+** TODO Limiting Size
+** TODO CYLINDRICAL TANK CLASSIFIER
+** TODO Width
+** TODO Diameter
+** TODO Length
+** TODO Angle of Repose
+** TODO SOLIDS
+** TODO ANGLE OF REPOSE
+** TODO Crystallization Processes
+** TODO Hydrate Formation Phase Diagram for Magnesium Sulfate-Water System
+** TODO 6H20
+** TODO TEMPERATURE (°F)
+** TODO Cost Estimation
+** TODO Cost Indexes
+** TODO Capital Cost Estimation
+** TODO Lang factors
+** TODO Type of plant
+** TODO Fixed capital investment
+** TODO Total capital investment
+** TODO Solid processing
+** TODO Solid-fluid processing
+** TODO Fluid processing
+** TODO Component
+** TODO Direct costs
+** TODO Range
+** TODO Purchased-equipment installation
+** TODO Yard improvements
+** TODO Total direct plant cost
+** TODO Indirect costs
+** TODO Engineering and supervision
+** TODO Construction expenses
+** TODO Total direct and indirect plant costs
+** TODO Fixed-capital investment
+** TODO Total capital investment
+** TODO Scaling of Equipment Costs
+** TODO Equipment
+** TODO Size range
+** TODO Exponent
+** TODO Classification of Cost Estimates
+** TODO Class of
+** TODO Estimate
+** TODO Level of Project
+** TODO Definition
+** TODO Complete
+** TODO Methodology
+** TODO Typical Purpose
+** TODO Stochastic or
+** TODO Judgement
+** TODO Primarily
+** TODO Stochastic
+** TODO Mixed but
+** TODO Deterministic
+** TODO Screening or
+** TODO Feasibility
+** TODO Concept Study or
+** TODO Control
+** TODO Control or
+** TODO Check Estimate
+** TODO Deterministic
+** TODO Expected
+** TODO Accuracy Range
+** TODO Relative to Best
+** TODO Preparation
+* Civil Engineering [0/481]
+** TODO Geotechnical
+** TODO Phase Relationships
+** TODO WEIGHTS
+** TODO (OR MASSES)
+** TODO VOLUMES
+** TODO PHASE DIAGRAM
+** TODO Volume of voids
+** TODO Total unit weight
+** TODO Saturated unit weight
+** TODO Unit weight of solids
+** TODO Dry unit weight
+** TODO Specific gravity of soil solids
+** TODO Void ratio
+** TODO Porosity
+** TODO Relative density
+** TODO Plasticity index
+** TODO Coefficient of uniformity
+** TODO Discharge velocity
+** TODO Factor of safety against seepage liquefaction
+** TODO RANGE OF
+** TODO RECOMPRESSION
+** TODO VIRGIN
+** TODO COMPRESSION
+** TODO PRESSURE (LOG10 SCALE)
+** TODO SOIL CONSOLIDATION CURVE OVER CONSOLIDATED CLAY
+** TODO Compression index
+** TODO Recompression index
+** TODO Ultimate consolidation settlement in soil layer
+** TODO Two-way
+** TODO One-way
+** TODO -COU
+** TODO MOHR
+** TODO NORMAL
+** TODO Different types of drainage
+** TODO Total normal stress
+** TODO Effective stress
+** TODO Shear stress
+** TODO Shear stress at failure
+** TODO Horizontal Stress Profiles and Forces
+** TODO Effective
+** TODO Vertical
+** TODO Stress
+** TODO Pore
+** TODO Water
+** TODO Pressure
+** TODO Effective
+** TODO Horizontal
+** TODO Force
+** TODO At rest forces on wall per unit length of wall
+** TODO Vertical Stress Profiles
+** TODO Total
+** TODO Vertical
+** TODO Pore
+** TODO Water
+** TODO Effective
+** TODO Vertical Stress Profiles with Surcharge
+** TODO Total
+** TODO Ultimate Bearing Capacity
+** TODO Vertical
+** TODO Retaining Walls
+** TODO GROUND
+** TODO SURFACE
+** TODO TMOB
+** TODO SLOPE FAILURE
+** TODO ALONG PLANAR SURFACE
+** TODO ASSUMED
+** TODO PLANAR SLIP
+** TODO SURFACE
+** TODO AASHTO Soil Classification
+** TODO GENERAL CLASSIFICATION
+** TODO GROUP CLASSIFICATION
+** TODO CHARACTERISTICS OF FRACTION PASSING
+** TODO LIQUID LIMIT
+** TODO USUAL TYPES OF CONSTITUENT MATERIALS STONE FRAGM'TS,
+** TODO SIEVE ANALYSIS, PERCENT PASSING:
+** TODO GRAVEL, SAND
+** TODO SILT-CLAY MATERIALS
+** TODO A-7-5
+** TODO A-7-6
+** TODO FINE
+** TODO SAND
+** TODO SILTY OR CLAYEY GRAVEL AND SAND
+** TODO SILTY SOILS
+** TODO EXCELLENT TO GOOD
+** TODO CLAYEY SOILS
+** TODO FAIR TO POOR
+** TODO Liquid limit
+** TODO Plasticity index
+** TODO Soil Classification
+** TODO Criteria for Assigning Group Symbols and Group Names Using Laboratory TestsA
+** TODO Gravels
+** TODO COARSE-GRAINED
+** TODO SOILS
+** TODO Group NameB
+** TODO Well-graded gravelE
+** TODO Poorly graded gravelE
+** TODO Fines classify as ML or
+** TODO Fines classify as CL or
+** TODO Clean Sands
+** TODO Well-graded sandI
+** TODO Poorly graded sandI
+** TODO Sands with Fines
+** TODO Fines classify as ML or
+** TODO Fines classify as CL or
+** TODO Clean Gravels
+** TODO Gravels with Fines
+** TODO Sands
+** TODO Silts and Clays
+** TODO FINE-GRAINED SOILS
+** TODO Group Symbol
+** TODO Liquid limit
+** TODO HIGHLY ORGANIC SOILS
+** TODO GW-GM well-graded gravel with silt
+** TODO GW-GC well-graded gravel with clay
+** TODO GP-GM poorly graded gravel with silt
+** TODO GP-GC poorly graded gravel with clay
+** TODO For classification of fine-grained soils
+** TODO PLASTICITY INDEX (PI)
+** TODO MH or OH
+** TODO ML or OL
+** TODO CL-ML
+** TODO Peat
+** TODO SW-SM well-graded sand with silt
+** TODO SW-SC well-graded sand with clay
+** TODO SP-SM poorly graded sand with silt
+** TODO SP-SC poorly graded sand with clay
+** TODO (D30)2
+** TODO LIQUID LIMIT (LL)
+** TODO Structural Analysis
+** TODO Influence Lines for Beams and Trusses
+** TODO Moving Concentrated Load Sets
+** TODO Beam Stiffness and Moment Carryover
+** TODO Truss Deflection by Unit Load Method
+** TODO Frame Deflection by Unit Load Method
+** TODO Elementary Statically Indeterminate Structures by Force Method of Analysis
+** TODO 48 EI
+** TODO Plane Truss
+** TODO Static Analysis
+** TODO Classification
+** TODO Unstable
+** TODO Stable and statically determinate
+** TODO Stable and statically indeterminate
+** TODO Plane Frame
+** TODO Static Analysis
+** TODO Classification
+** TODO Unstable
+** TODO Stable and statically determinate
+** TODO Stable and statically indeterminate
+** TODO Structural Design
+** TODO Nominal Loads used in LRFD and ASD Load Combinations
+** TODO Basic combinations
+** TODO Nominal loads used in the following combinations
+** TODO 1.4D
+** TODO Live Load Reduction
+** TODO For members supporting one floor
+** TODO For members supporting two or more floors
+** TODO Flat Roof Snow Loads
+** TODO Terrain Category
+** TODO Roof Exposure
+** TODO Partially Exposed
+** TODO Fully Exposed
+** TODO Sheltered
+** TODO All structures except as indicated below
+** TODO Unheated and open air structures
+** TODO Structures intentionally kept below freezing
+** TODO Importance Factors
+** TODO Risk Category
+** TODO Low Risk
+** TODO All Others
+** TODO Assembly Buildings
+** TODO Essential Facilities
+** TODO Wind Loads
+** TODO Suburban
+** TODO Exposure
+** TODO Open Terrain
+** TODO Open Water
+** TODO Definitions
+** TODO Members with tied reinforcement
+** TODO Shear and torsion
+** TODO Bearing on concrete
+** TODO For All Beams
+** TODO Singly-Reinforced Beams
+** TODO As fy
+** TODO Required
+** TODO Maximum
+** TODO ASTM STANDARD REINFORCEMENT BARS
+** TODO BAR SIZE
+** TODO DIAMETER, IN.
+** TODO AREA, IN
+** TODO WEIGHT, LB/FT
+** TODO Unified Design Provisions
+** TODO Compressive Strain
+** TODO Forces
+** TODO Tensioncontrolled
+** TODO Transition
+** TODO Compressioncontrolled
+** TODO Short Columns
+** TODO Limits for Longitudinal Reinforcements
+** TODO Nominal Column Strength Interaction Diagram for Rectangular Section
+** TODO INTERACTION
+** TODO Interaction Diagram
+** TODO DIAGRAM
+** TODO GRAPH A.11
+** TODO E–4–60–0.75
+** TODO COMP. CONT. LIMIT
+** TODO TENS. CONT. LIMIT
+** TODO Design of Steel Components
+** TODO (ANSI/AISC 360-16) LRFD, ASD
+** TODO Beams
+** TODO Yielding
+** TODO Lateral-Torsional Buckling
+** TODO Based on bracing where Lb is the length between points that are either braced against lateral displacement of the compression
+** TODO Shear
+** TODO Columns
+** TODO VALUES OF Cb FOR SIMPLY SUPPORTED BEAMS
+** TODO LATERAL BRACING
+** TODO ALONG SPAN
+** TODO LOAD
+** TODO NONE
+** TODO LOAD AT MIDPOINT
+** TODO AT LOAD POINT
+** TODO AT LOAD POINTS
+** TODO LOADS AT THIRD POINTS
+** TODO LOADS SYMMETRICALLY PLACED
+** TODO NONE
+** TODO LOADS AT QUARTER POINTS
+** TODO AT MIDPOINT
+** TODO AT THIRD POINTS
+** TODO AT QUARTER
+** TODO POINTS
+** TODO AT FIFTH POINTS
+** TODO NOTE: LATERAL BRACING MUST ALWAYS BE PROVIDED AT POINTS OF
+** TODO SUPPORT PER AISC SPECIFICATION CHAPTER F.
+** TODO Tension Members
+** TODO Definitions
+** TODO Angles with longitudinal welds only
+** TODO Limit States and Available Strengths
+** TODO Smaller
+** TODO Area Depth Web
+** TODO Shape
+** TODO Axis X-X
+** TODO W24X62
+** TODO W24X55
+** TODO W21X73
+** TODO W21X68
+** TODO W21X62
+** TODO W21X55
+** TODO W21X57
+** TODO W21X50
+** TODO W21X48
+** TODO W21X44
+** TODO W18X71
+** TODO W18X65
+** TODO W18X60
+** TODO W18X55
+** TODO W18X50
+** TODO W18X46
+** TODO W18X40
+** TODO W16X67
+** TODO W16X57
+** TODO W16X50
+** TODO W16X45
+** TODO W16X40
+** TODO W16X36
+** TODO W14X74
+** TODO W14X68
+** TODO W14X61
+** TODO W14X53
+** TODO W14X48
+** TODO W12X79
+** TODO W12X72
+** TODO W12X65
+** TODO W12X58
+** TODO W12X53
+** TODO W12X50
+** TODO W12X45
+** TODO W12X40
+** TODO Axis Y-Y
+** TODO W24X68
+** TODO Flange
+** TODO Shape
+** TODO LRFD
+** TODO AVAILABLE MOMENT VS. UNBRACED LENGTH
+** TODO W21X
+** TODO W24X
+** TODO X50 14X
+** TODO W10X68
+** TODO W12X65
+** TODO W24X7
+** TODO W12X72
+** TODO W14X68
+** TODO W10X88
+** TODO W12X79
+** TODO TABLE 3-10 (CONTINUED)
+** TODO TABLE C-A-7.1
+** TODO BUCKLED SHAPE OF COLUMN IS
+** TODO SHOWN BY DASHED LINE.
+** TODO AISC-RECOMMENDED DESIGN
+** TODO VALUE WHEN IDEAL CONDITIONS
+** TODO ARE APPROXIMATED
+** TODO END CONDITION CODE
+** TODO ROTATION FIXED AND TRANSLATION FIXED
+** TODO ROTATION FREE AND TRANSLATION FIXED
+** TODO ROTATION FIXED AND TRANSLATION FREE
+** TODO ROTATION FREE AND TRANSLATION FREE
+** TODO Shape
+** TODO CN 1, 000
+** TODO Rational Formula
+** TODO Surface Water System Hydrologic Budget
+** TODO Pan Evaporation
+** TODO Evapotranspiration Rates for Grasses
+** TODO Grass-Reference Evapotranspiration Rates
+** TODO Classification
+** TODO Moderate
+** TODO High
+** TODO Very High
+** TODO Lake Classification
+** TODO Lake Classification Based on Productivity
+** TODO Oligotrophic
+** TODO Mesotrophic
+** TODO Eutrophic
+** TODO Average
+** TODO Range
+** TODO Secchi Depth
+** TODO Total Phosphorus
+** TODO Darcy's Law
+** TODO Well Drawdown
+** TODO Unconfined aquifer
+** TODO ORIGINAL
+** TODO GROUNDWATER
+** TODO LEVEL
+** TODO PERMEABLE SOIL
+** TODO BOTTOM OF AQUIFER
+** TODO IMPERMEABLE
+** TODO Dupuit's Formula
+** TODO Confined aquifer
+** TODO ORIGINAL PIEZOMETRIC SURFACE
+** TODO AQUITARD
+** TODO TOP OF AQUIFER
+** TODO PERMEABLE SOIL
+** TODO BOTTOM OF AQUIFER
+** TODO IMPERMEABLE
+** TODO Thiem Equation
+** TODO Ratio of Minimum or of Peak-to-Average Daily Sewage Flow
+** TODO Sewage Flow Ratio Curves
+** TODO DARCY-WEISBACH
+** TODO HYDRAULIC
+** TODO Specific Energy
+** TODO For rectangular channels
+** TODO Specific Energy Diagram
+** TODO Momentum Depth Diagram
+** TODO Hydraulic Jump
+** TODO Manning's Equation
+** TODO Weir Formulas
+** TODO Rectangular
+** TODO Free discharge suppressed
+** TODO Free discharge contracted
+** TODO V-Notch
+** TODO Hazen-Williams Equation
+** TODO Q1.852
+** TODO 4.52 Q1.85
+** TODO 6.05 Q1.85
+** TODO SI Units
+** TODO Pipe Material
+** TODO Ductile iron
+** TODO Vitrified clay
+** TODO Brick sewers
+** TODO Asbestos-cement
+** TODO Plastic
+** TODO Fire Hydrant Discharging to Atmosphere
+** TODO OUTLET SMOOTH
+** TODO AND WELL-ROUNDED
+** TODO COEF. 0.90
+** TODO OUTLET SQUARE
+** TODO OUTLET SQUARE AND
+** TODO AND SHARP
+** TODO PROJECTING INTO BARREL
+** TODO COEF. 0.80
+** TODO COEF. 0.70
+** TODO Fire Sprinkler Discharge
+** TODO Orifice Size
+** TODO Name
+** TODO Standard
+** TODO Large
+** TODO Extra large
+** TODO Transportation
+** TODO Traffic Signal Timing
+** TODO Stopping Sight Distance
+** TODO Peak Hour Factor
+** TODO Hourly Volume
+** TODO PHF Hourly
+** TODO Vertical Curves
+** TODO CK NT
+** TODO BA NGE
+** TODO YPVC
+** TODO DATUM
+** TODO VERTICAL CURVE FORMULAS
+** TODO NOT TO SCALE
+** TODO TAN WARD
+** TODO Crest Vertical Curve
+** TODO Sag Vertical Curve
+** TODO Horizontal Curves
+** TODO E+ R=
+** TODO Spiral Transition Length
+** TODO Basic Freeway Segment Highway Capacity
+** TODO Parameters for Speed-Flow Curves for Basic Freeway Segments
+** TODO Parameter
+** TODO FFSadj
+** TODO Definition and Units
+** TODO Basic Freeway Segments
+** TODO Measured or predicted with equation
+** TODO Adjustment to FFS for Average Lane Width for Basic Freeway
+** TODO Adjustment to FFS for Right-Side Lateral
+** TODO Right-Side
+** TODO Lateral
+** TODO Lanes in One Direction
+** TODO PCE by Type of Terrain
+** TODO Vehicle
+** TODO Level
+** TODO Rolling
+** TODO Demand exceeds capacity
+** TODO Traffic Flow Relationships
+** TODO Greenshields Model
+** TODO Oversaturated flow
+** TODO Gravity Model
+** TODO Logit Models
+** TODO Traffic Safety Equations
+** TODO Crash Rates at Intersections
+** TODO Crash Rates for Roadway Segments
+** TODO Crash Reduction
+** TODO Highway Pavement Design
+** TODO AASHTO Structural Number Equation
+** TODO Gross Axle Load
+** TODO Load Equivalency
+** TODO Factors
+** TODO Tandem
+** TODO Axles
+** TODO Single
+** TODO Gross Axle Load
+** TODO Latitudes and Departures
+** TODO Earthwork formulas
+** TODO Average End Area Formula
+** TODO Prismoidal Formula
+** TODO Pyramid or Cone
+** TODO PROFILE
+** TODO EXISTING GROUND
+** TODO BEGINNING
+** TODO OF PROJECT
+** TODO FILL
+** TODO PROPOSED
+** TODO GRADE LINE
+** TODO STATION
+** TODO MASS HAUL DIAGRAM
+** TODO BALANCE
+** TODO POINT
+** TODO Area formulas
+** TODO Construction
+** TODO CPM Precedence Relationships
+** TODO ACTIVITY-ON-NODE
+** TODO ACTIVITY-ON-ARROW ANNOTATION
+** TODO EARLY START/LATE START
+** TODO ACTIVITY-ON-NODE ANNOTATION
+** TODO EARLY FINISH/LATE FINISH
+** TODO ACTIVITY
+** TODO DURATION
+** TODO EARLY
+** TODO START
+** TODO ACTIVITY DESCRIPTION
+** TODO DURATION FLOAT
+** TODO LATE
+** TODO Nomenclature
+** TODO Earned-Value Analysis
+** TODO Variances
+** TODO EARLY
+** TODO FINISH
+** TODO LATE
+** TODO Indices
+** TODO BCWP
+** TODO Forecasting
+** TODO Actual
+** TODO Planned
+* Environmental Engineering [0/595]
+** TODO Air pollution
+** TODO Nomenclature
+** TODO OOWWW
+** TODO Selected Properties of Air
+** TODO Molecular weight of air
+** TODO Density
+** TODO Lapse Rate
+** TODO Stability Condition
+** TODO Unstable
+** TODO Neutral
+** TODO Stable
+** TODO Solar Insolation
+** TODO Surface Wind
+** TODO Strongb
+** TODO Moderatec
+** TODO Slightd
+** TODO Night
+** TODO Cloudinesse
+** TODO Cloudy
+** TODO Clear
+** TODO STANDARD DEVIATION, METERS
+** TODO Constants
+** TODO Stability
+** TODO Cyclone
+** TODO Cyclone Effective Number of Turns Approximation
+** TODO Dimension
+** TODO High Efficiency
+** TODO Conventional
+** TODO High Throughput
+** TODO Cyclone Collection Efficiency
+** TODO Particle Size Ratio
+** TODO Baghouse
+** TODO Pulse
+** TODO Reverse
+** TODO Dust
+** TODO Electrostatic Precipitator Efficiency
+** TODO Incineration
+** TODO Kiln Formula
+** TODO 2.28 L/D
+** TODO Energy Content of Waste
+** TODO Typical Waste Values
+** TODO Food Waste
+** TODO Paper
+** TODO Cardboard
+** TODO Plastics
+** TODO Wood
+** TODO Glass
+** TODO Bi-metallic Cans
+** TODO Indoor Air Quality
+** TODO Material Balance
+** TODO Air Infiltration Rates into Homes with Windows Closed
+** TODO Layout of Room
+** TODO No windows or exterior doors
+** TODO Windows or exterior doors on one wall
+** TODO Windows or exterior doors on two walls
+** TODO Windows or exterior doors on three walls
+** TODO Air Exchange Rate
+** TODO Approximate Volume Flow Rate of Outdoor Air
+** TODO Percent of Outdoor Air
+** TODO Outdoor Air Changes per Hour
+** TODO Fate and Transport
+** TODO Mass Calculations
+** TODO Microbial Kinetics
+** TODO BOD Exertion
+** TODO Stream Modeling
+** TODO Streeter Phelps
+** TODO YkmS
+** TODO Multiple Limiting Substrates
+** TODO Non-steady State Continuous Flow
+** TODO Steady State Continuous Flow
+** TODO Kinetic Temperature Corrections
+** TODO Bio Towers
+** TODO Trickling Filters
+** TODO Partition Coefficients
+** TODO Bioconcentration Factor BCF
+** TODO Octanol-Water Partition Coefficient
+** TODO Organic Carbon Partition Coefficient Koc
+** TODO Vadose Zone Penetration
+** TODO Typical Values of Rv
+** TODO Soil
+** TODO Coarse Gravel
+** TODO Gravel to Coarse Sand
+** TODO Coarse to Medium Sand
+** TODO Medium to Fine Sand
+** TODO Fine Sand to Silt
+** TODO Gasoline
+** TODO Kerosene
+** TODO Light Fuel Oil
+** TODO Reaction Order
+** TODO Zero
+** TODO Ideal Batch
+** TODO Ideal Plug Flow
+** TODO Ideal CMFR
+** TODO First
+** TODO Second
+** TODO Equations for Ct
+** TODO Reaction Order
+** TODO Ideal Batch
+** TODO Ideal Plug Flow
+** TODO Ideal CMFR
+** TODO First
+** TODO Second
+** TODO Landfill
+** TODO Typical Densities of As-Received Source-Separated Materials
+** TODO Material
+** TODO Paper
+** TODO Newspaper
+** TODO Corrugated cardboard
+** TODO High grades
+** TODO Clear
+** TODO Green or amber
+** TODO Semicrushed
+** TODO Aluminum Cans
+** TODO Whole
+** TODO Flattened
+** TODO Plastics
+** TODO Typical Moisture Content of Municipal
+** TODO Component
+** TODO Food wastes
+** TODO Paper
+** TODO Cardboard
+** TODO Plastics
+** TODO Textiles
+** TODO Rubber
+** TODO Leather
+** TODO Garden trimmings
+** TODO Wood
+** TODO Glass
+** TODO Tin cans
+** TODO Nonferrous metals
+** TODO Ferrous metals
+** TODO Municipal solid waste
+** TODO Range
+** TODO Typical
+** TODO Effect of Overburden Pressure
+** TODO Gas Flux
+** TODO Soil Landfill Cover Water Balance
+** TODO Compaction
+** TODO Population Modeling
+** TODO Population Projection Equations
+** TODO Percent Growth
+** TODO Ratio and Correlation Growth
+** TODO Decreasing-Rate-of-Increase Growth
+** TODO Radiation
+** TODO Effective Half-Life
+** TODO Half-Life
+** TODO Daughter Product Activity
+** TODO Daughter Product Maximum Activity Time
+** TODO Inverse Square Law
+** TODO Sampling and Monitoring
+** TODO Investigation Type
+** TODO Confidence
+** TODO Minimum Detectable Relative
+** TODO Preliminary site investigation
+** TODO Emergency clean-up
+** TODO Planned removal and
+** TODO Coefficient of
+** TODO Variation
+** TODO Power
+** TODO Confidence
+** TODO Level
+** TODO Minimum Detectable Relative Difference
+** TODO Wastewater Treatment and Technologies
+** TODO The recirculation factor is calculated using
+** TODO Dechlorination of Sulfite Compounds
+** TODO Methanol Requirement for Biologically Treated Wastewater
+** TODO BOD Test Solution and Seeding Procedures
+** TODO Activated Sludge
+** TODO Design and Operaonal Parameters for Acvated-Sludge
+** TODO Treatment of Municipal Wastewater
+** TODO Type of Process
+** TODO Tapered aeration
+** TODO Conventional
+** TODO Step aeration
+** TODO Completely mixed
+** TODO Contact stabilization
+** TODO Contact basin
+** TODO Stabilization basin
+** TODO High-rate aeration
+** TODO Pure oxygen
+** TODO Extended aeration
+** TODO Mean cell
+** TODO Food-to-mass ratio
+** TODO Hydraulic
+** TODO Volumetric
+** TODO Mixed liquor
+** TODO (MLSS,
+** TODO Recycle
+** TODO Facultative Pond
+** TODO Flow
+** TODO BOD5
+** TODO Air supplied
+** TODO BOD5)
+** TODO Biotower
+** TODO Fixed-Film Equation without Recycle
+** TODO Fixed-Film Equation with Recycle
+** TODO Aerobic Digestion
+** TODO Design criteria for aerobic digestersa
+** TODO Parameter
+** TODO Value
+** TODO Cell tissue
+** TODO Energy requirements for mixing
+** TODO Tank Volume
+** TODO OF DIGESTER LIQUID TEMPERATURE AND DIGESTER SLUDGE AGE
+** TODO Anaerobic Digestion
+** TODO Design parameters for anaerobic digesters
+** TODO Parameter
+** TODO Standard-rate
+** TODO High-rate
+** TODO Standard Rate
+** TODO High Rate
+** TODO First stage
+** TODO Second Stage
+** TODO Water Treatment Technologies
+** TODO Activated Carbon Adsorption
+** TODO Freundlich Isotherm
+** TODO Linearized Form
+** TODO Langmuir Isotherm
+** TODO Depth of Sorption Zone
+** TODO EXHAUSTION
+** TODO BREAKTHROUGH
+** TODO Air Stripping
+** TODO WATER INLET
+** TODO AIR OUTLETS
+** TODO AIR INLETS (BLOWER)
+** TODO WATER OUTLET
+** TODO MW KLa
+** TODO Clarifier
+** TODO Typical Primary Clarifier Efficiency Percent Removal
+** TODO Suspended
+** TODO Solids
+** TODO BOD5
+** TODO Overflow rates
+** TODO Design Criteria for Sedimentation Basins
+** TODO Type of Basin
+** TODO Average
+** TODO Water Treatment
+** TODO Alum coagulation
+** TODO Ferric coagulation
+** TODO Upflow clarifiers
+** TODO Groundwater
+** TODO Surface water
+** TODO Clarification following lime-soda softening
+** TODO Conventional
+** TODO Wastewater Treatment
+** TODO Primary clarifiers
+** TODO Settling basins following fixed film reactors
+** TODO Settling basins following air-activated sludge reactors
+** TODO All configurations EXCEPT extended aeration
+** TODO Extended aeration
+** TODO Overflow Rate
+** TODO Hydraulic
+** TODO Residence Depth
+** TODO Time
+** TODO Solids Loading Rate
+** TODO Average
+** TODO Peak
+** TODO Weir Loadings
+** TODO Horizontal Velocities
+** TODO Dimensions
+** TODO Settling Equations
+** TODO General Spherical
+** TODO Stokes's Law
+** TODO Filtration Equations
+** TODO Head Loss Through Clean Bed
+** TODO Rose Equation
+** TODO Monosized Media
+** TODO Multisized Media
+** TODO Carmen-Kozeny Equation
+** TODO Bed Expansion
+** TODO Monosized
+** TODO Multisized
+** TODO Lime-Soda Softening Equations
+** TODO Molecular
+** TODO Formulas
+** TODO Weight
+** TODO Equivalent
+** TODO CO32–
+** TODO HCO3–
+** TODO SO42–
+** TODO Coagulation Equations
+** TODO Phosphorus Removal Equations
+** TODO Common Radicals in Water
+** TODO Molecular
+** TODO Formulas
+** TODO Weight
+** TODO Equivalent
+** TODO CO32–
+** TODO HCO3–
+** TODO SO42–
+** TODO Typical Operating Ranges for Coagulation with Alum and Ferric Chloride
+** TODO RE-STABILIZATION ZONE
+** TODO (BOUNDARY
+** TODO CHANGES
+** TODO WITH
+** TODO COLLOID)
+** TODO OPTIMAL SWEEP
+** TODO COMBINATION
+** TODO (SWEEP AND
+** TODO ABSORPTION)
+** TODO CHARGE NEUTRALIZATION
+** TODO TO ZERO ZETA POTENTIAL
+** TODO ADSORPTION
+** TODO DESTABILIZATION
+** TODO AITOTAL
+** TODO AI8(OH)20
+** TODO SWEEP
+** TODO COAGULATION
+** TODO AI(OH)4
+** TODO AI(OH)
+** TODO RE-STABILIZATION ZONE
+** TODO (CHANGES
+** TODO WITH COLLOID
+** TODO OR SURFACE
+** TODO AREA)
+** TODO ADSORPTION
+** TODO DESTABILIZATION
+** TODO FeTOTAL
+** TODO Rapid Mix and Flocculator Design
+** TODO Reel and Paddle
+** TODO Turbulent Flow Impeller Mixer
+** TODO Values of the Impeller Constant KT
+** TODO Type of Impeller
+** TODO Reverse Osmosis
+** TODO Osmotic Pressure of Solutions of Electrolytes
+** TODO PRESSURIZED
+** TODO SALINE FEED
+** TODO PRODUCT
+** TODO WATER
+** TODO SELECTIVELY
+** TODO PERMEABLE
+** TODO MEMBRANE
+** TODO WASTE BRINE
+** TODO REVERSE OSMOSIS UNIT
+** TODO Salt Flux through the Membrane
+** TODO Water Flux
+** TODO Ultrafiltration
+** TODO Disinfection
+** TODO Baffling Factors
+** TODO Baffling
+** TODO Condition
+** TODO Factor
+** TODO Unbaffled
+** TODO Poor
+** TODO Single or multiple unbaffled
+** TODO Average
+** TODO Baffled inlet or outlet with some
+** TODO Superior
+** TODO Perfect
+** TODO Very high length to width ratio
+** TODO Baffling Description
+** TODO Removal and Inactivation Requirements
+** TODO Microorganism
+** TODO Giardia
+** TODO Virsuses
+** TODO Cryptosporidium
+** TODO Required Log Reduction
+** TODO Treatment
+** TODO Removal
+** TODO Typical Removal Credits and Inactivation Requirements for Various Treatment Technologies
+** TODO Process
+** TODO Conventional
+** TODO Treatment
+** TODO Resulting
+** TODO Typical Log
+** TODO Disinfection
+** TODO Removal Credits Inactivation Requirements
+** TODO Giardia Viruses
+** TODO Giardia
+** TODO Viruses
+** TODO Direct
+** TODO Filtration
+** TODO Slow Sand
+** TODO Diatomaceous
+** TODO Earth Filtration
+** TODO Unfiltered
+** TODO Of Giardia Cysts By Free Chlorine
+** TODO Chlorine Concentration
+** TODO CT VALUES* FOR
+** TODO 4-LOG INACTIVATION OF VIRUSES BY FREE CHLORINE
+** TODO Energy
+** TODO ENERGY SOURCES
+** TODO Energy Sources and Conversion Processes
+** TODO BIOMASS
+** TODO FUELS
+** TODO PHOTOSYNTHESIS
+** TODO PHOTOVOLTAICS
+** TODO SOLAR
+** TODO THERMAL
+** TODO OCEAN
+** TODO WIND, HYDRO,
+** TODO WAVES, TIDAL
+** TODO ENERGY FORMS
+** TODO BATTERIES, FUEL CELLS
+** TODO ELECTROCHEMICAL
+** TODO CHEMICAL
+** TODO HEAT
+** TODO MECHANICAL
+** TODO WORK
+** TODO ELECTRICITY
+** TODO ENERGY SOURCES
+** TODO NUCLEAR
+** TODO FISSION,
+** TODO FUSION
+** TODO FOSSIL FUELS
+** TODO FUELS
+** TODO GEOTHERMAL
+** TODO GAS, OIL, COAL
+** TODO TO END USES:
+** TODO RESIDENTIAL
+** TODO INDUSTRIAL
+** TODO TRANSPORTATION
+** TODO Combustion
+** TODO Combustible Substance
+** TODO Reaction
+** TODO Mols
+** TODO Carbon to carbon monoxide
+** TODO Carbon to carbon dioxide
+** TODO Carbon monoxide to carbon dioxide
+** TODO Hydrogen
+** TODO Sulfur to sulfur dioxide
+** TODO Sulfur to sulfur trioxide
+** TODO Methane
+** TODO Ethane
+** TODO Propane
+** TODO Butane
+** TODO Acetylene
+** TODO Ethylene
+** TODO Biomass as an Energy Source
+** TODO DIRECT COMBUSTION
+** TODO WOODY PLANT MATERIAL
+** TODO SIZE REDUCTION/PELLETING
+** TODO HEAT
+** TODO PYROLYSIS/LIQUEFACTION
+** TODO SOLID FUELS
+** TODO GASIFICATION
+** TODO GASEOUS
+** TODO FUELS
+** TODO CELLULOSIC PLANT MATERIAL
+** TODO STARCH/SUGARY PLANT MATERIALS
+** TODO ANAEROBIC DIGESTION
+** TODO LIQUID
+** TODO FUEL
+** TODO OILY PLANT MATERIAL
+** TODO FERMENTATION
+** TODO MICROORGANISMS
+** TODO EXTRACTION
+** TODO ENGINES
+** TODO CONVERSION
+** TODO HUMANS
+** TODO LIVESTOCK
+** TODO WASTES
+** TODO RESIDUES
+** TODO KEY:
+** TODO PHYSICAL PROCESSES
+** TODO CHEMICAL/THERMAL PROCESSES
+** TODO BIOCHEMICAL PROCESSES
+** TODO Hydropower
+** TODO Nuclear
+** TODO Nuclear Power Reactor Characteristics
+** TODO Reactor
+** TODO Type
+** TODO Typical
+** TODO Thermal
+** TODO Power
+** TODO Pressurizedwater
+** TODO Boilingwater
+** TODO Gas-cooled
+** TODO Liquid-metal
+** TODO Average
+** TODO Typical Fuel
+** TODO Reactor
+** TODO Coolant
+** TODO Light water
+** TODO Carbon
+** TODO Fast-breeder
+** TODO Sodium
+** TODO Fluid-fueled
+** TODO Varies
+** TODO Reactor fuel
+** TODO Wind
+** TODO Noise of Different Activities Compared with Wind Turbines
+** TODO Threshold of pain
+** TODO Busy general office
+** TODO Quiet bedroom
+** TODO Rural night-time background
+** TODO Threshold of hearing
+** TODO Hydraulic Turbine Operating Regimes
+** TODO IMPULSE
+** TODO TURBINE
+** TODO BARREL
+** TODO FRANCIS
+** TODO INDUSTRIAL
+** TODO PUMP
+** TODO PROPELLER AND
+** TODO KAPLAN TURBINE
+** TODO BULB
+** TODO UNIT
+** TODO STANDARDIZED
+** TODO TUBULAR UNIT
+** TODO ELECTRIC OUTPUT (MW)
+** TODO TYPICAL SUMMER DAY
+** TODO NATURAL-GASFIRED MODE
+** TODO SOLAR MODE
+** TODO TYPICAL WINTER DAY
+** TODO OFF-
+** TODO MID-PEAK
+** TODO PEAK
+** TODO Spacing of Solar Flat-Plate Collectors to Avoid Shadowing
+** TODO OPTIMUM TILT ANGLE (°)
+** TODO ELECTRIC OUTPUT (MW)
+** TODO Solar
+** TODO INTE
+** TODO ATIO
+** TODO INSO
+** TODO LATITUDE (°)
+** TODO Wastes with Fuel Value
+** TODO Industrial Wastes
+** TODO Coke-oven
+** TODO Blast-furnace
+** TODO Carbon monoxide
+** TODO Refinery
+** TODO Industrial sludge
+** TODO Black liquor
+** TODO Sulfite liquor
+** TODO Dirty solvents
+** TODO Spent lubricants
+** TODO Paints and resins
+** TODO Oily waste and residue
+** TODO Bagasse
+** TODO Bark
+** TODO General wood waste
+** TODO Sawdust and shavings
+** TODO Coffee grounds
+** TODO Nut hulls
+** TODO Rice hulls
+** TODO Corn cobs
+** TODO Typical Heating Value of MSW Components
+** TODO Component
+** TODO Range
+** TODO Typical
+** TODO Food wastes
+** TODO Paper
+** TODO Cardboard
+** TODO Plastics
+** TODO Textiles
+** TODO Rubber
+** TODO Leather
+** TODO Garden trimmings
+** TODO Wood
+** TODO Glass
+** TODO Tin cans
+** TODO Nonferrous metals
+** TODO Ferrous metals
+** TODO Concentrations Held Constant at Current Levels
+** TODO Global Warming Potential
+** TODO Chemical
+** TODO Formula
+** TODO Methane
+** TODO Nitrous Oxide
+** TODO HFC-23
+** TODO CHF3
+** TODO HFC-32
+** TODO CH2F2
+** TODO HFC-41
+** TODO CH3F
+** TODO C5H2F10
+** TODO HFC-125
+** TODO C2HF5
+** TODO HFC-134
+** TODO C2H2F4
+** TODO CH2FCF3
+** TODO C2H4F2
+** TODO HFC-143
+** TODO C2H3F3
+** TODO C3HF7
+** TODO C3H2F6
+** TODO C3H3F5
+** TODO Sulfur hexafluoride
+** TODO Perfluoromethane
+** TODO Perfluoroethane
+** TODO C2F6
+** TODO Perfluoropropane
+** TODO C3F8
+** TODO Perfluorobutane
+** TODO C4F10
+** TODO Perfluorocyblobutane
+** TODO Perfluoropentane
+** TODO C5F12
+** TODO C6F14
+** TODO Species
+** TODO Perfluorohexane
+** TODO Sustainability
+** TODO Carbon emission factors
+** TODO Kaya's Emission Equation
+* [#B] Electrical and Computer Engineering [0/472]
+** TODO Units
+** TODO Electrostatics
+** TODO Q1Q2
+** TODO Electrostatic Fields
+** TODO Voltage
+** TODO Current
+** TODO Magnetic Fields
+** TODO Induced Voltage
+** TODO Resistivity
+** TODO Resistors in Series and Parallel
+** TODO R1R2
+** TODO Kirchhoff's Laws
+** TODO Source Equivalents
+** TODO For an arbitrary circuit
+** TODO SOURCES
+** TODO RESISTORS
+** TODO The Norton equivalent circuit is
+** TODO Capacitors and Inductors
+** TODO Inductor
+** TODO The energy stored in an inductor is expressed in joules and given by
+** TODO Capacitors and Inductors in Parallel and Series
+** TODO Capacitors in Parallel
+** TODO Capacitors in Series
+** TODO Inductors in Parallel
+** TODO Inductors in Series
+** TODO AC Circuits
+** TODO Average Value
+** TODO Effective or RMS Values
+** TODO Sine-Cosine Relations and Trigonometric Identities
+** TODO Phasor Transforms of Sinusoids
+** TODO Circuit
+** TODO Element
+** TODO Impedance Resistance Reactance Admittance Conductance Susceptance
+** TODO Resistor
+** TODO Capacitor
+** TODO Inductor
+** TODO Maximum Power-Transfer Theorem
+** TODO DC Circuits
+** TODO Thevenin Equivalent Circuit
+** TODO AC Circuits
+** TODO In an ac circuit maximum power transfer to the load impedance ZL occurs when the load impedance equals the complex
+** TODO RC and RL Transients
+** TODO Resonance
+** TODO The radian resonant frequency for both parallel and series resonance situations is
+** TODO Series Resonance
+** TODO Parallel Resonance
+** TODO AC Power
+** TODO Complex Power
+** TODO The corresponding line-to-line voltages are
+** TODO Turns Ratio
+** TODO The impedance seen at the input is
+** TODO Three-Phase Transformer Connection Diagrams
+** TODO H2 H1
+** TODO WYE-WYE CONNECTION
+** TODO WYE-DELTA CONNECTION
+** TODO DELTA-WYE CONNECTION
+** TODO DELTA-DELTA CONNECTION
+** TODO AC Machines
+** TODO The synchronous speed ns for ac motors is given by
+** TODO Synchronous Machines
+** TODO Induction Machines
+** TODO TORQUE (% OF MAXIMUM)
+** TODO ROTOR SPEED (% OF SYNCHRONOUS SPEED)
+** TODO DC Machines
+** TODO The mechanical power generated by the armature is
+** TODO The mechanical torque produced is
+** TODO Servomotors and Generators
+** TODO SPEED
+** TODO TORQUE
+** TODO Voltage Regulation
+** TODO Electromagnetic Dynamic Fields
+** TODO The integral and point form of Maxwell's equations are
+** TODO Lossless Transmission Lines
+** TODO The reflection coefficient at the load is defined as
+** TODO Difference Equations
+** TODO First-Order Linear Difference Equation
+** TODO Second-Order Linear Difference Equation
+** TODO The transform definition is
+** TODO The inverse transform is given by the contour integral
+** TODO Convolution
+** TODO Digital Signal Processing
+** TODO The corresponding transfer function is given by
+** TODO Communication Theory and Concepts
+** TODO Functions
+** TODO Rectangular
+** TODO The Fourier Transform and its Inverse
+** TODO Frequency Response and Impulse Response
+** TODO This gives
+** TODO Parseval's Theorem
+** TODO Parseval's Theorem for Fourier Series
+** TODO Fourier series
+** TODO Decibels and Bode Plots
+** TODO Term
+** TODO Magnitude Response
+** TODO Phase Response
+** TODO Plot
+** TODO MAGNITUDE
+** TODO PHASE
+** TODO Angle Modulation
+** TODO The instantaneous phase is
+** TODO The instantaneous frequency is
+** TODO The frequency deviation is
+** TODO The phase deviation is
+** TODO The frequency-deviation ratio is
+** TODO Sampled Messages
+** TODO Ideal-Impulse Sampling
+** TODO The minimum bandwidth required to transmit the PCM message will be
+** TODO Error Coding
+** TODO Delays in Computer Networks
+** TODO PACKET
+** TODO DESTINATION
+** TODO SOURCE
+** TODO Transmission Algorithms
+** TODO Shannon Channel Capacity Formula
+** TODO Analog Filter Circuits
+** TODO First-Order Low-Pass Filters
+** TODO First-Order High-Pass Filters
+** TODO Frequency Response
+** TODO V2 R2
+** TODO V2 RP
+** TODO R1R2
+** TODO Band-Pass Filters
+** TODO Band-Reject Filters
+** TODO Frequency Response
+** TODO V2 R2
+** TODO V2 RP
+** TODO R1R2
+** TODO Operational Amplifiers
+** TODO Ideal
+** TODO Equivalent Circuit of an Ideal Op Amp
+** TODO Solid-State Electronics and Devices
+** TODO Carrier concentrations at equilibrium
+** TODO NaNd
+** TODO Thermal voltage
+** TODO Differential Amplifier
+** TODO Linear region
+** TODO Power Conversion
+** TODO DIODES
+** TODO Device and Schematic
+** TODO Symbol
+** TODO Relationship
+** TODO Shockley Equation
+** TODO Mathematical
+** TODO Realistic
+** TODO Schematic Symbol
+** TODO Ideal I-V Relationship
+** TODO State
+** TODO Reverse
+** TODO Blocking
+** TODO Triggered by iG Pulse
+** TODO Realistic
+** TODO I-V Relationship
+** TODO State
+** TODO Forward
+** TODO Blocking
+** TODO Reverse
+** TODO Breakdown Blocking
+** TODO Forward Forward
+** TODO Blocking Breakover
+** TODO Mathematical
+** TODO Relationships
+** TODO Equivalent Circuit
+** TODO Schematic Symbol
+** TODO Same as for NPN with current
+** TODO VCE sat
+** TODO VBE sat
+** TODO Same as NPN with current directions
+** TODO Qpoint
+** TODO Equivalent Circuit
+** TODO Schematic Symbol
+** TODO N-CHANNEL JFET
+** TODO Mathematical Relationships
+** TODO P-CHANNEL JFET
+** TODO N-CHANNEL DEPLETION
+** TODO MOSFET (NMOS)
+** TODO SIMPLIFIED SYMBOL
+** TODO P-CHANNEL DEPLETION
+** TODO MOSFET (PMOS)
+** TODO Same as for N-Channel with current directions
+** TODO Same as for N-Channel
+** TODO Schematic Symbol
+** TODO N-CHANNEL ENHANCEMENT
+** TODO MOSFET (NMOS)
+** TODO Mathematical Relationships
+** TODO SIMPLIFIED SYMBOL
+** TODO P-CHANNEL ENHANCEMENT
+** TODO MOSFET (PMOS)
+** TODO Same as for N-channel with current directions
+** TODO Same as for N-channel
+** TODO Number Systems and Codes
+** TODO Binary Number System
+** TODO HexaPacked
+** TODO Binary Decimal decimal Octal
+** TODO Code
+** TODO Gray
+** TODO Logic Operations and Boolean Algebra
+** TODO Function
+** TODO Inputs
+** TODO C= A⊕B
+** TODO LOGIC SYMBOL
+** TODO De Morgan's Theorems
+** TODO NAND
+** TODO Flip-Flops
+** TODO SR Flip-Flop
+** TODO JK Flip-Flop
+** TODO Composite Flip-Flop State Transition
+** TODO Switching Function Terminology
+** TODO Computer Networking
+** TODO OSI MODEL
+** TODO TCP/IP MODEL
+** TODO APPLICATION
+** TODO PRESENTATION
+** TODO SESSION
+** TODO TRANSPORT
+** TODO NETWORK
+** TODO INTERNET
+** TODO DATA LINK
+** TODO INTERFACE
+** TODO PHYSICAL
+** TODO The link layer or data link layer contains protocols for transmissions between devices on the same link and usually handles error
+** TODO MESSAGE
+** TODO DATA
+** TODO APPLICATION
+** TODO TCP/UDP
+** TODO HEADER
+** TODO TRANSPORT
+** TODO INTERNET
+** TODO DATA
+** TODO NETWORK INTERFACE
+** TODO SEGMENT
+** TODO PACKET
+** TODO FRAME
+** TODO FRAME HEADER
+** TODO ENCAPSULATION OF APPLICATION DATA THROUGH EACH LAYER
+** TODO Abbreviation
+** TODO Acknowledge
+** TODO Automatic request
+** TODO Bandwidth
+** TODO Cyclic redundancy code
+** TODO DHCP Dynamic host configuration protocol
+** TODO Internet protocol
+** TODO Local area network
+** TODO Negative acknowledgement
+** TODO Open systems interconnect
+** TODO Transmission control protocol
+** TODO Protocol Definitions
+** TODO Internet Protocol Addressing
+** TODO Address range
+** TODO Number of
+** TODO Software
+** TODO Private network
+** TODO Shared address space for communications
+** TODO Host
+** TODO Subnet
+** TODO Used for link-local addresses between two hosts
+** TODO Documentation
+** TODO Internet
+** TODO Private network
+** TODO Used for benchmark testing of inter-network
+** TODO Subnet
+** TODO Address block
+** TODO Scope
+** TODO Description
+** TODO Address
+** TODO (CIDR)
+** TODO First address
+** TODO Number of
+** TODO Last address
+** TODO Usage
+** TODO Purpose
+** TODO Routing
+** TODO Software
+** TODO Unspecified
+** TODO Host
+** TODO Loopback
+** TODO Global Internet
+** TODO Routing
+** TODO Discard
+** TODO Teredo
+** TODO Software
+** TODO Addresses
+** TODO Documentation
+** TODO Private
+** TODO Unique local
+** TODO Link
+** TODO Link-local
+** TODO Global Internet
+** TODO Multicast
+** TODO Offsets
+** TODO Octet
+** TODO Version
+** TODO DSCP
+** TODO Total Length
+** TODO Identification
+** TODO Time To Live
+** TODO Flags
+** TODO Protocol
+** TODO Fragment Offset
+** TODO Header Checksum
+** TODO Source IP Address
+** TODO Destination IP Address
+** TODO Version
+** TODO Total Length
+** TODO Identification
+** TODO Flags
+** TODO Fragment Offset
+** TODO Protocol
+** TODO Header Checksum
+** TODO Source Address
+** TODO Destination Address
+** TODO Options
+** TODO Size
+** TODO Field
+** TODO Copied
+** TODO Description
+** TODO Option
+** TODO Number
+** TODO Length
+** TODO Option Data
+** TODO Variable
+** TODO Offsets
+** TODO Octet
+** TODO Version
+** TODO Flow Label
+** TODO Traffic Class
+** TODO Payload Length
+** TODO Next Header
+** TODO Hop Limit
+** TODO Source Address
+** TODO Destination Address
+** TODO Transmission Control Protocol
+** TODO TCP Header
+** TODO Offsets
+** TODO Octet
+** TODO Source port
+** TODO Sequence number
+** TODO Data
+** TODO Checksum
+** TODO Reserved
+** TODO Destination port
+** TODO Padding
+** TODO User Datagram Protocol
+** TODO UDP Header
+** TODO Offsets
+** TODO Octet
+** TODO Source port
+** TODO Destination port
+** TODO Length
+** TODO Checksum
+** TODO Source Port Number
+** TODO Destination Port Number
+** TODO Internet Control Message Protocol
+** TODO Offsets
+** TODO Octet
+** TODO Type
+** TODO Rest of Header
+** TODO Code
+** TODO Checksum
+** TODO ICMP Type
+** TODO ICMP Code
+** TODO Network Topologies
+** TODO Point-to-Point
+** TODO STATIONS
+** TODO Token Ring
+** TODO RING
+** TODO INTERFACE
+** TODO Star
+** TODO STATIONS
+** TODO HUB OR SWITCH
+** TODO Mesh
+** TODO Tree
+** TODO STATION
+** TODO Communication Methodologies
+** TODO SERIAL
+** TODO PARALLEL
+** TODO Serial
+** TODO Parallel
+** TODO Simplex
+** TODO Half-Duplex
+** TODO Allows communications in both directions simultaneously
+** TODO Computer Systems
+** TODO INDEX
+** TODO BLOCK OFFSET
+** TODO INSTRUCTION
+** TODO MEMORY
+** TODO CONTROL
+** TODO UNIT
+** TODO DATA
+** TODO Multicore
+** TODO CPU CORE
+** TODO L1 CACHES
+** TODO BACK SIDE
+** TODO BUS INTERFACE
+** TODO L2 CACHES
+** TODO FRONT SIDE
+** TODO Threading
+** TODO Abbreviation
+** TODO CISC Complex instruction set computing
+** TODO Central processing unit
+** TODO FIFO
+** TODO Least frequently used
+** TODO Least recently used
+** TODO MRU Most recently used
+** TODO RISC Reduced instruction set computing
+** TODO RAM Random access memory
+** TODO ROM Read only memory
+** TODO Software Engineering
+** TODO Endianness
+** TODO Pointers
+** TODO Algorithms
+** TODO Data Structures
+** TODO (LIFO))
+** TODO Graph Traversal
+** TODO Tree Traversal
+** TODO In-Order Traversal
+** TODO Preorder Traversal
+** TODO Postorder Traversal
+** TODO Notation
+** TODO Name
+** TODO Logarithmic
+** TODO Loglinear
+** TODO Quadratic
+** TODO Software Syntax Guidelines
+** TODO Variables whose type is object and the exact specification of that object is not critical to the problem must have the
+** TODO Flow Chart Definition
+** TODO PROCESS
+** TODO OPERATION
+** TODO DATA I/O
+** TODO START OR STOP
+** TODO POINT
+** TODO DOCUMENT
+** TODO DECISION
+** TODO DATABASE
+** TODO Software Testing
+** TODO There are many approaches to software testing but they are typically split into static testing versus dynamic and black box
+** TODO Computer Network Security
+** TODO Firewalls
+** TODO Nmap
+** TODO Target Specification
+** TODO Host Discovery
+** TODO Scan Techniques
+** TODO Port Specification and Scan Order
+** TODO OS Detection
+** TODO Timing and Performance
+** TODO Output
+** TODO Examples
+** TODO Port Scanning
+** TODO Common TCP Ports
+** TODO Protocol
+** TODO Port Number
+** TODO Telnet
+** TODO HTTP
+** TODO HTTPS
+** TODO POP3
+** TODO SMTP
+** TODO Web Vulnerability Testing
+** TODO Phases
+** TODO Reconnaissance
+** TODO Scanning
+** TODO Gaining Access
+** TODO Maintaining Access
+** TODO Covering Tracks
+** TODO Methods
+** TODO Security Triad
+** TODO Authentication
+** TODO Three factors for authentication
+** TODO PPP protocols
+** TODO Other protocols
+** TODO Key Equations
+** TODO McCabe's Cyclomatic Complexity
+** TODO The RSA Public-Key Cryptosystem
+** TODO Diffie-Hellman Key-Exchange Protocol
+* Industrial and Systems Engineering [0/73]
+** TODO Linear Programming
+** TODO Dual Linear Program
+** TODO Primal
+** TODO Dual
+** TODO Network Optimization
+** TODO Process Capability
+** TODO Actual Capability
+** TODO Queueing Models
+** TODO Definitions
+** TODO Fundamental Relationships
+** TODO Simulation
+** TODO Inverse Transform Method for Continuous Random Variables
+** TODO Forecasting
+** TODO Moving Average
+** TODO Exponentially Weighted Moving Average
+** TODO Main Effects
+** TODO Interaction Effects
+** TODO Sum of Squares of Random Error
+** TODO The sum of the squares due to the random error can be computed as
+** TODO The total sum of squares is equal to
+** TODO Reliability
+** TODO Learning Curves
+** TODO Inventory Models
+** TODO Facility Planning
+** TODO Equipment Requirements
+** TODO People Requirements
+** TODO Standard Time Determination
+** TODO Plant Location
+** TODO Minimize
+** TODO Material Handling
+** TODO Line Balancing
+** TODO Job Sequencing
+** TODO PERT
+** TODO Taylor Tool Life Formula
+** TODO Work Sampling Formulas
+** TODO ANTHROPOMETRIC MEASUREMENTS
+** TODO SITTING HEIGHT
+** TODO (ERECT)
+** TODO SITTING HEIGHT (NORMAL)
+** TODO THIGH CLEARANCE
+** TODO HEIGHT
+** TODO ELBOW-TO-ELBOW
+** TODO BREADTH
+** TODO KNEE HEIGHT
+** TODO ELBOW REST
+** TODO SEAT BREADTH
+** TODO BUTTOCK
+** TODO POPLITEAL
+** TODO LENGTH
+** TODO KNEE LENGTH
+** TODO HEIGHT
+** TODO HEIGHTS
+** TODO Eye height
+** TODO Elbow height
+** TODO Knuckle height
+** TODO Thigh clearance height
+** TODO DEPTHS
+** TODO Chest depth
+** TODO Elbow-fingertip distance
+** TODO BREADTHS
+** TODO Elbow-to-elbow breadth
+** TODO HEAD DIMENSIONS
+** TODO Head breadth
+** TODO Head circumference
+** TODO Interpupillary distance
+** TODO HAND DIMENSIONS
+** TODO Hand length
+** TODO Crotch-tip length
+** TODO FOOT DIMENSIONS
+** TODO Foot length
+** TODO Foot breadth
+** TODO Lateral malleolus height
+** TODO Percentiles
+* Mechanical Engineering [0/243]
+** TODO Mechanical Design and Analysis
+** TODO Springs
+** TODO Mechanical Springs
+** TODO Equivalent Spring Constant
+** TODO Material
+** TODO ASTM
+** TODO Music wire
+** TODO Oil-tempered wire
+** TODO Hard-drawn wire
+** TODO Chrome vanadium
+** TODO Chrome silicon
+** TODO A228
+** TODO A229
+** TODO A227
+** TODO A232
+** TODO A401
+** TODO Maximum allowable torsional stress for static applications may be approximated as
+** TODO Compression Spring Dimensions
+** TODO Type of Spring Ends
+** TODO Plain
+** TODO Plain and
+** TODO Ground
+** TODO Squared or
+** TODO Closed
+** TODO Squared and
+** TODO Term
+** TODO Bearings
+** TODO The equivalent radial load is
+** TODO Power Screws
+** TODO Power Transmission
+** TODO Shafts and Axles
+** TODO Gearing
+** TODO Involute Gear Tooth Nomenclature
+** TODO Base pitch
+** TODO Module
+** TODO Dynamics of Mechanisms
+** TODO Gearing
+** TODO Lewis Equation
+** TODO Joining Methods
+** TODO Bolt stiffness may be calculated from
+** TODO Material
+** TODO Steel
+** TODO Aluminum
+** TODO Copper
+** TODO Gray cast iron
+** TODO The factor of safety guarding against joint separation is
+** TODO Failure by Pure Shear
+** TODO FASTENER IN SHEAR
+** TODO Failure by Rupture
+** TODO MEMBER RUPTURE
+** TODO Failure by Crushing of Rivet or Fastener
+** TODO MEMBER OR FASTENER CRUSHING
+** TODO Fastener Groups in Shear
+** TODO FASTENER GROUPS
+** TODO Manufacturability
+** TODO Limits and Fits
+** TODO Definitions
+** TODO Some Preferred Fits
+** TODO Clearance
+** TODO Transition
+** TODO Interference
+** TODO For the hole
+** TODO All values in mm
+** TODO Basic Size
+** TODO Deviations for Shafts
+** TODO Basic
+** TODO Size
+** TODO Feature Control Frame
+** TODO Datum
+** TODO Virtual Condition
+** TODO Modifying Symbols
+** TODO Term
+** TODO Symbol
+** TODO AT MAXIMUM MATERIAL CONDITION
+** TODO AT MAXIMUM MATERIAL BOUNDARY
+** TODO Definitions
+** TODO AT LEAST MATERIAL CONDITION
+** TODO AT LEAST MATERIAL BOUNDARY
+** TODO PROJECTED TOLERANCE
+** TODO ZONE
+** TODO DIAMETER
+** TODO SPHERICAL DIAMETER
+** TODO RADIUS
+** TODO SPHERICAL RADIUS
+** TODO SQUARE
+** TODO REFERENCE
+** TODO ARC LENGTH
+** TODO DIMENSION ORIGIN
+** TODO Tolerance
+** TODO Types
+** TODO Drawing Callout
+** TODO Meaning
+** TODO Example
+** TODO ASME
+** TODO Symbol
+** TODO Ø10±0.2
+** TODO Tolerance Zone
+** TODO Definition
+** TODO Zone
+** TODO Modifiers
+** TODO Allowed
+** TODO Datums
+** TODO Used
+** TODO Straightness
+** TODO Ø10±0.2
+** TODO Form
+** TODO Flatness
+** TODO Circularity
+** TODO Cylindricity
+** TODO Profile
+** TODO Profile of
+** TODO Additional Comments
+** TODO Tolerance
+** TODO Types
+** TODO Angularity
+** TODO Drawing Callout
+** TODO Meaning
+** TODO Example
+** TODO ASME
+** TODO Symbol
+** TODO Orientation
+** TODO Perpendicularity
+** TODO Ø5±0.2
+** TODO Parallelism
+** TODO Location
+** TODO Position
+** TODO Ø10±0.2
+** TODO Circular
+** TODO Runout
+** TODO Individual Feature of Size
+** TODO Ø5±0.2
+** TODO Total
+** TODO Zone
+** TODO EXTERNAL
+** TODO FEATURE
+** TODO Ø22.2
+** TODO GAGE
+** TODO Ø22.1
+** TODO AT Ø22.2 (MMC)
+** TODO FORM SHALL
+** TODO BE PERFECT
+** TODO Tolerance Zone
+** TODO Definition
+** TODO Zone
+** TODO Modifiers
+** TODO Allowed
+** TODO Datums
+** TODO Used
+** TODO Additional Comments
+** TODO Variations of Size
+** TODO The actual local size of an individual feature at
+** TODO Perfect Form at MMC Not Required
+** TODO PERFECT FORM AT MMC NOT REQUIRED
+** TODO All Applicable Geometric Tolerances
+** TODO Ø22.4
+** TODO INTERNAL
+** TODO FEATURE
+** TODO GAGE
+** TODO AT Ø22.3 (MMC)
+** TODO FORM SHALL
+** TODO BE PERFECT
+** TODO Ø22.3
+** TODO Ø22.4
+** TODO Intermediate- and Long-Length Columns
+** TODO Static Loading Failure Theories
+** TODO Brittle Materials
+** TODO Maximum-Normal-Stress Theory
+** TODO The maximum-normal-stress theory states that failure occurs when one of the three principal stresses equals the strength of the
+** TODO Coulomb-Mohr Theory
+** TODO Ductile Materials
+** TODO Maximum-Shear-Stress Theory
+** TODO The maximum-shear-stress theory states that yielding begins when the maximum shear stress equals the maximum shear stress
+** TODO Distortion-Energy Theory
+** TODO Variable Loading Failure Theories
+** TODO Modified Goodman Theory
+** TODO Soderberg Theory
+** TODO Endurance Limit for Steels
+** TODO Endurance Limit Modifying Factors
+** TODO Surface
+** TODO Finish
+** TODO Ground
+** TODO Machined or
+** TODO Hot rolled
+** TODO As forged
+** TODO Kinematics of Mechanisms
+** TODO Four-Bar Linkage
+** TODO ANSI Symbols for Hydraulic Power
+** TODO HVAC
+** TODO Nomenclature
+** TODO MOIST
+** TODO Cooling and Dehumidification
+** TODO Qout
+** TODO LIQUID OUT
+** TODO Heating and Humidification
+** TODO WATER OR STEAM
+** TODO MOIST
+** TODO WATER
+** TODO Adiabatic Mixing
+** TODO MOIST AIR
+** TODO Cycles and Processes
+** TODO Internal Combustion Engines
+** TODO Diesel Cycle
+** TODO Brake Power
+** TODO Indicated Power
+** TODO Brake Thermal Efficiency
+** TODO Indicated Thermal Efficiency
+** TODO Mechanical Efficiency
+** TODO Displacement Volume
+** TODO Cylinder
+** TODO Piston
+** TODO Compression Ratio
+** TODO Volumetric Efficiency
+** TODO Gas Turbines
+** TODO COMBUSTOR
+** TODO COMPRESSOR
+** TODO TURBINE
+** TODO Steam Power Plants
+** TODO Feedwater Heaters
+** TODO Steam Trap
+** TODO LIQUID
+** TODO Junction
+** TODO Pump
+** TODO Index
+** TODO Symbols
+** TODO INDEX
+** TODO AASHTO 266
+** TODO ASD 272, 281
+** TODO ASME Y14.5 444
+** TODO Index
+** TODO (ACI 318-14) 274
+** TODO LRFD, ASD 281
+** TODO INDEX
+** TODO HVAC 173, 454
+** TODO (ASD) 272
+** TODO LRFD 272, 281
+** TODO Index
+** TODO (MACRS) 231
+** TODO NOAEL 24
+** TODO INDEX
+** TODO PERT 428
+** TODO CHEMICAL CBT Exam Specifications
+** TODO Knowledge
+** TODO Number of Questions
