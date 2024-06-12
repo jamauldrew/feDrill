@@ -1,7 +1,7 @@
 ** Exam 1
 :PROPERTIES:
-#+STARTUP: inlineimages
-#+ATTR_LATEX: :width 80px
+# #+STARTUP: inlineimages
+# #+ATTR_LATEX: :width 80px
 :END:
 
 *** 0                                                                 :drill:
@@ -1020,17 +1020,17 @@ In applying KCL, it is necessary to assume a direction of current as positive. I
 ***The answer is \(B\) and \(D\).***
 
 *** 28                                                                :drill:
-SCHEDULED: <2023-10-25 Wed>
+SCHEDULED: <2024-06-17 Mon>
 :PROPERTIES:
 :ID:       1936b88b-3db7-42e6-9955-681bcf79a89c
-:DRILL_LAST_INTERVAL: 1.813
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 3.813
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 4
 :DRILL_AVERAGE_QUALITY: 1.519
 :DRILL_EASE: 1.598
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [Y-10-23 Mon 21:%]
+:DRILL_LAST_REVIEWED: [Y-06-11 Tue 10:%]
 :END:
 
 Two point charges are placed at points A and C. A third point charge is placed at point B in line with the other two so that it is not subject to any net force from the other two point charges. The electrical charge units are in coulombs, as shown.
@@ -1149,17 +1149,17 @@ Option D correctly represents the directions and magnitudes of the force vectors
 ***The answer is \(D\).***
 
 *** 31                                                                :drill:
-SCHEDULED: <2023-10-26 Thu>
+SCHEDULED: <2024-06-27 Thu>
 :PROPERTIES:
 :ID:       0b52f11e-7454-47c2-90d7-0f24ec24a287
-:DRILL_LAST_INTERVAL: 4.0
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 13.0
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 2.0
-:DRILL_EASE: 2.5
+:DRILL_EASE: 2.65
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [Y-10-22 Sun 10:%]
+:DRILL_LAST_REVIEWED: [Y-06-11 Tue 19:%]
 :END:
 
 A moment couple is a system of
@@ -2422,17 +2422,17 @@ Under isostrain condition, say, strain *ε* = 1, the portion of load carried by 
 ***The answer is \(A\).***
 
 *** 66                                                                :drill:
-SCHEDULED: <2023-10-25 Wed>
+SCHEDULED: <2024-06-25 Tue>
 :PROPERTIES:
 :ID:       23c236f3-3887-4396-8de8-944256c25e43
-:DRILL_LAST_INTERVAL: 2.3046
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 13.4012
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 5.0
 :DRILL_EASE: 5.815
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [Y-10-23 Mon 00:%]
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-11 Tue 11:%]
 :END:
 
 A solution is composed of iron and 0.28% carbon. What, most nearly, is the amount and composition of primary *α* phase just above the eutectoid isotherm?
@@ -3032,17 +3032,17 @@ Apply the heat energy equation for rigid containers.
 ***The answer is A.***
 
 *** 80                                                                :drill:
-SCHEDULED: <2023-10-26 Thu>
+SCHEDULED: <2024-06-13 Thu>
 :PROPERTIES:
 :ID:       8a584cbc-7f26-4c35-be95-8bc9a4ca9cba
-:DRILL_LAST_INTERVAL: 4.14
+:DRILL_LAST_INTERVAL: 1.0
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [Y-10-22 Sun 19:%]
+:DRILL_EASE: 2.4
+:DRILL_LAST_QUALITY: 2
+:DRILL_LAST_REVIEWED: [Y-06-12 Wed 10:%]
 :END:
 
 A condenser inlets 10 kg/s of saturated water vapor at 1 MPa from a turbine and cools it by heating water from 20°C to 30°C. The pressure remains constant. What is the mass flux in kg/s, rounded to the nearest integer? *   * Enter your response in the blank.

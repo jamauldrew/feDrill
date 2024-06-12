@@ -4310,5 +4310,5 @@ According to ASME Y14.5 standard § 1.4 \(a\), “each dimension shall have a to
 
 # Local Variables:
 # org-drill-scope:    directory
-# org-drill-spaced-repetition-algorithm:  simple8
+# org-drill-spaced-repetition-algorithm: sm2-anki
 # End:
