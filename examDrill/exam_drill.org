@@ -297,18 +297,18 @@ The first differentiation of the expression is
 [[./images/000325.png]] 
 ***The answer is \(C\).***
 
-*** 8                                                                 :drill:
-SCHEDULED: <2023-10-26 Thu>
+*** TODO 8 :drill:
+SCHEDULED: <2024-06-30 Sun>
 :PROPERTIES:
 :ID:       c6d820a0-1ab3-4995-9f5a-7aca7f9280c9
-:DRILL_LAST_INTERVAL: 4.14
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 13.9932
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [Y-10-22 Sun 21:%]
+:DRILL_EASE: 2.75
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [Y-06-13 Thu 12:%]
 :END:
 
 The three-number combination to open a safe is unknown. The lock keypad shows numbers from 0 to 9. The number of possible selections to open the combination lock is(hint:permutations)
@@ -3572,17 +3572,17 @@ Apply the data to the heat loss formula.
 ***The answer is \(B\).***
 
 *** 95                                                                :drill:
-SCHEDULED: <2023-10-26 Thu>
+SCHEDULED: <2024-06-25 Tue>
 :PROPERTIES:
 :ID:       4d5df23a-8296-4436-8afb-5a43049e7348
-:DRILL_LAST_INTERVAL: 4.14
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 13.9932
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [Y-10-22 Sun 18:%]
+:DRILL_EASE: 2.75
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [Y-06-13 Thu 11:%]
 :END:
 
 Which one of the following statements is INCORRECT?

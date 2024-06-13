@@ -116,73 +116,55 @@ variables = {
     "depth": 10            # Depth (m)
 }
 
-# Category
-print(f"\nMechanics of Materials\n")
-
+print(f"\n::Mechanics of Materials::\n")
 # Calculate Stress (sigma)
 sigma = variables["force"] / variables["area"]
 print(f"Stress (sigma): {sigma} Pa")
-
 # Calculate Strain (epsilon)
 epsilon = variables["delta_length"] / variables["length"]
 print(f"Strain (epsilon): {epsilon}")
-
 # Calculate Young's Modulus (E)
 E = variables["stress"] / variables["strain"]
 print(f"Young's Modulus (E): {E} Pa")
-
 # Calculate Shear Stress (tau)
 tau = variables["force"] / variables["area"]
 print(f"Shear Stress (tau): {tau} Pa")
-
 # Calculate Shear Strain (gamma)
 gamma = variables["delta_displacement"] / variables["height"]
 print(f"Shear Strain (gamma): {gamma}")
-
 # Calculate Bending Stress
 bending_stress = variables["moment"] * variables["dist_to_neutral_axis"] / variables["moment_of_inertia"]
 print(f"Bending Stress: {bending_stress} Pa")
-
 # Calculate Torsional Shear Stress
 torsional_shear_stress = variables["torque"] * variables["radius"] / variables["polar_moment_inertia"]
 print(f"Torsional Shear Stress: {torsional_shear_stress} Pa")
-
 # Calculate Poisson's Ratio (v)
 poisson_ratio = -variables["lateral_strain"] / variables["longitudinal_strain"]
 print(f"Poisson's Ratio (v): {poisson_ratio}")
-
 # Calculate Second Moment of Inertia (Rectangle about centroid)
 I = (variables["width"] * variables["height"]**3) / 12
 print(f"Second Moment of Inertia: {I} m^4")
 
 
-# Category
-print(f"\nFluid Mechanics\n")
-
+print(f"\n::Fluid Mechanics::\n")
 # Calculate Pressure (P)
 P = variables["density"] * variables["gravity"] * variables["height"]
 print(f"Pressure (P): {P} Pa")
-
 # Calculate Flow Rate
 flow_rate = variables["area1"] * variables["velocity1"]
 print(f"Flow Rate: {flow_rate} m^3/s")
-
 # Calculate Reynolds Number
 Re = variables["density"] * variables["velocity"] * variables["diameter"] / variables["viscosity"]
 print(f"Reynolds Number: {Re}")
-
 # Calculate Nusselt Number
 Nu = variables["convective_heat_transfer"] * variables["characteristic_length"] / variables["thermal_conductivity"]
 print(f"Nusselt Number: {Nu}")
-
 # Calculate Stokes' Law (Viscous Drag on a Sphere)
 stokes_law = 6 * math.pi * variables["viscosity"] * variables["radius"] * variables["velocity"]
 print(f"Stokes' Law (Viscous Drag on a Sphere): {stokes_law}")
-
 # Calculate Strouhal Number (Flow past a Cylinder)
 St = variables["frequency"] * variables["characteristic_length"] / variables["velocity"]
 print(f"Strouhal Number: {St}")
-
 # Calculate Bernoulli Equation Pressure Difference
 rho = variables["density"]
 v1 = variables["velocity1"]
@@ -192,117 +174,89 @@ P2 = P1 + 0.5 * rho * (v1**2 - v2**2)
 print(f"Pressure Difference (Bernoulli): {P2 - P1} Pa")
 
 
-# Category
-print(f"\nThermodynamics\n")
-
+print(f"\n::Thermodynamics::\n")
 # Ideal Gas Law calculation
 ideal_gas = variables["substance_amount"] * variables["gas_constant"] * variables["temperature"]
 print(f"Ideal Gas Law: {ideal_gas} J/mol")
-
 # Calculate Efficiency (eta)
 eta = variables["work_output_out"] / variables["heat_input"]
 print(f"Efficiency (eta): {eta}")
-
 # Calculate Specific Heat Capacity
 specific_heat_capacity = variables["heat_added"] / (variables["mass"] * variables["temperature_change"])
 print(f"Specific Heat Capacity: {specific_heat_capacity}")
-
 # Calculate Coefficient of Performance (Refrigeration Cycle)
 COP = variables["heat_removed"] / variables["work_output_in"]
 print(f"Coefficient of Performance (Refrigeration Cycle): {COP}")
-
 # Calculate Heat Transfer by Radiation (Stefan-Boltzmann Law)
 radiative_heat_transfer = variables["stefan_boltzmann_constant"] * variables["emissivity"] * (variables["temperature_surface"]**4 - variables["temperature_surroundings"]**4) * variables["area"]
 print(f"Heat Transfer by Radiation (Stefan-Boltzmann Law): {radiative_heat_transfer}")
-
 # Calculate Change in Internal Energy (delta_U)
 delta_U = variables["heat_added"] - variables["work_output_out"]
 print(f"Change in Internal Energy (delta_U): {delta_U} J")
-
 # Calculate Change in Enthalpy (delta_H)
 delta_H = variables["enthalpy_initial"] + variables["delta_KE"] + variables["delta_PE"] + variables["delta_S"]
 print(f"Change in Enthalpy (delta_H): {delta_H} J")
-
 # Calculate Efficiency using Carnot Cycle (eta_carnot)
 eta_carnot = 1 - variables["low_temp"] / variables["high_temp"]
 print(f"Carnot Cycle Efficiency (eta_carnot): {eta_carnot}")
-
 # Calculate Latent Heat of Vaporization (h_fg)
 h_fg = variables["spec_heat_capacity_cp"] * (variables["boiling_point"] - variables["initial_temp"])
 print(f"Latent Heat of Vaporization (h_fg): {h_fg} kJ/kg")
 
 
-# Category
-print(f"\nDynamics and Kinematics\n")
-
+print(f"\n::Dynamics and Kinematics::\n")
 # Calculate Potential Energy (PE)
 PE = variables["mass"] * variables["gravity"] * variables["height"]
 print(f"Potential Energy (PE): {PE} J")
-
 # Calculate Kinetic Energy (KE)
 KE = 0.5 * variables["mass"] * variables["velocity"]**2
 print(f"Kinetic Energy (KE): {KE} J")
-
 # Calculate Work (W)
 W = variables["force"] * variables["distance"] * math.cos(variables["angle"])
 print(f"Work (W): {W} J")
-
 # Calculate Centripetal Force (Fc)
 Fc = variables["mass"] * variables["velocity"]**2 / variables["radius"]
 print(f"Centripetal Force (Fc): {Fc} N")
-
 # Calculate Angular Velocity (omega)
 omega = variables["angle"] / variables["time"]
 print(f"Angular Velocity (omega): {omega} rad/s")
-
 # Calculate Wave Speed (v)
 wave_speed = variables["frequency"] * variables["wavelength"]
 print(f"Wave Speed (v): {wave_speed} m/s")
 
 
-# Category
-print(f"\nElectricity and Magnetism\n")
-
+print(f"\n::Electricity and Magnetism::\n")
 # Calculate Voltage (V)
 V = variables["current"] * variables["resistance"]
 print(f"Voltage (V): {V} V")
-
 # Calculate Magnetic Flux Density (B)
 B = variables["permeability_free_space"] * variables["current"] / (2 * math.pi * variables["radius"])
 print(f"Magnetic Flux Density (B): {B} T")
-
 # Calculate Magnetic Force (F_m)
 F_m = variables["num_turns"] * variables["current"] * variables["length_vec"][0] * variables["mag_field_vec"][0]
 print(f"Magnetic Force (F_m): {F_m} N")
-
 # Calculate Electrostatic Force (F)
 electrostatic_force = variables["coulomb_constant"] * variables["charge1"] * variables["charge2"] / variables["rad_dist_from_wire"]**2
 print(f"Electrostatic Force (F): {electrostatic_force} N")
-
 # Calculate Inductance (Solenoid)
 inductance = (variables["permeability"] * variables["num_turns"]**2 * variables["cross_sectional_area"]) / variables["length"]
 print(f"Inductance (Solenoid): {inductance}")
-
 # Calculate Capacitance (Parallel Plate Capacitor)
 capacitance = (variables["dielectric_constant"] * variables["permittivity_free_space"] * variables["area"]) / variables["distance"]
 print(f"Capacitance (Parallel Plate Capacitor): {capacitance}")
-
 # Calculate Displacement Current (Maxwell's equations)
 displacement_current = variables["permittivity_free_space"] * variables["rate_of_change_electric_field"]
 print(f"Displacement Current (Maxwell's equations): {displacement_current}")
-
 # Calculate Resistivity (Electrical Resistance)
 resistivity = variables["resistance"] * variables["cross_sectional_area"] / variables["length"]
 print(f"Resistivity (Electrical Resistance): {resistivity}")
 
 
 # Category
-print(f"\nMaterial Properties\n")
-
+print(f"\n::Material Properties::\n")
 # Calculate Linear Expansion (delta_L)
 delta_L = variables["length"] * variables["strain"]
 print(f"Linear Expansion (delta_L): {delta_L} m")
-
 # Calculate Volume Expansion (delta_V)
 alpha = 1 / (variables["spec_heat_capacity_cv"] * variables["temperature"])
 delta_V = alpha * variables["volume"] * variables["temp_difference"]
@@ -310,48 +264,73 @@ print(f"Volume Expansion (delta_V): {delta_V} m^3")
 
 
 # Category
-print(f"\nFluid and Thermal Systems\n")
-
+print(f"\n::Fluid and Thermal Systems::\n")
 # Function for saturation vapor pressure calculation
 def saturation_vapor_pressure(T):
     T_C = (T - 32) * 5.0 / 9.0  # Convert °F to °C
     return 6.112 * math.exp((17.67 * T_C) / (T_C + 243.5))
-
 # Calculate saturation vapor pressure
 T = variables["temperature"]  # Example temperature in °F
 saturation_vapor_pressure_value = saturation_vapor_pressure(T)
 print(f"Saturation Vapor Pressure at {T} °F: {saturation_vapor_pressure_value} hPa")
-
 # Calculate specific heat
 specific_heat = variables["heat_added"] / (variables["mass"] * variables["temperature_change"])
 specific_heat
 print(f"Specific Heat: {specific_heat} J/(kg·K)")
-
 # Calculate Fourier's Law (Heat Conduction)
 heat_conduction = variables["thermal_conductivity"] * variables["area"] * (variables["temperature_change"] / variables["length"])
 print(f"Fourier's Law (Heat Conduction): {heat_conduction} W")
-
 # Calculate Diffusion Equation (Mass Transfer)
 diffusion_flux = -variables["diffusion_coefficient"] * (variables["concentration_gradient"] / variables["distance"])
 print(f"Diffusion Equation (Mass Transfer): {diffusion_flux} kg/(m²·s)")
 
 
 # Category
-print(f"\nAdditional Physics\n")
-
+print(f"\n::Additional Physics::\n")
 # Calculate Speed of Sound in a Gas
 speed_of_sound = math.sqrt(variables["adiabatic_index"] * variables["gas_constant"] * variables["temperature"])
 print(f"Speed of Sound in a Gas: {speed_of_sound} m/s")
-
 # Calculate Pascal's Law (Hydrostatic Pressure)
 hydrostatic_pressure = variables["fluid_density"] * variables["gravity"] * variables["depth"]
 print(f"Hydrostatic Pressure (Pascal's Law): {hydrostatic_pressure} Pa")
+
+# Function to calculate permutations
+def permutations(n, r):
+    """
+    Calculate the number of permutations of n distinct objects taken r at a time.
+    Parameters:
+    n (int): Total number of distinct objects.
+    r (int): Number of objects taken at a time.
+    Returns:
+    int: Number of permutations.
+    """
+    return math.factorial(n) // math.factorial(n - r)
+
+# Function to calculate combinations
+def combinations(n, r):
+    """
+    Calculate the number of combinations of n distinct objects taken r at a time.
+    Parameters:
+    n (int): Total number of distinct objects.
+    r (int): Number of objects taken at a time.
+    Returns:
+    int: Number of combinations.
+    """
+    return math.factorial(n) // (math.factorial(r) * math.factorial(n - r))
+# Example calculations
+n = 10
+r = 1
+nPr = permutations(n, r)
+nCr = combinations(n, r)
+print(f"Permutations P({n}, {r}): {nPr}")
+print(f"Combinations C({n}, {r}): {nCr}")
+
 #+END_SRC
 
 #+RESULTS: variables
 #+begin_example
 
-Mechanics of Materials
+::Mechanics of Materials::
 
 Stress (sigma): 2500.0 Pa
 Strain (epsilon): 0.01
@@ -363,7 +342,7 @@ Torsional Shear Stress: 20000000.0 Pa
 Poisson's Ratio (v): -0.5
 Second Moment of Inertia: 833.3333333333334 m^4
 
-Fluid Mechanics
+::Fluid Mechanics::
 
 Pressure (P): 98100.0 Pa
 Flow Rate: 2.0 m^3/s
@@ -373,7 +352,7 @@ Stokes' Law (Viscous Drag on a Sphere): 188.49555921538757
 Strouhal Number: 10.0
 Pressure Difference (Bernoulli): -6000.0 Pa
 
-Thermodynamics
+::Thermodynamics::
 
 Ideal Gas Law: 2270.9691 J/mol
 Efficiency (eta): 0.5
@@ -385,7 +364,7 @@ Change in Enthalpy (delta_H): 1090.001 J
 Carnot Cycle Efficiency (eta_carnot): 0.4
 Latent Heat of Vaporization (h_fg): 418.0 kJ/kg
 
-Dynamics and Kinematics
+::Dynamics and Kinematics::
 
 Potential Energy (PE): 98.10000000000001 J
 Kinetic Energy (KE): 12.5 J
@@ -394,7 +373,7 @@ Centripetal Force (Fc): 0.25 N
 Angular Velocity (omega): 0.0 rad/s
 Wave Speed (v): 25.0 m/s
 
-Electricity and Magnetism
+::Electricity and Magnetism::
 
 Voltage (V): 10 V
 Magnetic Flux Density (B): 4e-09 T
@@ -405,20 +384,22 @@ Capacitance (Parallel Plate Capacitor): 1.56645e-25
 Displacement Current (Maxwell's equations): 1.77e-13
 Resistivity (Electrical Resistance): 0.5
 
-Material Properties
+::Material Properties::
 
 Linear Expansion (delta_L): 0.001 m
 Volume Expansion (delta_V): 0.001957749801533114 m^3
 
-Fluid and Thermal Systems
+::Fluid and Thermal Systems::
 
 Saturation Vapor Pressure at 273.15 °F: 3234.663572434392 hPa
 Specific Heat: 30.0 J/(kg·K)
 Fourier's Law (Heat Conduction): 1.0 W
 Diffusion Equation (Mass Transfer): -5e-06 kg/(m²·s)
 
-Additional Physics
+::Additional Physics::
 
 Speed of Sound in a Gas: 56.38578491073792 m/s
 Hydrostatic Pressure (Pascal's Law): 98100.0 Pa
+Permutations P(10, 1): 10
+Combinations C(10, 1): 10
 #+end_example
