@@ -3259,17 +3259,17 @@ Determine the change in specific entropy in oxygen.
 ***The answer is 0.18 kJ/K.***
 
 *** 86                                                                :drill:
-SCHEDULED: <2023-10-26 Thu>
+SCHEDULED: <2024-06-28 Fri>
 :PROPERTIES:
 :ID:       0339a3e3-7c8d-42f7-a876-040719b3f36f
-:DRILL_LAST_INTERVAL: 4.14
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 13.9932
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [Y-10-22 Sun 20:%]
+:DRILL_EASE: 2.75
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [Y-06-13 Thu 16:%]
 :END:
 
 Atmospheric air at 29.921 in of mercury pressure has 80°F dry-bulb temperature and 60°F wet-bulb temperature. What is the relative humidity as a percentage and the dew point in °F rounded to the nearest integer? *   * Enter your response in the blank.
@@ -3850,17 +3850,17 @@ Determine the total load.
 ***The answer is \(B\).***
 
 *** 101                                                               :drill:
-SCHEDULED: <2023-10-26 Thu>
+SCHEDULED: <2024-06-26 Wed>
 :PROPERTIES:
 :ID:       ed332c28-fc06-4a7b-8602-f20901b83fa3
-:DRILL_LAST_INTERVAL: 4.14
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 13.9932
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [Y-10-22 Sun 21:%]
+:DRILL_EASE: 2.75
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [Y-06-13 Thu 18:%]
 :END:
 
 A metallic crankshaft has the following properties.

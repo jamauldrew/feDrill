@@ -1,21 +1,26 @@
+#+TITLE: Physics and Engineering Formulas
+#+AUTHOR: Your Name
+#+DATE: 2024-06-13
+* Variables
 #+NAME: variables
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output :exports both :tangle yes
 import math
 import numpy as np
+
+# Define variables
 variables = {
     "area": 0.02,                          # Area (m^2)
     "area1": 1.0,                          # Area 1 (m^2)
     "area2": 0.5,                          # Area 2 (m^2)
-    "mag_field_vec": np.array([0.1, 0, 0]), # Magnetic field vector (T)
+    "mag_field_vec": np.array([0.1, 0, 0]),# Magnetic field vector (T)
     "diameter": 0.1,                       # Diameter (m)
     "delta_H": 0.001,                      # Change in Enthalpy (J)
     "delta_KE": 50,                        # Change in kinetic energy (J)
     "delta_PE": 40,                        # Change in potential energy (J)
-    "delta_S": 0.001,                      # Change in Entropy ()
+    "delta_S": 0.001,                      # Change in Entropy (J/K)
     "youngs_modulus": 2.0e11,              # Young's Modulus (Pa)
     "force": 50,                           # Force (N)
     "centripetal_force": 20,               # Centripetal force (N)
-    "mag_field_vec_H": np.array([0, 0, 0]),# Magnetic field vector H (A/m)
     "moment_of_inertia": 0.0001,           # Moment of inertia (m^4)
     "current": 2,                          # Current (A)
     "polar_moment_inertia": 0.00005,       # Polar moment of inertia (m^4)
@@ -47,7 +52,7 @@ variables = {
     "spec_heat_capacity_cp": 4.18,         # Specific heat capacity at constant pressure (J/(K·kg))
     "spec_heat_capacity_cv": 1.87,         # Specific heat capacity at constant volume (J/(K·kg))
     "distance": 10,                        # Distance (m)
-    "initial_temp": float(273.15),                    # Temperature difference (K)
+    "initial_temp": 273.15,                # Initial temperature (K)
     "temp_difference": 10,                 # Temperature difference (K)
     "delta_length": 0.001,                 # Change in length (m)
     "delta_displacement": 1,               # Change in displacement (m)
@@ -64,9 +69,9 @@ variables = {
     "coulomb_constant": 8.99e9,            # Coulomb constant (N·m^2/C^2)
     "length": 0.1,                         # Length (m)
     "wavelength": 0.5,                     # Wavelength (m)
-    "mass": 1,                             # Mass (kg)
+    "mass": 1.0,                             # Mass (kg)
     "viscosity": 0.02,                     # Viscosity (N·s/m^2)
-    "permeability_free_space": 4*math.pi*1e-7,  # Permeability of free space (T·m/A)
+    "permeability_free_space": 4 * math.pi * 1e-7,  # Permeability of free space (T·m/A)
     "substance_amount": 1,                 # Amount of substance (mol)
     "refractive_index1": 1.5,              # Refractive index 1
     "refractive_index2": 1.0,              # Refractive index 2
@@ -85,16 +90,14 @@ variables = {
     "velocity": 5,                         # Velocity (m/s)
     "velocity1": 2,                        # Velocity 1 (m/s)
     "velocity2": 4,                        # Velocity 2 (m/s)
-    "width": 10,                           # Height (m)
+    "width": 10,                           # Width (m)
     "displacement": 0.02,                  # Displacement (m)
-
-    # Missing variables
     "temperature_change": 10,              # Temperature change for specific heat capacity (K)
     "thermal_conductivity": 0.5,           # Thermal conductivity (W/(m·K))
     "characteristic_length": 1.0,          # Characteristic length for Nusselt number (m)
     "convective_heat_transfer": 100,       # Convective heat transfer coefficient (W/(m^2·K))
     "diffusion_coefficient": 0.05,         # Diffusion coefficient (m²/s)
-    "concentration_gradient": 0.001,        # Concentration gradient (mol/m³)
+    "concentration_gradient": 0.001,       # Concentration gradient (mol/m³)
     "stefan_boltzmann_constant": 5.67e-8,  # Stefan-Boltzmann constant (W/(m²·K⁴))
     "emissivity": 0.9,                     # Emissivity (dimensionless)
     "temperature_surface": 400,            # Surface temperature for radiation (K)
@@ -106,7 +109,13 @@ variables = {
     "dielectric_constant": 8.85e-12,       # Dielectric constant for capacitance (F/m)
     "permittivity_free_space": 8.85e-12,   # Permittivity of free space for capacitance (F/m)
     "rate_of_change_electric_field": 0.02, # Rate of change of electric field for displacement current (V/m²)
-    "volume": 0.1,                         # Volume for volume expansion (m³)
+    "volume": 0.1,                         # Volume for volumetric flow rate (m³)
+    "mass_flow_rate": 0.5,                 # Mass flow rate for volumetric flow rate (kg/s)
+    "specific_volume": 0.001,              # Specific volume for mass flow rate (m³/kg)
+    "mass_density": 1000,                  # Mass density for mass flow rate (kg/m³)
+    "specific_heat_capacity": 4.18,        # Specific heat capacity (J/(kg·K))
+    "temperature_initial": 300,            # Initial temperature for specific heat (K)
+    "temperature_final": 350,               # Final temperature for specific heat (K)
     "boiling_point": 373.15,               # Boiling point for latent heat of vaporization (K)
 
 # additional_variables
@@ -116,7 +125,14 @@ variables = {
     "depth": 10            # Depth (m)
 }
 
-print(f"\n::Mechanics of Materials::\n")
+# Convert the variables dictionary to a table format
+variable_table = [["Variable", "Value"]] + [[key, value] for key, value in variables.items()]
+
+# Print the table for export
+for row in variable_table:
+    print(f"{row[0]: <10} | {row[1]}")
+
+print(f"\n::Mechanics of Materials::")
 # Calculate Stress (sigma)
 sigma = variables["force"] / variables["area"]
 print(f"Stress (sigma): {sigma} Pa")
@@ -146,7 +162,7 @@ I = (variables["width"] * variables["height"]**3) / 12
 print(f"Second Moment of Inertia: {I} m^4")
 
 
-print(f"\n::Fluid Mechanics::\n")
+print(f"\n::Fluid Mechanics::")
 # Calculate Pressure (P)
 P = variables["density"] * variables["gravity"] * variables["height"]
 print(f"Pressure (P): {P} Pa")
@@ -174,7 +190,7 @@ P2 = P1 + 0.5 * rho * (v1**2 - v2**2)
 print(f"Pressure Difference (Bernoulli): {P2 - P1} Pa")
 
 
-print(f"\n::Thermodynamics::\n")
+print(f"\n::Thermodynamics::")
 # Ideal Gas Law calculation
 ideal_gas = variables["substance_amount"] * variables["gas_constant"] * variables["temperature"]
 print(f"Ideal Gas Law: {ideal_gas} J/mol")
@@ -204,7 +220,7 @@ h_fg = variables["spec_heat_capacity_cp"] * (variables["boiling_point"] - variab
 print(f"Latent Heat of Vaporization (h_fg): {h_fg} kJ/kg")
 
 
-print(f"\n::Dynamics and Kinematics::\n")
+print(f"\n::Dynamics and Kinematics::")
 # Calculate Potential Energy (PE)
 PE = variables["mass"] * variables["gravity"] * variables["height"]
 print(f"Potential Energy (PE): {PE} J")
@@ -225,7 +241,7 @@ wave_speed = variables["frequency"] * variables["wavelength"]
 print(f"Wave Speed (v): {wave_speed} m/s")
 
 
-print(f"\n::Electricity and Magnetism::\n")
+print(f"\n::Electricity and Magnetism::")
 # Calculate Voltage (V)
 V = variables["current"] * variables["resistance"]
 print(f"Voltage (V): {V} V")
@@ -253,7 +269,7 @@ print(f"Resistivity (Electrical Resistance): {resistivity}")
 
 
 # Category
-print(f"\n::Material Properties::\n")
+print(f"\n::Material Properties::")
 # Calculate Linear Expansion (delta_L)
 delta_L = variables["length"] * variables["strain"]
 print(f"Linear Expansion (delta_L): {delta_L} m")
@@ -264,7 +280,7 @@ print(f"Volume Expansion (delta_V): {delta_V} m^3")
 
 
 # Category
-print(f"\n::Fluid and Thermal Systems::\n")
+print(f"\n::Fluid and Thermal Systems::")
 # Function for saturation vapor pressure calculation
 def saturation_vapor_pressure(T):
     T_C = (T - 32) * 5.0 / 9.0  # Convert °F to °C
@@ -286,7 +302,7 @@ print(f"Diffusion Equation (Mass Transfer): {diffusion_flux} kg/(m²·s)")
 
 
 # Category
-print(f"\n::Additional Physics::\n")
+print(f"\n::Additional Physics::")
 # Calculate Speed of Sound in a Gas
 speed_of_sound = math.sqrt(variables["adiabatic_index"] * variables["gas_constant"] * variables["temperature"])
 print(f"Speed of Sound in a Gas: {speed_of_sound} m/s")
@@ -329,9 +345,119 @@ print(f"Combinations C({n}, {r}): {nCr}")
 
 #+RESULTS: variables
 #+begin_example
+Variable   | Value
+area       | 0.02
+area1      | 1.0
+area2      | 0.5
+mag_field_vec | [0.1 0.  0. ]
+diameter   | 0.1
+delta_H    | 0.001
+delta_KE   | 50
+delta_PE   | 40
+delta_S    | 0.001
+youngs_modulus | 200000000000.0
+force      | 50
+centripetal_force | 20
+moment_of_inertia | 0.0001
+current    | 2
+polar_moment_inertia | 5e-05
+col_eff_len_factor | 1.0
+length_vec | [1 0 0]
+moment     | 100
+num_turns  | 100
+pressure   | 101325
+heat_added | 300
+heat_input | 200
+radius     | 100
+resistance | 5
+gas_constant | 8.314
+cold_temp  | 300
+dry_bulb_temp | 80
+high_temp  | 500
+low_temp   | 300
+period     | 0.02
+temperature | 273.15
+torque     | 10
+wet_bulb_temp | 60
+internal_energy_change | 500
+work_output_in | 100
+work_output_out | 100
+acceleration | 9.8
+angular_acceleration | 2
+base_length | 1
+dist_to_neutral_axis | 0.05
+spec_heat_capacity_cp | 4.18
+spec_heat_capacity_cv | 1.87
+distance   | 10
+initial_temp | 273.15
+temp_difference | 10
+delta_length | 0.001
+delta_displacement | 1
+diff_length_vector | [1, 0, 0]
+strain     | 0.01
+vacuum_permittivity | 8.854e-12
+lateral_strain | 0.005
+longitudinal_strain | 0.01
+frequency  | 50
+gravity    | 9.81
+gamma      | 1.4
+height     | 10
+spring_constant | 100
+coulomb_constant | 8990000000.0
+length     | 0.1
+wavelength | 0.5
+mass       | 1.0
+viscosity  | 0.02
+permeability_free_space | 1.2566370614359173e-06
+substance_amount | 1
+refractive_index1 | 1.5
+refractive_index2 | 1.0
+second_deriv_conc | 2
+charge1    | 6
+charge2    | 3
+rad_dist_from_wire | 1.58
+position_vector | [1.0, 2.0, 3.0]
+density    | 1000
+fluid_density | 1000
+stress     | 200
+time       | 1
+angle      | 0
+incident_angle | 0.5235987755982988
+refracted_angle | 0.8480620789814809
+velocity   | 5
+velocity1  | 2
+velocity2  | 4
+width      | 10
+displacement | 0.02
+temperature_change | 10
+thermal_conductivity | 0.5
+characteristic_length | 1.0
+convective_heat_transfer | 100
+diffusion_coefficient | 0.05
+concentration_gradient | 0.001
+stefan_boltzmann_constant | 5.67e-08
+emissivity | 0.9
+temperature_surface | 400
+temperature_surroundings | 300
+enthalpy_initial | 1000
+heat_removed | 250
+permeability | 1.2566370614359173e-06
+cross_sectional_area | 0.01
+dielectric_constant | 8.85e-12
+permittivity_free_space | 8.85e-12
+rate_of_change_electric_field | 0.02
+volume     | 0.1
+mass_flow_rate | 0.5
+specific_volume | 0.001
+mass_density | 1000
+specific_heat_capacity | 4.18
+temperature_initial | 300
+temperature_final | 350
+boiling_point | 373.15
+adiabatic_index | 1.4
+depth      | 10
 
 ::Mechanics of Materials::
-
 Stress (sigma): 2500.0 Pa
 Strain (epsilon): 0.01
 Young's Modulus (E): 20000.0 Pa
@@ -343,7 +469,6 @@ Poisson's Ratio (v): -0.5
 Second Moment of Inertia: 833.3333333333334 m^4
 
 ::Fluid Mechanics::
-
 Pressure (P): 98100.0 Pa
 Flow Rate: 2.0 m^3/s
 Reynolds Number: 25000.0
@@ -353,7 +478,6 @@ Strouhal Number: 10.0
 Pressure Difference (Bernoulli): -6000.0 Pa
 
 ::Thermodynamics::
-
 Ideal Gas Law: 2270.9691 J/mol
 Efficiency (eta): 0.5
 Specific Heat Capacity: 30.0
@@ -365,7 +489,6 @@ Carnot Cycle Efficiency (eta_carnot): 0.4
 Latent Heat of Vaporization (h_fg): 418.0 kJ/kg
 
 ::Dynamics and Kinematics::
-
 Potential Energy (PE): 98.10000000000001 J
 Kinetic Energy (KE): 12.5 J
 Work (W): 500.0 J
@@ -374,7 +497,6 @@ Angular Velocity (omega): 0.0 rad/s
 Wave Speed (v): 25.0 m/s
 
 ::Electricity and Magnetism::
-
 Voltage (V): 10 V
 Magnetic Flux Density (B): 4e-09 T
 Magnetic Force (F_m): 20.0 N
@@ -385,21 +507,207 @@ Displacement Current (Maxwell's equations): 1.77e-13
 Resistivity (Electrical Resistance): 0.5
 
 ::Material Properties::
-
 Linear Expansion (delta_L): 0.001 m
 Volume Expansion (delta_V): 0.001957749801533114 m^3
 
 ::Fluid and Thermal Systems::
-
 Saturation Vapor Pressure at 273.15 °F: 3234.663572434392 hPa
 Specific Heat: 30.0 J/(kg·K)
 Fourier's Law (Heat Conduction): 1.0 W
 Diffusion Equation (Mass Transfer): -5e-06 kg/(m²·s)
 
 ::Additional Physics::
-
 Speed of Sound in a Gas: 56.38578491073792 m/s
 Hydrostatic Pressure (Pascal's Law): 98100.0 Pa
 Permutations P(10, 1): 10
 Combinations C(10, 1): 10
 #+end_example
+
+
+* Mechanics of Materials
+#+BEGIN_SRC python :results output :exports both
+import math
+import numpy as np
+
+# Define variables
+variables.update = {
+    "area": 0.02,                          # Area (m^2)
+    "force": 50,                           # Force (N)
+    "stress": 2500.0,                      # Stress (Pa)
+    "strain": 0.01,                        # Strain
+    "youngs_modulus": 20000.0,             # Young's Modulus (Pa)
+    "shear_stress": 2500.0,                # Shear Stress (Pa)
+    "shear_strain": 0.1,                   # Shear Strain
+    "bending_stress": 50000.0,             # Bending Stress (Pa)
+    "torsional_shear_stress": 20000000.0,  # Torsional Shear Stress (Pa)
+    "poisson_ratio": -0.5,                 # Poisson's Ratio
+    "second_moment_inertia": 833.3333333333334, # Second Moment of Inertia (m^4)
+    "displacement": 0.02,                  # Displacement (m)
+    "spring_constant": 100                 # Spring constant (N/m)
+}
+#+END_SRC
+
+#+NAME: calculate_energy
+#+BEGIN_SRC python :results output :exports both
+elastic_energy = 0.5 * spring_constant * displacement ** 2
+print(f"elastic_energy = {elastic_energy}")
+#+END_SRC
+
+#+NAME: shear_stress
+#+BEGIN_SRC python :results output :exports both
+# Calculate Shear Stress
+shear_stress = variables['force'] / variables['area']
+print(f"{shear_stress}")
+#+END_SRC
+
+#+RESULTS: shear_stress
+: 2500.0
+
+#+RESULTS:
+
+* Fluid Mechanics
+#+BEGIN_SRC python :results output :exports both
+variables.update({
+    "pressure": 98100.0,                   # Pressure (Pa)
+    "flow_rate": 2.0,                      # Flow Rate (m^3/s)
+    "reynolds_number": 25000.0,            # Reynolds Number
+    "nusselt_number": 200.0,               # Nusselt Number
+    "stokes_law_drag": 188.49555921538757, # Stokes' Law (Viscous Drag on a Sphere)
+    "strouhal_number": 10.0,               # Strouhal Number
+    "pressure_difference": -6000.0,        # Pressure Difference (Pa)
+    "fluid_density": 1000,                 # Density (kg/m^3)
+    "velocity": 5,                         # Velocity (m/s)
+    "characteristic_length": 1.0,          # Characteristic length (m)
+    "viscosity": 0.02                      # Viscosity (N·s/m^2)
+})
+
+# Calculate Reynold's Number (Re = (ρ * v * L) / μ)
+reynolds_number = (variables['fluid_density'] * variables['velocity'] * variables['characteristic_length']) / variables['viscosity']
+reynolds_number
+#+END_SRC
+
+#+RESULTS:
+: 250000.0
+
+* Thermodynamics
+#+BEGIN_SRC python :results output :exports both
+variables.update({
+    "ideal_gas_law": 2270.9691,            # Ideal Gas Law (J/mol)
+    "efficiency": 0.5,                     # Efficiency
+    "specific_heat_capacity": 30.0,        # Specific Heat Capacity
+    "cop_refrigeration": 2.5,              # Coefficient of Performance (Refrigeration Cycle)
+    "heat_transfer_radiation": 17.8605,    # Heat Transfer by Radiation (W)
+    "delta_U": 200,                        # Change in Internal Energy (J)
+    "delta_H": 1090.001,                   # Change in Enthalpy (J)
+    "carnot_efficiency": 0.4,              # Carnot Cycle Efficiency
+    "latent_heat_vaporization": 418.0,     # Latent Heat of Vaporization (kJ/kg)
+    "mass": 1,                             # Mass (kg)
+    "temperature_initial": 300,            # Initial temperature (K)
+    "temperature_final": 350,              # Final temperature (K)
+    "specific_heat_capacity": 4.18,        # Specific heat capacity (J/(kg·K))
+    "delta_T": 50                          # Temperature difference (K)
+})
+
+# Calculate Thermal Energy Transfer (Q = mcΔT)
+thermal_energy_transfer = variables['mass'] * variables['specific_heat_capacity'] * (variables['temperature_final'] - variables['temperature_initial'])
+thermal_energy_transfer
+#+END_SRC
+
+#+RESULTS:
+: 209.0
+
+* Dynamics and Kinematics
+#+BEGIN_SRC python :results output :exports both
+variables.update({
+    "potential_energy": 98.1,              # Potential Energy (J)
+    "kinetic_energy": 12.5,                # Kinetic Energy (J)
+    "work_done": 500.0,                    # Work Done (J)
+    "centripetal_force": 0.25,             # Centripetal Force (N)
+    "angular_velocity": 0.0,               # Angular Velocity (rad/s)
+    "wave_speed": 25.0,                    # Wave Speed (m/s)
+    "radius": 100,                         # Radius (m)
+    "gravity": 9.81,                       # Gravity (m/s^2)
+    "height": 10,                          # Height (m)
+    "velocity": 5,                         # Velocity (m/s)
+    "frequency": 50,                       # Frequency (Hz)
+    "wavelength": 0.5                      # Wavelength (m)
+})
+
+# Calculate Gravitational Potential Energy (PE = mgh)
+gravitational_potential_energy = variables['mass'] * variables['gravity'] * variables['height']
+print(f"{gravitational_potential_energy}")
+#+END_SRC
+
+#+RESULTS:
+: 98.10000000000001
+
+#+BEGIN_SRC python :results output :exports both
+# Calculate Kinetic Energy (KE = 0.5 * m * v²)
+kinetic_energy = 0.5 * variables['mass'] * variables['velocity']**2
+print(f"{kinetic_energy}")
+kinetic_energy
+#+END_SRC
+
+#+RESULTS:
+: 12.5
+
+#+BEGIN_SRC python :results output :exports both
+# Calculate Wave Speed (v = fλ)
+wave_speed = variables['frequency'] * variables['wavelength']
+wave_speed
+#+END_SRC
+
+#+RESULTS:
+: 25.0
+
+* Electricity and Magnetism
+#+BEGIN_SRC python :results output :exports both
+variables.update({
+    "voltage": 10,                         # Voltage (V)
+    "magnetic_flux_density": 4e-09,        # Magnetic Flux Density (T)
+    "magnetic_force": 20.0,                # Magnetic Force (N)
+    "electrostatic_force": 64821342733.536285, # Electrostatic Force (N)
+    "inductance": 0.0012566370614359172,   # Inductance (Solenoid)
+    "capacitance": 1.56645e-25,            # Capacitance (Parallel Plate Capacitor)
+    "displacement_current": 1.77e-13,      # Displacement Current (Maxwell's equations)
+    "resistivity": 0.5,                    # Resistivity (Electrical Resistance)
+    "current": 2                           # Current (A)
+})
+
+# Calculate Electrical Power (P = IV)
+electrical_power = variables['current'] * variables['voltage']
+electrical_power
+#+END_SRC
+
+#+RESULTS:
+: 20
+
+* Additional Physics
+#+BEGIN_SRC python :results output :exports both
+variables.update({
+    "speed_of_sound": 56.38578491073792,   # Speed of Sound in a Gas (m/s)
+    "hydrostatic_pressure": 98100.0,       # Hydrostatic Pressure (Pa)
+    "permutations": 10,                    # Permutations P(10, 1)
+    "combinations": 10                     # Combinations C(10, 1)
+})
+
+variables
+#+END_SRC
+
+#+RESULTS:
+: { ... }
+* Mechanical Engineering
+#+BEGIN_SRC python :results output :exports both
+# Goodman theory formula
+def goodman(ultimate_strength, mean_stress, alternating_stress):
+    safety_factor = ultimate_strength / (mean_stress + alternating_stress)
+    return safety_factor
+
+# Example usage
+safety_factor = goodman(3000.0, 2000.0, 1000.0)
+safety_factor
+print(f"{safety_factor}")
+#+END_SRC
+
+#+RESULTS:
+: 1.0

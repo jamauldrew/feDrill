@@ -1,0 +1,20 @@
+#+title: Test Bullshit Garbage Throwaway
+
+#+title: Harmonic Oscillator Energy Calculation
+
+#+NAME: variables
+#+BEGIN_SRC python :exports both
+spring_constant = 10.0
+displacement = 2.0
+#+END_SRC
+
+#+RESULTS: variables
+
+#+NAME: calculate_energy
+#+BEGIN_SRC python :results output :exports both
+elastic_energy = 0.5 * spring_constant * displacement ** 2
+print(f"elastic_energy = {elastic_energy}")
+#+END_SRC
+
+#+RESULTS: calculate_energy
+: elastic_energy = 20.0
