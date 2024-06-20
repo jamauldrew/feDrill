@@ -1424,17 +1424,17 @@ The formula is applicable to problems involving ropes wrapped around a capstan o
 ***The answer is \(A\) and \(C\).***
 
 *** 38                                                                :drill:
-SCHEDULED: <2023-10-26 Thu>
+SCHEDULED: <2024-07-05 Fri>
 :PROPERTIES:
 :ID:       9b565e62-f3dc-4dec-8ff5-dc56b47290cf
-:DRILL_LAST_INTERVAL: 4.14
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 13.9932
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [Y-10-22 Sun 19:%]
+:DRILL_EASE: 2.75
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [Y-06-19 Wed 18:%]
 :END:
 
 Consider the ladder shown.
@@ -2655,17 +2655,18 @@ In order to maximize the siphoning height, *h*, the water pressure at point C sh
 ***The answer is \(C\).***
 
 *** 72                                                                :drill:
-SCHEDULED: <2023-10-26 Thu>
+SCHEDULED: <2024-06-19 Wed 19:10>
 :PROPERTIES:
 :ID:       1058ef88-3be6-4792-8743-ae251379f335
-:DRILL_LAST_INTERVAL: 4.14
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
+:DRILL_LAST_INTERVAL: -10.7
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [Y-10-22 Sun 18:%]
+:DRILL_EASE: 2.4
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [Y-06-19 Wed 19:%]
+:DRILL_REPS_LEFT: (1 1)
 :END:
 
 A spherical air balloon having a 1 m diameter is propelled up into the air at a speed of 3.4 m/s. The air temperature is 40°C, and the air properties are

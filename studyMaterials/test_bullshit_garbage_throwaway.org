@@ -1,14 +1,102 @@
 #+title: Test Bullshit Garbage Throwaway
 
-#+title: Harmonic Oscillator Energy Calculation
+#+NAME: engineering_economics_variables
+#+BEGIN_SRC python :results output :exports both
+# Engineering Economics Variables
+A = 0.0  # Uniform amount per interest period
+B = 0.0  # Benefit
+BV = 0.0  # Book value
+C = 0.0  # Cost
+d = 0.0  # Inflation adjusted interest rate per interest period
+Dj = 0.0  # Depreciation in year j
+EV = 0.0  # Expected value
+f = 0.0  # General inflation rate per interest period
+MARR = 0.0  # Minimum acceptable/attractive rate of return
+m = 0  # Number of compounding periods per year
+P = 0.0  # Present worth, value, or amount
+r = 0.0  # Nominal annual interest rate
+Sn = 0.0  # Expected salvage value in year n
 
-#+NAME: variables
-#+BEGIN_SRC python :exports both
-spring_constant = 10.0
-displacement = 2.0
+# Interest rate per interest period
+i = 0.1  # Interest rate per interest period, example: 0.1 for 10%
+n = 10  # Number of compounding periods; or the expected life of an asset
+P_single_payment = 1000  # Given Present worth
+F_present_worth = 1500  # Given Future worth
+F_single_payment = 2000  # Future worth to be calculated
+P_capital_recovery = 1000  # Given Present worth for Capital Recovery
+A_uniform_series = 150  # Given Uniform amount per interest period
+G_uniform_gradient = 50  # Given Uniform Gradient
+
+# Single Payment Compound Amount (F/P, i%, n)
+F_single_payment = P_single_payment * (1 + i)**n
+print(f"Single Payment Compound Amount (F/P, i%, n): {F_single_payment}")
+
+# Single Payment Present Worth (P/F, i%, n)
+P_present_worth = F_present_worth / (1 + i)**n
+print(f"Single Payment Present Worth (P/F, i%, n): {P_present_worth}")
+
+# Uniform Series Sinking Fund (A/F, i%, n)
+A_sinking_fund = F_single_payment * (i / ((1 + i)**n - 1))
+print(f"Uniform Series Sinking Fund (A/F, i%, n): {A_sinking_fund}")
+
+# Capital Recovery (A/P, i%, n)
+A_capital_recovery = P_capital_recovery * (i * (1 + i)**n) / ((1 + i)**n - 1)
+print(f"Capital Recovery (A/P, i%, n): {A_capital_recovery}")
+
+# Uniform Series Compound Amount (F/A, i%, n)
+F_uniform_series = A_uniform_series * (((1 + i)**n - 1) / i)
+print(f"Uniform Series Compound Amount (F/A, i%, n): {F_uniform_series}")
+
+# Uniform Series Present Worth (P/A, i%, n)
+P_uniform_series = A_uniform_series * ((1 - (1 + i)**-n) / i)
+print(f"Uniform Series Present Worth (P/A, i%, n): {P_uniform_series}")
+
+# Uniform Gradient Present Worth (P/G, i%, n)
+P_uniform_gradient = G_uniform_gradient * (((1 + i)**n - n * i - 1) / (i**2 * (1 + i)**n))
+print(f"Uniform Gradient Present Worth (P/G, i%, n): {P_uniform_gradient}")
+
+# Uniform Gradient Future Worth (F/G, i%, n)
+F_uniform_gradient = G_uniform_gradient * (((1 + i)**n - 1 - n * i) / i)
+print(f"Uniform Gradient Future Worth (F/G, i%, n): {F_uniform_gradient}")
+
+# Uniform Gradient Uniform Series (A/G, i%, n)
+A_gradient_series = G_uniform_gradient * (1 / i - n / ((1 + i)**n - 1))
+print(f"Uniform Gradient Uniform Series (A/G, i%, n): {A_gradient_series}")
 #+END_SRC
 
-#+RESULTS: variables
+#+RESULTS: engineering_economics_variables
+: Single Payment Compound Amount (F/P, i%, n): 2593.7424601000025
+: Single Payment Present Worth (P/F, i%, n): 578.3149341442971
+: Uniform Series Sinking Fund (A/F, i%, n): 162.74539488251153
+: Capital Recovery (A/P, i%, n): 162.74539488251153
+: Uniform Series Compound Amount (F/A, i%, n): 2390.6136901500035
+: Uniform Series Present Worth (P/A, i%, n): 921.6850658557028
+: Uniform Gradient Present Worth (P/G, i%, n): 1144.5671057046857
+: Uniform Gradient Future Worth (F/G, i%, n): 296.87123005000115
+: Uniform Gradient Uniform Series (A/G, i%, n): 186.27302558744242
+
+* Mechanics of Materials
+#+BEGIN_SRC python :results output :exports both
+import math
+import numpy as np
+
+# Define variables
+variables.update = {
+    "area": 0.02,                          # Area (m^2)
+    "force": 50,                           # Force (N)
+    "stress": 2500.0,                      # Stress (Pa)
+    "strain": 0.01,                        # Strain
+    "youngs_modulus": 20000.0,             # Young's Modulus (Pa)
+    "shear_stress": 2500.0,                # Shear Stress (Pa)
+    "shear_strain": 0.1,                   # Shear Strain
+    "bending_stress": 50000.0,             # Bending Stress (Pa)
+    "torsional_shear_stress": 20000000.0,  # Torsional Shear Stress (Pa)
+    "poisson_ratio": -0.5,                 # Poisson's Ratio
+    "second_moment_inertia": 833.3333333333334, # Second Moment of Inertia (m^4)
+    "displacement": 0.02,                  # Displacement (m)
+    "spring_constant": 100                 # Spring constant (N/m)
+}
+#+END_SRC
 
 #+NAME: calculate_energy
 #+BEGIN_SRC python :results output :exports both
@@ -18,3 +106,162 @@ print(f"elastic_energy = {elastic_energy}")
 
 #+RESULTS: calculate_energy
 : elastic_energy = 20.0
+
+#+NAME: shear_stress
+#+BEGIN_SRC python :results output :exports both
+# Calculate Shear Stress
+shear_stress = variables['force'] / variables['area']
+print(f"{shear_stress}")
+#+END_SRC
+
+#+RESULTS: shear_stress
+: 2500.0
+
+#+RESULTS:
+
+* Fluid Mechanics
+#+BEGIN_SRC python :results output :exports both
+variables.update({
+    "pressure": 98100.0,                   # Pressure (Pa)
+    "flow_rate": 2.0,                      # Flow Rate (m^3/s)
+    "reynolds_number": 25000.0,            # Reynolds Number
+    "nusselt_number": 200.0,               # Nusselt Number
+    "stokes_law_drag": 188.49555921538757, # Stokes' Law (Viscous Drag on a Sphere)
+    "strouhal_number": 10.0,               # Strouhal Number
+    "pressure_difference": -6000.0,        # Pressure Difference (Pa)
+    "fluid_density": 1000,                 # Density (kg/m^3)
+    "velocity": 5,                         # Velocity (m/s)
+    "characteristic_length": 1.0,          # Characteristic length (m)
+    "viscosity": 0.02                      # Viscosity (N·s/m^2)
+})
+
+# Calculate Reynold's Number (Re = (ρ * v * L) / μ)
+reynolds_number = (variables['fluid_density'] * variables['velocity'] * variables['characteristic_length']) / variables['viscosity']
+reynolds_number
+#+END_SRC
+
+#+RESULTS:
+: 250000.0
+
+* Thermodynamics
+#+BEGIN_SRC python :results output :exports both
+variables.update({
+    "ideal_gas_law": 2270.9691,            # Ideal Gas Law (J/mol)
+    "efficiency": 0.5,                     # Efficiency
+    "specific_heat_capacity": 30.0,        # Specific Heat Capacity
+    "cop_refrigeration": 2.5,              # Coefficient of Performance (Refrigeration Cycle)
+    "heat_transfer_radiation": 17.8605,    # Heat Transfer by Radiation (W)
+    "delta_U": 200,                        # Change in Internal Energy (J)
+    "delta_H": 1090.001,                   # Change in Enthalpy (J)
+    "carnot_efficiency": 0.4,              # Carnot Cycle Efficiency
+    "latent_heat_vaporization": 418.0,     # Latent Heat of Vaporization (kJ/kg)
+    "mass": 1,                             # Mass (kg)
+    "temperature_initial": 300,            # Initial temperature (K)
+    "temperature_final": 350,              # Final temperature (K)
+    "specific_heat_capacity": 4.18,        # Specific heat capacity (J/(kg·K))
+    "delta_T": 50                          # Temperature difference (K)
+})
+
+# Calculate Thermal Energy Transfer (Q = mcΔT)
+thermal_energy_transfer = variables['mass'] * variables['specific_heat_capacity'] * (variables['temperature_final'] - variables['temperature_initial'])
+thermal_energy_transfer
+#+END_SRC
+
+#+RESULTS:
+: 209.0
+
+* Dynamics and Kinematics
+#+BEGIN_SRC python :results output :exports both
+variables.update({
+    "potential_energy": 98.1,              # Potential Energy (J)
+    "kinetic_energy": 12.5,                # Kinetic Energy (J)
+    "work_done": 500.0,                    # Work Done (J)
+    "centripetal_force": 0.25,             # Centripetal Force (N)
+    "angular_velocity": 0.0,               # Angular Velocity (rad/s)
+    "wave_speed": 25.0,                    # Wave Speed (m/s)
+    "radius": 100,                         # Radius (m)
+    "gravity": 9.81,                       # Gravity (m/s^2)
+    "height": 10,                          # Height (m)
+    "velocity": 5,                         # Velocity (m/s)
+    "frequency": 50,                       # Frequency (Hz)
+    "wavelength": 0.5                      # Wavelength (m)
+})
+
+# Calculate Gravitational Potential Energy (PE = mgh)
+gravitational_potential_energy = variables['mass'] * variables['gravity'] * variables['height']
+print(f"{gravitational_potential_energy}")
+#+END_SRC
+
+#+RESULTS:
+: 98.10000000000001
+
+#+BEGIN_SRC python :results output :exports both
+# Calculate Kinetic Energy (KE = 0.5 * m * v²)
+kinetic_energy = 0.5 * variables['mass'] * variables['velocity']**2
+print(f"{kinetic_energy}")
+kinetic_energy
+#+END_SRC
+
+#+RESULTS:
+: 12.5
+
+#+BEGIN_SRC python :results output :exports both
+# Calculate Wave Speed (v = fλ)
+wave_speed = variables['frequency'] * variables['wavelength']
+wave_speed
+#+END_SRC
+
+#+RESULTS:
+: 25.0
+
+* Electricity and Magnetism
+#+BEGIN_SRC python :results output :exports both
+variables.update({
+    "voltage": 10,                         # Voltage (V)
+    "magnetic_flux_density": 4e-09,        # Magnetic Flux Density (T)
+    "magnetic_force": 20.0,                # Magnetic Force (N)
+    "electrostatic_force": 64821342733.536285, # Electrostatic Force (N)
+    "inductance": 0.0012566370614359172,   # Inductance (Solenoid)
+    "capacitance": 1.56645e-25,            # Capacitance (Parallel Plate Capacitor)
+    "displacement_current": 1.77e-13,      # Displacement Current (Maxwell's equations)
+    "resistivity": 0.5,                    # Resistivity (Electrical Resistance)
+    "current": 2                           # Current (A)
+})
+
+# Calculate Electrical Power (P = IV)
+electrical_power = variables['current'] * variables['voltage']
+electrical_power
+#+END_SRC
+
+#+RESULTS:
+: 20
+
+* Additional Physics
+#+BEGIN_SRC python :results output :exports both
+variables.update({
+    "speed_of_sound": 56.38578491073792,   # Speed of Sound in a Gas (m/s)
+    "hydrostatic_pressure": 98100.0,       # Hydrostatic Pressure (Pa)
+    "permutations": 10,                    # Permutations P(10, 1)
+    "combinations": 10                     # Combinations C(10, 1)
+})
+
+variables
+#+END_SRC
+
+#+RESULTS:
+: { ... }
+* Mechanical Engineering
+#+BEGIN_SRC python :results output :exports both
+# Goodman theory formula
+def goodman(ultimate_strength, mean_stress, alternating_stress):
+    safety_factor = ultimate_strength / (mean_stress + alternating_stress)
+    return safety_factor
+
+# Example usage
+safety_factor = goodman(3000.0, 2000.0, 1000.0)
+safety_factor
+print(f"{safety_factor}")
+#+END_SRC
+
+#+RESULTS:
+: 1.0
