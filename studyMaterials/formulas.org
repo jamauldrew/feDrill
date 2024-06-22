@@ -191,83 +191,46 @@ youngs_modulus
 import matplotlib.pyplot as plt
 import numpy as np
 
-def generate_stress_strain_data(material, strain_values):
-    """
-    Generate stress-strain data that includes elastic, plastic deformations, and potential strain hardening.
-
-    Parameters:
-        material (str): Name of the material.
-        strain_values (numpy array): Array of strain values.
-
-    Returns:
-        stress_values (numpy array): Calculated stress values.
-    """
+def calculate_stress(strain_values, yield_strength, young_modulus, plastic_strain_hardening_modulus):
     stress_values = np.zeros_like(strain_values)
-
-    if material == "Steel":
-        yield_strength = 250  # MPa
-        young_modulus = 210000  # MPa
-        plastic_strain_hardening_modulus = 1000  # MPa
-
-        for i, strain in enumerate(strain_values):
-            if strain < yield_strength / young_modulus:
-                stress_values[i] = young_modulus * strain
-            else:
-                stress_values[i] = yield_strength + plastic_strain_hardening_modulus * (strain - yield_strength / young_modulus)
-
-    elif material == "Aluminum":
-        yield_strength = 100  # MPa
-        young_modulus = 70000  # MPa
-        plastic_strain_hardening_modulus = 500  # MPa
-
-        for i, strain in enumerate(strain_values):
-            if strain < yield_strength / young_modulus:
-                stress_values[i] = young_modulus * strain
-            else:
-                stress_values[i] = yield_strength + plastic_strain_hardening_modulus * (strain - yield_strength / young_modulus)
-
-    elif material == "Copper":
-        yield_strength = 200  # MPa
-        young_modulus = 110000  # MPa
-        plastic_strain_hardening_modulus = 750  # MPa
-
-        for i, strain in enumerate(strain_values):
-            if strain < yield_strength / young_modulus:
-                stress_values[i] = young_modulus * strain
-            else:
-                stress_values[i] = yield_strength + plastic_strain_hardening_modulus * (strain - yield_strength / young_modulus)
-
+    for i, strain in enumerate(strain_values):
+        if strain < yield_strength / young_modulus:
+            stress_values[i] = young_modulus * strain
+        else:
+            stress_values[i] = yield_strength + plastic_strain_hardening_modulus * (strain - yield_strength / young_modulus)
     return stress_values
 
-# Define strain values
-strain_values = np.linspace(0, 0.05, 500)  # Extended strain range for comprehensive curves
+def generate_stress_strain_data(material, strain_values):
+    materials_properties = {
+        "Steel": {"yield_strength": 250, "young_modulus": 210000, "plastic_strain_hardening_modulus": 1000},
+        "Aluminum": {"yield_strength": 100, "young_modulus": 70000, "plastic_strain_hardening_modulus": 500},
+        "Copper": {"yield_strength": 200, "young_modulus": 110000, "plastic_strain_hardening_modulus": 750}
+    }
 
-# Define materials
+    if material in materials_properties:
+        props = materials_properties[material]
+        return calculate_stress(strain_values, **props)
+    else:
+        raise ValueError(f"Unknown material: {material}")
+
+strain_values = np.linspace(0, 0.05, 500)
 materials = ["Steel", "Aluminum", "Copper"]
-
-# Initialize max stress variable
 max_stress = 0
 
-# Plotting the stress-strain curves
-plt.figure(figsize=(12, 8))  # Set a larger figure size
+plt.figure(figsize=(12, 8))
 
 for material in materials:
     stress_values = generate_stress_strain_data(material, strain_values)
     max_stress = max(max_stress, max(stress_values))
     plt.plot(strain_values, stress_values, label=material)
 
-# Add titles and labels
 plt.title('Stress-Strain Diagram for Multiple Materials', fontsize=16)
 plt.xlabel('Strain', fontsize=14)
 plt.ylabel('Stress (MPa)', fontsize=14)
 plt.legend(fontsize=12)
 plt.grid(True)
-
-# Ensure the entire curve is shown by adjusting axis limits
 plt.xlim(0, np.max(strain_values) * 1.1)
-plt.ylim(0, max_stress * 1.1)  # Add some padding at the top of the y-axis
-
-# Display the plot
+plt.ylim(0, max_stress * 1.1)
 plt.show()
 #+end_src
 
