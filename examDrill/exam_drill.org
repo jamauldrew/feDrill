@@ -2654,7 +2654,7 @@ In order to maximize the siphoning height, *h*, the water pressure at point C sh
 [[./images/000302.png]]  [[./images/000157.png]] 
 ***The answer is \(C\).***
 
-*** 72                                                                :drill:
+*** 72 :drill:Fluid_Mechanics:
 SCHEDULED: <2024-06-21 Fri>
 :PROPERTIES:
 :ID:       1058ef88-3be6-4792-8743-ae251379f335
@@ -2670,7 +2670,7 @@ SCHEDULED: <2024-06-21 Fri>
 
 A spherical air balloon having a 1 m diameter is propelled up into the air at a speed of 3.4 m/s. The air temperature is 40°C, and the air properties are
 [[./images/000537.png]] 
-The drag force on the balloon is most nearly(hint:fluid mechanics)
+The drag force on the balloon is most nearly
 
 \(A\)
 

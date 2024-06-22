@@ -140,6 +140,37 @@ dry_bulb_temp_c, wet_bulb_temp_c
 #+RESULTS:
 
 * Mechanics of Materials
+** Calculate Stress (sigma)
+#+BEGIN_SRC python :results output :exports both
+# Given parameters
+variables = {
+    "force": 400,  # Force (N)
+    "area": 2      # Area (m^2)
+}
+
+# Calculate Stress (sigma)
+sigma = variables["force"] / variables["area"]
+print(f"Stress (sigma): {sigma} Pa")
+sigma
+#+END_SRC
+
+#+RESULTS:
+: Stress (sigma): 200.0 Pa
+
+** Calculate Strain (epsilon)
+#+BEGIN_SRC python :results output :exports both
+# Given parameters
+variables = {
+    "delta_length": 0.01,  # Change in length (m)
+    "length": 1            # Original length (m)
+}
+
+# Calculate Strain (epsilon)
+epsilon = variables["delta_length"] / variables["length"]
+print(f"Strain (epsilon): {epsilon}")
+epsilon
+#+END_SRC
+
 ** Young's Modulus Formula
 The formula for Young's Modulus is:
 \[ E = \frac{\sigma}{\epsilon} \]
@@ -154,6 +185,36 @@ youngs_modulus
 
 #+RESULTS:
 : Young's Modulus: 20000.0 Pa
+*** Stress-Strain Relationship Plot
+#+BEGIN_SRC python :results output :exports both
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Define stress and strain values
+stress = np.array([0, 100, 200])  # in Pascal (Pa)
+strain = np.array([0, 0.005, 0.01])  # dimensionless
+
+# Calculate Young's Modulus
+youngs_modulus = stress[2] / strain[2]
+
+# Plotting the stress-strain curve
+plt.figure(figsize=(10, 6))
+plt.plot(strain, stress, marker='o', linestyle='-', color='b')
+
+# Adding title and labels
+plt.title('Stress-Strain Diagram')
+plt.xlabel('Strain (dimensionless)')
+plt.ylabel('Stress (Pa)')
+plt.grid(True)
+plt.axhline(y=0, color='k',linewidth=1)
+plt.axvline(x=0, color='k',linewidth=1)
+plt.text(0.005, 150, f"Young's Modulus: {youngs_modulus} Pa", fontsize=12, color='r')
+
+# Display the plot
+plt.show()
+#+end_src
+
+#+RESULTS:
 
 ** Moment of Inertia
 The formula for the Moment of Inertia is:
@@ -286,12 +347,15 @@ ideal_gas_law
 ** Bernoulli's Equation
 The formula for Bernoulli's Equation is:
 \[ P + \frac{1}{2}\rho v^2 + \rho gh = \text{constant} \]
+
 #+BEGIN_SRC python :results output :exports both
 # Bernoulli's Equation (Pa)
-pressure = 101325 # Pressure (Pa)
-density = 1000 # Density (kg/m^3)
-velocity = 5 # Velocity (m/s)
-height = 10 # Height (m)
+pressure = 101325  # Pressure (Pa)
+density = 1000     # Density (kg/m^3)
+velocity = 5       # Velocity (m/s)
+height = 10        # Height (m)
+gravity = 9.81     # Gravity (m/s^2)
+
 bernoullis_equation = pressure + (0.5 * density * velocity**2) + (density * gravity * height)
 print(f"Bernoulli's Equation: {bernoullis_equation} Pa")
 bernoullis_equation
@@ -303,10 +367,12 @@ bernoullis_equation
 ** Volumetric Flow Rate
 The formula for Volumetric Flow Rate is:
 \[ Q = A \cdot v \]
+
 #+BEGIN_SRC python :results output :exports both
 # Volumetric Flow Rate (m^3/s)
-area = 0.02 # Area (m^2)
+area = 0.02  # Area (m^2)
 velocity = 5 # Velocity (m/s)
+
 volumetric_flow_rate = area * velocity
 print(f"Volumetric Flow Rate: {volumetric_flow_rate} m^3/s")
 volumetric_flow_rate
@@ -314,6 +380,56 @@ volumetric_flow_rate
 
 #+RESULTS:
 : Volumetric Flow Rate: 0.1 m^3/s
+
+** Reynolds Number
+The formula for Reynolds Number is:
+\[ Re = \frac{\rho v L}{\mu} \]
+
+#+BEGIN_SRC python :results output :exports both
+# Reynolds Number
+length = 0.05    # Characteristic Length (m)
+viscosity = 0.001 # Dynamic Viscosity (Pa.s)
+
+reynolds_number = (density * velocity * length) / viscosity
+print(f"Reynolds Number: {reynolds_number}")
+reynolds_number
+#+END_SRC
+
+#+RESULTS:
+: Reynolds Number: 250000.0
+
+** Drag Force
+The formula for Drag Force is:
+\[ F_d = \frac{1}{2} \rho v^2 C_d A \]
+
+#+BEGIN_SRC python :results output :exports both
+# Drag Force (N)
+drag_coefficient = 1.2
+
+drag_force = 0.5 * density * velocity**2 * drag_coefficient * area
+print(f"Drag Force: {drag_force} N")
+drag_force
+#+END_SRC
+
+#+RESULTS:
+: Drag Force: 150.0 N
+
+** Nusselt Number
+The formula for Nusselt Number is:
+\[ Nu = \frac{h L}{k} \]
+
+#+BEGIN_SRC python :results output :exports both
+# Nusselt Number
+heat_transfer_coefficient = 100  # Heat Transfer Coefficient (W/m^2.K)
+thermal_conductivity = 0.6       # Thermal Conductivity (W/m.K)
+
+nusselt_number = (heat_transfer_coefficient * length) / thermal_conductivity
+print(f"Nusselt Number: {nusselt_number}")
+nusselt_number
+#+END_SRC
+
+#+RESULTS:
+: Nusselt Number: 8.333333333333334
 
 * Electricity and Magentism
 ** Magnetic Field
@@ -485,7 +601,7 @@ capacitance
 #+END_SRC
 
 ** Displacement Current (Maxwell's Equations)
-The formula for Displacement Current (I_d) is:
+The formula for nDisplacement Current (I_d) is:
 Id=ε0∂E∂tId​=ε0​∂t∂E​
 #+BEGIN_SRC python :results output :exports both
 # Displacement Current (Maxwell's Equations)
@@ -637,11 +753,6 @@ print(f"Moment of Inertia about x-axis: {moment_of_inertia_x} m^4")
 print(f"Moment of Inertia about y-axis: {moment_of_inertia_y} m^4")
 moment_of_inertia_x, moment_of_inertia_y
 #+END_SRC
-
-#+RESULTS:
-: Moment of Inertia about x-axis: 0.00013333333333333334 m^4
-: Moment of Inertia about y-axis: 0.000004166666666666667 m^4
-
 * Dynamics
 ** Kinetic Energy
 The formula for Kinetic Energy is:
@@ -777,31 +888,7 @@ pdf
 
 * Engineering Economics
 #+BEGIN_SRC python :results output :exports both
-A = 12000  # Uniform amount per interest period
-B = 0.0  # Benefit
-BV = 0.0  # Book value
-C = 40000  # Cost
-d = 0.0  # Inflation adjusted interest rate per interest period
-Dj = 0.0  # Depreciation in year j
-EV = 0.0  # Expected value
-f = 0.0  # General inflation rate per interest period
-MARR = 0.0  # Minimum acceptable/attractive rate of return
-m = 0  # Number of compounding periods per year
-P = 0.0  # Present worth, value, or amount
-r = 0.0  # Nominal annual interest rate
-Sn = 0.0  # Expected salvage value in year n
-
-# Interest rate per interest period
-i = 0.1  # Interest rate per interest period, example: 0.1 for 10%
-n = 5  # Number of compounding periods; or the expected life of an asset
-P_single_payment = 1000  # Given Present worth
-F_present_worth = 1500  # Given Future worth
-F_single_payment = 2000  # Future worth to be calculated
-P_capital_recovery = 1000  # Given Present worth for Capital Recovery
-A_uniform_series = 150  # Given Uniform amount per interest period
-G_uniform_gradient = 50  # Given Uniform Gradient
-
-# Define the necessary financial functions
+import math
 
 def single_payment_compound_amount(P, i, n):
     """
@@ -833,7 +920,7 @@ def linear_interpolation(x0, x1, y0, y1, x):
     """
     return y0 + (y1 - y0) * ((x - x0) / (x1 - x0))
 
-def calculate_ror(initial_cost, annual_savings, operational_cost, life_expectancy, interest_rates, factors):
+def calculate_ror(initial_cost, annual_savings, operational_cost, life_expectancy, interest_rates):
     """
     Calculate Rate of Return (ROR)
     """
@@ -846,7 +933,6 @@ def calculate_ror(initial_cost, annual_savings, operational_cost, life_expectanc
     # Interpolate between two interest rates
     expense_factor = expenses / annual_net_savings
 
-    # Find interest rate where our expense_factor approximates
     for i in range(len(interest_rates) - 1):
         if factors_at_interest_rates[i] <= expense_factor <= factors_at_interest_rates[i + 1]:
             ROR = linear_interpolation(factors_at_interest_rates[i],
@@ -866,29 +952,37 @@ annual_savings = 15000
 operational_cost = 3000
 life_expectancy = 5
 interest_rates = [0.12, 0.18]  # Example interest rates (12%, 18%)
-factors = [4.111, 3.127]  # Example factors for these interest rates
 
 # ROR Calculation
-rate_of_return = calculate_ror(initial_cost, annual_savings, operational_cost, life_expectancy, interest_rates, factors)
-print(f"Rate of Return (ROR): {rate_of_return*100:.2f}%")
+rate_of_return = calculate_ror(initial_cost, annual_savings, operational_cost, life_expectancy, interest_rates)
+if rate_of_return is not None:
+    print(f"Rate of Return (ROR): {rate_of_return*100:.2f}%")
+else:
+    print("Rate of Return (ROR) could not be calculated with the given data.")
 
 # Single Payment Compound Amount (F/P, i%, n)
-F_single_payment = P_single_payment * (1 + i)**n
+P_single_payment = 1000  # Given Present worth
+i = 0.1  # Interest rate per interest period, example: 0.1 for 10%
+n = 5  # Number of compounding periods; or the expected life of an asset
+F_single_payment = single_payment_compound_amount(P_single_payment, i, n)
 print(f"Single Payment Compound Amount (F/P, i%, n): {F_single_payment}")
 
 # Single Payment Present Worth (P/F, i%, n)
-P_present_worth = F_present_worth / (1 + i)**n
+F_present_worth = 1500  # Given Future worth
+P_present_worth = single_payment_present_worth(F_present_worth, i, n)
 print(f"Single Payment Present Worth (P/F, i%, n): {P_present_worth}")
 
 # Uniform Series Sinking Fund (A/F, i%, n)
-A_sinking_fund = F_single_payment * (i / ((1 + i)**n - 1))
+A_sinking_fund = uniform_series_sinking_fund(F_single_payment, i, n)
 print(f"Uniform Series Sinking Fund (A/F, i%, n): {A_sinking_fund}")
 
 # Capital Recovery (A/P, i%, n)
-A_capital_recovery = P_capital_recovery * (i * (1 + i)**n) / ((1 + i)**n - 1)
+P_capital_recovery = 1000  # Given Present worth for Capital Recovery
+A_capital_recovery = capital_recovery(P_capital_recovery, i, n)
 print(f"Capital Recovery (A/P, i%, n): {A_capital_recovery}")
 
 # Uniform Series Compound Amount (F/A, i%, n)
+A_uniform_series = 150  # Given Uniform amount per interest period
 F_uniform_series = A_uniform_series * (((1 + i)**n - 1) / i)
 print(f"Uniform Series Compound Amount (F/A, i%, n): {F_uniform_series}")
 
@@ -897,6 +991,7 @@ P_uniform_series = A_uniform_series * ((1 - (1 + i)**-n) / i)
 print(f"Uniform Series Present Worth (P/A, i%, n): {P_uniform_series}")
 
 # Uniform Gradient Present Worth (P/G, i%, n)
+G_uniform_gradient = 50  # Given Uniform Gradient
 P_uniform_gradient = G_uniform_gradient * (((1 + i)**n - n * i - 1) / (i**2 * (1 + i)**n))
 print(f"Uniform Gradient Present Worth (P/G, i%, n): {P_uniform_gradient}")
 
@@ -909,78 +1004,62 @@ A_gradient_series = G_uniform_gradient * (1 / i - n / ((1 + i)**n - 1))
 print(f"Uniform Gradient Uniform Series (A/G, i%, n): {A_gradient_series}")
 #+END_SRC
 
-#+BEGIN_SRC python :results output :exports both
-def single_payment_compound_amount(P, i, n):
-    """
-    Calculate Single Payment Compound Amount (F/P, i%, n)
-    """
-    return P * (1 + i)**n
+#+RESULTS:
+#+begin_example
+Rate of Return (ROR) could not be calculated with the given data.
+Single Payment Compound Amount (F/P, i%, n): 1610.5100000000004
+Single Payment Present Worth (P/F, i%, n): 931.3819845887324
+Uniform Series Sinking Fund (A/F, i%, n): 263.79748079474524
+Capital Recovery (A/P, i%, n): 263.7974807947452
+Uniform Series Compound Amount (F/A, i%, n): 915.7650000000008
+Uniform Series Present Worth (P/A, i%, n): 568.6180154112676
+Uniform Gradient Present Worth (P/G, i%, n): 343.09007705633775
+Uniform Gradient Future Worth (F/G, i%, n): 55.25500000000028
+Uniform Gradient Uniform Series (A/G, i%, n): 90.5062980131369
+#+end_example
 
-def single_payment_present_worth(F, i, n):
-    """
-    Calculate Single Payment Present Worth (P/F, i%, n)
-    """
-    return F / (1 + i)**n
 
-def uniform_series_sinking_fund(F, i, n):
-    """
-    Calculate Uniform Series Sinking Fund (A/F, i%, n)
-    """
-    return F * (i / ((1 + i)**n - 1))
-
-def capital_recovery(P, i, n):
-    """
-    Calculate Capital Recovery (A/P, i%, n)
-    """
-    return P * (i * (1 + i)**n) / ((1 + i)**n - 1)
-
-def linear_interpolation(x0, x1, y0, y1, x):
-    """
-    Perform linear interpolation between (x0, y0) and (x1, y1) for a given x
-    """
-    return y0 + (y1 - y0) * ((x - x0) / (x1 - x0))
-
-def calculate_ror(initial_cost, annual_savings, operational_cost, life_expectancy, interest_rates, factors):
-    """
-    Calculate Rate of Return (ROR)
-    """
-    annual_net_savings = annual_savings - operational_cost
-    expenses = initial_cost
-
-    # Calculate the capital recovery factor
-    factors_at_interest_rates = [capital_recovery(1, i, life_expectancy) for i in interest_rates]
-
-    # Interpolate between two interest rates
-    expense_factor = expenses / annual_net_savings
-
-    # Find interest rate where our expense_factor approximates
-    for i in range(len(interest_rates) - 1):
-        if factors_at_interest_rates[i] <= expense_factor <= factors_at_interest_rates[i + 1]:
-            ROR = linear_interpolation(factors_at_interest_rates[i],
-                                        factors_at_interest_rates[i + 1],
-                                        interest_rates[i],
-                                        interest_rates[i + 1],
-                                        expense_factor)
-            return ROR
-
-    return None
-
-# Example Usage
-
-# Given Values
-initial_cost = 40000
-annual_savings = 15000
-operational_cost = 3000
-life_expectancy = 5
-interest_rates = [0.12, 0.18]  # Example interest rates (12%, 18%)
-factors = [4.111, 3.127]  # Example factors for these interest rates
-
-# ROR Calculation
-rate_of_return = calculate_ror(initial_cost, annual_savings, operational_cost, life_expectancy, interest_rates, factors)
-print(f"Rate of Return (ROR): {rate_of_return*100:.2f}%")
-#+end_src
 
 * TODO
+** Reference Handbook Category Scores
+#+BEGIN_SRC python :results output :exports both
+import pandas as pd
+
+data = {
+    "Knowledge Area": ["Mathematics", "Probability and Statistics", "Ethics and Professional Practice", "Engineering Economics", "Electricity and Magnetism", "Statics", "Dynamics, Kinematics, and Vibrations", "Mechanics of Materials", "Material Properties and Processing", "Fluid Mechanics", "Thermodynamics", "Heat Transfer", "Measurements, Instrumentation, and Controls", "Mechanical Design and Analysis"],
+    "Number of Items": [6, 4, 4, 4, 5, 9, 10, 9, 7, 10, 10, 7, 5, 10],
+    "Performance": [10.3, 6.2, 8.5, 6.8, 5.6, 8.5, 7.1, 4.5, 7.9, 6.7, 6.4, 6.9, 10.0, 6.7]
+}
+
+df = pd.DataFrame(data)
+
+df['Percentage Score'] = df['Performance'] / df['Number of Items'] * 100
+df = df.sort_values(by='Percentage Score', ascending=False)
+print(f"Dataframe (df): {df} df")
+df
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Dataframe (df):                                  Knowledge Area  ...  Percentage Score
+2              Ethics and Professional Practice  ...        212.500000
+12  Measurements, Instrumentation, and Controls  ...        200.000000
+0                                   Mathematics  ...        171.666667
+3                         Engineering Economics  ...        170.000000
+1                    Probability and Statistics  ...        155.000000
+8            Material Properties and Processing  ...        112.857143
+4                     Electricity and Magnetism  ...        112.000000
+11                                Heat Transfer  ...         98.571429
+5                                       Statics  ...         94.444444
+6          Dynamics, Kinematics, and Vibrations  ...         71.000000
+13               Mechanical Design and Analysis  ...         67.000000
+9                               Fluid Mechanics  ...         67.000000
+10                               Thermodynamics  ...         64.000000
+7                        Mechanics of Materials  ...         50.000000
+
+[14 rows x 4 columns] df
+#+end_example
+
 ** Previous Print Statements
 # print(f"\n::Mechanics of Materials::")
 # # Calculate Stress (sigma)
@@ -1187,41 +1266,3 @@ print(f"Rate of Return (ROR): {rate_of_return*100:.2f}%")
 # nCr = combinations(n, r)
 # print(f"Permutations P({n}, {r}): {nPr}")
 # print(f"Combinations C({n}, {r}): {nCr}")
-** Reference Handbook Category Scores
-#+BEGIN_SRC python :results output :exports both
-import pandas as pd
-
-data = {
-    "Knowledge Area": ["Mathematics", "Probability and Statistics", "Ethics and Professional Practice", "Engineering Economics", "Electricity and Magnetism", "Statics", "Dynamics, Kinematics, and Vibrations", "Mechanics of Materials", "Material Properties and Processing", "Fluid Mechanics", "Thermodynamics", "Heat Transfer", "Measurements, Instrumentation, and Controls", "Mechanical Design and Analysis"],
-    "Number of Items": [6, 4, 4, 4, 5, 9, 10, 9, 7, 10, 10, 7, 5, 10],
-    "Performance": [10.3, 6.2, 8.5, 6.8, 5.6, 8.5, 7.1, 4.5, 7.9, 6.7, 6.4, 6.9, 10.0, 6.7]
-}
-
-df = pd.DataFrame(data)
-
-df['Percentage Score'] = df['Performance'] / df['Number of Items'] * 100
-df = df.sort_values(by='Percentage Score', ascending=False)
-print(f"Dataframe (df): {df} df")
-df
-#+end_src
-
-#+RESULTS:
-#+begin_example
-Dataframe (df):                                  Knowledge Area  ...  Percentage Score
-2              Ethics and Professional Practice  ...        212.500000
-12  Measurements, Instrumentation, and Controls  ...        200.000000
-0                                   Mathematics  ...        171.666667
-3                         Engineering Economics  ...        170.000000
-1                    Probability and Statistics  ...        155.000000
-8            Material Properties and Processing  ...        112.857143
-4                     Electricity and Magnetism  ...        112.000000
-11                                Heat Transfer  ...         98.571429
-5                                       Statics  ...         94.444444
-6          Dynamics, Kinematics, and Vibrations  ...         71.000000
-13               Mechanical Design and Analysis  ...         67.000000
-9                               Fluid Mechanics  ...         67.000000
-10                               Thermodynamics  ...         64.000000
-7                        Mechanics of Materials  ...         50.000000
-
-[14 rows x 4 columns] df
-#+end_example
