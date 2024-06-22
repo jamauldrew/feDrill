@@ -257,8 +257,17 @@ Use the *NCEES Handbook*, Mathematics: Partial Derivative section. Use the diffe
 ***The answer is \(A\).***
 
 *** 7                                                                 :drill:
+SCHEDULED: <2024-06-26 Wed>
 :PROPERTIES:
 :ID:       f348859d-21df-4034-bf58-1e520a1c1120
+:DRILL_LAST_INTERVAL: 5.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-20 Thu 15:%]
 :END:
 
 An integral is shown.
@@ -459,8 +468,17 @@ From the Unit Normal Distribution table in the *NCEES Handbook*, the shaded area
 ***The answer is \(C\).***
 
 *** 13                                                                :drill:
+SCHEDULED: <2024-06-25 Tue>
 :PROPERTIES:
 :ID:       f827e666-47be-47f3-8cba-db8a13469a7e
+:DRILL_LAST_INTERVAL: 5.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-20 Thu 15:%]
 :END:
 
 From the following statements, which describe the Code of Engineering Ethics? Select all that apply.
@@ -492,8 +510,17 @@ Ethics are a set of guidelines, rules, philosophical concepts, customs, norms, a
 ***The answer is \(A\), \(B\), and \(C\).***
 
 *** 14                                                                :drill:
+SCHEDULED: <2024-06-23 Sun>
 :PROPERTIES:
 :ID:       a215634c-d37c-46e3-870b-bbce0c6564f8
+:DRILL_LAST_INTERVAL: 3.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-20 Thu 15:%]
 :END:
 
 An engineer develops a new idea to significantly reduce energy consumption in manufacturing plants. The engineer considers filing a patent application to the United States Patent and Trademark office \(USPTO\). Which categories of patents will the USPTO consider? Select all that apply.
@@ -686,17 +713,17 @@ A licensee who is an employee should inform the licensee’s employer. A self-em
 ***The answer is \(D\).***
 
 *** 19                                                                :drill:
-SCHEDULED: <2023-10-27 Fri>
+SCHEDULED: <2024-06-25 Tue>
 :PROPERTIES:
 :ID:       c2ab3173-7182-4721-b316-b7c3a075101f
-:DRILL_LAST_INTERVAL: 2.0607
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 5.0611
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 5
 :DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.456
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [Y-10-25 Wed 19:%]
+:DRILL_LAST_REVIEWED: [Y-06-19 Wed 19:%]
 :END:
 
 An engineer owns a design firm that generates $1 million per year in gross fees. He calculates that he receives $100,000 per year in profits after paying all employee salaries, benefits, and other expenses. Assume zero inflation and no growth. If the expected rate of return is 10%, the fair market price of the firm is most nearly
@@ -1492,8 +1519,17 @@ In the KE equation, the velocity, v, is constant over time. Therefore, KE also r
 ***The answer is \(C\).***
 
 *** 41                                                                :drill:
+SCHEDULED: <2024-06-25 Tue>
 :PROPERTIES:
 :ID:       9f9f74fe-2f50-4db9-a7a8-45af3197058b
+:DRILL_LAST_INTERVAL: 5.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-20 Thu 15:%]
 :END:
 
 A 10,000 lbf vehicle traveling at 60 mph comes to a stop without skidding. The wheelbase and center of gravity of the vehicle are shown.
@@ -2181,8 +2217,17 @@ The resultant shear on bolt 1 is
 ***The answer is \(B\).***
 
 *** 58                                                                :drill:
+SCHEDULED: <2024-06-25 Tue>
 :PROPERTIES:
 :ID:       dc60defd-e01b-44f1-9164-c13ca8d29ad1
+:DRILL_LAST_INTERVAL: 5.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-20 Thu 16:%]
 :END:
 
 A steel shaft has an outer diameter of 400 mm and a wall thickness of 20 mm. The shaft is supported at two simple supports 12 m apart. The shaft is carrying a uniformly distributed load \(UDL\) of 2.5 kN/m, including its self-weight. The shaft’s maximum deflection is most nearly

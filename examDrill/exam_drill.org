@@ -149,17 +149,17 @@ The rule: The magnitude of determinant is the area of parallelogram, with vector
 ***The answer is \(C\).***
 
 *** 4                                                                 :drill:
-SCHEDULED: <2023-10-27 Fri>
+SCHEDULED: <2024-06-28 Fri>
 :PROPERTIES:
 :ID:       935b543b-5f9d-4aa2-948a-85a6a2bd7c92
-:DRILL_LAST_INTERVAL: 1.9924
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 6.3613
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 4
 :DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.456
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [Y-10-25 Wed 21:%]
+:DRILL_EASE: 2.606
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [Y-06-20 Thu 15:%]
 :END:
 
 The following series equation is used to approximate the value of sin *x*, where *x* is an angle.
@@ -1020,17 +1020,17 @@ In applying KCL, it is necessary to assume a direction of current as positive. I
 ***The answer is \(B\) and \(D\).***
 
 *** 28                                                                :drill:
-SCHEDULED: <2024-06-17 Mon>
+SCHEDULED: <2024-06-30 Sun>
 :PROPERTIES:
 :ID:       1936b88b-3db7-42e6-9955-681bcf79a89c
-:DRILL_LAST_INTERVAL: 3.813
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 7.9211
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 4
 :DRILL_AVERAGE_QUALITY: 1.519
-:DRILL_EASE: 1.598
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [Y-06-11 Tue 10:%]
+:DRILL_EASE: 1.748
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [Y-06-20 Thu 15:%]
 :END:
 
 Two point charges are placed at points A and C. A third point charge is placed at point B in line with the other two so that it is not subject to any net force from the other two point charges. The electrical charge units are in coulombs, as shown.
@@ -2655,18 +2655,17 @@ In order to maximize the siphoning height, *h*, the water pressure at point C sh
 ***The answer is \(C\).***
 
 *** 72                                                                :drill:
-SCHEDULED: <2024-06-19 Wed 19:10>
+SCHEDULED: <2024-06-21 Fri>
 :PROPERTIES:
 :ID:       1058ef88-3be6-4792-8743-ae251379f335
-:DRILL_LAST_INTERVAL: -10.7
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 1.0
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 2.5
 :DRILL_EASE: 2.4
-:DRILL_LAST_QUALITY: 1
-:DRILL_LAST_REVIEWED: [Y-06-19 Wed 19:%]
-:DRILL_REPS_LEFT: (1 1)
+:DRILL_LAST_QUALITY: 2
+:DRILL_LAST_REVIEWED: [Y-06-20 Thu 15:%]
 :END:
 
 A spherical air balloon having a 1 m diameter is propelled up into the air at a speed of 3.4 m/s. The air temperature is 40°C, and the air properties are
@@ -3033,17 +3032,17 @@ Apply the heat energy equation for rigid containers.
 ***The answer is A.***
 
 *** 80                                                                :drill:
-SCHEDULED: <2024-06-13 Thu>
+SCHEDULED: <2024-06-24 Mon>
 :PROPERTIES:
 :ID:       8a584cbc-7f26-4c35-be95-8bc9a4ca9cba
-:DRILL_LAST_INTERVAL: 1.0
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.4
-:DRILL_LAST_QUALITY: 2
-:DRILL_LAST_REVIEWED: [Y-06-12 Wed 10:%]
+:DRILL_EASE: 2.55
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [Y-06-20 Thu 15:%]
 :END:
 
 A condenser inlets 10 kg/s of saturated water vapor at 1 MPa from a turbine and cools it by heating water from 20°C to 30°C. The pressure remains constant. What is the mass flux in kg/s, rounded to the nearest integer? *   * Enter your response in the blank.
@@ -3899,16 +3898,17 @@ Use the data above. For the failure envelope,
 ***The answer is \(A\).***
 
 *** 102                                                               :drill:
+SCHEDULED: <2024-06-24 Mon>
 :PROPERTIES:
 :ID:       54cb9ce9-25d6-4462-8e93-2771247e5414
-:DRILL_LAST_INTERVAL: 0.0
-:DRILL_REPEATS_SINCE_FAIL: 0
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 3.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 6
 :DRILL_AVERAGE_QUALITY: 0.2
-:DRILL_EASE: 1.259
-:DRILL_LAST_QUALITY: 1
-:DRILL_LAST_REVIEWED: [Y-10-23 Mon 00:%]
+:DRILL_EASE: 1.409
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [Y-06-20 Thu 15:%]
 :END:
 
 A spring system is subjected to a point load as shown.
