@@ -1,7 +1,5 @@
 ** Exam 1
 :PROPERTIES:
-# #+STARTUP: inlineimages
-# #+ATTR_LATEX: :width 80px
 :END:
 
 *** 0                                                                 :drill:
@@ -2655,17 +2653,17 @@ In order to maximize the siphoning height, *h*, the water pressure at point C sh
 ***The answer is \(C\).***
 
 *** 72 :drill:Fluid_Mechanics:
-SCHEDULED: <2024-06-21 Fri>
+SCHEDULED: <2024-06-28 Fri>
 :PROPERTIES:
 :ID:       1058ef88-3be6-4792-8743-ae251379f335
-:DRILL_LAST_INTERVAL: 1.0
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.4
-:DRILL_LAST_QUALITY: 2
-:DRILL_LAST_REVIEWED: [Y-06-20 Thu 15:%]
+:DRILL_EASE: 2.55
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 03:%]
 :END:
 
 A spherical air balloon having a 1 m diameter is propelled up into the air at a speed of 3.4 m/s. The air temperature is 40°C, and the air properties are
@@ -3192,9 +3190,18 @@ Determine the ratio of efficiencies.
 
 ***The correct answer is 0.5.***
 
-*** 84                                                                :drill:
+*** 84 :drill:thermodynamics:
+SCHEDULED: <2024-06-28 Fri>
 :PROPERTIES:
 :ID:       1a29cc51-8484-4164-ab7c-1912bf2ea859
+:DRILL_LAST_INTERVAL: 5.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 03:%]
 :END:
 
 Refrigerant R-410A is used in a cycle which operates between 30 psia and 200 psia. The refrigerant leaves the condenser as saturated liquid and enters the compressor as saturated vapor. What is the heat rejected in the condenser rounded to the nearest 10 Btu/lbm? *   * Enter your response in the blank.

@@ -1,0 +1,435 @@
+#+TITLE: Unit Conversions for Mechanical Engineering
+#+STARTUP: overview
+
+* Pressure
+** Convert 1 atm to Pa :drill:
+:PROPERTIES:
+:ID: atm-to-pa
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 atm to Pa
+*** Back
+1 atm = 101,325 Pa
+
+** Convert 1 bar to Pa :drill:
+SCHEDULED: <2024-06-28 Fri>
+:PROPERTIES:
+:ID: bar-to-pa
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: 5.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_SIDE: 1
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 14:%]
+:END:
+*** Front
+Convert 1 bar to Pa
+*** Back
+1 bar = 100,000 Pa
+
+** Convert 1 psi to Pa :drill:
+:PROPERTIES:
+:ID: psi-to-pa
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 psi to Pa
+*** Back
+1 psi = 6,894.76 Pa
+
+* Energy/Work
+** Convert 1 J to N·m :drill:
+:PROPERTIES:
+:ID: j-to-nm
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 J to N·m
+*** Back
+1 J = 1 N·m
+
+** Convert 1 cal to J :drill:
+SCHEDULED: <2024-06-27 Thu>
+:PROPERTIES:
+:ID: cal-to-j
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_SIDE: 1
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 13:%]
+:END:
+*** Front
+Convert 1 cal to J
+*** Back
+1 cal = 4.184 J
+
+** Convert 1 Btu to J :drill:
+SCHEDULED: <2024-06-23 Sun 11:20>
+:PROPERTIES:
+:ID: btu-to-j
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: -1.05
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_REPS_LEFT: (2 2)
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 11:%]
+:END:
+*** Front
+Convert 1 Btu to J
+*** Back
+1 Btu = 1,055.06 J
+
+* Power
+** Convert 1 W to J/s :drill:
+SCHEDULED: <2024-06-28 Fri>
+:PROPERTIES:
+:ID: w-to-js
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: 5.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_SIDE: 1
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 14:%]
+:END:
+*** Front
+Convert 1 W to J/s
+*** Back
+1 W = 1 J/s
+
+** Convert 1 hp to W :drill:
+SCHEDULED: <2024-06-28 Fri>
+:PROPERTIES:
+:ID: hp-to-w
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: 5.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_SIDE: 1
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 13:%]
+:END:
+*** Front
+Convert 1 hp to W
+*** Back
+1 hp = 745.7 W
+
+* Force
+** Convert 1 lb_f to N :drill:
+:PROPERTIES:
+:ID: lbf-to-n
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 lb_f to N
+*** Back
+1 lb_f = 4.44822 N
+
+* Length
+** Convert 1 in to m :drill:
+:PROPERTIES:
+:ID: in-to-m
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 in to m
+*** Back
+1 in = 0.0254 m
+
+** Convert 1 ft to m :drill:
+SCHEDULED: <2024-06-25 Tue>
+:PROPERTIES:
+:ID: ft-to-m
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: 3.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_SIDE: 1
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 11:%]
+:END:
+*** Front
+Convert 1 ft to m
+*** Back
+1 ft = 0.3048 m
+
+** Convert 1 mile to m :drill:
+SCHEDULED: <2024-06-23 Sun 11:20>
+:PROPERTIES:
+:ID: mile-to-m
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: -1.2
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_REPS_LEFT: (2 2)
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 11:%]
+:END:
+*** Front
+Convert 1 mile to m
+*** Back
+1 mile = 1,609.34 m
+
+* Volume
+** Convert 1 L to m³ :drill:
+:PROPERTIES:
+:ID: l-to-m3
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 L to m³
+*** Back
+1 L = 0.001 m³
+
+** Convert 1 gal to L :drill:
+:PROPERTIES:
+:ID: gal-to-l
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 gal to L
+*** Back
+1 gal = 3.78541 L
+
+* Mass
+** Convert 1 kg to g :drill:
+:PROPERTIES:
+:ID: kg-to-g
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 kg to g
+*** Back
+1 kg = 1,000 g
+
+** Convert 1 lb_m to kg :drill:
+:PROPERTIES:
+:ID: lbm-to-kg
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 lb_m to kg
+*** Back
+1 lb_m = 0.453592 kg
+
+* Density
+** Convert 1 kg/m³ to g/cm³ :drill:
+:PROPERTIES:
+:ID: kgm3-to-gcm3
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 kg/m³ to g/cm³
+*** Back
+1 kg/m³ = 0.001 g/cm³
+
+** Convert 1 lb/ft³ to kg/m³ :drill:
+SCHEDULED: <2024-06-25 Tue>
+:PROPERTIES:
+:ID: lbf3-to-kgm3
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: 3.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_SIDE: 1
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 14:%]
+:END:
+*** Front
+Convert 1 lb/ft³ to kg/m³
+*** Back
+1 lb/ft³ = 16.0185 kg/m³
+
+* Thermodynamics and Heat Transfer
+** Convert °C to K :drill:
+:PROPERTIES:
+:ID: c-to-k
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+What is the conversion formula from °C to K?
+*** Back
+K = °C + 273.15
+
+** Convert °F to °C :drill:
+SCHEDULED: <2024-06-23 Sun 11:25>
+:PROPERTIES:
+:ID: f-to-c
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: -1.12
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_REPS_LEFT: (2 2)
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 11:%]
+:END:
+*** Front
+What is the conversion formula from °F to °C?
+*** Back
+°C = (°F - 32) * 5/9
+
+** Convert 1 cal/g·°C to J/g·°C :drill:
+SCHEDULED: <2024-06-27 Thu>
+:PROPERTIES:
+:ID: calgc-to-jgc
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_SIDE: 1
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 13:%]
+:END:
+*** Front
+Convert 1 cal/g·°C to J/g·°C
+*** Back
+1 cal/g·°C = 4.184 J/g·°C
+
+* Fluid Mechanics
+** Convert 1 Poise to Pa·s :drill:
+:PROPERTIES:
+:ID: poise-to-pas
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 Poise to Pa·s
+*** Back
+1 Poise = 0.1 Pa·s
+
+** Convert 1 Stokes to m²/s :drill:
+:PROPERTIES:
+:ID: stokes-to-ms
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 Stokes to m²/s
+*** Back
+1 Stokes = 10⁻⁴ m²/s
+
+* Mechanics of Materials
+** Convert 1 ksi to psi :drill:
+:PROPERTIES:
+:ID: ksi-to-psi
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 ksi to psi
+*** Back
+1 ksi = 1,000 psi
+
+** Convert 1 MPa to Pa :drill:
+SCHEDULED: <2024-06-23 Sun 13:17>
+:PROPERTIES:
+:ID: mpa-to-pa
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: -1.09
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_REPS_LEFT: (2 2)
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 13:%]
+:END:
+*** Front
+Convert 1 MPa to Pa
+*** Back
+1 MPa = 1,000,000 Pa
+
+* Miscellaneous
+** Convert 1 g to m/s² :drill:
+SCHEDULED: <2024-06-26 Wed>
+:PROPERTIES:
+:ID: g-to-ms2
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: 3.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_SIDE: 1
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 14:%]
+:END:
+*** Front
+Convert 1 g to m/s²
+*** Back
+1 g = 9.81 m/s²
+
+** Convert 1 N·m to lb_f·ft :drill:
+SCHEDULED: <2024-06-23 Sun 13:33>
+:PROPERTIES:
+:ID: nm-to-lbfft
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: -10.9
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_REPS_LEFT: (1 1)
+:DRILL_LAST_QUALITY: 2
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 13:%]
+:END:
+*** Front
+Convert 1 N·m to lb_f·ft
+*** Back
+1 N·m = 0.73756 lb_f·ft
+
+** Convert 1 Hz to cycles/second :drill:
+:PROPERTIES:
+:ID: hz-to-cps
+:DRILL_CARD_TYPE: twosided
+:END:
+*** Front
+Convert 1 Hz to cycles/second
+*** Back
+1 Hz = 1 cycle/second
+
+# Local Variables:
+# org-drill-cram-hours: 12
+# org-drill-hide-item-headings-p: t
+# org-drill-scope: file
+# org-drill-maximum-items-per-session: 30
+# org-drill-learn-fraction: 0.3
+# org-drill-leech-method: warn
+# org-drill-leech-failure-threshold: 5
+# org-drill-spaced-repetition-algorithm: sm2-anki
+# End:

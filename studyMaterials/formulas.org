@@ -2,7 +2,7 @@
 #+AUTHOR: Jamaul Drew
 #+DATE: 2024-06-13
 * VARIABLES
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 import math
 import numpy as np
 
@@ -137,11 +137,9 @@ dry_bulb_temp_c, wet_bulb_temp_c
 
 #+END_SRC
 
-#+RESULTS:
-
-* Mechanics of Materials
+* Mechanics of Materials (Materials Science/Structure of Matter)
 ** Calculate Stress (sigma)
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Given parameters
 variables = {
     "force": 400,  # Force (N)
@@ -158,7 +156,7 @@ sigma
 : Stress (sigma): 200.0 Pa
 
 ** Calculate Strain (epsilon)
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Given parameters
 variables = {
     "delta_length": 0.01,  # Change in length (m)
@@ -171,10 +169,13 @@ print(f"Strain (epsilon): {epsilon}")
 epsilon
 #+END_SRC
 
+#+RESULTS:
+: Strain (epsilon): 0.01
+
 ** Young's Modulus Formula
 The formula for Young's Modulus is:
 \[ E = \frac{\sigma}{\epsilon} \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Young's Modulus (Pa)
 stress = 200 # Stress (Pa)
 strain = 0.01 # Strain (dimensionless)
@@ -186,8 +187,8 @@ youngs_modulus
 #+RESULTS:
 : Young's Modulus: 20000.0 Pa
 
-*** Stress-Strain Relationship Plot
-#+BEGIN_SRC python :results output :exports both
+** Stress-Strain Relationship Plot
+#+BEGIN_SRC python :results output raw :exports both
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -234,13 +235,10 @@ plt.ylim(0, max_stress * 1.1)
 plt.show()
 #+end_src
 
-#+RESULTS:
-
-
 ** Moment of Inertia
 The formula for the Moment of Inertia is:
 \[ I = \frac{1}{12}bh^3 \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Moment of Inertia (m^4)
 base_length = 1 # Base length (m)
 height = 10 # Height (m)
@@ -255,7 +253,7 @@ moment_of_inertia
 ** Polar Moment of Inertia
 The formula for the Polar Moment of Inertia is:
 \[ J = \frac{\pi}{32}d^4 \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Polar Moment of Inertia (m^4)
 diameter = 0.1 # Diameter (m)
 polar_moment_inertia = (math.pi * diameter**4) / 32
@@ -269,7 +267,7 @@ polar_moment_inertia
 ** Axial Deformation
 The formula for Axial Deformation is:
 \[ \delta L = \frac{FL}{AE} \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Axial Deformation (m)
 force = 50 # Force (N)
 length = 0.1 # Length (m)
@@ -286,7 +284,7 @@ axial_deformation
 ** Flexural Stress
 The formula for Flexural Stress is:
 \[ \sigma = \frac{Mc}{I} \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Flexural Stress (Pa)
 moment = 100 # Moment (N·m)
 dist_to_neutral_axis = 0.05 # Distance to neutral axis (m)
@@ -299,11 +297,90 @@ flexural_stress
 #+RESULTS:
 : Flexural Stress: 50000.0 Pa
 
+* Mechanical Design and Analysis
+** Four-Bar Linkage Analysis
+#+BEGIN_SRC python :results output raw
+import numpy as np
+import matplotlib.pyplot as plt
+
+def four_bar_linkage(a, b, c, d, theta2, plot=False):
+    """
+    Analyze a four-bar linkage.
+    Parameters:
+    a: length of the crank (input link)
+    b: length of the coupler link
+    c: length of the output link
+    d: length of the ground link
+    theta2: angle of the crank (in radians)
+    plot: boolean to determine if a plot should be generated
+    Returns:
+    theta3, theta4: angles of the coupler and output links
+    """
+
+    K1 = d / a
+    K2 = d / c
+    K3 = (a*a - b*b + c*c + d*d) / (2*a*c)
+
+    A = np.cos(theta2) - K1 - K2*np.cos(theta2) + K3
+    B = -2 * np.sin(theta2)
+    C = K1 - (K2 + 1)*np.cos(theta2) + K3
+
+    theta4 = 2 * np.arctan((-B - np.sqrt(B*B - 4*A*C)) / (2*A))
+
+    theta3 = np.arctan2(c*np.sin(theta4) - a*np.sin(theta2),
+                        d + c*np.cos(theta4) - a*np.cos(theta2))
+
+    if plot:
+        plot_linkage(a, b, c, d, theta2, theta3, theta4)
+
+    return theta3, theta4
+
+def plot_linkage(a, b, c, d, theta2, theta3, theta4):
+    """Plot the four-bar linkage"""
+    O2 = np.array([0, 0])
+    O4 = np.array([d, 0])
+    A = O2 + a * np.array([np.cos(theta2), np.sin(theta2)])
+    B = O4 + c * np.array([np.cos(theta4), np.sin(theta4)])
+
+    plt.figure(figsize=(8, 6))
+    plt.plot([O2[0], A[0]], [O2[1], A[1]], 'r-', label='Crank')
+    plt.plot([A[0], B[0]], [A[1], B[1]], 'g-', label='Coupler')
+    plt.plot([O4[0], B[0]], [O4[1], B[1]], 'b-', label='Output')
+    plt.plot([O2[0], O4[0]], [O2[1], O4[1]], 'k-', label='Ground')
+    plt.legend()
+    plt.axis('equal')
+    plt.title('Four-Bar Linkage')
+    plt.grid(True)
+    plt.show()
+
+# Example usage
+a, b, c, d = 2, 5, 4, 3  # Link lengths
+theta2 = np.pi/4  # Input angle in radians
+
+theta3, theta4 = four_bar_linkage(a, b, c, d, theta2, plot=True)
+print(f"Coupler angle (theta3): {np.degrees(theta3):.2f} degrees")
+print(f"Output angle (theta4): {np.degrees(theta4):.2f} degrees")
+
+# Then add your specific problem:
+a, b, c, d = 2, 5, 4, 3  # Link lengths for your specific problem
+theta2 = np.pi/3  # Input angle for your specific problem
+
+theta3, theta4 = four_bar_linkage(a, b, c, d, theta2, plot=True)
+print(f"Coupler angle (theta3): {np.degrees(theta3):.2f} degrees")
+print(f"Output angle (theta4): {np.degrees(theta4):.2f} degrees")
+#+END_SRC
+
+#+RESULTS:
+Coupler angle (theta3): 8.78 degrees
+Output angle (theta4): 32.97 degrees
+Coupler angle (theta3): 11.90 degrees
+Output angle (theta4): 43.68 degrees
+
 * Thermodynamics
 ** Entropy Change
 The formula for Entropy Change is:
 \[ \Delta S = \frac{\Delta Q}{T} \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Entropy Change (J/K)
 delta_Q = 300 # Heat added (J)
 temperature = 273.15 # Temperature (K)
@@ -312,13 +389,10 @@ print(f"Entropy Change: {delta_S} J/K")
 delta_S
 #+END_SRC
 
-#+RESULTS:
-: Entropy Change: 1.098297638660077 J/K
-
 ** First Law of Thermodynamics
 The formula for the First Law of Thermodynamics is:
 \[ \Delta U = Q - W \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # First Law of Thermodynamics (J)
 internal_energy_change = 500 # Internal energy change (J)
 heat_added = 300 # Heat added (J)
@@ -334,7 +408,7 @@ delta_U
 ** Second Law of Thermodynamics
 The formula for the Second Law of Thermodynamics is:
 \[ \Delta S = \frac{\Delta Q}{T} \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Second Law of Thermodynamics (J/K)
 delta_Q = 300 # Heat added (J)
 temperature = 273.15 # Temperature (K)
@@ -349,27 +423,277 @@ delta_S
 ** Ideal Gas Law
 The formula for the Ideal Gas Law is:
 \[ PV = nRT \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Ideal Gas Law (Pa·m³ = J)
-pressure = 101325 # Pressure (Pa)
-volume = 0.1 # Volume (m^3)
-gas_constant = 8.314 # Gas constant (J/(mol·K))
-temperature = 273.15 # Temperature (K)
-substance_amount = 1 # Amount of substance (mol)
-ideal_gas_law = pressure * volume - substance_amount * gas_constant * temperature
-print(f"Ideal Gas Law: {ideal_gas_law} Pa·m³")
-ideal_gas_law
+def van_der_waals_law(critical_temp, critical_pressure, pressure=None, volume=None, temperature=None, substance_amount=None, tolerance=1.0e-5):
+    R = 0.0821  # Ideal gas constant in appropriate units
+    result = {}
+
+    # Calculate the van der Waals constants a and b
+    a = (27 * R**2 * critical_temp**2) / (64 * critical_pressure)
+    b = (R * critical_temp) / (8 * critical_pressure)
+    # Check how many parameters are missing
+    missing_params = [param is None for param in [pressure, volume, temperature, substance_amount]].count(True)
+
+    if missing_params != 1:
+        raise ValueError("Exactly one of the parameters must be missing.")
+
+    # Calculate the missing parameter for ideal gas law
+    if pressure is None:
+        pressure = (substance_amount * R * temperature) / volume
+        missing_param = "pressure"
+    elif volume is None:
+        volume = (substance_amount * R * temperature) / pressure
+        missing_param = "volume"
+    elif temperature is None:
+        temperature = (pressure * volume) / (substance_amount * R)
+        missing_param = "temperature"
+    elif substance_amount is None:
+        substance_amount = (pressure * volume) / (R * temperature)
+        missing_param = "substance_amount"
+
+    # Verbose output for ideal gas calculation
+    result = {
+        "pressure": pressure,
+        "volume": volume,
+        "temperature": temperature,
+        "substance_amount": substance_amount
+    }
+
+    print(f"Given values:")
+    for param, value in result.items():
+        print(f"  {param.title()} (P): {value if param != missing_param else 'Calculated'}")
+
+    print()
+    print(f"Calculated value for missing parameter ({missing_param}):")
+    print(f"  {missing_param.title()} (P): {result[missing_param]}")
+
+    # Verify if PV ≈ nRT
+    calculated_pv = pressure * volume
+    calculated_nrt = substance_amount * R * temperature
+
+    if abs(calculated_pv - calculated_nrt) > tolerance:
+        print("\nWarning: PV does not equal nRT within the specified tolerance. Non-ideal gas behavior might be involved.")
+
+        # Apply van der Waals equation
+        if pressure is None:
+            pressure = (substance_amount * R * temperature) / (volume - substance_amount * b) - (a * substance_amount**2) / (volume**2)
+        elif volume is None:
+            # Solving for volume in van der Waals is more complex and typically requires numerical methods
+            raise NotImplementedError("Volume calculation under van der Waals equation is not implemented")
+        elif temperature is None:
+            raise NotImplementedError("Temperature calculation under van der Waals equation is not implemented")
+        elif substance_amount is None:
+            # Solving for substance amount in van der Waals is more complex and typically requires numerical methods
+            raise NotImplementedError("Substance amount calculation under van der Waals equation is not implemented")
+
+        print("\nUsing van der Waals equation:")
+        result["pressure"] = pressure if pressure is not None else "N/A"
+        result["volume"] = volume if volume is not None else "N/A"
+        result["temperature"] = temperature if temperature is not None else "N/A"
+        result["substance_amount"] = substance_amount if substance_amount is not None else "N/A"
+        result["a"] = a
+        result["b"] = b
+    else:
+        print("\nValues are consistent with the ideal gas law.")
+
+    return result
+
+def calculate_compressibility_factor(pressure, volume, temperature, substance_amount, R, critical_temp, critical_pressure):
+    # Here you would implement your own logic or use experimental data to calculate Z
+    # This function should return the compressibility factor Z
+    # For simplicity, assuming an ideal gas Z = 1
+    Z = 1.0
+    return Z
+
+# Usage Example
+result = van_der_waals_law(pressure=None, volume=1, temperature=273.15, substance_amount=1, critical_temp=300, critical_pressure=50)
 #+END_SRC
 
 #+RESULTS:
-: Ideal Gas Law: 7861.5309 Pa·m³
+Given values:
+  Pressure (P): Calculated
+  Volume (P): 1
+  Temperature (P): 273.15
+  Substance_Amount (P): 1
+
+Calculated value for missing parameter (pressure):
+  Pressure (P): 22.425615
+
+Values are consistent with the ideal gas law.
+
+** Efficiency (eta)
+#+BEGIN_SRC python :results output raw :exports both
+variables = {
+    "work_output_out": 500,  # J
+    "heat_input": 1000  # J
+}
+eta = variables["work_output_out"] / variables["heat_input"]
+print(f"Efficiency (eta): {eta}")
+#+END_SRC
+
+** Specific Heat Capacity
+#+BEGIN_SRC python :results output raw :exports both
+variables = {
+    "heat_added": 100,  # J
+    "mass": 2,  # kg
+    "temperature_change": 50  # K
+}
+specific_heat_capacity = variables["heat_added"] / (variables["mass"] * variables["temperature_change"])
+print(f"Specific Heat Capacity: {specific_heat_capacity}")
+#+END_SRC
+
+** Coefficient of Performance (Refrigeration Cycle)
+#+BEGIN_SRC python :results output raw :exports both
+
+variables = {
+    "heat_removed": 300,  # J
+    "work_output_in": 100  # J
+}
+COP = variables["heat_removed"] / variables["work_output_in"]
+print(f"Coefficient of Performance (Refrigeration Cycle): {COP}")
+#+END_SRC
+
+** Internal Energy (delta_U)
+#+BEGIN_SRC python :results output raw :exports both
+variables = {
+    "heat_added": 100,  # J
+    "work_output_out": 50  # J
+}
+delta_U = variables["heat_added"] - variables["work_output_out"]
+print(f"Change in Internal Energy (delta_U): {delta_U} J")
+#+END_SRC
+
+** Enthalpy (delta_H)
+#+BEGIN_SRC python :results output raw :exports both
+variables = {
+    "enthalpy_initial": 500,  # J
+    "delta_KE": 50,  # J
+    "delta_PE": 30,  # J
+    "delta_S": 20  # J
+}
+delta_H = variables["enthalpy_initial"] + variables["delta_KE"] + variables["delta_PE"] + variables["delta_S"]
+print(f"Change in Enthalpy (delta_H): {delta_H} J")
+#+END_SRC
+
+** Efficiency using Carnot Cycle (eta_carnot)
+#+BEGIN_SRC python :results output raw :exports both
+variables = {
+    "low_temp": 300,  # K
+    "high_temp": 600  # K
+}
+eta_carnot = 1 - variables["low_temp"] / variables["high_temp"]
+print(f"Carnot Cycle Efficiency (eta_carnot): {eta_carnot}")
+#+END_SRC
+
+* Heat Transfer
+** Heat Transfer by Radiation (Stefan-Boltzmann Law)
+#+BEGIN_SRC python :results output raw :exports both
+variables = {
+    "stefan_boltzmann_constant": 5.67e-8,  # W/(m^2·K^4)
+    "emissivity": 0.9,
+    "temperature_surface": 300,  # K
+    "temperature_surroundings": 290,  # K
+    "area": 1  # m^2
+}
+radiative_heat_transfer = variables["stefan_boltzmann_constant"] * variables["emissivity"] * (variables["temperature_surface"]**4 - variables["temperature_surroundings"]**4) * variables["area"]
+print(f"Heat Transfer by Radiation (Stefan-Boltzmann Law): {radiative_heat_transfer} W")
+#+END_SRC
+
+#+RESULTS:
+: Heat Transfer by Radiation (Stefan-Boltzmann Law): 52.4175057 W
+
+** Latent Heat of Vaporization (h_fg)
+#+BEGIN_SRC python :results output raw :exports both
+variables = {
+    "spec_heat_capacity_cp": 4.18,  # kJ/(kg·K)
+    "boiling_point": 373,  # K
+    "initial_temp": 298  # K
+}
+h_fg = variables["spec_heat_capacity_cp"] * (variables["boiling_point"] - variables["initial_temp"])
+print(f"Latent Heat of Vaporization (h_fg): {h_fg} kJ/kg")
+#+END_SRC
+
+#+RESULTS:
+: Latent Heat of Vaporization (h_fg): 313.5 kJ/kg
+
+** Conduction
+The heat transfer rate via conduction is governed by Fourier's law:
+\[ q = \frac{dQ}{dt} = -k \cdot A \cdot \frac{dT}{dx} \]
+For a steady-state, this simplifies to:
+\[ q = k \cdot A \cdot \frac{\Delta T}{d} \]
+#+BEGIN_SRC python :results output raw :exports both
+def heat_conduction(thermal_conductivity, area, temp_difference, thickness):
+    """
+    Calculate heat transfer rate via conduction.
+    """
+    q_conduction = thermal_conductivity * area * temp_difference / thickness
+    return q_conduction
+
+variables_conduction = {
+    "thermal_conductivity": 0.6,  # W/(m·K)
+    "area": 2,  # m^2
+    "temp_difference": 100,  # K
+    "thickness": 0.05  # m
+}
+
+q_conduction = heat_conduction(**variables_conduction)
+print(f"Heat Conduction (Q): {q_conduction} W")
+#+END_SRC
+
+** Convection
+Newton's law of cooling governs convection:
+\[ q = h \cdot A \cdot \Delta T \]
+#+BEGIN_SRC python :results output raw :exports both
+def heat_convection(convection_coefficient, area, temp_difference):
+    """
+    Calculate heat transfer rate via convection.
+    """
+    q_convection = convection_coefficient * area * temp_difference
+    return q_convection
+
+variables_convection = {
+    "convection_coefficient": 15,  # W/(m²·K)
+    "area": 2,  # m²
+    "temp_difference": 25  # K
+}
+
+q_convection = heat_convection(**variables_convection)
+print(f"Heat Convection (Q): {q_convection} W")
+#+END_SRC
+
+** Radiation
+The Stefan-Boltzmann law governs radiation:
+\[ q = \epsilon \cdot \sigma \cdot A \cdot (T_1^4 - T_2^4) \]
+where:
+- \(\epsilon\) is the emissivity.
+- \(\sigma\) is the Stefan-Boltzmann constant, \(5.67 \times 10^{-8} \, W/(m^2 \cdot K^4)\).
+#+BEGIN_SRC python :results output raw :exports both
+def heat_radiation(emissivity, area, temp_surface, temp_surrounding):
+    """
+    Calculate heat transfer rate via radiation.
+    """
+    stefan_boltzmann_constant = 5.67e-8  # W/(m²·K^4)
+    q_radiation = emissivity * stefan_boltzmann_constant * area * (temp_surface**4 - temp_surrounding**4)
+    return q_radiation
+
+variables_radiation = {
+    "emissivity": 0.85,
+    "area": 2,  # m²
+    "temp_surface": 500,  # K
+    "temp_surrounding": 300  # K
+}
+
+q_radiation = heat_radiation(**variables_radiation)
+print(f"Heat Radiation (Q): {q_radiation} W")
+#+END_SRC
 
 * Fluid Mechanics
 ** Bernoulli's Equation
 The formula for Bernoulli's Equation is:
 \[ P + \frac{1}{2}\rho v^2 + \rho gh = \text{constant} \]
 
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Bernoulli's Equation (Pa)
 pressure = 101325  # Pressure (Pa)
 density = 1000     # Density (kg/m^3)
@@ -389,7 +713,7 @@ bernoullis_equation
 The formula for Volumetric Flow Rate is:
 \[ Q = A \cdot v \]
 
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Volumetric Flow Rate (m^3/s)
 area = 0.02  # Area (m^2)
 velocity = 5 # Velocity (m/s)
@@ -406,7 +730,7 @@ volumetric_flow_rate
 The formula for Reynolds Number is:
 \[ Re = \frac{\rho v L}{\mu} \]
 
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Reynolds Number
 length = 0.05    # Characteristic Length (m)
 viscosity = 0.001 # Dynamic Viscosity (Pa.s)
@@ -423,7 +747,7 @@ reynolds_number
 The formula for Drag Force is:
 \[ F_d = \frac{1}{2} \rho v^2 C_d A \]
 
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Drag Force (N)
 drag_coefficient = 1.2
 
@@ -439,7 +763,7 @@ drag_force
 The formula for Nusselt Number is:
 \[ Nu = \frac{h L}{k} \]
 
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Nusselt Number
 heat_transfer_coefficient = 100  # Heat Transfer Coefficient (W/m^2.K)
 thermal_conductivity = 0.6       # Thermal Conductivity (W/m.K)
@@ -452,11 +776,11 @@ nusselt_number
 #+RESULTS:
 : Nusselt Number: 8.333333333333334
 
-* Electricity and Magentism
+* Electrical and Computer Engineering (Electricity and Magnetism)
 ** Magnetic Field
 The formula for Magnetic Field is:
 \[ \mathbf{B} = \mu_0 \frac{I}{2\pi r} \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Magnetic Field (T)
 import math
 permeability_free_space = 4 * math.pi * 1e-7  # Permeability of free space (T·m/A)
@@ -473,7 +797,7 @@ magnetic_field
 ** Voltage
 The formula for Voltage (V) is:
 V=I⋅RV=I⋅R
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Voltage (V)
 current = 2  # Current (A)
 resistance = 5  # Resistance (Ω)
@@ -488,7 +812,7 @@ voltage
 ** Magnetic Flux Density
 The formula for Magnetic Flux Density (B) is:
 B=μ0⋅I2π⋅rB=2π⋅rμ0​⋅I​
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Magnetic Flux Density (B)
 permeability_free_space = 4 * math.pi * 1e-7  # Permeability of free space (T·m/A)
 current = 2  # Current (A)
@@ -501,7 +825,7 @@ magnetic_flux_density
 ** Magnetic Force
 The formula for Magnetic Force (F_m) is:
 Fm=N⋅I⋅L⋅BFm​=N⋅I⋅L⋅B
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Magnetic Force (F_m)
 num_turns = 100  # Number of turns
 current = 2  # Current (A)
@@ -515,7 +839,7 @@ magnetic_force
 ** Electrostatic Force
 The formula for Electrostatic Force (F) is:
 F=keq1q2r2F=ke​r2q1​q2​​
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Electrostatic Force (F)
 coulomb_constant = 8.99e9  # Coulomb constant (N·m^2/C^2)
 charge1 = 6  # Charge 1 (C)
@@ -535,7 +859,7 @@ V=I⋅RV=I⋅R
 
 org
 
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Voltage (V)
 current = 2  # Current (A)
 resistance = 5  # Resistance (Ω)
@@ -550,7 +874,7 @@ B=μ0⋅I2π⋅rB=2π⋅rμ0​⋅I​
 
 org
 
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Magnetic Flux Density (B)
 permeability_free_space = 4 * math.pi * 1e-7  # Permeability of free space (T·m/A)
 current = 2  # Current (A)
@@ -566,7 +890,7 @@ Fm=N⋅I⋅L⋅BFm​=N⋅I⋅L⋅B
 
 org
 
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Magnetic Force (F_m)
 num_turns = 100  # Number of turns
 current = 2  # Current (A)
@@ -583,7 +907,7 @@ F=keq1q2r2F=ke​r2q1​q2​​
 
 org
 
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Electrostatic Force (F)
 coulomb_constant = 8.99e9  # Coulomb constant (N·m^2/C^2)
 charge1 = 6  # Charge 1 (C)
@@ -597,7 +921,7 @@ electrostatic_force
 ** Inductance (Solenoid)
 The formula for Inductance (L) is:
 L=μ⋅N2⋅AlL=lμ⋅N2⋅A​
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Inductance (Solenoid)
 permeability = 4 * math.pi * 1e-7  # Permeability of material (T·m/A)
 num_turns = 100  # Number of turns
@@ -610,7 +934,7 @@ inductance
 ** Capacitance (Parallel Plate Capacitor)
 The formula for Capacitance (C) is:
 C=ε⋅AdC=dε⋅A​
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Capacitance (Parallel Plate Capacitor)
 dielectric_constant = 8.85e-12  # Dielectric constant (F/m)
 permittivity_free_space = 8.85e-12  # Permittivity of free space (F/m)
@@ -624,7 +948,7 @@ capacitance
 ** Displacement Current (Maxwell's Equations)
 The formula for nDisplacement Current (I_d) is:
 Id=ε0∂E∂tId​=ε0​∂t∂E​
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Displacement Current (Maxwell's Equations)
 permittivity_free_space = 8.85e-12  # Permittivity of free space (F/m)
 rate_of_change_electric_field = 0.02  # Rate of change of electric field (V/m²)
@@ -635,7 +959,7 @@ displacement_current
 ** Resistivity
 The formula for Resistivity (ρ) is:
 ρ=R⋅Alρ=R⋅lA​
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Resistivity (Electrical Resistance)
 resistance = 5  # Resistance (Ω)
 cross_sectional_area = 0.01  # Cross-sectional area (m²)
@@ -648,11 +972,10 @@ resistivity
 #+RESULTS:
 : Resistivity (Electrical Resistance): 0.5 Ω·m
 
-* Waves
 ** Wave Speed
 The formula for Wave Speed is:
 \[ v = f \cdot \lambda \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Wave Speed (m/s)
 frequency = 50  # Frequency (Hz)
 wavelength = 0.5  # Wavelength (m)
@@ -664,10 +987,10 @@ wave_speed
 #+RESULTS:
 : Wave Speed: 25.0 m/s
 
-** Snell's Law
+** Snell's Law (Refraction)
 The formula for Snell's Law is:
 \[ n_1 \sin \theta_1 = n_2 \sin \theta_2 \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Snell's Law
 refractive_index1 = 1.5  # Refractive index 1
 refractive_index2 = 1.0  # Refractive index 2
@@ -684,7 +1007,7 @@ refracted_angle
 ** Equilibrium of a Particle
 The conditions for equilibrium of a particle are:
 \[ \sum \mathbf{F} = 0 \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Equilibrium of a Particle (N)
 force1 = 50  # Force 1 (N)
 force2 = -50  # Force 2 (N)
@@ -699,7 +1022,7 @@ resultant_force
 ** Equilibrium of a Rigid Body
 The conditions for equilibrium of a rigid body are:
 \[ \sum \mathbf{F} = 0 \quad \text{and} \quad \sum \mathbf{M} = 0 \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Equilibrium of a Rigid Body (N and N·m)
 force1 = 100  # Force 1 (N)
 force2 = -100  # Force 2 (N)
@@ -725,7 +1048,7 @@ The process for creating a free-body diagram is:
 ** Trusses
 The method for analyzing trusses is:
 \[ \sum F_x = 0, \quad \sum F_y = 0, \quad \sum M = 0 \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Analysis of Trusses (N)
 joint_force_x = 300  # Force in x-direction (N)
 joint_force_y = 400  # Force in y-direction (N)
@@ -745,7 +1068,7 @@ resultant_force_x, resultant_force_y
 ** Centroids
 The formula for the centroid of a composite area is:
 \[ \bar{x} = \frac{\sum A_i x_i}{\sum A_i} \quad \text{and} \quad \bar{y} = \frac{\sum A_i y_i}{\sum A_i} \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Centroid Calculation (m)
 areas = [1, 2, 3]  # Areas (m^2)
 x_coords = [1, 2, 3]  # x-coordinates (m)
@@ -764,7 +1087,7 @@ centroid_x, centroid_y
 ** Moments of Inertia
 The formulas for the moments of inertia are:
 \[ I_x = \int y^2 \, dA \quad \text{and} \quad I_y = \int x^2 \, dA \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Moment of Inertia (m^4)
 base_length = 0.5  # Base length (m)
 height = 0.2  # Height (m)
@@ -774,11 +1097,11 @@ print(f"Moment of Inertia about x-axis: {moment_of_inertia_x} m^4")
 print(f"Moment of Inertia about y-axis: {moment_of_inertia_y} m^4")
 moment_of_inertia_x, moment_of_inertia_y
 #+END_SRC
-* Dynamics
+* Dynamics (Kinematics and Vibrations)
 ** Kinetic Energy
 The formula for Kinetic Energy is:
 \[ KE = \frac{1}{2}mv^2 \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Kinetic Energy (J)
 mass = 1.0  # Mass (kg)
 velocity = 5  # Velocity (m/s)
@@ -793,7 +1116,7 @@ kinetic_energy
 ** Potential Energy
 The formula for Potential Energy is:
 \[ PE = mgh \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Potential Energy (J)
 mass = 1.0  # Mass (kg)
 gravity = 9.81  # Acceleration due to gravity (m/s^2)
@@ -806,11 +1129,10 @@ potential_energy
 #+RESULTS:
 : Potential Energy: 98.10000000000001 J
 
-* Vibration
 ** Natural Frequency
 The formula for Natural Frequency is:
 \[ f_n = \frac{1}{2\pi}\sqrt{\frac{k}{m}} \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Natural Frequency (Hz)
 spring_constant = 100  # Spring constant (N/m)
 mass = 1.0  # Mass (kg)
@@ -825,7 +1147,7 @@ natural_frequency
 ** Damping Ratio
 The formula for Damping Ratio is:
 \[ \zeta = \frac{c}{2\sqrt{km}} \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Damping Ratio (dimensionless)
 damping_coefficient = 10  # Damping coefficient (N·s/m)
 damping_ratio = damping_coefficient / (2 * math.sqrt(spring_constant * mass))
@@ -836,11 +1158,11 @@ damping_ratio
 #+RESULTS:
 : Damping Ratio: 0.5
 
-* Control Systems
+* Instrumentation, Measurement and Control
 ** Transfer Function
 The formula for Transfer Function is:
 \[ H(s) = \frac{Y(s)}{X(s)} \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Transfer Function
 import control as ctrl
 numerator = [1]  # Numerator coefficients
@@ -851,21 +1173,21 @@ transfer_function
 #+END_SRC
 
 #+RESULTS:
-: Transfer Function:
-: <TransferFunction>: sys[0]
-: Inputs (1): ['u[0]']
-: Outputs (1): ['y[0]']
-:
-:
-:       1
-: -------------
-: s^2 + 2 s + 1
+Transfer Function:
+<TransferFunction>: sys[0]
+Inputs (1): ['u[0]']
+Outputs (1): ['y[0]']
+
+
+      1
+-------------
+s^2 + 2 s + 1
 
 * Probability and Statistics
 ** Mean
 The formula for Mean is:
 \[ \mu = \frac{\sum x_i}{n} \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Mean
 data = [1, 2, 3, 4, 5]  # Data points
 mean = sum(data) / len(data)
@@ -879,7 +1201,7 @@ mean
 ** Standard Deviation
 The formula for Standard Deviation is:
 \[ \sigma = \sqrt{\frac{\sum (x_i - \mu)^2}{n}} \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Standard Deviation
 mean = sum(data) / len(data)
 variance = sum((x - mean) ** 2 for x in data) / len(data)
@@ -894,7 +1216,7 @@ standard_deviation
 ** Probability Density Function
 The formula for Probability Density Function is:
 \[ f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}} \]
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 # Probability Density Function
 x = 3  # Data point
 mean = 0  # Mean
@@ -908,7 +1230,7 @@ pdf
 : PDF at x=3: 0.0044318484119380075
 
 * Engineering Economics
-#+BEGIN_SRC python :results output :exports both
+#+BEGIN_SRC python :results output raw :exports both
 import math
 
 def single_payment_compound_amount(P, i, n):
@@ -1039,11 +1361,8 @@ Uniform Gradient Future Worth (F/G, i%, n): 55.25500000000028
 Uniform Gradient Uniform Series (A/G, i%, n): 90.5062980131369
 #+end_example
 
-
-
-* TODO
-** Reference Handbook Category Scores
-#+BEGIN_SRC python :results output :exports both
+* Previous Scores
+#+BEGIN_SRC python :results output raw :exports both
 import pandas as pd
 
 data = {
@@ -1055,32 +1374,48 @@ data = {
 df = pd.DataFrame(data)
 
 df['Percentage Score'] = df['Performance'] / df['Number of Items'] * 100
-df = df.sort_values(by='Percentage Score', ascending=False)
+df = df.sort_values(by='Percentage Score', ascending=True)
 print(f"Dataframe (df): {df} df")
 df
 #+end_src
 
 #+RESULTS:
-#+begin_example
 Dataframe (df):                                  Knowledge Area  ...  Percentage Score
-2              Ethics and Professional Practice  ...        212.500000
-12  Measurements, Instrumentation, and Controls  ...        200.000000
-0                                   Mathematics  ...        171.666667
-3                         Engineering Economics  ...        170.000000
-1                    Probability and Statistics  ...        155.000000
-8            Material Properties and Processing  ...        112.857143
-4                     Electricity and Magnetism  ...        112.000000
-11                                Heat Transfer  ...         98.571429
-5                                       Statics  ...         94.444444
-6          Dynamics, Kinematics, and Vibrations  ...         71.000000
-13               Mechanical Design and Analysis  ...         67.000000
-9                               Fluid Mechanics  ...         67.000000
-10                               Thermodynamics  ...         64.000000
 7                        Mechanics of Materials  ...         50.000000
+10                               Thermodynamics  ...         64.000000
+9                               Fluid Mechanics  ...         67.000000
+13               Mechanical Design and Analysis  ...         67.000000
+6          Dynamics, Kinematics, and Vibrations  ...         71.000000
+5                                       Statics  ...         94.444444
+11                                Heat Transfer  ...         98.571429
+4                     Electricity and Magnetism  ...        112.000000
+8            Material Properties and Processing  ...        112.857143
+1                    Probability and Statistics  ...        155.000000
+3                         Engineering Economics  ...        170.000000
+0                                   Mathematics  ...        171.666667
+12  Measurements, Instrumentation, and Controls  ...        200.000000
+2              Ethics and Professional Practice  ...        212.500000
 
 [14 rows x 4 columns] df
-#+end_example
+Dataframe (df):                                  Knowledge Area  ...  Percentage Score
+7                        Mechanics of Materials  ...         50.000000
+10                               Thermodynamics  ...         64.000000
+9                               Fluid Mechanics  ...         67.000000
+13               Mechanical Design and Analysis  ...         67.000000
+6          Dynamics, Kinematics, and Vibrations  ...         71.000000
+5                                       Statics  ...         94.444444
+11                                Heat Transfer  ...         98.571429
+4                     Electricity and Magnetism  ...        112.000000
+8            Material Properties and Processing  ...        112.857143
+1                    Probability and Statistics  ...        155.000000
+3                         Engineering Economics  ...        170.000000
+0                                   Mathematics  ...        171.666667
+12  Measurements, Instrumentation, and Controls  ...        200.000000
+2              Ethics and Professional Practice  ...        212.500000
 
+[14 rows x 4 columns] df
+
+* TODO
 ** Previous Print Statements
 # print(f"\n::Mechanics of Materials::")
 # # Calculate Stress (sigma)

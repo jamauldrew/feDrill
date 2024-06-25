@@ -1,7 +1,5 @@
 ** Exam 2
 :PROPERTIES:
-#+STARTUP: inlineimages
-#+ATTR_LATEX: :width 100px
 :END:
 
 *** 0                                                                 :drill:
@@ -510,17 +508,17 @@ Ethics are a set of guidelines, rules, philosophical concepts, customs, norms, a
 ***The answer is \(A\), \(B\), and \(C\).***
 
 *** 14                                                                :drill:
-SCHEDULED: <2024-06-23 Sun>
+SCHEDULED: <2024-07-04 Thu>
 :PROPERTIES:
 :ID:       a215634c-d37c-46e3-870b-bbce0c6564f8
-:DRILL_LAST_INTERVAL: 3.0
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 9.75
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 0.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [Y-06-20 Thu 15:%]
+:DRILL_EASE: 2.65
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 03:%]
 :END:
 
 An engineer develops a new idea to significantly reduce energy consumption in manufacturing plants. The engineer considers filing a patent application to the United States Patent and Trademark office \(USPTO\). Which categories of patents will the USPTO consider? Select all that apply.
@@ -1023,8 +1021,17 @@ The Thevenin theorem states that any given complicated circuit can be reduced to
      1. Thevenin theorem D  2. Norton theorem C 
 
 *** 28                                                                :drill:
+SCHEDULED: <2024-06-27 Thu>
 :PROPERTIES:
 :ID:       e0ca6241-8c9c-4322-92c5-91ba927dd700
+:DRILL_LAST_INTERVAL: 3.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 03:%]
 :END:
 
 A sawtooth waveform is shown.
@@ -3819,8 +3826,17 @@ For steady state, *s* = 0.
 ***The answer is \(A\).***
 
 *** 97                                                                :drill:
+SCHEDULED: <2024-06-27 Thu>
 :PROPERTIES:
 :ID:       8181d4a9-de72-4eee-b36c-6578bac7e1d0
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 0.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [Y-06-23 Sun 03:%]
 :END:
 
 A 22.5 kg ± 0.1 kg sphere is moving with a velocity of 5.19 m/s ± 0.05 m/s. The sphere’s kinetic energy, including its measurement uncertainty, in joules and rounded to the nearest integer, is *   *. Enter your response in the blank.
