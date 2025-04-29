@@ -1,0 +1,27 @@
+==== CARD 0 ====
+FRONT:
+For a geothermal project, the temperature increases from 20°C at the surface of the earth to 90°C at a depth of 2 km below the ground. Assuming a linear temperature gradient, the underground temperature at 3800 m below the ground surface is most nearly<br><br>$A\$<br><br>113°C<br><br>$B\$<br><br>133°C<br><br>$C\$<br><br>153°C<br><br>$D\$<br><br>173°C
+
+BACK:
+Geothermal energy is generated when water comes into contact with heated underground rocks. The heat turns the water into a steam which can be used to generate power. In this problem, the thermal gradient, <em>m</em>, is constant because the thermal variation along the depth is linear. Calculate the slope, <em>m</em>.<br><img src="000648.png"> <br>Use the point-slope form of the straight-line equation.<br><img src="000366.png">  <img src="000404.png">  <br>Therefore, the temperature at a depth of 3800 m can be determined as<br><img src="000432.png"> <br>**<em>The answer is $C\$.</em>**
+
+========================================
+
+==== CARD 1 ====
+FRONT:
+A particle moves along a line so that its position at time <em>t</em> is<br><img src="000795.png">  <br>The velocity at <em>t</em> = 2.5 s is most nearly<br><br>$A\$<br><br>0.78<br><br>$B\$<br><br>0.84<br><br>$C\$<br><br>0.92<br><br>$D\$<br><br>2.1
+
+BACK:
+The velocity, v, is defined as the distance travelled per unit time.<br><img src="000534.png">  <br>Use the <em>NCEES Handbook</em>, Mathematics: Derivatives section. Use the quotient rule.<br><img src="000359.png"> <br>Let <em>u</em> = <em>t</em>2 \+ 1 and v = <em>t</em> \+ 1.<br><img src="000165.png"> <br>Substitute these values into the velocity equation.<br><img src="000313.png"> <br>For <em>t</em> = 2.5 s, find the velocity.<br><img src="000768.png">  <br>**<em>The answer is $B\$.</em>**
+
+========================================
+
+==== CARD 2 ====
+FRONT:
+A differential equation is given.<br><img src="000568.png"> <br>Its general solution is<br><br>$A\$<br><br><em>y</em> = <em>C</em>1<em>e</em>−2<em>x</em> \+ <em>C</em>2<em>e</em>−<em>x</em><br><br>$B\$<br><br><em>y</em> = <em>C</em>1<em>e</em>2<em>x</em> \+ C2<em>e</em><em>x</em><br><br>$C\$<br><br><em>y</em> = <em>C</em>1<em>e</em><em>i</em>2<em>x</em> \+ <em>C</em>2<em>e</em><em>ix</em><br><br>$D\$<br><br><em>y</em> = <em>e</em><em>x</em> $3 cos <em>x</em> \+ 2 sin <em>x</em>\$
+
+BACK:
+The equation is a second-order linear homogeneous differential equation with constant real coefficients.<br><br>For the form <em>y</em>′′ \+ <em>ay</em>′ \+ <em>b</em> = 0, the general solution is<br><img src="000405.png">  <br>Substituting this solution in the equation gives<br><img src="000647.png"> <br>The roots are <em>r</em>1 = −2 and <em>r</em>2 = −1.<br><br>Since the roots are real, the solution is of the form<br><img src="000462.png"> <br>Substituting the values of <em>r</em>1 and <em>r</em>2, the solution is<br><img src="000298.png">  <br>**<em>The answer is $A\$.</em>**
+
+========================================
+

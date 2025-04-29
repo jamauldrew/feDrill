@@ -1,0 +1,18 @@
+Anki Import Instructions
+=======================
+
+1. Copy all media files listed in 'media_files_needed.txt' into your Anki collection.media folder
+   (Typically found at: %APPDATA%\Anki2\[User Profile]\collection.media on Windows
+   or ~/Library/Application Support/Anki2/[User Profile]/collection.media on Mac)
+
+2. In Anki, select 'Import File' from the File menu
+
+3. Select the 'anki_import.csv' file
+
+4. In the import dialog, ensure:
+   - 'Fields separated by: Comma' is selected
+   - 'Allow HTML in fields' is CHECKED
+   - Field mapping is correctly set (Front → Front, Back → Back, Tags → Tags)
+   - Choose your target deck
+
+5. Click 'Import' to complete the process

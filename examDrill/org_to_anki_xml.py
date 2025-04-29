@@ -17,14 +17,16 @@ Requirements:
     - shutil (for file operations)
 """
 
-import re
-import os
+# import re
+# import os
 import sys
-import hashlib
-import shutil
-import zipfile
+# import hashlib
+# import shutil
+# import zipfile
 import xml.sax.saxutils as saxutils
 from pathlib import Path
+import os, re, shutil, zipfile
+from hashlib import sha256
 
 def extract_drill_cards(org_content):
     """Extract individual drill cards from org file with engineering precision."""
@@ -88,7 +90,8 @@ def extract_drill_cards(org_content):
 def extract_images(text):
     """Extract image references from text with improved pattern matching."""
     # More flexible pattern to catch various image reference formats
-    image_pattern = r'\[\[\.?\/?(images\/)?(\d+)\.png\]\]'
+    # image_pattern = r'\[\[\.?\/?(images\/)?(\d+)\.png\]\]'
+    image_pattern = r'\[\[\.?\/?(images\/)?([\w-]+)\.png\]\]'
     return [match.group(2) + '.png' for match in re.finditer(image_pattern, text)]
 
 def process_latex_for_xml(text):
@@ -117,115 +120,178 @@ def process_latex_for_xml(text):
     text = text.replace('\n', '<br></br>')
 
     # Handle image references for XML format - preserve image filenames
-    text = re.sub(r'\[\[\.?\/?(images\/)?(\d+)\.png\]\]', r'<img id="\2.png"></img>', text)
+    text = re.sub(r'\[\[\.?\/?(images\/)?(\d+)\.png\]\]', r'<img id="\2.png" />', text)
 
     return text
 
-def calculate_sha256(file_path):
-    """Calculate SHA256 hash of a file for blob ID."""
-    sha256_hash = hashlib.sha256()
-    with open(file_path, "rb") as f:
-        for byte_block in iter(lambda: f.read(4096), b""):
-            sha256_hash.update(byte_block)
-    return sha256_hash.hexdigest()
+def calculate_sha256(path):
+    """Calculate SHA256 hash in base16 (hexadecimal) format as required by AnkiApp."""
+    h = sha256()
+    with open(path, 'rb') as f:
+        for chunk in iter(lambda: f.read(8192), b''):
+            h.update(chunk)
+    return h.hexdigest()  # Ensure we return the hexadecimal representation
 
 def create_anki_xml(cards, output_dir):
-    """Create AnkiApp-compatible XML file with precise structure."""
-    os.makedirs(output_dir, exist_ok=True)
+    """Create AnkiApp-compatible XML with diagnostic test elements."""
+    # Ensure output directory exists
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
 
-    # Create XML file with AnkiApp's expected structure
     xml_path = os.path.join(output_dir, 'anki_import.xml')
     with open(xml_path, 'w', encoding='utf-8') as f:
-        # XML header and deck definition
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
         f.write('<deck name="Mechanical Engineering Exam" tags="ME_Exam,EIT">\n')
 
-        # Define fields structure - using rich-text tag according to AnkiApp schema
+        # Define fields structure
         f.write('  <fields>\n')
         f.write('    <rich-text lang="en-US" name="Front" sides="11"></rich-text>\n')
         f.write('    <rich-text lang="en-US" name="Back" sides="01"></rich-text>\n')
         f.write('  </fields>\n')
 
-        # Define cards
+        # Add a test card with basic image (for diagnostic purposes)
         f.write('  <cards>\n')
 
-        for card in cards:
-            # Process question and answer for XML compatibility
-            front = card['front']
-            back = card['back']
+        # Add diagnostic test card
+        f.write('    <card tags="TEST">\n')
+        f.write('      <rich-text name="Front">This is a test card with hardcoded image reference</rich-text>\n')
+        f.write('      <rich-text name="Back">The image should appear below if the format is correct:<br></br><img id="TEST_HASH" /></rich-text>\n')
+        f.write('    </card>\n')
 
-            # Write card entry with properly formatted XML, matching AnkiApp schema
+        # Add regular cards
+        for card in cards:
             f.write(f'    <card tags="{card["tags"]}">\n')
-            f.write(f'      <rich-text name="Front">{front}</rich-text>\n')
-            f.write(f'      <rich-text name="Back">{back}</rich-text>\n')
+            f.write(f'      <rich-text name="Front">{card["front"]}</rich-text>\n')
+            f.write(f'      <rich-text name="Back">{card["back"]}</rich-text>\n')
             f.write(f'    </card>\n')
 
-        # Close cards and deck
         f.write('  </cards>\n')
         f.write('</deck>\n')
 
     return xml_path
 
-def create_anki_zip(xml_path, cards, output_dir, source_image_dir):
-    """Create a properly structured ZIP file for AnkiApp import with comprehensive image support."""
-    # Create blobs directory for images - must be named 'blobs' according to AnkiApp spec
+def process_images_for_anki(cards, source_image_dir, output_dir):
+    """Process images with multiple storage strategies to ensure compatibility."""
     blobs_dir = os.path.join(output_dir, 'blobs')
     os.makedirs(blobs_dir, exist_ok=True)
 
-    # Define zip file path
-    zip_path = os.path.join(output_dir, 'anki_import.zip')
-
-    # Collect all unique images
+    image_reference_map = {}
     all_images = set()
     for card in cards:
-        for img in card['front_images']:
-            all_images.add(img)
-        for img in card['back_images']:
-            all_images.add(img)
+        all_images.update(card.get('front_images', []))
+        all_images.update(card.get('back_images', []))
 
-    # Process and copy images to blobs directory with SHA256 hashing
-    image_id_map = {}
-    for image in all_images:
-        source_path = os.path.join(source_image_dir, image)
+    print(f"Processing {len(all_images)} unique binary assets for blob storage")
+
+    for image_filename in all_images:
+        source_path = os.path.join(source_image_dir, image_filename)
+
         if os.path.exists(source_path):
-            # Calculate SHA256 hash for blob ID - required by AnkiApp
-            image_hash = calculate_sha256(source_path)
-            # Copy to blobs directory with hash as filename
-            target_path = os.path.join(blobs_dir, image_hash)
-            shutil.copy(source_path, target_path)
-            # Store mapping for XML replacement
-            image_id_map[image] = image_hash
+            # Calculate SHA256 hash in hexadecimal format
+            binary_hash = calculate_sha256(source_path)
+            file_ext = os.path.splitext(image_filename)[1]  # Get the file extension
 
-    # Update XML with correct blob IDs
+            # Store with multiple strategies to ensure one works:
+
+            # 1. Store with original filename (for backward compatibility)
+            shutil.copy(source_path, os.path.join(blobs_dir, image_filename))
+
+            # 2. Store with hash as filename without extension
+            shutil.copy(source_path, os.path.join(blobs_dir, binary_hash))
+
+            # 3. Store with hash as filename with extension
+            shutil.copy(source_path, os.path.join(blobs_dir, binary_hash + file_ext))
+
+            # Create reference mapping
+            image_base = os.path.splitext(image_filename)[0]
+            image_reference_map[image_base] = {
+                'original_filename': image_filename,
+                'hash_id': binary_hash,
+                'file_extension': file_ext
+            }
+        else:
+            print(f"Warning: {image_filename} not found")
+
+    print(f"Completed blob processing: {len(image_reference_map)} unique assets stored with multiple filename strategies")
+
+    return image_reference_map
+
+def update_xml_with_blob_references(xml_path, image_reference_map):
+    """Update XML with precise AnkiApp-compliant image references."""
     with open(xml_path, 'r', encoding='utf-8') as f:
         xml_content = f.read()
 
-    # Replace image references with proper blob IDs
-    for image, image_hash in image_id_map.items():
-        # Extract numeric part of image filename
-        image_num = re.search(r'(\d+)\.png', image)
-        if image_num:
-            image_num = image_num.group(1)
-            # Replace in XML - use the SHA256 hash as the id
-            xml_content = xml_content.replace(f'<img id="{image_num}.png"></img>', f'<img id="{image_hash}"></img>')
+    for image_base in image_reference_map:
+        reference_info = image_reference_map[image_base]
 
-    # Write updated XML
+        # Match the exact format from AnkiApp docs: <img id="{SHA_256 hash of file}" />
+        old_tag = f'<img id="{image_base}.png" />'
+        new_tag = f'<img id="{reference_info["hash_id"]}" />'
+
+        xml_content = xml_content.replace(old_tag, new_tag)
+
     with open(xml_path, 'w', encoding='utf-8') as f:
         f.write(xml_content)
 
-    # Create ZIP file
+    return xml_content
+
+def create_anki_zip_with_verification(xml_path, blobs_dir, output_dir):
+    """Create AnkiApp-compatible ZIP with precise directory structure."""
+    zip_path = os.path.join(output_dir, 'anki_import.zip')
+
     with zipfile.ZipFile(zip_path, 'w') as zip_file:
-        # Add XML file
+        # Add XML directly to root
         zip_file.write(xml_path, os.path.basename(xml_path))
 
-        # Add blob files (using unique hashes to prevent duplicates)
-        unique_hashes = set(image_id_map.values())
-        for image_hash in unique_hashes:
-            blob_path = os.path.join(blobs_dir, image_hash)
-            if os.path.exists(blob_path):
-                zip_file.write(blob_path, os.path.join('blobs', image_hash))
+        # Create blobs directory in the ZIP
+        for blob_filename in os.listdir(blobs_dir):
+            blob_path = os.path.join(blobs_dir, blob_filename)
+            if os.path.isfile(blob_path):
+                # Store with path "blobs/filename" - ensure this exact structure
+                zip_file.write(blob_path, os.path.join('blobs', blob_filename))
 
-    return zip_path, image_id_map
+    # Verify the structure
+    with zipfile.ZipFile(zip_path, 'r') as verify_zip:
+        files = verify_zip.namelist()
+        print("ZIP file structure verification:")
+        print(f"- XML file in root: {os.path.basename(xml_path) in files}")
+        print(f"- 'blobs/' directory present: {any(f.startswith('blobs/') for f in files)}")
+        print(f"- Number of files in blobs: {sum(1 for f in files if f.startswith('blobs/'))}")
+
+    return zip_path
+
+# def main_processing_workflow(input_file, output_dir):
+#     """
+#     Integrated workflow for AnkiApp-compatible conversion with technical precision.
+#     """
+#     # Extract cards from org file
+#     with open(input_file, 'r', encoding='utf-8') as f:
+#         org_content = f.read()
+
+#     cards = extract_drill_cards(org_content)
+#     print(f"Extracted {len(cards)} engineering problem cards for conversion")
+
+#     # Determine source image directory
+#     source_image_dir = os.path.join(os.path.dirname(input_file), "images")
+#     if not os.path.exists(source_image_dir):
+#         print(f"ERROR: Source image directory not found: {source_image_dir}")
+#         return
+
+#     # Create XML with proper card structure
+#     xml_path = create_anki_xml(cards, output_dir)
+#     print(f"Created AnkiApp schema XML: {xml_path}")
+
+#     # Process images with blob protocol
+#     image_reference_map = process_images_for_anki(cards, source_image_dir, output_dir)
+
+#     # Update XML with hash-based blob references
+#     update_xml_with_blob_references(xml_path, image_reference_map)
+
+#     # Create ZIP with verification
+#     blobs_dir = os.path.join(output_dir, 'blobs')
+#     zip_path = create_anki_zip_with_verification(xml_path, blobs_dir, output_dir)
+
+#     print(f"Conversion complete: {zip_path}")
+#     print(f"Technical verification complete - binary asset reference integrity confirmed")
 
 def create_html_preview(cards, output_dir, image_id_map=None):
     """Create HTML preview for verification with proper LaTeX rendering."""
@@ -402,6 +468,9 @@ def main():
     try:
         print("=== Engineering Flashcard XML Conversion Process ===")
 
+        # Create output directory if it doesn't exist
+        Path(output_dir).mkdir(parents=True, exist_ok=True)
+
         # Read input file
         print(f"Reading source file: {input_file}")
         with open(input_file, 'r', encoding='utf-8') as f:
@@ -415,7 +484,7 @@ def main():
         # Determine if we have images
         has_images = any(card['front_images'] or card['back_images'] for card in cards)
 
-        # Create XML file
+        # Create XML file - ensure directory exists
         print("Generating AnkiApp-compatible XML...")
         xml_path = create_anki_xml(cards, output_dir)
 
@@ -425,12 +494,9 @@ def main():
             print(f"XML file created and validated: {xml_path}")
         else:
             print(f"WARNING: XML file created but validation failed: {message}")
-            print(f"Attempting to fix XML issues...")
-            # Here you would implement fixes if needed
 
         # Handle images if present
         source_image_dir = os.path.join(os.path.dirname(input_file), "images")
-        image_id_map = None
         copied_images = set()
         missing_images = set()
 
@@ -438,47 +504,39 @@ def main():
             print(f"Looking for engineering diagrams in {source_image_dir}")
 
             if os.path.exists(source_image_dir):
-                print(f"Processing engineering diagrams from {source_image_dir}")
-                # Create ZIP file with images
-                zip_path, image_id_map = create_anki_zip(xml_path, cards, output_dir, source_image_dir)
-                print(f"ZIP archive created with XML and images: {zip_path}")
+                print(f"Processing engineering diagrams with enhanced blob protocol...")
 
-                # Create HTML preview
-                preview_path, preview_images_dir = create_html_preview(cards, output_dir, image_id_map)
+                # Implement enhanced binary asset processing
+                image_reference_map = process_images_for_anki(cards, source_image_dir, output_dir)
+
+                # Update XML with correct hash-based references
+                update_xml_with_blob_references(xml_path, image_reference_map)
+
+                # Create technically verified ZIP archive
+                blobs_dir = os.path.join(output_dir, 'blobs')
+                zip_path = create_anki_zip_with_verification(xml_path, blobs_dir, output_dir)
+
+                print(f"ZIP archive created with technical verification: {zip_path}")
+
+                # Create HTML preview with resolved image references
+                preview_path, preview_images_dir = create_html_preview(cards, output_dir)
                 copied_images, missing_images = copy_images_for_preview(cards, source_image_dir, preview_images_dir)
                 print(f"HTML preview created: {preview_path}")
-                print(f"Successfully processed {len(copied_images)} images")
-
-                if missing_images:
-                    print(f"WARNING: {len(missing_images)} referenced images were not found")
             else:
                 print(f"WARNING: Image directory not found at {source_image_dir}")
-                print("Creating preview without images...")
                 preview_path, _ = create_html_preview(cards, output_dir)
-                print(f"Text-only HTML preview created: {preview_path}")
         else:
             print("No image references found in the cards")
             preview_path, _ = create_html_preview(cards, output_dir)
             print(f"Text-only HTML preview created: {preview_path}")
 
-        # Create instructions
+        # Create instructions and reports
         create_instructions(output_dir)
-        print(f"Comprehensive instructions created: {os.path.join(output_dir, 'README.txt')}")
-
-        # Create image report
         if has_images:
             create_image_report(output_dir, copied_images, missing_images)
-            print(f"Image processing report created: {os.path.join(output_dir, 'image_report.txt')}")
 
         print("\n=== Conversion Complete ===")
         print(f"Output files available in: {output_dir}")
-        if has_images and os.path.exists(source_image_dir):
-            print(f"For import to AnkiApp: Use the ZIP file {os.path.join(output_dir, 'anki_import.zip')}")
-            if missing_images:
-                print(f"NOTE: {len(missing_images)} images were referenced but not found. See image_report.txt")
-        else:
-            print(f"For import to AnkiApp: Use the XML file {xml_path}")
-        print("Verify output formatting in preview.html before importing")
 
     except Exception as e:
         print(f"Error processing engineering content: {str(e)}")

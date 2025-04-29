@@ -1,0 +1,27 @@
+==== CARD 0 ====
+FRONT:
+The equation of a line passing through points $1, 2\$ and $5, 0\$ is<br><br>$A\$<br><br>2<em>y</em> \+ <em>x</em> = 5<br><br>$B\$<br><br><em>y</em> \+ 2<em>x</em> = 5<br><br>$C\$<br><br><em>y</em> \+ 3<em>x</em> = 5<br><br>$D\$<br><br>3<em>y</em> \+ <em>x</em> = 5
+
+BACK:
+See the <em>NCEES Handbook</em>, Mathematics section. The general equation of a straight line is<br><img src="000750.png">  <br>The slope, <em>m</em>, of a line passing through points $<em>x</em>1, <em>y</em>1\$ and $<em>x</em>2, <em>y</em>2\$ is<br><img src="000577.png"> <br>For the two given points, the slope is<br><img src="000074.png">  <br>It can be represented graphically as<br><img src="000082.png">  <br>Use the slope and one of the original points to calculate the standard form of the line.<br><img src="000029.png"> <br>The standard form of the line passing through the points $1, 2\$ and $5, 0\$ is<br><img src="000109.png">  <br>**<em>The answer is $A\$.</em>**
+
+========================================
+
+==== CARD 1 ====
+FRONT:
+Line <em>y</em> = 2<em>x</em> is rotated about the <em>y</em>-axis. The volume of the resulting solid between <em>y</em> = 0 and <em>y</em> = 10 is most nearly<br><br>$A\$<br><br>50<em>π</em>/3<br><br>$B\$<br><br>100<em>π</em>/3<br><br>$C\$<br><br>150<em>π</em>/3<br><br>$D\$<br><br>250<em>π</em>/3
+
+BACK:
+The line represented by the equation is shown.<br><img src="000351.png">  <br>The rotation of the line about its <em>y</em>-axis generates a conical shape. The area of the circle at the top of the conical shape at a given <em>x</em> is<br><img src="000274.png"> <br>The volume of a slice of thickness <em>dy</em> is<br><img src="000259.png">  <br>The volume between <em>y</em> = 0 and <em>y</em> = 10 is<br><img src="000345.png">  <br>Shortcut: The solution can be arrived at by using the cone volume formula given in the Mensuration of Areas and Volumes section of the <em>NCEES Handbook</em>.<br><br>**<em>The answer is $D\$.</em>**
+
+========================================
+
+==== CARD 2 ====
+FRONT:
+A differential equation, and its boundary conditions are<br><img src="000548.png"> <br>The general solution to the equation is<br><br>$A\$<br><br><em>e</em>−3<em>t</em><br><br>$B\$<br><br><em>e</em>3<em>t</em><br><br>$C\$<br><br>3<em>e</em><em>t</em><br><br>$D\$<br><br><em>e</em><em>i</em>3<em>t</em>
+
+BACK:
+The equation is a first-order linear homogeneous differential equation with constant real coefficients. For the form <em>y</em> ′ \+ <em>ay</em> = 0, the general solution is <em>y</em> = <em>Ce</em>−<em>at</em>. Here, <em>a</em> = 3, so <em>y</em> = <em>Ce</em>−3<em>t</em>.<br><br>The constant <em>C</em> must satisfy the boundary condition. Substitute <em>y</em>$0\$ = 1 into the general solution.<br><img src="000712.png">  <br>Therefore, <em>C</em> = 1, and <em>y</em> = <em>e</em>−3<em>t</em>.<br><br>**<em>The answer is A.</em>**
+
+========================================
+

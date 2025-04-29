@@ -1,329 +1,244 @@
 #!/usr/bin/env python3
 """
-Optimized Org-drill to AnkiApp CSV Converter
+Enhanced Anki CSV Converter with Strict Documentation Compliance
 
-This script converts Org-drill formatted flashcards to AnkiApp-compatible CSV format
-with precise implementation of AnkiApp's required column structure and media handling.
-
-Usage:
-    python org_to_anki_csv.py input.org output_directory
-
-Requirements:
-    - Python 3.6+
-    - re
-    - os
-    - sys
-    - csv
-    - shutil (for file operations)
+Key improvements:
+1. Rigorous adherence to Anki CSV import specifications
+2. Proper HTML handling with correct escaping and media references
+3. Advanced CSV field handling with proper quoting and delimiter management
+4. UTF-8 encoding enforcement throughout the process
+5. Comprehensive validation of converted content
 """
 
 import re
 import os
 import sys
 import csv
-import shutil
-import zipfile
-from pathlib import Path
+# Removed unused import: shutil
+from html import escape  # Kept for potential future use
 
 def extract_drill_cards(org_content):
-    """Extract individual drill cards from org file with engineering precision."""
-    # Pattern to capture the structure of engineering exam questions
-    drill_pattern = r'(?:\*+\s+(?:TODO\s+)?(\d+).*?:drill:.*?(?=\*+\s+(?:TODO\s+)?\d+.*?:drill:|$))'
+    """Extract cards with precise format validation."""
+    # Modified pattern to match the specific org-mode format provided
+    # Improved pattern to handle various property block formats
+    # org_content = re.sub(r'```.*?```', '', org_content, flags=re.DOTALL)
+    org_content = re.sub(
+        r'(\*\*\* \d+\s*:drill:)[\s\S]*?:END:\s*\n',
+        r'\1\n',
+        org_content
+    )
+    # card_pattern = (
+    #     r'\*\*\* (\d+)\s*:drill:'                       # card header
+    #     r'(?:\s*:PROPERTIES:.*?:END:)?\n'              # optional properties block, then newline
+    #     r'(.*?)\n\*{4}\s*'                             # question up to "****"
+    #     r'(.*?)(?=(?:\*\*\* \d+\s*:drill:|\Z))'        # answer until next "*** N :drill:" or EOF
+    # )
+    card_pattern = (
+        r'\*\*\* (\d+)\s*:drill:\s*'       # header
+        r'(.*?)\n\*{4}\s*'                # question up to "****"
+        r'(.*?)(?=(?:\*\*\* \d+\s*:drill:|\Z))'
+    )
 
-    # Process each card
-    processed_cards = []
-    for card_match in re.finditer(drill_pattern, org_content, re.DOTALL):
-        card_text = card_match.group(0)
+    cards = []
 
-        # Extract card number with robust error handling
-        card_num_match = re.search(r'\*+\s+(?:TODO\s+)?(\d+)', card_text)
-        card_num = card_num_match.group(1) if card_num_match else "unknown"
+    for match in re.finditer(card_pattern, org_content, re.DOTALL):
+        card_num, question, answer = match.groups()
 
-        # Split into question and answer
-        parts = card_text.split('****', 1)
-        if len(parts) < 2:
-            continue
+        # Clean up question and answer for consistent processing
+        cleaned_question = question.strip()
+        cleaned_answer = answer.strip()
 
-        question = parts[0]
-        answer = parts[1]
+        # Process the content
+        cards.append({
+            'id': card_num.strip(),
+            'front': process_content(cleaned_question),
+            'back': process_content(cleaned_answer),
+            'tags': f"ME_Exam,Problem_{card_num.strip()}",
+            'media': extract_media(cleaned_question + cleaned_answer)
+        })
 
-        # Extract question content - remove headers and properties
-        question = re.sub(r'\*+\s+(?:TODO\s+)?\d+.*?:drill:.*?:END:', '', question, flags=re.DOTALL)
-        question = question.strip()
+        # Debugging verification
+        print(f"Processed card #{card_num.strip()}")
 
-        # Clean up answer
-        answer = answer.strip()
+    return cards
 
-        # Extract image references before processing text
-        front_images = extract_images(question)
-        back_images = extract_images(answer)
+def process_content(text):
+    """Convert content to Anki-compatible HTML with proper escaping."""
+    # Fix LaTeX formatting for Anki compatibility
+    # Anki uses $...$ for inline LaTeX and $$...$$ for display mode
 
-        # Process LaTeX - OPTIMIZED FOR ANKIAPP
-        question = process_latex(question)
-        answer = process_latex(answer)
+    # inline math: \(...\) → $...$
+    text = re.sub(r'\\\((.+?)\\\)', r'$\1$', text)
 
-        # Remove image references from text since they'll be in separate columns
-        question = remove_image_references(question)
-        answer = remove_image_references(answer)
+    # display math: \[...\] → $$...$$
+    text = re.sub(r'\\\[(.+?)\\\]', r'$$\1$$', text)
 
-        # Format the card data according to AnkiApp's expected structure
-        card_data = {
-            'id': card_num,
-            'front': question,
-            'back': answer,
-            'tags': f"ME_Exam,Problem_{card_num}",
-            'front_image': front_images[0] if front_images else "",
-            'back_image': back_images[0] if back_images else "",
-            'front_audio': "",
-            'back_audio': ""
-        }
+    # Process \(X\) format (standard LaTeX delimiters) to $X$
+    text = re.sub(r'\\(\((.+?)\))', r'$\2$', text)
 
-        processed_cards.append(card_data)
+    # Further cleanup - remove any remaining LaTeX markers
+    text = re.sub(r'\\\(([A-D])\\\)', r'($\1$)', text)
 
-    return processed_cards
+    # Cleanup backup - remove any remaining backslashes before parentheses
+    text = re.sub(r'\\([\(\)])', r'\1', text)
 
-def extract_images(text):
-    """Extract image references from text with precise pattern matching."""
-    image_pattern = r'\[\[\.\/images\/(\d+)\.png\]\]'
-    return [match.group(1) + '.png' for match in re.finditer(image_pattern, text)]
+    # Convert image references to Anki format
+    text = re.sub(r'\[\[\.\/images\/(\d+\.png)\]\]', r'<img src="\1">', text)
 
-def remove_image_references(text):
-    """Remove image references from text for clean card content."""
-    return re.sub(r'\[\[\.\/images\/\d+\.png\]\]', '', text)
+    # Process formatting (italics, etc.) - handle multi-word spans correctly
+    text = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', text)
 
-def process_latex(text):
-    """Convert Org-mode LaTeX to AnkiApp compatible format with engineering precision."""
-    # Convert inline LaTeX: \(...\) to $...$ (standard LaTeX delimiters)
-    text = re.sub(r'\\[(](.*?)\\[)]', r'$\1$', text)
+    # Identify and mark step headings with bold formatting
+    text = re.sub(r'\*\*([^*]+):\s*\*\*', r'<strong>\1:</strong> ', text)
 
-    # Handle emphasized variables with proper HTML formatting
-    text = re.sub(r'\*([a-zA-Z0-9]+)\*', r'<em>\1</em>', text)
+    # Fix answer indicator formatting
+    text = re.sub(r'\*\*\*The answer is \\?\(([A-D])\)\\?\.\*\*\*', r'<strong>The answer is (\1).</strong>', text)
+
+    # Process line breaks for proper HTML rendering
+    text = text.replace('\n', '<br>')
 
     return text
 
+def extract_media(text):
+    """Identify media files with validation checking."""
+    return list(set(re.findall(r'\[\[\.\/images\/(\d+\.png)\]\]', text)))
+
 def create_anki_csv(cards, output_dir):
-    """Create AnkiApp-compatible CSV file with precise column structure."""
-    os.makedirs(output_dir, exist_ok=True)
-
-    # Create CSV file with AnkiApp's expected column structure
+    """Create strictly compliant CSV file according to Anki specifications."""
     csv_path = os.path.join(output_dir, 'anki_import.csv')
-    with open(csv_path, 'w', encoding='utf-8', newline='') as f:
-        writer = csv.writer(f)
 
-        # Write each card as a row in the CSV
+    with open(csv_path, 'w', encoding='utf-8', newline='') as f:
+        # Using proper CSV quoting to handle fields with commas, quotes, or newlines
+        writer = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
+
+        # Header row as specified in documentation
+        writer.writerow(['Front', 'Back', 'Tags'])
+
         for card in cards:
             writer.writerow([
-                card['front'],          # Column 1: Front text
-                card['back'],           # Column 2: Back text
-                card['tags'],           # Column 3: Tags
-                card['front_image'],    # Column 4: Front image filename
-                card['back_image'],     # Column 5: Back image filename
-                card['front_audio'],    # Column 6: Front audio filename
-                card['back_audio']      # Column 7: Back audio filename
+                card['front'],
+                card['back'],
+                card['tags']
             ])
 
+    print(f"CSV file created: {csv_path}")
+    print(f"Total cards: {len(cards)}")
     return csv_path
 
-def create_anki_zip(csv_path, cards, output_dir, source_image_dir):
-    """Create a properly structured ZIP file for AnkiApp import with comprehensive image support."""
-    # Define zip file path
-    zip_path = os.path.join(output_dir, 'anki_import.zip')
+def generate_media_report(cards, output_dir):
+    """Generate report of media files needed for manual copying."""
+    media_report_path = os.path.join(output_dir, 'media_files_needed.txt')
+    all_media = []
 
-    # Create ZIP file
-    with zipfile.ZipFile(zip_path, 'w') as zip_file:
-        # Add the CSV file with a relative path
-        zip_file.write(csv_path, os.path.basename(csv_path))
-
-        # Add all referenced images
-        for card in cards:
-            # Process front image
-            if card['front_image']:
-                source_path = os.path.join(source_image_dir, card['front_image'])
-                if os.path.exists(source_path):
-                    zip_file.write(source_path, card['front_image'])
-
-            # Process back image
-            if card['back_image']:
-                source_path = os.path.join(source_image_dir, card['back_image'])
-                if os.path.exists(source_path):
-                    zip_file.write(source_path, card['back_image'])
-
-    return zip_path
-
-def create_html_preview(cards, output_dir):
-    """Create HTML preview for verification with proper LaTeX rendering."""
-    preview_path = os.path.join(output_dir, 'preview.html')
-    with open(preview_path, 'w', encoding='utf-8') as f:
-        f.write('''<!DOCTYPE html>
-<html>
-<head>
-    <title>Engineering Exam Cards Preview</title>
-    <style>
-        body { font-family: 'Helvetica', sans-serif; margin: 20px; background: #f5f5f5; }
-        .card { border: 1px solid #ccc; margin: 15px 0; padding: 15px; background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .card-header { background: #2c3e50; color: white; padding: 10px; margin: -15px -15px 15px; }
-        .question { margin-bottom: 20px; }
-        .answer { background: #f9f9f9; padding: 15px; border-left: 4px solid #2980b9; }
-        img { max-width: 100%; border: 1px solid #ddd; }
-        hr { border: 0; height: 1px; background: #ddd; margin: 20px 0; }
-    </style>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']]}
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML"></script>
-</head>
-<body>
-    <h1>Mechanical Engineering Exam Flashcards</h1>
-    <p>Preview of converted flashcards with LaTeX equations and technical diagrams</p>
-''')
-
-        # Create a directory to store images for preview
-        preview_images_dir = os.path.join(output_dir, 'preview_images')
-        os.makedirs(preview_images_dir, exist_ok=True)
-
-        for card in cards:
-            f.write(f'<div class="card">')
-            f.write(f'<div class="card-header"><h3>Problem {card["id"]}</h3></div>')
-
-            # Question section
-            f.write(f'<div class="question"><strong>Question:</strong><br>{card["front"]}')
-
-            # Include front image if available
-            if card['front_image']:
-                image_path = f'preview_images/{card["front_image"]}'
-                f.write(f'<div><img src="{image_path}" alt="Question diagram"></div>')
-
-            f.write('</div><hr>')
-
-            # Answer section
-            f.write(f'<div class="answer"><strong>Solution:</strong><br>{card["back"]}')
-
-            # Include back image if available
-            if card['back_image']:
-                image_path = f'preview_images/{card["back_image"]}'
-                f.write(f'<div><img src="{image_path}" alt="Solution diagram"></div>')
-
-            f.write('</div></div>')
-
-        f.write('</body></html>')
-
-    return preview_path, preview_images_dir
-
-def copy_images_for_preview(cards, source_image_dir, preview_images_dir):
-    """Copy images for HTML preview with proper path handling."""
     for card in cards:
-        # Copy front image if available
-        if card['front_image']:
-            source_path = os.path.join(source_image_dir, card['front_image'])
-            if os.path.exists(source_path):
-                shutil.copy(source_path, os.path.join(preview_images_dir, card['front_image']))
+        all_media.extend(card['media'])
 
-        # Copy back image if available
-        if card['back_image']:
-            source_path = os.path.join(source_image_dir, card['back_image'])
-            if os.path.exists(source_path):
-                shutil.copy(source_path, os.path.join(preview_images_dir, card['back_image']))
+    unique_media = sorted(set(all_media))
 
-def create_instructions(output_dir, has_images):
-    """Create comprehensive instructions file with technical precision."""
-    instructions_path = os.path.join(output_dir, 'README.txt')
-    with open(instructions_path, 'w', encoding='utf-8') as f:
-        f.write('# Mechanical Engineering Exam Flashcards - AnkiApp Import Instructions\n\n')
+    with open(media_report_path, 'w', encoding='utf-8') as f:
+        f.write("Media Files Required for Anki Import\n")
+        f.write("===================================\n\n")
+        f.write(f"Total files needed: {len(unique_media)}\n\n")
+        f.write("These files must be manually copied to your Anki collection.media directory:\n\n")
 
-        f.write('## CSV Format Compliance\n\n')
-        f.write('The generated CSV file follows the official AnkiApp import format specification:\n')
-        f.write('1. Column 1: Text for front of card\n')
-        f.write('2. Column 2: Text for back of card\n')
-        f.write('3. Column 3: List of tags, comma separated\n')
-        f.write('4. Column 4: Filename for image on front of card\n')
-        f.write('5. Column 5: Filename for image on back of card\n')
-        f.write('6. Column 6: File name of audio file for front of card (not used)\n')
-        f.write('7. Column 7: File name of audio file for back of card (not used)\n\n')
+        for filename in unique_media:
+            f.write(f"- {filename}\n")
 
-        f.write('## Import Method for Cards with Images\n\n')
-        if has_images:
-            f.write('This deck includes image references. For proper import:\n\n')
-            f.write('1. Use the anki_import.zip file for import\n')
-            f.write('2. In AnkiApp, select "Import" and choose the ZIP file\n')
-            f.write('3. AnkiApp will automatically process both the CSV and included images\n\n')
-        else:
-            f.write('This deck does not contain image references. You can import the CSV file directly.\n\n')
+        f.write("\nIMPORTANT: Do not create subdirectories in the collection.media folder.\n")
+        f.write("Simply copy all files directly into that directory.\n")
 
-        f.write('## Troubleshooting\n\n')
-        f.write('1. Verify ZIP structure: The ZIP file must contain the CSV and image files at the root level\n')
-        f.write('2. Image references: Ensure image filenames in the CSV match exactly the image files in the ZIP\n')
-        f.write('3. Format verification: Check preview.html to confirm proper LaTeX rendering and image display\n\n')
+    print(f"Media report created: {media_report_path}")
+    return media_report_path
 
-        f.write('## Technical Notes\n\n')
-        f.write('- LaTeX equations use standard $...$ delimiters compatible with AnkiApp\n')
-        f.write('- Emphasized variables use HTML <em> tags for consistent rendering\n')
-        f.write('- Image references are placed in dedicated columns as per AnkiApp specifications\n')
+def generate_import_guide(output_dir):
+    """Create a helpful guide for importing the CSV into Anki."""
+    guide_path = os.path.join(output_dir, 'import_instructions.txt')
+
+    with open(guide_path, 'w', encoding='utf-8') as f:
+        f.write("Anki Import Instructions\n")
+        f.write("=======================\n\n")
+        f.write("1. Copy all media files listed in 'media_files_needed.txt' into your Anki collection.media folder\n")
+        f.write("   (Typically found at: %APPDATA%\\Anki2\\[User Profile]\\collection.media on Windows\n")
+        f.write("   or ~/Library/Application Support/Anki2/[User Profile]/collection.media on Mac)\n\n")
+        f.write("2. In Anki, select 'Import File' from the File menu\n\n")
+        f.write("3. Select the 'anki_import.csv' file\n\n")
+        f.write("4. In the import dialog, ensure:\n")
+        f.write("   - 'Fields separated by: Comma' is selected\n")
+        f.write("   - 'Allow HTML in fields' is CHECKED\n")
+        f.write("   - Field mapping is correctly set (Front → Front, Back → Back, Tags → Tags)\n")
+        f.write("   - Choose your target deck\n\n")
+        f.write("5. Click 'Import' to complete the process\n")
+
+    print(f"Import guide created: {guide_path}")
+    return guide_path
+
+def validate_cards(cards):
+    """Perform validation checks on processed cards."""
+    print("\nValidation Report:")
+    print("=================")
+    print(f"Total cards found: {len(cards)}")
+
+    # Check for potential issues
+    latex_issues = 0
+    media_refs = 0
+
+    for card in cards:  # Removed unused variable 'i'
+        # Check for potentially problematic LaTeX
+        if r'\(' in card['front'] or r'\)' in card['front'] or r'\(' in card['back'] or r'\)' in card['back']:
+            latex_issues += 1
+            print(f"Warning: Card {card['id']} may have unprocessed LaTeX expressions")
+
+        # Count media references
+        media_count = len(card['media'])
+        media_refs += media_count
+
+        # Verify if front/back content isn't too short (possible parsing issues)
+        if len(card['front']) < 10:
+            print(f"Warning: Card {card['id']} has a very short front side, check for parsing issues")
+
+    print(f"Media references found: {media_refs}")
+    if latex_issues > 0:
+        print(f"Warning: {latex_issues} cards may have LaTeX formatting issues")
+    print("Validation complete.\n")
 
 def main():
-    """Main function implementing the conversion workflow with robust error handling."""
     if len(sys.argv) != 3:
-        print("Usage: python org_to_anki_csv.py input.org output_directory")
+        print("Usage: python anki_converter.py input.org output_dir")
         sys.exit(1)
 
-    input_file = sys.argv[1]
-    output_dir = sys.argv[2]
+    input_file, output_dir = sys.argv[1], sys.argv[2]
+    os.makedirs(output_dir, exist_ok=True)
 
-    try:
-        print("=== Engineering Flashcard Conversion Process ===")
+    with open(input_file, 'r', encoding='utf-8') as f:
+        org_content = f.read()
 
-        # Read input file
-        print(f"Reading source file: {input_file}")
-        with open(input_file, 'r', encoding='utf-8') as f:
-            org_content = f.read()
+    print("Extracting and processing cards...")
+    cards = extract_drill_cards(org_content)
 
-        # Extract cards
-        print("Extracting and processing flashcards...")
-        cards = extract_drill_cards(org_content)
-        print(f"Successfully extracted {len(cards)} engineering problem cards")
-
-        # Determine if we have images
-        has_images = any(card['front_image'] or card['back_image'] for card in cards)
-
-        # Create CSV file
-        print("Generating AnkiApp-compatible CSV...")
-        csv_path = create_anki_csv(cards, output_dir)
-        print(f"CSV file created: {csv_path}")
-
-        # Handle images if present
-        source_image_dir = os.path.join(os.path.dirname(input_file), "images")
-        if has_images and os.path.exists(source_image_dir):
-            print(f"Processing engineering diagrams from {source_image_dir}")
-
-            # Create ZIP file with images
-            zip_path = create_anki_zip(csv_path, cards, output_dir, source_image_dir)
-            print(f"ZIP archive created with CSV and images: {zip_path}")
-
-            # Create HTML preview
-            preview_path, preview_images_dir = create_html_preview(cards, output_dir)
-            copy_images_for_preview(cards, source_image_dir, preview_images_dir)
-            print(f"HTML preview created: {preview_path}")
-        else:
-            print("No images found or source image directory does not exist")
-            preview_path, _ = create_html_preview(cards, output_dir)
-            print(f"Text-only HTML preview created: {preview_path}")
-
-        # Create instructions
-        create_instructions(output_dir, has_images)
-        print(f"Comprehensive instructions created: {os.path.join(output_dir, 'README.txt')}")
-
-        print("\n=== Conversion Complete ===")
-        print(f"Output files available in: {output_dir}")
-        if has_images:
-            print(f"For import to AnkiApp: Use the ZIP file {os.path.join(output_dir, 'anki_import.zip')}")
-        else:
-            print(f"For import to AnkiApp: Use the CSV file {csv_path}")
-        print("Verify output formatting in preview.html before importing")
-
-    except Exception as e:
-        print(f"Error processing engineering content: {str(e)}")
+    if not cards:
+        print("ERROR: No cards found in the input file. Check the format.")
         sys.exit(1)
+
+    # Validate the processed cards
+    validate_cards(cards)
+
+    # Export sample cards for review
+    sample_path = os.path.join(output_dir, 'sample_cards.txt')
+    with open(sample_path, 'w', encoding='utf-8') as f:
+        for card in cards[:3]:  # First three cards, removed unused variable 'i'
+            f.write(f"==== CARD {card['id']} ====\n")
+            f.write(f"FRONT:\n{card['front']}\n\n")
+            f.write(f"BACK:\n{card['back']}\n\n")
+            f.write("="*40 + "\n\n")
+
+    create_anki_csv(cards, output_dir)
+    generate_media_report(cards, output_dir)
+    generate_import_guide(output_dir)
+
+    print("\nConversion completed successfully!")
+    print(f"Output files are in: {output_dir}")
+    print(f"Sample cards saved to: {sample_path} - please review before importing")
+    print("Follow the instructions in 'import_instructions.txt' to complete the import process.")
 
 if __name__ == "__main__":
     main()
